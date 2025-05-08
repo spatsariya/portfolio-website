@@ -552,6 +552,84 @@
     </div>
 </section>
 
+<!-- Certifications Section -->
+<section id="certifications" class="certifications-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My Certifications</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="certifications-grid">
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UX Design Professional Certificate</h3>
+                    <p class="certification-issuer">Google</p>
+                    <p class="certification-date">May 2024</p>
+                    <a href="#" class="btn-view-certificate">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>User Experience Design Essentials</h3>
+                    <p class="certification-issuer">Adobe XD</p>
+                    <p class="certification-date">January 2024</p>
+                    <a href="#" class="btn-view-certificate">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Design Thinking Specialist</h3>
+                    <p class="certification-issuer">Interaction Design Foundation</p>
+                    <p class="certification-date">October 2023</p>
+                    <a href="#" class="btn-view-certificate">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Certified Product Manager</h3>
+                    <p class="certification-issuer">Product School</p>
+                    <p class="certification-date">July 2023</p>
+                    <a href="#" class="btn-view-certificate">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Frontend Web Development</h3>
+                    <p class="certification-issuer">Udemy</p>
+                    <p class="certification-date">March 2023</p>
+                    <a href="#" class="btn-view-certificate">View Certificate</a>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Project Management Professional (PMP)</h3>
+                    <p class="certification-issuer">PMI</p>
+                    <p class="certification-date">December 2022</p>
+                    <a href="#" class="btn-view-certificate">View Certificate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Organizations Section -->
 <section id="organizations" class="certifications-section">
     <div class="container">
