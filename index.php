@@ -101,10 +101,49 @@
             <div class="section-line"></div>
         </div>
         <div class="experience-timeline">
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="25">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Nov 2024 - Present</span>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/designcollective-logo.png" alt="Design Collective Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Apr 2025 - Present</span>
+                    <h3>Design Ethics Advisor</h3>
+                    <h4>Design Collective</h4>
+                    <p>Consulting on ethical design practices and accessibility standards for digital products.</p>
+                    <ul class="timeline-list">
+                        <li>Advising teams on inclusive design methodologies and best practices</li>
+                        <li>Conducting design ethics workshops for organizations</li>
+                        <li>Contributing to industry standards for responsible AI interfaces</li>
+                        <li>Mentoring designers on creating ethically-conscious digital experiences</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/fusion-design-logo.png" alt="Fusion Design Studio Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Mar 2025 - Present</span>
+                    <h3>Senior UX Design Lead</h3>
+                    <h4>Fusion Design Studio</h4>
+                    <p>Leading UX design initiatives for enterprise SaaS applications with focus on accessibility and inclusive design.</p>
+                    <ul class="timeline-list">
+                        <li>Directing UX design strategy for a portfolio of enterprise clients</li>
+                        <li>Managing a team of 5 designers with focus on mentorship and growth</li>
+                        <li>Implementing design systems that prioritize accessibility standards</li>
+                        <li>Presenting design solutions to C-level stakeholders</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/rcycle-logo.png" alt="rCycle Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Nov 2024 - Feb 2025</span>
                     <h3>Design Consultant</h3>
                     <h4>rCycle</h4>
                     <p>Creating sustainable digital experiences for an eco-conscious platform.</p>
@@ -115,9 +154,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/tech-mahindra-logo.png" alt="Tech Mahindra Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
                     <span class="date">Dec 2021 - May 2024</span>
                     <h3>Technical Lead</h3>
                     <h4>Tech Mahindra</h4>
@@ -129,9 +171,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/virgin-plus-logo.png" alt="Virgin Plus Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
                     <span class="date">Dec 2021 - May 2024</span>
                     <h3>Product Designer</h3>
                     <h4>Virgin Plus</h4>
@@ -143,9 +188,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/squareroot-logo.png" alt="SquareRoot Technology Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
                     <span class="date">Mar 2024 - Apr 2024</span>
                     <h3>Management Intern</h3>
                     <h4>SquareRoot Technology</h4>
@@ -157,9 +205,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/nims-logo.png" alt="NIMS University Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
                     <span class="date">Apr 2021 - Dec 2023</span>
                     <h3>Social Communication Manager | Branding & Design Instructor</h3>
                     <h4>NIMS University</h4>
@@ -171,115 +222,165 @@
                     </ul>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/shopsy-logo.png" alt="Shopsy Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
                     <span class="date">Jan 2021 - Sep 2021</span>
                     <h3>Lead Designer</h3>
                     <h4>Shopsy</h4>
                     <p>Led design efforts for e-commerce platform with focus on user experience and conversion optimization.</p>
                     <ul class="timeline-list">
                         <li>Created user interface designs and prototypes for web and mobile</li>
-                        <li>Developed motion graphics and video content for marketing campaigns</li>
-                        <li>Designed email marketing templates with high conversion rates</li>
+                        <li>Developed visual identity and branding guidelines</li>
+                        <li>Optimized user flows to improve conversion rates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/flipkart-logo.png" alt="2Gud by Flipkart Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Aug 2020 - Dec 2020</span>
+                    <h3>Product Designer</h3>
+                    <h4>2Gud by Flipkart</h4>
+                    <p>Designed product interfaces for Flipkart's refurbished goods platform.</p>
+                    <ul class="timeline-list">
+                        <li>Created user interface designs for web and mobile applications</li>
+                        <li>Collaborated with product managers to define feature requirements</li>
+                        <li>Conducted usability testing and implemented design improvements</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Aug 2020 - Dec 2020</span>
-                    <h3>Product Designer</h3>
-                    <h4>2Gud by Flipkart</h4>
-                    <p>Designed digital experiences for Flipkart's value-focused e-commerce platform.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/flipkart-logo.png" alt="Flipkart Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">May 2020 - Sep 2020</span>
+                    <h3>Senior Visual Designer</h3>
+                    <h4>Flipkart</h4>
+                    <p>Created visual designs for India's leading e-commerce platform.</p>
                     <ul class="timeline-list">
-                        <li>Created user experience designs for web and mobile applications</li>
-                        <li>Developed marketing materials and digital assets</li>
-                        <li>Contributed to website building and optimization</li>
+                        <li>Designed promotional materials for marketing campaigns</li>
+                        <li>Created visual assets for web and mobile platforms</li>
+                        <li>Collaborated with UI/UX teams to ensure design consistency</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">May 2020 - Sep 2020</span>
-                    <h3>Senior Visual Designer</h3>
-                    <h4>Flipkart</h4>
-                    <p>Created visual designs for one of India's largest e-commerce platforms.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/launchers-logo.png" alt="Launchers World Software Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Jul 2016 - Jan 2018</span>
+                    <h3>Software Engineer</h3>
+                    <h4>Launchers World Software India Pvt. Ltd.</h4>
+                    <p>Full stack web development, graphics designing and video production.</p>
                     <ul class="timeline-list">
-                        <li>Designed user experiences for high-traffic e-commerce platform</li>
-                        <li>Created email marketing campaigns with high engagement rates</li>
-                        <li>Developed digital marketing assets aligned with brand guidelines</li>
+                        <li>Designed mobile app UI objects in Photoshop/Illustrator</li>
+                        <li>Handled end-to-end web development project lifecycle</li>
+                        <li>Created UX designs and wireframes for mobile applications</li>
+                        <li>Managed web hosting servers and performed website migrations</li>
+                        <li>Produced promotional videos for mobile apps on Play Store</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="900">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Apr 2019 - Jun 2020</span>
-                    <h3>Customer Experience Manager</h3>
-                    <h4>NextGen Invent Corporation</h4>
-                    <p>Managed customer experience initiatives for an INC.5000 technology company.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/imast-logo.png" alt="Imast Operations Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Sep 2017 - Dec 2017</span>
+                    <h3>Head of IT (Design)</h3>
+                    <h4>Imast Operations Pvt. Ltd.</h4>
+                    <p>UI/UX designer and web developer handling various design responsibilities.</p>
                     <ul class="timeline-list">
-                        <li>Designed and implemented customer relationship management strategies</li>
-                        <li>Created user interfaces and digital media for marketing campaigns</li>
-                        <li>Led project teams for client-facing digital initiatives</li>
+                        <li>Led full stack website development projects</li>
+                        <li>Created UI designs for websites and mobile apps</li>
+                        <li>Managed web hosting servers and website migrations</li>
+                        <li>Designed publishing content such as hoardings, leaflets, and brochures</li>
+                        <li>Communicated with clients to take design briefs and approvals</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="1000">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Jan 2016 - 2020</span>
-                    <h3>Co-Founder</h3>
-                    <h4>InstiWitty Media Pvt. Ltd.</h4>
-                    <p>Co-founded a design and development agency helping startups and small businesses build digital products.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/lastloft-logo.png" alt="Last Loft Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Aug 2016 - Apr 2017</span>
+                    <h3>Full Stack Developer</h3>
+                    <h4>Last Loft</h4>
+                    <p>Full stack web development with focus on e-commerce solutions.</p>
                     <ul class="timeline-list">
-                        <li>Provided consulting and development services to clients</li>
-                        <li>Created UI/UX designs for web and mobile applications</li>
-                        <li>Managed client relationships and project delivery</li>
+                        <li>Developed and maintained e-commerce sites as lead developer</li>
+                        <li>Handled AbanteCart CMS implementation</li>
+                        <li>Managed customer experience and digital promotion</li>
+                        <li>Performed SEO optimization for client websites</li>
+                        <li>Created promotional videos and managed order delivery execution</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="1100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Aug 2015 - 2020</span>
-                    <h3>President and Founder</h3>
-                    <h4>Aashayen Foundation</h4>
-                    <p>Founded a non-profit organization focused on education for children in slums.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/designhub-logo.png" alt="DesignHub Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Mar 2016 - Jul 2016</span>
+                    <h3>UX/UI Designer</h3>
+                    <h4>DesignHub Creative</h4>
+                    <p>Created intuitive user interfaces and experiences for web and mobile applications.</p>
                     <ul class="timeline-list">
-                        <li>Led initiatives to provide educational opportunities to underprivileged children</li>
-                        <li>Managed volunteer teams and community outreach programs</li>
-                        <li>Developed partnerships with local organizations and sponsors</li>
+                        <li>Developed wireframes and interactive prototypes</li>
+                        <li>Conducted user testing and implemented design improvements</li>
+                        <li>Collaborated with development teams to ensure design fidelity</li>
+                        <li>Created responsive designs for various screen sizes</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="1200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Jan 2014 - 2020</span>
-                    <h3>Founder And CEO (FREELANCER)</h3>
-                    <h4>BeingShivam Online</h4>
-                    <p>Founded a personal tech blog and freelance design service.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/creativeminds-logo.png" alt="Creative Minds Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Oct 2015 - Feb 2016</span>
+                    <h3>Graphic Designer</h3>
+                    <h4>Creative Minds Studio</h4>
+                    <p>Developed visual assets for print and digital media campaigns.</p>
                     <ul class="timeline-list">
-                        <li>Created web designs and implementations for clients</li>
-                        <li>Produced technical content and reviews</li>
-                        <li>Managed personal brand and client relationships</li>
+                        <li>Created brand identity materials for clients across various industries</li>
+                        <li>Designed marketing collateral including brochures, posters, and social media graphics</li>
+                        <li>Collaborated with marketing teams to align visual design with campaign objectives</li>
+                        <li>Maintained consistent brand identity across all design deliverables</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="1300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">Feb 2018 - Jan 2019</span>
-                    <h3>Creative Head</h3>
-                    <h4>MSS PAYMENTS</h4>
-                    <p>Led creative design initiatives for a financial services company.</p>
+                    <div class="company-logo-placeholder">
+                        <img src="images/company-logos/techinnovate-logo.png" alt="TechInnovate Logo" onerror="this.src='images/company-logos/placeholder.png'">
+                    </div>
+                    <span class="date">Jun 2015 - Sep 2015</span>
+                    <h3>Web Designer Intern</h3>
+                    <h4>TechInnovate Solutions</h4>
+                    <p>Assisted in the design and development of responsive websites.</p>
                     <ul class="timeline-list">
-                        <li>Designed user interfaces for mobile and web applications</li>
-                        <li>Created marketing materials and promotional content</li>
-                        <li>Managed and mentored junior designers</li>
+                        <li>Created website mockups and prototypes using Adobe XD</li>
+                        <li>Implemented responsive designs using HTML, CSS, and JavaScript</li>
+                        <li>Optimized web assets for maximum performance</li>
+                        <li>Participated in client meetings and design reviews</li>
                     </ul>
                 </div>
             </div>
