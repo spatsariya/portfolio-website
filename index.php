@@ -13,8 +13,8 @@
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
                 <h1>Hi, I'm <span class="highlight">Shivam Patsariya</span></h1>
-                <h2>UX Designer & Creative Problem Solver</h2>
-                <p>I craft meaningful digital experiences that delight users and drive business growth.</p>
+                <h2>UI/UX Designer & Creative Problem Solver</h2>
+                <p>Versatile professional specializing in UI/UX and Visual Design, creating meaningful digital experiences that delight users and drive business growth.</p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -45,7 +45,7 @@
         </div>
         <div class="about-content">
             <div class="about-text" data-aos="fade-right" data-aos-delay="100">
-                <p>I am a passionate UX designer dedicated to creating human-centered digital experiences that solve real problems. With a strong foundation in design thinking, user research, and interface design, I help businesses connect with their audience through intuitive and engaging products.</p>
+                <p>I am a versatile professional with expertise in Management, Engineering, and Design. As a UI/UX and Visual Design Specialist, I create human-centered digital experiences that solve real problems and help businesses connect with their audience through intuitive and engaging products.</p>
                 <p>My design approach combines analytical thinking with creative vision, resulting in experiences that are both functional and delightful. I believe that great design should be invisible, allowing users to achieve their goals effortlessly.</p>
                 <div class="about-details">
                     <div class="detail-item">
@@ -58,11 +58,15 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Location:</span>
-                        <span class="detail-value">Mumbai, India</span>
+                        <span class="detail-value">East York, Ontario, Canada</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Languages:</span>
+                        <span class="detail-value">English (Native), Hindi (Native)</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Availability:</span>
-                        <span class="detail-value">Available for freelance & full-time</span>
+                        <span class="detail-value">Available for new opportunities</span>
                     </div>
                 </div>
                 <a href="#" class="btn btn-primary download-cv">Download CV <i class="fas fa-download"></i></a>
@@ -81,8 +85,8 @@
                     <div class="stat-text">Happy<br>Clients</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="10">0</div>
-                    <div class="stat-text">Design<br>Awards</div>
+                    <div class="stat-number" data-count="4000">0</div>
+                    <div class="stat-text">LinkedIn<br>Followers</div>
                 </div>
             </div>
         </div>
@@ -100,42 +104,42 @@
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2023 - Present</span>
-                    <h3>Senior UX Designer</h3>
-                    <h4>Design Studio XYZ</h4>
-                    <p>Lead UX designer for enterprise clients, managing end-to-end product design processes. Collaborated with cross-functional teams to create intuitive interfaces and meaningful experiences.</p>
+                    <span class="date">2022 - Present</span>
+                    <h3>UI/UX Designer</h3>
+                    <h4>rCycle</h4>
+                    <p>Creating engaging user interfaces and optimizing user experiences for sustainability-focused applications. Collaborating with cross-functional teams to deliver intuitive and impactful digital solutions.</p>
                     <ul class="timeline-list">
-                        <li>Led redesign of client's flagship product, increasing user engagement by 45%</li>
-                        <li>Conducted user research and usability testing across multiple projects</li>
-                        <li>Mentored junior designers and facilitated design thinking workshops</li>
+                        <li>Designed and improved user interfaces for web and mobile applications</li>
+                        <li>Conducted user research and usability testing to enhance user experience</li>
+                        <li>Collaborated with development teams to implement responsive designs</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2020 - 2023</span>
-                    <h3>UX Designer</h3>
-                    <h4>Tech Solutions Inc.</h4>
-                    <p>Designed user interfaces for web and mobile applications. Created wireframes, prototypes, and visual designs while collaborating closely with developers and product managers.</p>
+                    <span class="date">2021 - 2024</span>
+                    <h3>Designer</h3>
+                    <h4>Virgin Plus - My Benefits</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
                     <ul class="timeline-list">
-                        <li>Improved conversion rates by 30% through app redesign</li>
-                        <li>Implemented design system to ensure consistency across products</li>
-                        <li>Conducted A/B testing to optimize user flows and interactions</li>
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2018 - 2020</span>
-                    <h3>UI/UX Design Intern</h3>
-                    <h4>Creative Agency ABC</h4>
-                    <p>Assisted senior designers in creating user interfaces for various digital products. Participated in brainstorming sessions and contributed to the design process.</p>
+                    <span class="date">2020 - 2021</span>
+                    <h3>Graphics Designer</h3>
+                    <h4>Flipkart</h4>
+                    <p>Created visual designs and graphics for one of India's largest e-commerce platforms, contributing to marketing campaigns and product presentations.</p>
                     <ul class="timeline-list">
-                        <li>Designed landing pages for marketing campaigns</li>
-                        <li>Created interactive prototypes using Figma and Adobe XD</li>
-                        <li>Supported user research activities and usability testing</li>
+                        <li>Designed graphics for promotional campaigns and product pages</li>
+                        <li>Collaborated with marketing teams to create engaging visual content</li>
+                        <li>Maintained brand consistency across various digital touchpoints</li>
                     </ul>
                 </div>
             </div>
@@ -210,7 +214,7 @@
                         <div class="skill-item">
                             <span class="skill-name">Adobe Photoshop</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
+                                <div class="skill-progress" data-progress="90"></div>
                             </div>
                         </div>
                     </div>
@@ -223,7 +227,7 @@
                         <span class="skill-tag">Design Systems</span>
                         <span class="skill-tag">Information Architecture</span>
                         <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Design Thinking</span>
+                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Responsive Design</span>
                         <span class="skill-tag">Interaction Design</span>
                         <span class="skill-tag">Visual Design</span>
@@ -250,13 +254,13 @@
             <button class="filter-btn" data-filter="branding">Branding</button>
         </div>
         <div class="projects-grid">
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
                 <div class="project-image">
-                    <img src="images/project-1.jpg" alt="Project 1">
+                    <img src="images/project-1.jpg" alt="InstiWitty Read Write Express">
                     <div class="project-overlay">
                         <div class="project-info">
-                            <h3>Finance Mobile App</h3>
-                            <p>UI/UX Design, Mobile App</p>
+                            <h3>InstiWitty Read Write Express</h3>
+                            <p>Platform for freelance authors, 2015-2023</p>
                             <a href="project-detail.php?id=1" class="btn-view-project">View Project</a>
                         </div>
                     </div>
@@ -264,23 +268,23 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
                 <div class="project-image">
-                    <img src="images/project-2.jpg" alt="Project 2">
+                    <img src="images/project-2.jpg" alt="BeingShivam Online">
                     <div class="project-overlay">
                         <div class="project-info">
-                            <h3>E-commerce Website</h3>
-                            <p>UI/UX Design, Web Design</p>
+                            <h3>BeingShivam Online</h3>
+                            <p>Personal Tech Blog, 2016-2021</p>
                             <a href="project-detail.php?id=2" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="300">
+            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
                 <div class="project-image">
-                    <img src="images/project-3.jpg" alt="Project 3">
+                    <img src="images/project-3.jpg" alt="NGO Website">
                     <div class="project-overlay">
                         <div class="project-info">
-                            <h3>Brand Identity Design</h3>
-                            <p>Branding, Visual Design</p>
+                            <h3>NPO/NGO Website</h3>
+                            <p>Website Design, 2015-2018</p>
                             <a href="project-detail.php?id=3" class="btn-view-project">View Project</a>
                         </div>
                     </div>
@@ -288,10 +292,10 @@
             </div>
             <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
                 <div class="project-image">
-                    <img src="images/project-4.jpg" alt="Project 4">
+                    <img src="images/project-4.jpg" alt="rCycle App">
                     <div class="project-overlay">
                         <div class="project-info">
-                            <h3>Fitness Tracking App</h3>
+                            <h3>rCycle Mobile App</h3>
                             <p>UI/UX Design, Mobile App</p>
                             <a href="project-detail.php?id=4" class="btn-view-project">View Project</a>
                         </div>
@@ -300,10 +304,10 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
                 <div class="project-image">
-                    <img src="images/project-5.jpg" alt="Project 5">
+                    <img src="images/project-5.jpg" alt="Virgin Plus">
                     <div class="project-overlay">
                         <div class="project-info">
-                            <h3>Landing Page Design</h3>
+                            <h3>Virgin Plus My Benefits</h3>
                             <p>UI/UX Design, Web Design</p>
                             <a href="project-detail.php?id=5" class="btn-view-project">View Project</a>
                         </div>
@@ -312,16 +316,89 @@
             </div>
             <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="600">
                 <div class="project-image">
-                    <img src="images/project-6.jpg" alt="Project 6">
+                    <img src="images/project-6.jpg" alt="Flipkart Graphics">
                     <div class="project-overlay">
                         <div class="project-info">
-                            <h3>Logo Design Collection</h3>
+                            <h3>Flipkart Graphics Design</h3>
                             <p>Branding, Visual Design</p>
                             <a href="project-detail.php?id=6" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Organizations Section -->
+<section id="organizations" class="certifications-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Organizations</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="certifications-grid">
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>InstiWitty Media Studios</h3>
+                    <p class="certification-issuer">Director</p>
+                    <p class="certification-date">May 2018 - Present</p>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Aashayen Foundation</h3>
+                    <p class="certification-issuer">Founder & President</p>
+                    <p class="certification-date">2015 - Present</p>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Microsoft Student Association</h3>
+                    <p class="certification-issuer">Student Ambassador</p>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Dahij</h3>
+                    <p class="certification-issuer">Creativity Head</p>
+                    <p class="certification-date">Aug 2013 - May 2015</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="experience-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Education</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="experience-timeline">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Recent</span>
+                    <h3>Fleming College</h3>
+                    <h4>Ontario, Canada</h4>
+                    <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
+                </div>
+            </div>
+            <!-- You can add more education entries here as needed -->
         </div>
     </div>
 </section>
@@ -339,10 +416,9 @@
                     <i class="fas fa-certificate"></i>
                 </div>
                 <div class="certification-content">
-                    <h3>Google UX Design Professional Certificate</h3>
-                    <p class="certification-issuer">Google</p>
-                    <p class="certification-date">2022</p>
-                    <a href="#" class="certification-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    <h3>JavaScript ES6+ Programming</h3>
+                    <p class="certification-issuer">LinkedIn Learning</p>
+                    <p class="certification-date">2025</p>
                 </div>
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
@@ -350,10 +426,9 @@
                     <i class="fas fa-certificate"></i>
                 </div>
                 <div class="certification-content">
-                    <h3>UI/UX Design Specialization</h3>
-                    <p class="certification-issuer">Coursera</p>
-                    <p class="certification-date">2021</p>
-                    <a href="#" class="certification-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    <h3>CSS for Developers</h3>
+                    <p class="certification-issuer">LinkedIn Learning</p>
+                    <p class="certification-date">2025</p>
                 </div>
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
@@ -361,10 +436,9 @@
                     <i class="fas fa-certificate"></i>
                 </div>
                 <div class="certification-content">
-                    <h3>Certified Usability Analyst</h3>
-                    <p class="certification-issuer">Human Factors International</p>
-                    <p class="certification-date">2020</p>
-                    <a href="#" class="certification-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    <h3>End-to-End JavaScript Testing with Cypress.io</h3>
+                    <p class="certification-issuer">LinkedIn Learning</p>
+                    <p class="certification-date">2025</p>
                 </div>
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
@@ -372,10 +446,9 @@
                     <i class="fas fa-certificate"></i>
                 </div>
                 <div class="certification-content">
-                    <h3>Adobe XD Certification</h3>
-                    <p class="certification-issuer">Adobe</p>
-                    <p class="certification-date">2019</p>
-                    <a href="#" class="certification-link" target="_blank">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
                 </div>
             </div>
         </div>
@@ -400,7 +473,7 @@
                         </div>
                         <div class="contact-text">
                             <h4>Phone</h4>
-                            <p>+91 1234567890</p>
+                            <p>+1 (123) 456-7890</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -418,12 +491,12 @@
                         </div>
                         <div class="contact-text">
                             <h4>Location</h4>
-                            <p>Mumbai, India</p>
+                            <p>East York, Ontario, Canada</p>
                         </div>
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
                     <a href="#" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
                     <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
