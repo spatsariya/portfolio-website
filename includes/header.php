@@ -8,8 +8,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Patsariya | UX Designer</title>
-    <meta name="description" content="Shivam Patsariya - UX Designer crafting meaningful digital experiences">
+    <title>Shivam Patsariya | UI/UX & Visual Design Specialist</title>
+    <meta name="description" content="Shivam Patsariya - Versatile Professional specializing in UI/UX and Visual Design based in Toronto, Canada">
     
     <!-- Favicon -->
     <link rel="icon" href="images/favicon.png" type="image/png">
@@ -41,6 +41,8 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#organizations">Organizations</a></li>
+                        <li><a href="#education">Education</a></li>
                         <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -59,6 +61,8 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#organizations">Organizations</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
