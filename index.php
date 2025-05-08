@@ -104,42 +104,182 @@
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2022 - Present</span>
-                    <h3>UI/UX Designer</h3>
+                    <span class="date">Nov 2024 - Present</span>
+                    <h3>Design Consultant</h3>
                     <h4>rCycle</h4>
-                    <p>Creating engaging user interfaces and optimizing user experiences for sustainability-focused applications. Collaborating with cross-functional teams to deliver intuitive and impactful digital solutions.</p>
+                    <p>Creating sustainable digital experiences for an eco-conscious platform.</p>
                     <ul class="timeline-list">
-                        <li>Designed and improved user interfaces for web and mobile applications</li>
-                        <li>Conducted user research and usability testing to enhance user experience</li>
-                        <li>Collaborated with development teams to implement responsive designs</li>
+                        <li>Designing UI/UX for applications focused on sustainable consumer product lifecycle</li>
+                        <li>Creating digital assets that promote circular economy principles</li>
+                        <li>Working remotely with a team dedicated to eco-friendly initiatives</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2021 - 2024</span>
-                    <h3>Designer</h3>
-                    <h4>Virgin Plus - My Benefits</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <span class="date">Dec 2021 - May 2024</span>
+                    <h3>Technical Lead</h3>
+                    <h4>Tech Mahindra</h4>
+                    <p>Led UI/UX design initiatives as part of the U4 design team.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Managed project delivery with agile methodologies using Jira</li>
+                        <li>Conducted user research to inform design decisions</li>
+                        <li>Created presentation materials for stakeholder reviews</li>
                     </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2020 - 2021</span>
-                    <h3>Graphics Designer</h3>
-                    <h4>Flipkart</h4>
-                    <p>Created visual designs and graphics for one of India's largest e-commerce platforms, contributing to marketing campaigns and product presentations.</p>
+                    <span class="date">Dec 2021 - May 2024</span>
+                    <h3>Product Designer</h3>
+                    <h4>Virgin Plus</h4>
+                    <p>Designed and developed the Virgin Plus My Benefits platform with focus on user experience.</p>
                     <ul class="timeline-list">
-                        <li>Designed graphics for promotional campaigns and product pages</li>
-                        <li>Collaborated with marketing teams to create engaging visual content</li>
-                        <li>Maintained brand consistency across various digital touchpoints</li>
+                        <li>Created user interface designs for web and mobile applications</li>
+                        <li>Implemented system thinking approaches to complex UX challenges</li>
+                        <li>Developed digital marketing assets and content for various channels</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Mar 2024 - Apr 2024</span>
+                    <h3>Management Intern</h3>
+                    <h4>SquareRoot Technology</h4>
+                    <p>Managed digital marketing initiatives and website optimization projects.</p>
+                    <ul class="timeline-list">
+                        <li>Executed social media marketing campaigns across multiple platforms</li>
+                        <li>Developed websites using WordPress and Squarespace</li>
+                        <li>Implemented SEO and analytics tracking to improve performance</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Apr 2021 - Dec 2023</span>
+                    <h3>Social Communication Manager | Branding & Design Instructor</h3>
+                    <h4>NIMS University</h4>
+                    <p>Managed social communications for the Admissions Cell and taught design principles to students.</p>
+                    <ul class="timeline-list">
+                        <li>Led cross-functional teams for admissions marketing initiatives</li>
+                        <li>Developed educational content and training materials for design courses</li>
+                        <li>Implemented digital transformation strategies for the admissions process</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="600">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Jan 2021 - Sep 2021</span>
+                    <h3>Lead Designer</h3>
+                    <h4>Shopsy</h4>
+                    <p>Led design efforts for e-commerce platform with focus on user experience and conversion optimization.</p>
+                    <ul class="timeline-list">
+                        <li>Created user interface designs and prototypes for web and mobile</li>
+                        <li>Developed motion graphics and video content for marketing campaigns</li>
+                        <li>Designed email marketing templates with high conversion rates</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="700">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Aug 2020 - Dec 2020</span>
+                    <h3>Product Designer</h3>
+                    <h4>2Gud by Flipkart</h4>
+                    <p>Designed digital experiences for Flipkart's value-focused e-commerce platform.</p>
+                    <ul class="timeline-list">
+                        <li>Created user experience designs for web and mobile applications</li>
+                        <li>Developed marketing materials and digital assets</li>
+                        <li>Contributed to website building and optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="800">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">May 2020 - Sep 2020</span>
+                    <h3>Senior Visual Designer</h3>
+                    <h4>Flipkart</h4>
+                    <p>Created visual designs for one of India's largest e-commerce platforms.</p>
+                    <ul class="timeline-list">
+                        <li>Designed user experiences for high-traffic e-commerce platform</li>
+                        <li>Created email marketing campaigns with high engagement rates</li>
+                        <li>Developed digital marketing assets aligned with brand guidelines</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="900">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Apr 2019 - Jun 2020</span>
+                    <h3>Customer Experience Manager</h3>
+                    <h4>NextGen Invent Corporation</h4>
+                    <p>Managed customer experience initiatives for an INC.5000 technology company.</p>
+                    <ul class="timeline-list">
+                        <li>Designed and implemented customer relationship management strategies</li>
+                        <li>Created user interfaces and digital media for marketing campaigns</li>
+                        <li>Led project teams for client-facing digital initiatives</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="1000">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Jan 2016 - 2020</span>
+                    <h3>Co-Founder</h3>
+                    <h4>InstiWitty Media Pvt. Ltd.</h4>
+                    <p>Co-founded a design and development agency helping startups and small businesses build digital products.</p>
+                    <ul class="timeline-list">
+                        <li>Provided consulting and development services to clients</li>
+                        <li>Created UI/UX designs for web and mobile applications</li>
+                        <li>Managed client relationships and project delivery</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="1100">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Aug 2015 - 2020</span>
+                    <h3>President and Founder</h3>
+                    <h4>Aashayen Foundation</h4>
+                    <p>Founded a non-profit organization focused on education for children in slums.</p>
+                    <ul class="timeline-list">
+                        <li>Led initiatives to provide educational opportunities to underprivileged children</li>
+                        <li>Managed volunteer teams and community outreach programs</li>
+                        <li>Developed partnerships with local organizations and sponsors</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="1200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Jan 2014 - 2020</span>
+                    <h3>Founder And CEO (FREELANCER)</h3>
+                    <h4>BeingShivam Online</h4>
+                    <p>Founded a personal tech blog and freelance design service.</p>
+                    <ul class="timeline-list">
+                        <li>Created web designs and implementations for clients</li>
+                        <li>Produced technical content and reviews</li>
+                        <li>Managed personal brand and client relationships</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="1300">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">Feb 2018 - Jan 2019</span>
+                    <h3>Creative Head</h3>
+                    <h4>MSS PAYMENTS</h4>
+                    <p>Led creative design initiatives for a financial services company.</p>
+                    <ul class="timeline-list">
+                        <li>Designed user interfaces for mobile and web applications</li>
+                        <li>Created marketing materials and promotional content</li>
+                        <li>Managed and mentored junior designers</li>
                     </ul>
                 </div>
             </div>
