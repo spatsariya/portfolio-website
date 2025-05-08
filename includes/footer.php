@@ -4,10 +4,10 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h3>Shivam Patsariya</h3>
-                    <p>UX Designer</p>
+                    <p>UI/UX & Visual Design Specialist</p>
                 </div>
                 <div class="social-links">
-                    <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
                     <a href="#" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
                     <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -19,6 +19,8 @@
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
+                        <li><a href="#organizations">Organizations</a></li>
+                        <li><a href="#education">Education</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
