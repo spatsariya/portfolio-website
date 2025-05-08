@@ -101,268 +101,46 @@
             <div class="section-line"></div>
         </div>
         <div class="experience-timeline">
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="10">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/rcycle-logo.png" alt="rCycle Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Nov 2024 – Present</span>
-                    <h3>Design Consultant</h3>
-                    <h4>rCycle</h4>
-                    <p>Toronto, Ontario (Remote) | Freelance</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="20">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/tech-mahindra-logo.png" alt="Tech Mahindra Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Dec 2021 – May 2024</span>
-                    <h3>Technical Lead</h3>
-                    <h4>Tech Mahindra</h4>
-                    <p>Remote | Permanent Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="30">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/virgin-plus-logo.png" alt="Virgin Plus Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Dec 2021 – May 2024</span>
-                    <h3>Product Designer</h3>
-                    <h4>Virgin Plus</h4>
-                    <p>Toronto, Ontario (Remote) | Contract Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="40">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/squareroot-logo.png" alt="SquareRoot Technology Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Mar 2024 – Apr 2024</span>
-                    <h3>Management Intern</h3>
-                    <h4>SquareRoot Technology</h4>
-                    <p>Greater Toronto Area (Remote) | Internship</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="50">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/nims-logo.png" alt="NIMS University Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Apr 2021 – Dec 2023</span>
-                    <h3>Social Communication Manager & Instructor</h3>
-                    <h4>NIMS University</h4>
-                    <p>Jaipur, India (Hybrid) | Permanent Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="60">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/shopsy-logo.png" alt="Shopsy Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jan 2021 – Sep 2021</span>
-                    <h3>Lead Designer</h3>
-                    <h4>Shopsy</h4>
-                    <p>Remote | Contract Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="70">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/flipkart-logo.png" alt="2Gud by Flipkart Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Aug 2020 – Dec 2020</span>
-                    <h3>Product Designer</h3>
-                    <h4>2Gud by Flipkart</h4>
-                    <p>Remote | Contract Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="80">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/flipkart-logo.png" alt="Flipkart Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">May 2020 – Sep 2020</span>
-                    <h3>Senior Visual Designer</h3>
-                    <h4>Flipkart</h4>
-                    <p>Remote | Contract Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="90">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/nextgen-logo.png" alt="NextGen Invent Corporation Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Apr 2019 – Jun 2020</span>
-                    <h3>Customer Experience Manager</h3>
-                    <h4>NextGen Invent Corporation</h4>
-                    <p>Noida, India (On-site) | Full-time</p>
-                </div>
-            </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/instiwitty-logo.png" alt="InstiWitty Media Pvt. Ltd. Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jan 2016 – 2020</span>
-                    <h3>Co-Founder</h3>
-                    <h4>InstiWitty Media Pvt. Ltd.</h4>
-                    <p>Bengaluru Area, India | Founder / Freelance</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="110">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/aashayen-logo.png" alt="Aashayen Foundation Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Aug 2015 – 2020</span>
-                    <h3>President and Founder</h3>
-                    <h4>Aashayen Foundation</h4>
-                    <p>Gwalior, India | Founder</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="120">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/beingshivam-logo.png" alt="BeingShivam Online Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jan 2014 – 2020</span>
-                    <h3>Founder and CEO (Freelancer)</h3>
-                    <h4>BeingShivam Online</h4>
-                    <p>Remote | Freelancer</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="130">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/bixbytes-logo.png" alt="Bix Bytes Solutions Pvt Ltd Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Aug 2018 – Feb 2019</span>
-                    <h3>Sr. Graphics Designer</h3>
-                    <h4>Bix Bytes Solutions Pvt Ltd</h4>
-                    <p>Mangalore Area, India | Part-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="140">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/mss-logo.png" alt="MSS Payments Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Feb 2018 – Jan 2019</span>
-                    <h3>Creative Head</h3>
-                    <h4>MSS Payments</h4>
-                    <p>Bengaluru, India (On-site) | Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/launchers-logo.png" alt="Launchers World Software Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jul 2016 – Jan 2018</span>
-                    <h3>Software Engineer</h3>
-                    <h4>Launchers World Software</h4>
-                    <p>Karnataka, India | Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="160">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/imast-logo.png" alt="Imast Operations Pvt. Ltd. Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Sep 2017 – Dec 2017</span>
-                    <h3>Head of IT (Design)</h3>
-                    <h4>Imast Operations Pvt. Ltd.</h4>
-                    <p>Indore, India | Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="170">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/lastloft-logo.png" alt="Last Loft Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Aug 2016 – Apr 2017</span>
-                    <h3>Full Stack Developer</h3>
-                    <h4>Last Loft</h4>
-                    <p>Gwalior Area, India | Full-time</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="180">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/hopeinyou-logo.png" alt="Hope In You Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jun 2016 – Dec 2016</span>
-                    <h3>Graphic Design Intern</h3>
-                    <h4>Hope In You</h4>
-                    <p>New Delhi Area, India | Internship</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="190">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/yahoo-logo.png" alt="Yahoo India Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jul 2016</span>
-                    <h3>Network Support Engineer</h3>
-                    <h4>Yahoo India (via Teleperformance)</h4>
-                    <p>Gurgaon, India | Contract</p>
+                    <span class="date">2022 - Present</span>
+                    <h3>UI/UX Designer</h3>
+                    <h4>rCycle</h4>
+                    <p>Creating engaging user interfaces and optimizing user experiences for sustainability-focused applications. Collaborating with cross-functional teams to deliver intuitive and impactful digital solutions.</p>
+                    <ul class="timeline-list">
+                        <li>Designed and improved user interfaces for web and mobile applications</li>
+                        <li>Conducted user research and usability testing to enhance user experience</li>
+                        <li>Collaborated with development teams to implement responsive designs</li>
+                    </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/uber-logo.png" alt="Uber Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jul 2016</span>
-                    <h3>Support Associate</h3>
-                    <h4>Uber (via Teleperformance)</h4>
-                    <p>Gurgaon, India | Contract</p>
+                    <span class="date">2021 - 2024</span>
+                    <h3>Designer</h3>
+                    <h4>Virgin Plus - My Benefits</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
+                    </ul>
                 </div>
             </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="210">
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/microsoft-logo.png" alt="Microsoft Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Jul 2013 – Jul 2016</span>
-                    <h3>Student Partner / Student Associate</h3>
-                    <h4>Microsoft</h4>
-                    <p>Gwalior Area, India | Student Program</p>
-                </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="220">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <div class="company-logo-placeholder">
-                        <img src="images/company-logos/mozilla-logo.png" alt="Mozilla India Logo" onerror="this.src='images/company-logos/placeholder.png'">
-                    </div>
-                    <span class="date">Sep 2013 – Jul 2015</span>
-                    <h3>College Representative</h3>
-                    <h4>Mozilla India</h4>
-                    <p>Gwalior | Student Program</p>
+                    <span class="date">2020 - 2021</span>
+                    <h3>Graphics Designer</h3>
+                    <h4>Flipkart</h4>
+                    <p>Created visual designs and graphics for one of India's largest e-commerce platforms, contributing to marketing campaigns and product presentations.</p>
+                    <ul class="timeline-list">
+                        <li>Designed graphics for promotional campaigns and product pages</li>
+                        <li>Collaborated with marketing teams to create engaging visual content</li>
+                        <li>Maintained brand consistency across various digital touchpoints</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -552,140 +330,6 @@
     </div>
 </section>
 
-<!-- Certifications Section -->
-<section id="certifications" class="certifications-section">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>My Certifications</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="certifications-grid">
-            <!-- Real certificates from CSV file -->
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>Demand and Capacity Management for Operations</h3>
-                    <p class="certification-issuer">LinkedIn</p>
-                    <p class="certification-date">May 2024</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="110">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>IT Security Foundations: Core Concepts</h3>
-                    <p class="certification-issuer">LinkedIn</p>
-                    <p class="certification-date">May 2024</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="120">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>Advanced Cardiovascular Life Support (ACLS)</h3>
-                    <p class="certification-issuer">The Postgraduate Institute for Medicine</p>
-                    <p class="certification-date">Apr 2024 · Expires Apr 2026</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="130">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>CPR, AED & First Aid Certification Course</h3>
-                    <p class="certification-issuer">Save a Life Certifications by NHCPS</p>
-                    <p class="certification-date">Apr 2024 · Expires Apr 2026</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="140">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>An Introduction to Accessibility and Inclusive Design</h3>
-                    <p class="certification-issuer">University of Illinois at Urbana-Champaign | Coursera</p>
-                    <p class="certification-date">Jul 2023</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="150">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>Digital Marketing Specialization</h3>
-                    <p class="certification-issuer">University of Illinois at Urbana-Champaign</p>
-                    <p class="certification-date">Jun 2023</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="160">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI / UX Design Specialization</h3>
-                    <p class="certification-issuer">California Institute of the Arts</p>
-                    <p class="certification-date">Jun 2023</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="170">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>Google Digital Marketing & E-commerce Specialization</h3>
-                    <p class="certification-issuer">Google</p>
-                    <p class="certification-date">Jun 2023</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="180">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>English Proficiency Certificate</h3>
-                    <p class="certification-issuer">Duolingo English Test</p>
-                    <p class="certification-date">Feb 2023 · Expired Feb 2025</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="190">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>Verified International Academic Qualifications</h3>
-                    <p class="certification-issuer">World Education Services</p>
-                    <p class="certification-date">Sep 2022</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>CutShort Certified HTML/CSS - Basic</h3>
-                    <p class="certification-issuer">Cutshort</p>
-                    <p class="certification-date">Jan 2020</p>
-                    <a href="#" class="btn-view-certificate">View Certificate</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Organizations Section -->
 <section id="organizations" class="certifications-section">
     <div class="container">
@@ -755,6 +399,58 @@
                 </div>
             </div>
             <!-- You can add more education entries here as needed -->
+        </div>
+    </div>
+</section>
+
+<!-- Certifications Section -->
+<section id="certifications" class="certifications-section">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2>My Certifications</h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="certifications-grid">
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>JavaScript ES6+ Programming</h3>
+                    <p class="certification-issuer">LinkedIn Learning</p>
+                    <p class="certification-date">2025</p>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>CSS for Developers</h3>
+                    <p class="certification-issuer">LinkedIn Learning</p>
+                    <p class="certification-date">2025</p>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>End-to-End JavaScript Testing with Cypress.io</h3>
+                    <p class="certification-issuer">LinkedIn Learning</p>
+                    <p class="certification-date">2025</p>
+                </div>
+            </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
