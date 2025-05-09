@@ -498,7 +498,7 @@
                 <div class="timeline-content">
                     <span class="date">2024 - 2025</span>
                     <h4>Graduate Certificate</h4>
-                    <h4>Global Business Management</h4>
+                    <h3>Global Business Management</h3>
                     <h4>Fleming College</h4>
                     <h4>ON, Canada</h4>
                     <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
@@ -508,8 +508,8 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2012 - 2016</span>
-                    <h4>Bachelors in Engineering (BE) (B.Eng)</h4>
-                    <h3>Computer Scinece Engineering</h3>
+                    <h4>Bachelors in Engineering (BE)</h4>
+                    <h3>Computer Science Engineering</h3>
                     <h4>Jiwaji University</h4>
                     <h4>MP, India</h4>
                     <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
