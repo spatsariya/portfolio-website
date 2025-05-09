@@ -159,6 +159,70 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Certificate category filtering
+    const certFilterButtons = document.querySelectorAll('.cert-filter-btn');
+    const certCategories = document.querySelectorAll('.cert-category');
+    const certItems = document.querySelectorAll('.certification-item');
+    
+    // Show all certificates by default
+    function showAllCertificates() {
+        certCategories.forEach(category => {
+            category.style.display = 'block';
+        });
+        
+        certItems.forEach(item => {
+            item.style.display = 'flex';
+            setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    }
+    
+    // Filter certificates by category
+    certFilterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            certFilterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filterValue = this.getAttribute('data-filter');
+            
+            if (filterValue === 'all') {
+                showAllCertificates();
+            } else {
+                // Hide all categories first
+                certCategories.forEach(category => {
+                    if (category.id === filterValue + '-category') {
+                        category.style.display = 'block';
+                    } else {
+                        category.style.display = 'none';
+                    }
+                });
+                
+                // Show/hide individual certificates within visible categories
+                certItems.forEach(item => {
+                    const parentCategory = item.closest('.cert-category');
+                    if (parentCategory && parentCategory.id === filterValue + '-category') {
+                        item.style.display = 'flex';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 100);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            }
+        });
+    });
+
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {

@@ -29,10 +29,11 @@
                 <p>&copy; <?php echo date("Y"); ?> Shivam Patsariya. All rights reserved.</p>
             </div>
         </div>
-    </footer>
-
-    <!-- AOS Animation Library -->
+    </footer>    <!-- AOS Animation Library -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Certificate Icons -->
+    <script src="js/certificate-icons.js"></script>
     
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
