@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
     
-    // Make sure the All filter is active by default
+    // Make sure the All filter is active by default and all items are visible
     const setDefaultFilter = () => {
         const allFilterBtn = document.querySelector('.cert-filter-btn[data-filter="all"]');
         if (allFilterBtn) {
@@ -61,14 +61,54 @@ document.addEventListener('DOMContentLoaded', function() {
             categories.forEach(category => {
                 category.style.display = 'block';
             });
+            
+            // Make all certification items visible
+            const certItems = document.querySelectorAll('#certifications .certification-item');
+            certItems.forEach(item => {
+                item.style.display = 'flex';
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            });
         } else {
             console.log('All filter button not found');
         }
     };
     
+    // Ensure empty certification items have a minimum height and proper styling
+    const fixEmptyCertItems = () => {
+        const emptyCertItems = document.querySelectorAll('#certifications .certification-item:empty');
+        emptyCertItems.forEach(item => {
+            // If item is completely empty or only has empty divs
+            if (!item.textContent.trim()) {
+                if (item.parentNode) {
+                    item.parentNode.removeChild(item);
+                    console.log('Removed empty certification item');
+                }
+            }
+        });
+        
+        // Check for items with incomplete content
+        const incompleteItems = document.querySelectorAll('#certifications .certification-item');
+        incompleteItems.forEach(item => {
+            const content = item.querySelector('.certification-content');
+            const icon = item.querySelector('.certification-icon');
+            
+            // If content is missing but there's an icon, add a placeholder
+            if (icon && (!content || !content.innerHTML.trim())) {
+                const placeholder = document.createElement('div');
+                placeholder.className = 'certification-content';
+                placeholder.innerHTML = '<h3>Certification</h3><p class="certification-issuer">Not specified</p>';
+                item.appendChild(placeholder);
+                console.log('Added placeholder content to incomplete certification item');
+            }
+        });
+    };
+    
     // Run initialization functions
     checkForDuplicates();
     ensureOrganizationsSectionVisible();
+    fixEmptyCertItems();
     setDefaultFilter();
     
     console.log('Certification initialization completed');

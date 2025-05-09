@@ -164,16 +164,26 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Show all certificates by default
     function showAllCertificates() {
+        // Make all categories visible
         certCategories.forEach(category => {
             category.style.display = 'block';
         });
         
+        // Make all certification items visible with animation
         certItems.forEach(item => {
             item.style.display = 'flex';
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            
+            // Trigger reflow to ensure animation works
+            void item.offsetWidth;
+            
+            // Animate items into view
             setTimeout(() => {
                 item.style.opacity = '1';
                 item.style.transform = 'translateY(0)';
-            }, 100);
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            }, 50);
         });
     }
     
@@ -187,34 +197,37 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             
             const filterValue = this.getAttribute('data-filter');
+            console.log('Filter selected:', filterValue);
             
             if (filterValue === 'all') {
                 showAllCertificates();
             } else {
-                // Hide all categories first
+                // Show only the selected category, hide others
                 certCategories.forEach(category => {
-                    if (category.id === filterValue + '-category') {
+                    if (category.id === `${filterValue}-category`) {
                         category.style.display = 'block';
                     } else {
                         category.style.display = 'none';
                     }
                 });
                 
-                // Show/hide individual certificates within visible categories
+                // Only show items that are within the visible category
                 certItems.forEach(item => {
                     const parentCategory = item.closest('.cert-category');
-                    if (parentCategory && parentCategory.id === filterValue + '-category') {
+                    if (parentCategory && parentCategory.style.display !== 'none') {
                         item.style.display = 'flex';
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        
+                        // Trigger reflow to ensure animation works
+                        void item.offsetWidth;
+                        
+                        // Animate items into view
                         setTimeout(() => {
                             item.style.opacity = '1';
                             item.style.transform = 'translateY(0)';
-                        }, 100);
-                    } else {
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                        }, 300);
+                            item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        }, 50);
                     }
                 });
             }
