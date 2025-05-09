@@ -21,8 +21,8 @@
                 </div>
                 <div class="hero-social-links">
                     <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                    <a href="#" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
@@ -31,15 +31,15 @@
                 </div>
                 <div class="hero-stats-highlight">
                     <div class="stat-highlight">
-                        <span class="stat-number">5+</span>
+                        <span class="stat-number" data-count="10">10</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-highlight">
-                        <span class="stat-number">50+</span>
+                        <span class="stat-number" data-count="50">50</span>
                         <span class="stat-label">Projects Delivered</span>
                     </div>
                     <div class="stat-highlight">
-                        <span class="stat-number">30+</span>
+                        <span class="stat-number" data-count="15">15</span>
                         <span class="stat-label">Happy Clients</span>
                     </div>
                 </div>
