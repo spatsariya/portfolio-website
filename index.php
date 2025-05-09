@@ -23,7 +23,7 @@
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="image-cutout">
                     <!-- Replace with your actual image -->
-                    <img src="images/cutout-1.png" alt="Shivam Patsariya - UX Designer">
+                    <img src="images/cutout-main.png" alt="Shivam Patsariya - UX Designer">
                 </div>
             </div>
         </div> 
