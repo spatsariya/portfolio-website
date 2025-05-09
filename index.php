@@ -31,7 +31,7 @@
                 </div>
                 <div class="hero-stats-highlight">
                     <div class="stat-highlight">
-                        <span class="stat-number" data-count="10">10</span>
+                        <span class="stat-number" data-count="10">10+</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-highlight">
@@ -91,19 +91,19 @@
             </div>
             <div class="about-stats" data-aos="fade-left" data-aos-delay="100">
                 <div class="stat-item">
-                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-number" data-count="50">50+</div>
                     <div class="stat-text">Projects<br>Completed</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="5">0</div>
+                    <div class="stat-number" data-count="10">10+</div>
                     <div class="stat-text">Years of<br>Experience</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="30">0</div>
+                    <div class="stat-number" data-count="15">15+</div>
                     <div class="stat-text">Happy<br>Clients</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number" data-count="4000">0</div>
+                    <div class="stat-number" data-count="4000">4000+</div>
                     <div class="stat-text">LinkedIn<br>Followers</div>
                 </div>
             </div>
