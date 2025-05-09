@@ -120,7 +120,49 @@
                 <div class="timeline-content">
                     <span class="date">2021 - 2024</span>
                     <h3>Designer</h3>
-                    <h4>Virgin Plus - My Benefits</h4>
+                    <h4>Virgin Plus (Bell Canada)</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021 - 2023</span>
+                    <h3>Senior Graphics Designer   </h3>
+                    <h4>Media.net</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021 - 2023</span>
+                    <h3>Senior Analyst Visual Design</h3>
+                    <h4>Accenture, ATCi</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2020 - 2023</span>
+                    <h3>Social Communication Manager</h3>
+                    <h4>NIMS University, Jaipur</h4>
                     <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
                     <ul class="timeline-list">
                         <li>Created visually appealing and user-friendly interfaces</li>
@@ -140,6 +182,48 @@
                         <li>Designed graphics for promotional campaigns and product pages</li>
                         <li>Collaborated with marketing teams to create engaging visual content</li>
                         <li>Maintained brand consistency across various digital touchpoints</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2019 - 2020</span>
+                    <h3>Customer Experience Lead</h3>
+                    <h4>NextGen Invent Corporation</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2018 - 2019</span>
+                    <h3>Creative Director</h3>
+                    <h4>MSS Payments</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2021 - 2024</span>
+                    <h3>Software Engineer</h3>
+                    <h4>Launchers World Software</h4>
+                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <ul class="timeline-list">
+                        <li>Created visually appealing and user-friendly interfaces</li>
+                        <li>Implemented design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with stakeholders to align design with business goals</li>
                     </ul>
                 </div>
             </div>
