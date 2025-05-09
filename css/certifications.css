@@ -7,23 +7,14 @@
 .certifications-section {
     padding: 120px 0;
     background-color: var(--light-color);
-    background-image: linear-gradient(45deg, rgba(110, 87, 224, 0.03) 0%, rgba(110, 87, 224, 0.01) 100%);
     position: relative;
     overflow: hidden;
-    margin-top: -40px;
-    margin-bottom: -40px;
     z-index: 1;
 }
 
+/* Remove the radial gradient background */
 .certifications-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at top right, rgba(110, 87, 224, 0.05), transparent 50%);
-    pointer-events: none;
+    content: none;
 }
 
 /* Category titles */
@@ -70,31 +61,25 @@
     }
 }
 
-/* Section header animation */
+/* Section header - updated to match global styling */
 .certifications-section .section-header {
     position: relative;
-}
-
-/* Section header animation */
-.certifications-section .section-header {
-    position: relative;
+    text-align: center;
+    margin-bottom: 70px;
+    z-index: 10;
+    padding-top: 20px;
 }
 
 .certifications-section .section-header h2 {
-    background: linear-gradient(90deg, var(--primary-color), #a594ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+    color: var(--text-color);
     display: inline-block;
 }
 
 .certifications-section .section-line {
-    width: 80px;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), transparent);
+    width: 60px;
+    background-color: var(--primary-color);
     margin: 0 auto 15px;
-    border-radius: 2px;
 }
 
 .certifications-section .section-subheading {
@@ -108,26 +93,6 @@
     position: relative;
     font-weight: 400;
     letter-spacing: 0.5px;
-}
-
-.certifications-section .section-subheading::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 50px;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-color), transparent);
-    border-radius: 1px;
-}
-
-.certifications-section .section-line {
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-color), transparent);
-    margin: 0 auto 15px;
-    border-radius: 2px;
 }
 
 /* Certification item */
@@ -171,12 +136,11 @@
 
 .certification-item::after {
     content: '';
-    position: absolute;
-    bottom: 0;
+    position: absolute;    bottom: 0;
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(to right, var(--primary-color), rgba(110, 87, 224, 0.4));
+    background-color: var(--primary-color);
     opacity: 0;
     transition: var(--transition);
 }
@@ -209,9 +173,9 @@
     align-items: center;
     justify-content: center;
     margin-right: 18px;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: var(--transition);
     position: relative;
-    box-shadow: 0 5px 15px rgba(110, 87, 224, 0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
 }
 
 .certification-icon i {
@@ -281,9 +245,8 @@
     bottom: -15px;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(110, 87, 224, 0.5), transparent);
+    width: 200px;    height: 1px;
+    background-color: rgba(110, 87, 224, 0.2);
 }
 
 .cert-filter-btn {
@@ -381,7 +344,7 @@ body.show-professional #professional-category,
     transform: translateX(-50%);
     width: 100px;
     height: 3px;
-    background: linear-gradient(to right, rgba(110, 87, 224, 0.6), transparent);
+    background-color: rgba(110, 87, 224, 0.1);
 }
 
 /* Background animation elements */
@@ -398,7 +361,7 @@ body.show-professional #professional-category,
 
 .floating-cert-element {
     position: absolute;
-    background: linear-gradient(45deg, rgba(110, 87, 224, 0.05), rgba(255, 255, 255, 0.1));
+    background-color: rgba(110, 87, 224, 0.05);
     border-radius: 50%;
     opacity: 0.5;
     animation: floatAnimation linear infinite;
