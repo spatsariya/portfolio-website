@@ -558,126 +558,337 @@
                     <p class="certification-date">2025</p>
                 </div>
             </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
-
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
-                </div>
-                <div class="certification-content">
-                    <h3>UI/UX Design Certification</h3>
-                    <p class="certification-issuer">Design Institute</p>
-                    <p class="certification-date">2023</p>
-                </div>
-            </div>
+            
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Demand and Capacity Management for Operations</h3>
+        <p class="certification-issuer">LinkedIn</p>
+        <p class="certification-date">May 2024</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>IT Security Foundations: Core Concepts</h3>
+        <p class="certification-issuer">LinkedIn</p>
+        <p class="certification-date">May 2024</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Advanced Cardiovascular Life Support (ACLS)</h3>
+        <p class="certification-issuer">The Postgraduate Institute for Medicine</p>
+        <p class="certification-date">Apr 2024</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>CPR, AED & First Aid Certification Course</h3>
+        <p class="certification-issuer">Save a Life Certifications by NHCPS</p>
+        <p class="certification-date">Apr 2024</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>An Introduction to Accessibility and Inclusive Design</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign | Coursera</p>
+        <p class="certification-date">Jul 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>What is Social?</h3>
+        <p class="certification-issuer">Northwestern University</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Design Thinking for Innovation</h3>
+        <p class="certification-issuer">University of Virginia</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Design and Develop a Website using Figma and CSS</h3>
+        <p class="certification-issuer">Coursera Project Network</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Design-Led Strategy: Design Thinking for Business Strategy and Entrepreneurship</h3>
+        <p class="certification-issuer">The University of Sydney Business School</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Digital Marketing Analytics in Practice</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign | Coursera</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Digital Marketing Analytics in Theory</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign | Coursera</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Digital Marketing Specialization</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Digital Media and Marketing Strategies</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Fundamentals of Graphic Design</h3>
+        <p class="certification-issuer">California Institute of the Arts</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Get Started with Figma</h3>
+        <p class="certification-issuer">Coursera</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Google Digital Marketing & E-commerce Specialization</h3>
+        <p class="certification-issuer">Google</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Marketing in a Digital World</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign | Coursera</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>UI / UX Design Specialization</h3>
+        <p class="certification-issuer">California Institute of the Arts</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>UX Design Fundamentals</h3>
+        <p class="certification-issuer">California Institute of the Arts</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Visual Elements of User Interface Design</h3>
+        <p class="certification-issuer">California Institute of the Arts</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Web Design: Strategy and Information Architecture</h3>
+        <p class="certification-issuer">California Institute of the Arts</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Web Design: Wireframes to Prototypes</h3>
+        <p class="certification-issuer">California Institute of the Arts</p>
+        <p class="certification-date">Jun 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>The Digital Marketing Revolution</h3>
+        <p class="certification-issuer">University of Illinois at Urbana-Champaign | Coursera</p>
+        <p class="certification-date">Mar 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>English Proficiency Certificate</h3>
+        <p class="certification-issuer">Duolingo English Test</p>
+        <p class="certification-date">Feb 2023</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Verified International Academic Qualifications</h3>
+        <p class="certification-issuer">World Education Services</p>
+        <p class="certification-date">Sep 2022</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>CutShort Certified HTML/CSS - Basic</h3>
+        <p class="certification-issuer">CutShort</p>
+        <p class="certification-date">Jan 2020</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Illustrator CC Masterclass</h3>
+        <p class="certification-issuer">Udemy</p>
+        <p class="certification-date">Jun 2018</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Sketch Design</h3>
+        <p class="certification-issuer">Udemy</p>
+        <p class="certification-date">Mar 2018</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Youtube MasterClass</h3>
+        <p class="certification-issuer">Udemy</p>
+        <p class="certification-date">Mar 2018</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Adobe XD Course</h3>
+        <p class="certification-issuer">Udemy</p>
+        <p class="certification-date">Jan 2018</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Graphics Design for Beginners</h3>
+        <p class="certification-issuer">Udemy</p>
+        <p class="certification-date">Jun 2015</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Programming With 'C'</h3>
+        <p class="certification-issuer">United Latino Students Association</p>
+        <p class="certification-date">Aug 2013</p>
+    </div>
+</div>
+<div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+    <div class="certification-icon">
+        <i class="fas fa-certificate"></i>
+    </div>
+    <div class="certification-content">
+        <h3>Digital Marketing</h3>
+        <p class="certification-issuer">Udemy</p>
+        <p class="certification-date">Unknown</p>
+    </div>
+</div>
         </div>
     </div>
 </section>
