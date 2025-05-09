@@ -26,7 +26,7 @@
                     <img src="images/profile-image.jpg" alt="Shivam Patsariya - UX Designer">
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
     <div class="hero-scroll">
         <a href="#about">
@@ -34,7 +34,7 @@
             <i class="fas fa-chevron-down"></i>
         </a>
     </div>
-</section>
+</section>   
 
 <!-- About Section -->
 <section id="about" class="about-section">
