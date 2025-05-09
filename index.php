@@ -216,7 +216,7 @@
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2021 - 2024</span>
+                    <span class="date">2016 - 2018</span>
                     <h3>Software Engineer</h3>
                     <h4>Launchers World Software</h4>
                     <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
@@ -456,11 +456,31 @@
                     <i class="fas fa-paint-brush"></i>
                 </div>
                 <div class="certification-content">
-                    <h3>Dahij</h3>
-                    <p class="certification-issuer">Creativity Head</p>
-                    <p class="certification-date">Aug 2013 - May 2015</p>
+                    <h3>OmniCan</h3>
+                    <p class="certification-issuer">Founder</p>
+                    <p class="certification-date">2023 - Present</p>
                 </div>
             </div>
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-paint-brush"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>EazyHaven</h3>
+                    <p class="certification-issuer">Founder</p>
+                    <p class="certification-date">2021 - Present</p>
+                </div>
+            </div>
+            <!-- <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>New Certification Title</h3>
+                    <p class="certification-issuer">New Issuer</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div> -->
         </div>
     </div>
 </section>
