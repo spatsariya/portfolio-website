@@ -18,6 +18,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (categoryId) {
                     const categoryName = categoryId.replace('-category', '');
                     item.setAttribute('data-category', categoryName);
+                    
+                    // Add category label to each item for the decoration
+                    const readableCategoryName = certFilterButtons.find(btn => 
+                        btn.getAttribute('data-filter') === categoryName
+                    )?.textContent || categoryName;
+                    
+                    // Set the readable category name for the hover label
+                    item.setAttribute('data-category', readableCategoryName);
                 }
             }
         });
@@ -147,10 +155,54 @@ document.addEventListener('DOMContentLoaded', function() {
             filterCertificates(filterValue);
         });
     });
-    
-    // Initialize certifications
+      // Initialize certifications
     ensureProperCertStructure();
     addCategoryAttributes();
+    
+    // Add certification count badges to category titles
+    function addCertificationCounters() {
+        certCategories.forEach(category => {
+            const categoryItems = category.querySelectorAll('.certification-item');
+            const categoryTitle = category.querySelector('.cert-category-title');
+            
+            if (categoryTitle && categoryItems.length > 0) {
+                // Create counter element
+                const counter = document.createElement('span');
+                counter.classList.add('cert-count-badge');
+                counter.textContent = categoryItems.length;
+                
+                // Add to title
+                categoryTitle.appendChild(counter);
+            }
+        });
+    }
+    
+    // Add count badges to filter buttons
+    function addFilterButtonCounters() {
+        certFilterButtons.forEach(button => {
+            const filterValue = button.getAttribute('data-filter');
+            
+            if (filterValue === 'all') {
+                const totalCount = certItems.length;
+                const counter = document.createElement('span');
+                counter.classList.add('filter-count-badge');
+                counter.textContent = totalCount;
+                button.appendChild(counter);
+            } else {
+                const categoryItems = document.querySelectorAll(`#${filterValue}-category .certification-item`);
+                if (categoryItems.length > 0) {
+                    const counter = document.createElement('span');
+                    counter.classList.add('filter-count-badge');
+                    counter.textContent = categoryItems.length;
+                    button.appendChild(counter);
+                }
+            }
+        });
+    }
+    
+    // Add counters
+    addCertificationCounters();
+    addFilterButtonCounters();
     
     // Make sure 'All' filter is active by default
     const allButton = document.querySelector('.cert-filter-btn[data-filter="all"]');

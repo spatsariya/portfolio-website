@@ -1,13 +1,12 @@
 <!-- Certifications Section -->
-<section id="certifications" class="certifications-section">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
+<section id="certifications" class="certifications-section">    <div class="container">
+        <div class="section-header">
             <h2>My Certifications</h2>
             <div class="section-line"></div>
         </div>
-        <p class="section-subheading">Professional development and continuous learning</p>
+        <p class="section-subheading">Professional development and continuous learning journey</p>
         
-        <div class="certification-filters" data-aos="fade-up">
+        <div class="certification-filters">
             <button class="cert-filter-btn active" data-filter="all">All</button>
             <button class="cert-filter-btn" data-filter="design">Design & UX/UI</button>
             <button class="cert-filter-btn" data-filter="development">Programming & Development</button>
@@ -18,10 +17,10 @@
         </div>
         
         <!-- Category 1: Design & UX/UI -->
-        <div class="cert-category" data-aos="fade-up" id="design-category">
+        <div class="cert-category" id="design-category">
             <h3 class="cert-category-title"><i class="fas fa-palette"></i> Design & UX/UI</h3>
             <div class="certifications-grid">
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-pencil-ruler"></i>
                     </div>
@@ -31,7 +30,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-user-edit"></i>
                     </div>
@@ -41,7 +40,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-vector-square"></i>
                     </div>
@@ -51,7 +50,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-sitemap"></i>
                     </div>
@@ -61,7 +60,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-pencil-alt"></i>
                     </div>
@@ -71,7 +70,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-lightbulb"></i>
                     </div>
@@ -81,7 +80,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
@@ -91,7 +90,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fab fa-figma"></i>
                     </div>
@@ -101,7 +100,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fas fa-palette"></i>
                     </div>
@@ -111,7 +110,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fab fa-figma"></i>
                     </div>
@@ -121,7 +120,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fas fa-universal-access"></i>
                     </div>
@@ -131,7 +130,7 @@
                         <p class="certification-date">Jul 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fab fa-adobe"></i>
                     </div>
@@ -141,7 +140,7 @@
                         <p class="certification-date">Jun 2018</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fab fa-sketch"></i>
                     </div>
@@ -151,7 +150,7 @@
                         <p class="certification-date">Mar 2018</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fab fa-adobe"></i>
                     </div>
@@ -161,7 +160,7 @@
                         <p class="certification-date">Jan 2018</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fas fa-paint-brush"></i>
                     </div>
@@ -175,10 +174,10 @@
         </div>
         
         <!-- Category 2: Programming & Development -->
-        <div class="cert-category" data-aos="fade-up" id="development-category">
+        <div class="cert-category" id="development-category">
             <h3 class="cert-category-title"><i class="fas fa-code"></i> Programming & Development</h3>
             <div class="certifications-grid">
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fab fa-js"></i>
                     </div>
@@ -188,7 +187,7 @@
                         <p class="certification-date">2025</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fab fa-css3-alt"></i>
                     </div>
@@ -198,7 +197,7 @@
                         <p class="certification-date">2025</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-vial"></i>
                     </div>
@@ -208,7 +207,7 @@
                         <p class="certification-date">2025</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
@@ -218,7 +217,7 @@
                         <p class="certification-date">May 2024</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fab fa-html5"></i>
                     </div>
@@ -228,7 +227,7 @@
                         <p class="certification-date">Jan 2020</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fas fa-code"></i>
                     </div>
@@ -242,10 +241,10 @@
         </div>
 
         <!-- Category 3: Digital Marketing -->
-        <div class="cert-category" data-aos="fade-up" id="marketing-category">
+        <div class="cert-category" id="marketing-category">
             <h3 class="cert-category-title"><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
             <div class="certifications-grid">
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-chart-pie"></i>
                     </div>
@@ -255,7 +254,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
@@ -265,7 +264,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-certificate"></i>
                     </div>
@@ -275,7 +274,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="certification-item" data-aos-delay="200">
                     <div class="certification-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
@@ -285,7 +284,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
@@ -295,7 +294,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fab fa-google"></i>
                     </div>
@@ -305,7 +304,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fas fa-globe"></i>
                     </div>
@@ -315,7 +314,7 @@
                         <p class="certification-date">Mar 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="certification-item" data-aos-delay="300">
                     <div class="certification-icon">
                         <i class="fas fa-share-alt"></i>
                     </div>
@@ -325,7 +324,7 @@
                         <p class="certification-date">Jun 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fab fa-youtube"></i>
                     </div>
@@ -335,7 +334,7 @@
                         <p class="certification-date">Mar 2018</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-item" data-aos-delay="400">
                     <div class="certification-icon">
                         <i class="fas fa-ad"></i>
                     </div>
@@ -349,10 +348,10 @@
         </div>
 
         <!-- Category 4: Business & Management -->
-        <div class="cert-category" data-aos="fade-up" id="business-category">
+        <div class="cert-category" id="business-category">
             <h3 class="cert-category-title"><i class="fas fa-briefcase"></i> Business & Management</h3>
             <div class="certifications-grid">
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
@@ -366,10 +365,10 @@
         </div>
 
         <!-- Category 5: Healthcare & Safety -->
-        <div class="cert-category" data-aos="fade-up" id="healthcare-category">
+        <div class="cert-category" id="healthcare-category">
             <h3 class="cert-category-title"><i class="fas fa-heartbeat"></i> Healthcare & Safety</h3>
             <div class="certifications-grid">
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-heart"></i>
                     </div>
@@ -379,7 +378,7 @@
                         <p class="certification-date">Apr 2024</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-first-aid"></i>
                     </div>
@@ -393,10 +392,10 @@
         </div>
 
         <!-- Category 6: Professional Qualifications -->
-        <div class="cert-category" data-aos="fade-up" id="professional-category">
+        <div class="cert-category" id="professional-category">
             <h3 class="cert-category-title"><i class="fas fa-award"></i> Professional Qualifications</h3>
             <div class="certifications-grid">
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-language"></i>
                     </div>
@@ -406,7 +405,7 @@
                         <p class="certification-date">Feb 2023</p>
                     </div>
                 </div>
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="certification-item" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-user-graduate"></i>
                     </div>
@@ -420,3 +419,7 @@
         </div>
     </div>
 </section>
+
+<!-- Add certificate animation script -->
+<script src="js/certification-animation.js"></script>
+<script src="js/certification-enhancements.js"></script>
