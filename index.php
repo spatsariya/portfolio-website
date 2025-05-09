@@ -497,8 +497,9 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2024 - 2025</span>
-                    <h2>Graduate Certificate</h2>
-                    <h3>Fleming College</h3>
+                    <h3>Graduate Certificate</h3>
+                    <h3>Global Business Management</h3>
+                    <h4>Fleming College</h4>
                     <h4>ON, Canada</h4>
                     <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
                 </div>
@@ -506,9 +507,10 @@
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2024 - 2025</span>
-                    <h2>Bachelors in Engineering (BE) (B.Eng)</h2>
-                    <h3>Jiwaji University</h3>
+                    <span class="date">2012 - 2016</span>
+                    <h3>Bachelors in Engineering (BE) (B.Eng)</h3>
+                    <h3>Computer Scinece Engineering</h3>
+                    <h4>Jiwaji University</h4>
                     <h4>MP, India</h4>
                     <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
                 </div>
