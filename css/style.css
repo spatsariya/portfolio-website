@@ -915,7 +915,7 @@ section {
 }
 
 /* ===== Certifications Section ===== */
-.certifications-section {
+.certifications-section, .organizations-section {
     background-color: var(--light-color);
 }
 

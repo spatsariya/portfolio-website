@@ -35,6 +35,9 @@
     <!-- Certificate Icons -->
     <script src="js/certificate-icons.js"></script>
     
+    <!-- Certification Initialization -->
+    <script src="js/certification-init.js"></script>
+    
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
 </body>

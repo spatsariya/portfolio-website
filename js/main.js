@@ -157,12 +157,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-    });
-
-    // Certificate category filtering
+    });    // Certificate category filtering
     const certFilterButtons = document.querySelectorAll('.cert-filter-btn');
-    const certCategories = document.querySelectorAll('.cert-category');
-    const certItems = document.querySelectorAll('.certification-item');
+    const certCategories = document.querySelectorAll('#certifications .cert-category');
+    const certItems = document.querySelectorAll('#certifications .certification-item');
     
     // Show all certificates by default
     function showAllCertificates() {

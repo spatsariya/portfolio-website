@@ -451,7 +451,7 @@
 </section>
 
 <!-- Organizations Section -->
-<section id="organizations" class="certifications-section">
+<section id="organizations" class="organizations-section">
     <div class="container">
         <div class="section-header" data-aos="fade-up">
             <h2>Organizations</h2>
