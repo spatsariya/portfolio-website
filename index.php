@@ -630,7 +630,7 @@
                     <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-fixed.php" method="POST" id="contactForm">
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" name="name" id="name" placeholder="Enter your name" required>

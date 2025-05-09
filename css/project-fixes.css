@@ -1,0 +1,42 @@
+/**
+ * Fix for missing project images
+ * This CSS adds a background color and a placeholder image icon for missing project images
+ */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    background-color: #f7f7f7;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* Image placeholder for missing images */
+.project-image img[src$=".jpg"]:not([src^="data:"]):before {
+    content: "\f03e";
+    font-family: "Font Awesome 5 Free";
+    font-size: 48px;
+    color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Fix for 404 errors on images */
+.project-image img:not([src$="project-1.jpg"]):not([src$="project-2.jpg"]):not([src$="project-3.jpg"]):not([src$="project-4.jpg"]):not([src$="project-5.jpg"]):not([src$="project-6.jpg"]) {
+    display: none;
+}
+
+.project-item .project-info {
+    max-width: 100%;
+    padding: 20px;
+}

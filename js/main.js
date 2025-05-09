@@ -298,7 +298,7 @@ document.addEventListener('DOMContentLoaded', function() {
                   // Collect form data                const formData = new FormData(contactForm);
                 
                 // Send AJAX request
-                fetch('process-form-fixed.php', {
+                fetch('process-form-simple.php', {
                     method: 'POST',
                     body: formData
                 })
