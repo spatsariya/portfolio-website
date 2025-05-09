@@ -6,13 +6,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Patsariya | UI/UX & Visual Design Specialist</title>
-    <meta name="description" content="Shivam Patsariya - Versatile Professional specializing in UI/UX and Visual Design based in Toronto, Canada">
-    
+    <meta charset="UTF-8" />
+  <title>Shivam Patsariya | UI/UX Designer & Digital Strategist | imShivam</title>
+  <meta name="description" content="Explore the portfolio of Shivam Patsariya – a Toronto-based UI/UX Designer, Visual Strategist, and Content Creator. Expert in product design, branding, and web experiences for digital-first businesses.">
+  <meta name="keywords" content="Shivam Patsariya, UI UX Designer Toronto, Visual Designer, Digital Product Designer, Portfolio, Personal Website, imShivam, Figma, Behance, Web Design, Freelance Designer">
+  <meta name="author" content="Shivam Patsariya">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="icon" href="images/fav-ico.png" type="image/png">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +28,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/certifications.css">
     <link rel="stylesheet" href="css/project-fixes.css">
+
+    <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
+<meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
+<meta property="og:image" content="images/land-2.png" />
+<meta property="og:url" content="http://imshivam.com/" />
+<meta property="og:type" content="website" />
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
+<meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
+<meta name="twitter:image" content="images/land-2.png" />
+
 </head>
 <body>
     <header class="header">
