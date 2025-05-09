@@ -631,7 +631,7 @@
                 </div>
             </div>
             <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
-                <form action="process-form.php" method="POST" id="contactForm">
+                <form action="process-form-phpmailer.php" method="POST" id="contactForm">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" name="name" id="name" placeholder="Enter your name" required>
