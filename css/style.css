@@ -131,6 +131,8 @@ section {
 .section-header {
     text-align: center;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
 }
 
 .section-line {
@@ -457,9 +459,12 @@ section {
 .section-subheading {
     text-align: center;
     color: var(--gray-color);
-    margin-top: -15px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 40px;
     font-size: 1.1rem;
+    clear: both;
+    position: relative;
+    z-index: 1;
 }
 
 /* Responsive adjustments */
@@ -915,19 +920,21 @@ section {
 
 .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
 }
 
 .certification-item {
     background-color: white;
-    padding: 30px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     transition: var(--transition);
     display: flex;
     align-items: flex-start;
     gap: 20px;
+    height: 100%;
+    overflow: hidden;
 }
 
 .certification-item:hover {
@@ -951,12 +958,18 @@ section {
 .certification-content h3 {
     font-size: 1.2rem;
     margin-bottom: 5px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .certification-issuer {
     font-weight: 500;
     color: var(--gray-color);
     margin-bottom: 5px;
+    line-height: 1.4;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .certification-date {
@@ -1305,6 +1318,14 @@ section {
 
     .certifications-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .certification-item {
+        padding: 20px;
+    }
+    
+    .certification-content h3 {
+        font-size: 1.1rem;
     }
 
     .image-cutout {
