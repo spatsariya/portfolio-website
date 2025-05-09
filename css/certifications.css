@@ -287,8 +287,8 @@
 }
 
 .cert-filter-btn {
-    background-color: transparent;
-    border: 1px solid var(--primary-color);
+    background-color: #ffffff;
+    border: 1px solid transparent;
     padding: 10px 22px;
     border-radius: 8px;
     cursor: pointer;
