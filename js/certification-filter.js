@@ -9,7 +9,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const certCategories = document.querySelectorAll('#certifications .cert-category');
     const certItems = document.querySelectorAll('#certifications .certification-item');
     
-    // Add data-category attributes to all certification items based on their parent category
+    // Create direct references to important categories to ensure they're properly identified
+    const professionalCategory = document.getElementById('professional-category');
+    console.log('Professional category found:', professionalCategory ? true : false);
+      // Add data-category attributes to all certification items based on their parent category
     function addCategoryAttributes() {
         certItems.forEach(item => {
             const parentCategory = item.closest('.cert-category');
@@ -20,12 +23,17 @@ document.addEventListener('DOMContentLoaded', function() {
                     item.setAttribute('data-category', categoryName);
                     
                     // Add category label to each item for the decoration
-                    const readableCategoryName = certFilterButtons.find(btn => 
+                    const filterButton = Array.from(certFilterButtons).find(btn => 
                         btn.getAttribute('data-filter') === categoryName
-                    )?.textContent || categoryName;
+                    );
+                    
+                    const readableCategoryName = filterButton ? filterButton.textContent : categoryName;
                     
                     // Set the readable category name for the hover label
                     item.setAttribute('data-category', readableCategoryName);
+                    
+                    // Log for debugging
+                    console.log(`Item assigned to category: ${categoryName}, Display as: ${readableCategoryName}`);
                 }
             }
         });
@@ -94,31 +102,75 @@ document.addEventListener('DOMContentLoaded', function() {
             item.style.opacity = '1';
             item.style.transform = 'translateY(0)';
         });
-    }
-    
-    // Filter certificates by category
+    }    // Filter certificates by category
     function filterCertificates(filterValue) {
         console.log('Filtering certificates by:', filterValue);
+        
+        // Special handling for professional category
+        if (filterValue === 'professional') {
+            const professionalCategory = document.getElementById('professional-category');
+            if (professionalCategory) {
+                // Let the professional-category-fix.js handle this case
+                return;
+            }
+        }
         
         if (filterValue === 'all') {
             showAllCertificates();
             return;
         }
         
-        // Show only the selected category, hide others
+        // Debug: check which categories exist
+        console.log('Available categories:');
+        certCategories.forEach(cat => {
+            console.log('Category ID:', cat.id);
+        });
+          // Show only the selected category, hide others
+        let categoryFound = false;
+        
+        // First, remove all active-category classes
+        certCategories.forEach(cat => {
+            cat.classList.remove('active-category');
+        });
+        
+        // Add a special class to the body to force professional category to show when selected
+        document.body.classList.remove('show-professional');
+        if (filterValue === 'professional') {
+            document.body.classList.add('show-professional');
+        }
+        
         certCategories.forEach(category => {
-            if (category.id === filterValue + '-category') {
+            // Normalize the comparison to ensure matching works regardless of exact ID format
+            const categoryId = category.id.toLowerCase().replace(/[^a-z0-9]/g, '');
+            const filterMatch = (filterValue + 'category').toLowerCase().replace(/[^a-z0-9]/g, '');
+            
+            if (categoryId === filterMatch || category.id === filterValue + '-category') {
+                console.log('Showing category:', category.id);
                 category.style.display = 'block';
+                category.classList.add('active-category');
+                categoryFound = true;
             } else {
                 category.style.display = 'none';
             }
         });
         
+        // If no category was found, check if there might be a different ID format
+        if (!categoryFound) {
+            console.warn('No category found for filter:', filterValue);
+            // As a fallback, try a less strict matching
+            certCategories.forEach(category => {
+                if (category.id.includes(filterValue)) {
+                    console.log('Fallback showing category:', category.id);
+                    category.style.display = 'block';
+                }
+            });
+        }
+        
         // Ensure items in the visible category are shown properly
         certItems.forEach(item => {
             const parentCategory = item.closest('.cert-category');
             
-            if (parentCategory && parentCategory.id === filterValue + '-category') {
+            if (parentCategory && parentCategory.style.display !== 'none') {
                 // Reset any previous transitions
                 item.style.transition = 'none';
                 
@@ -137,8 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-    
-    // Add click handlers to filter buttons
+      // Add click handlers to filter buttons
     certFilterButtons.forEach(button => {
         button.addEventListener('click', function() {
             // Remove active class from all buttons
@@ -151,8 +202,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const filterValue = this.getAttribute('data-filter');
             console.log('Filter selected:', filterValue);
             
+            // Log all categories for debugging
+            console.log('All categories in DOM:');
+            document.querySelectorAll('.cert-category').forEach(cat => {
+                console.log(`- ${cat.id} (display: ${window.getComputedStyle(cat).display})`);
+            });
+            
             // Apply filter
             filterCertificates(filterValue);
+            
+            // Force recheck to ensure the professional category is shown when needed
+            if (filterValue === 'professional') {
+                const profCategory = document.getElementById('professional-category');
+                if (profCategory) {
+                    console.log('Forcing professional category to display block');
+                    profCategory.style.display = 'block';
+                }
+            }
         });
     });
       // Initialize certifications
@@ -203,6 +269,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Add counters
     addCertificationCounters();
     addFilterButtonCounters();
+      // Ensure all categories have proper IDs and are accessible via filters
+    function validateCategoryIds() {
+        // Check all categories against their expected filter values
+        const allFilters = Array.from(certFilterButtons).map(btn => btn.getAttribute('data-filter'));
+        console.log('Available filters:', allFilters);
+        
+        certCategories.forEach(category => {
+            const categoryId = category.id;
+            const expectedFilter = categoryId.replace('-category', '');
+            console.log(`Category ${categoryId} should match filter '${expectedFilter}'`);
+            
+            // For professional category, add extra attribute to ensure it's always findable
+            if (categoryId === 'professional-category') {
+                category.setAttribute('data-cert-type', 'professional');
+            }
+        });
+    }
+    
+    // Run validation
+    validateCategoryIds();
     
     // Make sure 'All' filter is active by default
     const allButton = document.querySelector('.cert-filter-btn[data-filter="all"]');

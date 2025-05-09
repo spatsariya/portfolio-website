@@ -352,6 +352,21 @@
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+/* Ensure professional category is visible when it should be */
+#professional-category.active-category,
+.show-professional #professional-category,
+body.show-professional #professional-category,
+.cert-filter-btn[data-filter="professional"].active ~ #professional-category {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Add specific styling for professional category to make it stand out more */
+#professional-category {
+    border-left: 3px solid var(--primary-color);
+}
+
 .cert-category:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 50px rgba(110, 87, 224, 0.08);
