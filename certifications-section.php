@@ -424,5 +424,5 @@
 <script src="js/certification-animation.js"></script>
 <script src="js/certification-enhancements.js"></script>
 <script src="js/professional-category-fix.js"></script>
-<script src="js/certification-filter.js"></script>
-<script src="js/certification-init.js"></script>    
+<!-- <script src="js/certification-filter.js"></script>
+<script src="js/certification-init.js"></script>     -->
