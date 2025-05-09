@@ -72,7 +72,7 @@
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Email:</span>
-                        <span class="detail-value">contact@shivampatsariya.com</span>
+                        <span class="detail-value">contact@imshivam.com</span>
                     </div>
                     <div class="detail-item">
                         <span class="detail-label">Location:</span>
@@ -590,7 +590,8 @@
                         </div>
                         <div class="contact-text">
                             <h4>Phone</h4>
-                            <p>+1 (123) 456-7890</p>
+                            <p>+1 (647) 333 9098</p>
+                            <p>+1 (647) 274 5418</p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -599,7 +600,7 @@
                         </div>
                         <div class="contact-text">
                             <h4>Email</h4>
-                            <p>contact@shivampatsariya.com</p>
+                            <p>contact@imshivam.com</p>
                         </div>
                     </div>
                     <div class="contact-item">
