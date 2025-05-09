@@ -177,96 +177,118 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form validation
+    // Form validation and AJAX submission
     const contactForm = document.getElementById('contactForm');
-    
+    const formResponse = document.getElementById('form-response');
+
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Basic validation
+            // Validate form
             let isValid = true;
             const name = document.getElementById('name');
             const email = document.getElementById('email');
             const message = document.getElementById('message');
             
-            if (!name.value.trim()) {
-                isValid = false;
+            // Reset previous errors
+            removeError(name);
+            removeError(email);
+            removeError(message);
+            
+            if (name.value.trim() === '') {
                 showError(name, 'Please enter your name');
-            } else {
-                removeError(name);
+                isValid = false;
             }
             
-            if (!email.value.trim()) {
-                isValid = false;
+            if (email.value.trim() === '') {
                 showError(email, 'Please enter your email');
-            } else if (!isValidEmail(email.value)) {
                 isValid = false;
+            } else if (!isValidEmail(email.value)) {
                 showError(email, 'Please enter a valid email address');
-            } else {
-                removeError(email);
+                isValid = false;
             }
             
-            if (!message.value.trim()) {
-                isValid = false;
+            if (message.value.trim() === '') {
                 showError(message, 'Please enter your message');
-            } else {
-                removeError(message);
+                isValid = false;
             }
             
             if (isValid) {
-                // Here you would typically send the form data to the server
-                // For now, we'll just simulate a successful submission
-                const submitButton = contactForm.querySelector('button[type="submit"]');
-                const originalText = submitButton.innerHTML;
+                // Show loading state
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
                 
-                submitButton.disabled = true;
-                submitButton.innerHTML = 'Sending...';
+                // Collect form data
+                const formData = new FormData(contactForm);
                 
-                setTimeout(() => {
-                    contactForm.reset();
-                    submitButton.disabled = false;
-                    submitButton.innerHTML = originalText;
+                // Send AJAX request
+                fetch('process-form.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Reset button
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
                     
-                    // Show success message
-                    const successMessage = document.createElement('div');
-                    successMessage.className = 'success-message';
-                    successMessage.textContent = 'Your message has been sent successfully!';
-                    contactForm.appendChild(successMessage);
+                    // Show response
+                    if (data.status === 'success') {
+                        formResponse.className = 'form-response success';
+                        formResponse.innerHTML = data.message;
+                        contactForm.reset();
+                    } else {
+                        formResponse.className = 'form-response error';
+                        formResponse.innerHTML = data.message;
+                    }
                     
+                    // Hide response after some time
                     setTimeout(() => {
-                        successMessage.remove();
+                        formResponse.style.display = 'none';
                     }, 5000);
-                }, 1500);
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    formResponse.className = 'form-response error';
+                    formResponse.innerHTML = 'There was an error sending your message. Please try again later.';
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                });
             }
         });
     }
-    
+
     function showError(input, message) {
         const formGroup = input.parentElement;
-        let errorMessage = formGroup.querySelector('.error-message');
+        const errorMessage = document.createElement('div');
+        errorMessage.className = 'error-message';
+        errorMessage.textContent = message;
         
-        if (!errorMessage) {
-            errorMessage = document.createElement('div');
-            errorMessage.className = 'error-message';
-            formGroup.appendChild(errorMessage);
+        formGroup.classList.add('error');
+        
+        // Remove any existing error messages first
+        const existingError = formGroup.querySelector('.error-message');
+        if (existingError) {
+            formGroup.removeChild(existingError);
         }
         
-        errorMessage.textContent = message;
-        formGroup.classList.add('error');
+        formGroup.appendChild(errorMessage);
     }
-    
+
     function removeError(input) {
         const formGroup = input.parentElement;
         const errorMessage = formGroup.querySelector('.error-message');
         
         if (errorMessage) {
-            errorMessage.remove();
+            formGroup.removeChild(errorMessage);
         }
         
         formGroup.classList.remove('error');
     }
-    
+
     function isValidEmail(email) {
         const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return regex.test(email);

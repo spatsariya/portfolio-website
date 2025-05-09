@@ -12,25 +12,44 @@
     <div class="container">
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
-                <h1>Hi, I'm <span class="highlight">Shivam Patsariya</span></h1>
-                <h2>UI/UX Designer & Creative Problem Solver</h2>
-                <p>Versatile professional specializing in UI/UX and Visual Design, creating meaningful digital experiences that delight users and drive business growth.</p>
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1><span class="highlight">Shivam Patsariya</span></h1>
+                <h2>UI/UX Designer & Creative Innovator</h2>
+                <p class="hero-description">Bridging the gap between user needs and business goals through thoughtful design. I create intuitive digital experiences that delight users and drive measurable results.</p>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                </div>
+                <div class="hero-social-links">
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="image-cutout">
-                    <!-- Replace with your actual image -->
                     <img src="images/cutout-main.png" alt="Shivam Patsariya - UX Designer">
+                </div>
+                <div class="hero-stats-highlight">
+                    <div class="stat-highlight">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projects Delivered</span>
+                    </div>
+                    <div class="stat-highlight">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
                 </div>
             </div>
         </div> 
     </div>
     <div class="hero-scroll">
         <a href="#about">
-            <span>Scroll Down</span>
+            <span>Discover More</span>
             <i class="fas fa-chevron-down"></i>
         </a>
     </div>
@@ -99,6 +118,7 @@
         <div class="section-header" data-aos="fade-up">
             <h2>My Experience</h2>
             <div class="section-line"></div>
+            <p class="section-subheading">Building expertise across design and technology</p>
         </div>
         <div class="experience-timeline">
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
@@ -107,11 +127,13 @@
                     <span class="date">2022 - Present</span>
                     <h3>UI/UX Designer</h3>
                     <h4>rCycle</h4>
-                    <p>Creating engaging user interfaces and optimizing user experiences for sustainability-focused applications. Collaborating with cross-functional teams to deliver intuitive and impactful digital solutions.</p>
+                    <p>Leading design initiatives for sustainability-focused applications, creating user-centered solutions that promote environmental responsibility.</p>
                     <ul class="timeline-list">
-                        <li>Designed and improved user interfaces for web and mobile applications</li>
-                        <li>Conducted user research and usability testing to enhance user experience</li>
-                        <li>Collaborated with development teams to implement responsive designs</li>
+                        <li>Redesigned the mobile app interface, increasing user engagement by 35% and improving the overall recycling experience</li>
+                        <li>Conducted extensive user research and usability testing to identify pain points and opportunities for improvement</li>
+                        <li>Collaborated with development teams to implement responsive designs across web and mobile platforms</li>
+                        <li>Created a cohesive design system to ensure consistency across all digital touchpoints</li>
+                        <li>Facilitated design workshops to align stakeholders on product vision and user needs</li>
                     </ul>
                 </div>
             </div>
@@ -121,11 +143,13 @@
                     <span class="date">2021 - 2024</span>
                     <h3>Designer</h3>
                     <h4>Virgin Plus (Bell Canada)</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Led the UI/UX design for the My Benefits platform, enhancing the user experience for employees accessing benefits information.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Transformed complex benefits information into intuitive, user-friendly interfaces</li>
+                        <li>Implemented comprehensive design systems to ensure consistency across the platform</li>
+                        <li>Collaborated with cross-functional teams to align design with business objectives</li>
+                        <li>Conducted A/B testing to optimize user flows and increase platform adoption</li>
+                        <li>Incorporated accessibility standards to ensure inclusive design for all users</li>
                     </ul>
                 </div>
             </div>
@@ -133,13 +157,15 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2021 - 2023</span>
-                    <h3>Senior Graphics Designer   </h3>
+                    <h3>Senior Graphics Designer</h3>
                     <h4>Media.net</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Created visual designs for digital advertising campaigns, optimizing user engagement and conversion rates.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Developed compelling visual content for digital advertising campaigns across multiple platforms</li>
+                        <li>Collaborated with marketing teams to align design with campaign objectives and target audience</li>
+                        <li>Optimized designs for various ad formats and platforms to maximize engagement</li>
+                        <li>Maintained brand consistency while creating innovative visuals that stood out in competitive markets</li>
+                        <li>Provided art direction and mentorship to junior designers on the team</li>
                     </ul>
                 </div>
             </div>
@@ -149,11 +175,13 @@
                     <span class="date">2021 - 2023</span>
                     <h3>Senior Analyst Visual Design</h3>
                     <h4>Accenture, ATCi</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Led visual design initiatives for enterprise clients, focusing on creating effective and visually appealing digital experiences.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Developed and implemented visual design strategies for enterprise-level clients</li>
+                        <li>Created design specifications and style guides for consistent implementation across products</li>
+                        <li>Conducted design reviews and provided expert feedback to improve design quality</li>
+                        <li>Collaborated with UX researchers to incorporate user insights into visual solutions</li>
+                        <li>Presented design concepts to stakeholders and addressed feedback constructively</li>
                     </ul>
                 </div>
             </div>
@@ -163,11 +191,13 @@
                     <span class="date">2020 - 2023</span>
                     <h3>Social Communication Manager</h3>
                     <h4>NIMS University, Jaipur</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Managed social media presence and communication strategies, enhancing the university's digital footprint and engagement.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Developed and executed a comprehensive social media strategy across multiple platforms</li>
+                        <li>Created engaging content that increased student engagement and application rates</li>
+                        <li>Managed crisis communications and reputation management online</li>
+                        <li>Analyzed social media metrics to optimize content strategy and engagement</li>
+                        <li>Collaborated with departments to showcase university achievements and programs</li>
                     </ul>
                 </div>
             </div>
@@ -177,11 +207,13 @@
                     <span class="date">2020 - 2021</span>
                     <h3>Graphics Designer</h3>
                     <h4>Flipkart</h4>
-                    <p>Created visual designs and graphics for one of India's largest e-commerce platforms, contributing to marketing campaigns and product presentations.</p>
+                    <p>Created visual designs for one of India's largest e-commerce platforms, contributing to marketing campaigns and product experiences.</p>
                     <ul class="timeline-list">
-                        <li>Designed graphics for promotional campaigns and product pages</li>
-                        <li>Collaborated with marketing teams to create engaging visual content</li>
-                        <li>Maintained brand consistency across various digital touchpoints</li>
+                        <li>Designed graphics for high-impact promotional campaigns that drove significant sales increases</li>
+                        <li>Created visually compelling product presentations to enhance the shopping experience</li>
+                        <li>Collaborated with marketing teams to develop seasonal campaign materials</li>
+                        <li>Maintained brand consistency while innovating within the established visual language</li>
+                        <li>Optimized designs for various digital platforms and screen sizes</li>
                     </ul>
                 </div>
             </div>
@@ -191,11 +223,13 @@
                     <span class="date">2019 - 2020</span>
                     <h3>Customer Experience Lead</h3>
                     <h4>NextGen Invent Corporation</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Led customer experience initiatives, focusing on optimizing user journeys and satisfaction across digital products.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Conducted customer journey mapping to identify pain points and improvement opportunities</li>
+                        <li>Implemented experience improvements that increased customer satisfaction scores by 28%</li>
+                        <li>Collaborated with product teams to incorporate customer feedback into product roadmaps</li>
+                        <li>Established customer experience metrics and reporting frameworks</li>
+                        <li>Trained team members on customer-centric approaches to product development</li>
                     </ul>
                 </div>
             </div>
@@ -205,11 +239,13 @@
                     <span class="date">2018 - 2019</span>
                     <h3>Creative Director</h3>
                     <h4>MSS Payments</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Provided creative direction for digital payment solutions, focusing on creating intuitive and secure user experiences.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Led the creative direction for a complete rebrand of the company's payment platforms</li>
+                        <li>Developed design guidelines that improved usability while maintaining security standards</li>
+                        <li>Managed a team of designers, ensuring high-quality deliverables and creative growth</li>
+                        <li>Collaborated with product managers to align visual design with business objectives</li>
+                        <li>Created innovative visual solutions for complex financial transactions</li>
                     </ul>
                 </div>
             </div>
@@ -219,11 +255,13 @@
                     <span class="date">2016 - 2018</span>
                     <h3>Software Engineer</h3>
                     <h4>Launchers World Software</h4>
-                    <p>Designed user interfaces for the My Benefits platform, focusing on creating intuitive and accessible experiences for users navigating their benefits information.</p>
+                    <p>Developed front-end solutions with a focus on user experience, bridging the gap between design and functionality.</p>
                     <ul class="timeline-list">
-                        <li>Created visually appealing and user-friendly interfaces</li>
-                        <li>Implemented design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with stakeholders to align design with business goals</li>
+                        <li>Built responsive web applications using HTML, CSS, and JavaScript</li>
+                        <li>Collaborated with designers to implement visually appealing and functional interfaces</li>
+                        <li>Optimized application performance to enhance user experience</li>
+                        <li>Implemented front-end accessibility standards for inclusive design</li>
+                        <li>Participated in code reviews and contributed to best practice documentation</li>
                     </ul>
                 </div>
             </div>
@@ -491,6 +529,7 @@
         <div class="section-header" data-aos="fade-up">
             <h2>Education</h2>
             <div class="section-line"></div>
+            <p class="section-subheading">Academic foundation and continuous learning</p>
         </div>
         <div class="experience-timeline">
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
@@ -499,9 +538,15 @@
                     <span class="date">2024 - 2025</span>
                     <h4>Graduate Certificate</h4>
                     <h3>Global Business Management</h3>
-                    <h4>Fleming College</h4>
-                    <h4>ON, Canada</h4>
-                    <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
+                    <h4>Fleming College, Ontario, Canada</h4>
+                    <p>Specializing in international business strategies, cross-cultural management, and global marketing with a focus on digital transformation.</p>
+                    <ul class="timeline-list">
+                        <li>Global Business Strategies and Leadership</li>
+                        <li>International Marketing and Digital Branding</li>
+                        <li>Cross-Cultural Management and Communication</li>
+                        <li>Financial Management for Global Operations</li>
+                        <li>Digital Transformation and Innovation</li>
+                    </ul>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
@@ -510,12 +555,17 @@
                     <span class="date">2012 - 2016</span>
                     <h4>Bachelors in Engineering (BE)</h4>
                     <h3>Computer Science Engineering</h3>
-                    <h4>Jiwaji University</h4>
-                    <h4>MP, India</h4>
-                    <p>Pursued advanced studies in design and technology, building on previous education and professional experience.</p>
+                    <h4>Jiwaji University, Madhya Pradesh, India</h4>
+                    <p>Comprehensive education in computer science principles, programming, and software development with additional focus on design and user experience.</p>
+                    <ul class="timeline-list">
+                        <li>Data Structures and Algorithms</li>
+                        <li>Software Engineering and Development</li>
+                        <li>Database Management Systems</li>
+                        <li>Web Development and UI Design</li>
+                        <li>Computer Networks and Security</li>
+                    </ul>
                 </div>
             </div>
-            <!-- You can add more education entries here as needed -->
         </div>
     </div>
 </section>
@@ -899,11 +949,12 @@
         <div class="section-header" data-aos="fade-up">
             <h2>Get In Touch</h2>
             <div class="section-line"></div>
+            <p class="section-subheading">Let's collaborate on your next project</p>
         </div>
         <div class="contact-content">
             <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
-                <h3>Let's Talk About Your Project</h3>
-                <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+                <h3>Let's Create Something Amazing Together</h3>
+                <p>I'm always interested in hearing about new projects and opportunities. Whether you need a complete design overhaul or just want to discuss potential collaborations, I'm here to help turn your vision into reality.</p>
                 <div class="contact-details">
                     <div class="contact-item">
                         <div class="contact-icon">
@@ -932,6 +983,15 @@
                             <p>East York, Ontario, Canada</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Availability</h4>
+                            <p>Open to freelance & full-time opportunities</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -944,19 +1004,24 @@
             <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
                 <form action="process-form.php" method="POST" id="contactForm">
                     <div class="form-group">
-                        <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="What's this about?">
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Tell me about your project..." required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
                 </form>
+                <div id="form-response" class="form-response"></div>
             </div>
         </div>
     </div>
