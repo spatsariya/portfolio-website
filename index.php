@@ -471,16 +471,16 @@
                     <p class="certification-date">2021 - Present</p>
                 </div>
             </div>
-            <!-- <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
                 <div class="certification-icon">
                     <i class="fas fa-certificate"></i>
                 </div>
                 <div class="certification-content">
-                    <h3>New Certification Title</h3>
-                    <p class="certification-issuer">New Issuer</p>
-                    <p class="certification-date">2023</p>
+                    <h3>Dahej</h3>
+                    <p class="certification-issuer">City Leader</p>
+                    <p class="certification-date">2014 - 2015</p>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </section>
