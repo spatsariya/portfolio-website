@@ -30,6 +30,13 @@
             </div>
         </div>
     </footer>    <!-- AOS Animation Library -->
+
+
+    <!-- Add certificate animation script -->
+<script src="js/certification-animation.js"></script>
+<script src="js/certification-enhancements.js"></script>
+<script src="js/professional-category-fix.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
       <!-- Certificate Icons -->
     <script src="js/certificate-icons.js"></script>
