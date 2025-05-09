@@ -572,8 +572,6 @@
 <?php include 'certifications-section.php'; ?>
 
 
-</section>
-
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
     <div class="container">        <div class="section-header" data-aos="fade-up">
