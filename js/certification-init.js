@@ -5,14 +5,21 @@
  * proper display of certification categories and items
  */
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('Certification initialization started');
+    
     // Check for duplicated certification items and remove them if necessary
     const checkForDuplicates = () => {
         const certificationSection = document.getElementById('certifications');
-        if (!certificationSection) return;
+        if (!certificationSection) {
+            console.log('Certification section not found in DOM');
+            return;
+        }
         
         // Get all items by certification title
         const certTitles = {};
         const certItems = certificationSection.querySelectorAll('.certification-item');
+        
+        console.log(`Found ${certItems.length} certification items`);
         
         certItems.forEach(item => {
             const title = item.querySelector('h3')?.innerText.trim() || '';
@@ -21,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (certTitles[key]) {
                 // Found a duplicate, remove it
+                console.log(`Removing duplicate: ${key}`);
                 item.parentNode.removeChild(item);
             } else {
                 certTitles[key] = true;
@@ -48,9 +56,13 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Ensure all categories are visible on initial load
             const categories = document.querySelectorAll('#certifications .cert-category');
+            console.log(`Found ${categories.length} certification categories`);
+            
             categories.forEach(category => {
                 category.style.display = 'block';
             });
+        } else {
+            console.log('All filter button not found');
         }
     };
     
@@ -58,4 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
     checkForDuplicates();
     ensureOrganizationsSectionVisible();
     setDefaultFilter();
+    
+    console.log('Certification initialization completed');
 });
