@@ -295,15 +295,26 @@ document.addEventListener('DOMContentLoaded', function() {
                 const originalText = submitBtn.innerHTML;
                 submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                 submitBtn.disabled = true;
-                  // Collect form data
-                const formData = new FormData(contactForm);
+                  // Collect form data                const formData = new FormData(contactForm);
                 
                 // Send AJAX request
-                fetch('process-form-phpmailer.php', {
+                fetch('process-form-fixed.php', {
                     method: 'POST',
                     body: formData
                 })
-                .then(response => response.json())
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Server returned ' + response.status);
+                    }
+                    return response.text().then(text => {
+                        try {
+                            return JSON.parse(text);
+                        } catch (e) {
+                            console.error('Invalid JSON response:', text);
+                            throw new Error('Server returned invalid JSON response');
+                        }
+                    });
+                })
                 .then(data => {
                     // Reset button
                     submitBtn.innerHTML = originalText;
@@ -318,10 +329,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         formResponse.className = 'form-response error';
                         formResponse.innerHTML = data.message;
                     }
-                    
-                    // Hide response after some time
+                      // Hide response after some time
                     setTimeout(() => {
-                        formResponse.style.display = 'none';
+                        formResponse.style.opacity = '0';
+                        setTimeout(() => {
+                            formResponse.style.display = 'none';
+                            formResponse.style.opacity = '1';
+                        }, 500);
                     }, 5000);
                 })
                 .catch(error => {
