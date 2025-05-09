@@ -568,6 +568,116 @@
                     <p class="certification-date">2023</p>
                 </div>
             </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
+
+            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="certification-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>UI/UX Design Certification</h3>
+                    <p class="certification-issuer">Design Institute</p>
+                    <p class="certification-date">2023</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
