@@ -569,23 +569,7 @@
 </section>
 
 <!-- Certifications Section -->
-<section id="certifications" class="certifications-section">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>My Certifications</h2>
-            <div class="section-line"></div>
-        </div>
-        <p class="section-subheading">Professional development and continuous learning</p>
-        
-        <div class="certification-filters" data-aos="fade-up">
-            <button class="cert-filter-btn active" data-filter="all">All</button>
-            <button class="cert-filter-btn" data-filter="design">Design & UX/UI</button>
-            <button class="cert-filter-btn" data-filter="development">Programming & Development</button>
-            <button class="cert-filter-btn" data-filter="marketing">Digital Marketing</button>
-            <button class="cert-filter-btn" data-filter="business">Business & Management</button>
-            <button class="cert-filter-btn" data-filter="healthcare">Healthcare & Safety</button>
-            <button class="cert-filter-btn" data-filter="professional">Professional Qualifications</button>
-        </div>
+<?php include 'certifications-section.php'; ?>
         
         <!-- Category 1: Design & UX/UI -->
         <div class="cert-category" data-aos="fade-up" id="design-category">
