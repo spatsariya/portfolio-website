@@ -16,12 +16,24 @@ $phpmailer_files = [
     'Exception.php' => 'https://raw.githubusercontent.com/PHPMailer/PHPMailer/master/src/Exception.php'
 ];
 
+// Make sure error reporting is on for debugging
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// Log download attempts
 foreach ($phpmailer_files as $filename => $url) {
     $filepath = 'vendor/PHPMailer/' . $filename;
     if (!file_exists($filepath)) {
-        $content = file_get_contents($url);
+        error_log("Attempting to download: " . $url);
+        $content = @file_get_contents($url);
         if ($content !== false) {
-            file_put_contents($filepath, $content);
+            if (file_put_contents($filepath, $content)) {
+                error_log("Successfully saved: " . $filepath);
+            } else {
+                error_log("Error saving file: " . $filepath);
+            }
+        } else {
+            error_log("Error downloading file: " . $url);
         }
     }
 }
@@ -63,19 +75,17 @@ if (file_exists('vendor/PHPMailer/PHPMailer.php') &&
     try {
         // First email: Notification to admin
         $mail = new PHPMailer(true);
-        
-        // Server settings - update these with your SMTP details
+          // Server settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.hostinger.com'; // Replace with your SMTP server
+        $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'no-reply@imshivam.com'; // Replace with your email
-        $mail->Password   = 'YourSMTPPassword2@'; // Replace with your password
-        $mail->SMTPSecure = 'ssl';
+        $mail->Username   = 'no-reply@eazyhaven.com';
+        $mail->Password   = 'E@$Y#@ven2025';        $mail->SMTPSecure = 'ssl';
         $mail->Port       = 465;
-
-        // Recipients
-        $mail->setFrom('no-reply@imshivam.com', 'Shivam Patsariya Portfolio');
-        $mail->addAddress('s.patsariya@gmail.com'); // Replace with your receiving email
+        // Enable debugging for troubleshooting - comment out in production
+        $mail->SMTPDebug  = 2; // 0 = off, 1 = client messages, 2 = client and server messages        // Recipients
+        $mail->setFrom('no-reply@eazyhaven.com', 'Shivam Patsariya');
+        $mail->addAddress('s.patsariya@gmail.com'); // Your receiving email
         $mail->addReplyTo($email, $name);
 
         // Content
@@ -91,18 +101,15 @@ if (file_exists('vendor/PHPMailer/PHPMailer.php') &&
 
         // Second email: Auto-response to the user
         $autoResponse = new PHPMailer(true);
-        
-        // Server settings (same as above)
+          // Server settings (same as above)
         $autoResponse->isSMTP();
         $autoResponse->Host       = 'smtp.hostinger.com';
         $autoResponse->SMTPAuth   = true;
-        $autoResponse->Username   = 'no-reply@imshivam.com';
-        $autoResponse->Password   = 'YourSMTPPassword2@';
+        $autoResponse->Username   = 'no-reply@eazyhaven.com';
+        $autoResponse->Password   = 'E@$Y#@ven2025';
         $autoResponse->SMTPSecure = 'ssl';
-        $autoResponse->Port       = 465;
-
-        // Recipients for auto-response
-        $autoResponse->setFrom('no-reply@imshivam.com', 'Shivam Patsariya');
+        $autoResponse->Port       = 465;        // Recipients for auto-response
+        $autoResponse->setFrom('no-reply@eazyhaven.com', 'Shivam Patsariya');
         $autoResponse->addAddress($email, $name);
 
         // Content for auto-response
@@ -135,13 +142,13 @@ if (file_exists('vendor/PHPMailer/PHPMailer.php') &&
         
         // Return success JSON response
         echo json_encode(['status' => 'success', 'message' => 'Your message has been received. Thank you for contacting me!']);
-        
-    } catch (Exception $e) {
-        // Return error JSON response
+          } catch (Exception $e) {        // Return error JSON response
         http_response_code(500);
         echo json_encode(['status' => 'error', 'message' => 'Failed to send email. Please try again later.']);
         // Log the error (but don't expose it to the user)
         error_log("Mail sending failed: " . $e->getMessage());
+        // Uncomment the line below for debugging in development environment
+        echo json_encode(['status' => 'error', 'message' => 'Error: ' . $e->getMessage()]);
     }
 } else {
     // If PHPMailer files are not available, fall back to the old mail() function

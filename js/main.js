@@ -295,12 +295,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 const originalText = submitBtn.innerHTML;
                 submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                 submitBtn.disabled = true;
-                
-                // Collect form data
+                  // Collect form data
                 const formData = new FormData(contactForm);
                 
                 // Send AJAX request
-                fetch('process-form.php', {
+                fetch('process-form-phpmailer.php', {
                     method: 'POST',
                     body: formData
                 })
