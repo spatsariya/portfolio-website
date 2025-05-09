@@ -572,7 +572,7 @@
 <?php include 'certifications-section.php'; ?>
 
 <!-- Contact Section -->
-                <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
+                <!-- <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
                         <i class="fas fa-user-edit"></i>
                     </div>
@@ -715,7 +715,6 @@
             </div>
         </div>
         
-        <!-- Category 2: Programming & Development -->
         <div class="cert-category" data-aos="fade-up" id="development-category">
             <h3 class="cert-category-title"><i class="fas fa-code"></i> Programming & Development</h3>
             <div class="certifications-grid">
@@ -782,7 +781,6 @@
             </div>
         </div>
 
-        <!-- Category 3: Digital Marketing -->
         <div class="cert-category" data-aos="fade-up" id="marketing-category">
             <h3 class="cert-category-title"><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
             <div class="certifications-grid">
@@ -889,7 +887,6 @@
             </div>
         </div>
 
-        <!-- Category 4: Business & Management -->
         <div class="cert-category" data-aos="fade-up" id="business-category">
             <h3 class="cert-category-title"><i class="fas fa-briefcase"></i> Business & Management</h3>
             <div class="certifications-grid">
@@ -906,7 +903,6 @@
             </div>
         </div>
 
-        <!-- Category 5: Healthcare & Safety -->
         <div class="cert-category" data-aos="fade-up" id="healthcare-category">
             <h3 class="cert-category-title"><i class="fas fa-heartbeat"></i> Healthcare & Safety</h3>
             <div class="certifications-grid">
@@ -933,7 +929,6 @@
             </div>
         </div>
 
-        <!-- Category 6: Professional Qualifications -->
         <div class="cert-category" data-aos="fade-up" id="professional-category">
             <h3 class="cert-category-title"><i class="fas fa-award"></i> Professional Qualifications</h3>
             <div class="certifications-grid">
@@ -1324,7 +1319,7 @@
 </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
