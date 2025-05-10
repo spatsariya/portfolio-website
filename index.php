@@ -412,24 +412,24 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
                 <div class="project-image">
-                    <img src="images/project-3.jpg" alt="NGO Website">
+                    <img src="images/content/aafdn.png" alt="NGO Website">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>NPO/NGO Website</h3>
                             <p>Website Design, 2015-2018</p>
-                            <a href="project-detail?id=3" class="btn-view-project">View Project</a>
+                            <a href="https://www.aashayenfoundation.org/" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
                 <div class="project-image">
-                    <img src="images/project-4.jpg" alt="rCycle App">
+                    <img src="images/content/rCycle.png" alt="rCycle App">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>rCycle Mobile App</h3>
                             <p>UI/UX Design, Mobile App</p>
-                            <a href="project-detail?id=4" class="btn-view-project">View Project</a>
+                            <a href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&node-id=13-83&starting-point-node-id=13%3A83&t=URGumBC1RI91aJOu-1" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -437,12 +437,12 @@
             
             <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="600">
                 <div class="project-image">
-                    <img src="images/project-6.jpg" alt="Flipkart Graphics">
+                    <img src="images/content/flipkart-graphics.png" alt="Flipkart Graphics">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>Flipkart Graphics Design</h3>
                             <p>Branding, Visual Design</p>
-                            <a href="project-detail.php?id=6" class="btn-view-project">View Project</a>
+                            <a href="https://www.flipkart.com/" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
