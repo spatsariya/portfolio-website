@@ -388,12 +388,12 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
                 <div class="project-image">
-                    <img src="images/project-1.jpg" alt="InstiWitty Read Write Express">
+                    <img src="images/content/instiwitty-blog.png" alt="InstiWitty Read Write Express">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>InstiWitty Read Write Express</h3>
                             <p>Platform for freelance authors, 2015-2023</p>
-                            <a href="project-detail?id=1" class="btn-view-project">View Project</a>
+                            <a href="https://www.instiwitty.com/" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
