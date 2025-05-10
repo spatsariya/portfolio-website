@@ -400,12 +400,12 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
                 <div class="project-image">
-                    <img src="images/project-2.jpg" alt="BeingShivam Online">
+                    <img src="images/content/beingshivam-blog.png" alt="BeingShivam Online">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>BeingShivam Online</h3>
                             <p>Personal Tech Blog, 2016-2021</p>
-                            <a href="project-detail?id=2" class="btn-view-project">View Project</a>
+                            <a href="https://www.beingshivam.com/" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
