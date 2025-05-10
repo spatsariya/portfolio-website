@@ -374,6 +374,18 @@
             <button class="filter-btn" data-filter="branding">Branding</button>
         </div>
         <div class="projects-grid">
+            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-image">
+                    <img src="images/content/Virgin Plus.png" alt="Virgin Plus">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Virgin Plus My Benefits</h3>
+                            <p>UI/UX Design, Web Design</p>
+                            <a href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&node-id=13-83&starting-point-node-id=13%3A83&t=URGumBC1RI91aJOu-1" class="btn-view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
                 <div class="project-image">
                     <img src="images/project-1.jpg" alt="InstiWitty Read Write Express">
@@ -422,18 +434,7 @@
                     </div>
                 </div>
             </div>
-            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
-                <div class="project-image">
-                    <img src="images/project-5.jpg" alt="Virgin Plus">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Virgin Plus My Benefits</h3>
-                            <p>UI/UX Design, Web Design</p>
-                            <a href="project-detail.php?id=5" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="600">
                 <div class="project-image">
                     <img src="images/project-6.jpg" alt="Flipkart Graphics">
