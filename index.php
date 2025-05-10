@@ -376,7 +376,7 @@
         <div class="projects-grid">
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
                 <div class="project-image">
-                    <img src="images/content/Virgin Plus.png" alt="Virgin Plus">
+                    <img src="images/content/virgin-plus.png" alt="Virgin Plus">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>Virgin Plus My Benefits</h3>
