@@ -1,0 +1,33 @@
+# Enable URL rewriting
+RewriteEngine On
+
+# Set the base directory for the rewrite rules
+RewriteBase /
+
+# Don't apply rules to existing files or directories
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Remove trailing slashes
+RewriteRule ^(.+)/$ $1 [L,R=301]
+
+# Remove .php extension
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,NE,L]
+
+# Internally add .php extension back
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.+)$ $1.php [L]
+
+# Handle the root URL properly (redirect to index.php)
+RewriteRule ^$ index.php [L]
+
+# Prevent directory browsing
+Options -Indexes
+
+# Set default character set
+AddDefaultCharset UTF-8
+
+# Set default document
+DirectoryIndex index.php

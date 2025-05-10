@@ -31,23 +31,22 @@
 
     <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
 <meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
-<meta property="og:image" content="images/land-2.png" />
-<meta property="og:url" content="http://imshivam.com/" />
+<meta property="og:image" content="https://imshivam.com/images/land-2.png" />
+<meta property="og:url" content="https://imshivam.com/" />
 <meta property="og:type" content="website" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
 <meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
-<meta name="twitter:image" content="images/land-2.png" />
+<meta name="twitter:image" content="https://imshivam.com/images/land-2.png" />
 
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="index.php">SP.</a>
+            <div class="header-content">                <div class="logo">
+                    <a href="index">SP.</a>
                 </div>
                 <nav class="nav-menu">
                     <ul>

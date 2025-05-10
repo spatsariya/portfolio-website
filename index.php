@@ -381,7 +381,7 @@
                         <div class="project-info">
                             <h3>InstiWitty Read Write Express</h3>
                             <p>Platform for freelance authors, 2015-2023</p>
-                            <a href="project-detail.php?id=1" class="btn-view-project">View Project</a>
+                            <a href="project-detail?id=1" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -393,7 +393,7 @@
                         <div class="project-info">
                             <h3>BeingShivam Online</h3>
                             <p>Personal Tech Blog, 2016-2021</p>
-                            <a href="project-detail.php?id=2" class="btn-view-project">View Project</a>
+                            <a href="project-detail?id=2" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -405,7 +405,7 @@
                         <div class="project-info">
                             <h3>NPO/NGO Website</h3>
                             <p>Website Design, 2015-2018</p>
-                            <a href="project-detail.php?id=3" class="btn-view-project">View Project</a>
+                            <a href="project-detail?id=3" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -417,7 +417,7 @@
                         <div class="project-info">
                             <h3>rCycle Mobile App</h3>
                             <p>UI/UX Design, Mobile App</p>
-                            <a href="project-detail.php?id=4" class="btn-view-project">View Project</a>
+                            <a href="project-detail?id=4" class="btn-view-project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -630,7 +630,7 @@
                     <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm">
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple" method="POST" id="contactForm">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" name="name" id="name" placeholder="Enter your name" required>
