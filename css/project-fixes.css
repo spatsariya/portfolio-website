@@ -32,9 +32,9 @@
 }
 
 /* Fix for 404 errors on images */
-.project-image img:not([src$="project-1.jpg"]):not([src$="project-2.jpg"]):not([src$="project-3.jpg"]):not([src$="project-4.jpg"]):not([src$="project-5.jpg"]):not([src$="project-6.jpg"]) {
+/* .project-image img:not([src$="project-1.jpg"]):not([src$="project-2.jpg"]):not([src$="project-3.jpg"]):not([src$="project-4.jpg"]):not([src$="project-5.jpg"]):not([src$="project-6.jpg"]) {
     display: none;
-}
+} */
 
 .project-item .project-info {
     max-width: 100%;
