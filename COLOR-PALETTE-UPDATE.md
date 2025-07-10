@@ -8,6 +8,21 @@
 - **Background**: #FBFBFB (Almost White)
 - **Secondary**: #FFDDAE (Warm Peach)
 
+## ⚠️ **Text Visibility Fixes Applied**
+
+### Fixed Elements:
+1. **Navigation Logo "SP."** - Changed from gradient text to solid dark color with subtle shadow
+2. **Hero Greeting "Hello, I'm"** - Converted from gradient to solid dark text for better readability
+3. **Hero Name "Shivam Patsariya"** - Updated highlight style to use colored underline instead of gradient text
+4. **Hero Stats Numbers** - Changed from gradient text to solid dark color
+5. **About Stats Numbers** - Updated to solid dark text for better visibility
+
+### Solution Applied:
+- Replaced gradient text effects with solid `#2c3e50` color
+- Maintained visual interest through gradient underlines and backgrounds
+- Ensured proper contrast for accessibility
+- Preserved the overall design aesthetic while improving readability
+
 ## ✅ Updated Sections
 
 ### 1. **CSS Variables & Foundation**
