@@ -252,133 +252,136 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Form validation and AJAX submission
+    // Form validation and submission
     const contactForm = document.getElementById('contactForm');
     const formResponse = document.getElementById('form-response');
-
+    
     if (contactForm) {
+        // Real-time validation
+        const formInputs = contactForm.querySelectorAll('input, textarea');
+        
+        formInputs.forEach(input => {
+            input.addEventListener('blur', validateField);
+            input.addEventListener('input', clearError);
+        });
+        
+        function validateField(e) {
+            const field = e.target;
+            const value = field.value.trim();
+            const fieldName = field.name;
+            
+            // Remove existing error
+            clearError(e);
+            
+            // Validation rules
+            if (field.hasAttribute('required') && !value) {
+                showFieldError(field, `${getFieldLabel(fieldName)} is required`);
+                return false;
+            }
+            
+            if (fieldName === 'email' && value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(value)) {
+                    showFieldError(field, 'Please enter a valid email address');
+                    return false;
+                }
+            }
+            
+            if (fieldName === 'name' && value && value.length < 2) {
+                showFieldError(field, 'Name must be at least 2 characters');
+                return false;
+            }
+            
+            return true;
+        }
+        
+        function clearError(e) {
+            const field = e.target;
+            const errorElement = field.parentNode.querySelector('.field-error');
+            if (errorElement) {
+                errorElement.remove();
+            }
+            field.classList.remove('error');
+        }
+        
+        function showFieldError(field, message) {
+            field.classList.add('error');
+            const errorElement = document.createElement('div');
+            errorElement.className = 'field-error';
+            errorElement.textContent = message;
+            field.parentNode.appendChild(errorElement);
+        }
+        
+        function getFieldLabel(fieldName) {
+            const labels = {
+                'name': 'Name',
+                'email': 'Email',
+                'subject': 'Subject',
+                'message': 'Message'
+            };
+            return labels[fieldName] || fieldName;
+        }
+        
+        // Form submission
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Validate form
+            // Validate all fields
             let isValid = true;
-            const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const message = document.getElementById('message');
+            formInputs.forEach(input => {
+                if (!validateField({target: input})) {
+                    isValid = false;
+                }
+            });
             
-            // Reset previous errors
-            removeError(name);
-            removeError(email);
-            removeError(message);
-            
-            if (name.value.trim() === '') {
-                showError(name, 'Please enter your name');
-                isValid = false;
+            if (!isValid) {
+                showFormMessage('Please correct the errors above', 'error');
+                return;
             }
             
-            if (email.value.trim() === '') {
-                showError(email, 'Please enter your email');
-                isValid = false;
-            } else if (!isValidEmail(email.value)) {
-                showError(email, 'Please enter a valid email address');
-                isValid = false;
-            }
+            // Show loading state
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
             
-            if (message.value.trim() === '') {
-                showError(message, 'Please enter your message');
-                isValid = false;
-            }
+            // Submit form
+            const formData = new FormData(contactForm);
             
-            if (isValid) {
-                // Show loading state
-                const submitBtn = contactForm.querySelector('button[type="submit"]');
-                const originalText = submitBtn.innerHTML;
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                submitBtn.disabled = true;
-                  // Collect form data                const formData = new FormData(contactForm);
-                
-                // Send AJAX request
-                fetch('process-form-simple.php', {
-                    method: 'POST',
-                    body: formData
-                })
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Server returned ' + response.status);
-                    }
-                    return response.text().then(text => {
-                        try {
-                            return JSON.parse(text);
-                        } catch (e) {
-                            console.error('Invalid JSON response:', text);
-                            throw new Error('Server returned invalid JSON response');
-                        }
-                    });
-                })
-                .then(data => {
-                    // Reset button
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                    
-                    // Show response
-                    if (data.status === 'success') {
-                        formResponse.className = 'form-response success';
-                        formResponse.innerHTML = data.message;
-                        contactForm.reset();
-                    } else {
-                        formResponse.className = 'form-response error';
-                        formResponse.innerHTML = data.message;
-                    }
-                      // Hide response after some time
-                    setTimeout(() => {
-                        formResponse.style.opacity = '0';
-                        setTimeout(() => {
-                            formResponse.style.display = 'none';
-                            formResponse.style.opacity = '1';
-                        }, 500);
-                    }, 5000);
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                    formResponse.className = 'form-response error';
-                    formResponse.innerHTML = 'There was an error sending your message. Please try again later.';
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                });
-            }
+            fetch(contactForm.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    showFormMessage(data.message || 'Message sent successfully!', 'success');
+                    contactForm.reset();
+                } else {
+                    showFormMessage(data.message || 'Failed to send message. Please try again.', 'error');
+                }
+            })
+            .catch(error => {
+                console.error('Form submission error:', error);
+                showFormMessage('Network error. Please check your connection and try again.', 'error');
+            })
+            .finally(() => {
+                // Restore button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
         });
-    }
-
-    function showError(input, message) {
-        const formGroup = input.parentElement;
-        const errorMessage = document.createElement('div');
-        errorMessage.className = 'error-message';
-        errorMessage.textContent = message;
         
-        formGroup.classList.add('error');
-        
-        // Remove any existing error messages first
-        const existingError = formGroup.querySelector('.error-message');
-        if (existingError) {
-            formGroup.removeChild(existingError);
+        function showFormMessage(message, type) {
+            formResponse.innerHTML = `<div class="form-message ${type}">${message}</div>`;
+            formResponse.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            
+            // Auto-hide success messages
+            if (type === 'success') {
+                setTimeout(() => {
+                    formResponse.innerHTML = '';
+                }, 5000);
+            }
         }
-        
-        formGroup.appendChild(errorMessage);
-    }
-
-    function removeError(input) {
-        const formGroup = input.parentElement;
-        const errorMessage = formGroup.querySelector('.error-message');
-        
-        if (errorMessage) {
-            formGroup.removeChild(errorMessage);
-        }
-        
-        formGroup.classList.remove('error');
-    }
-
-    function isValidEmail(email) {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regex.test(email);
     }
 });

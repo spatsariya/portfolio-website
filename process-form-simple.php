@@ -23,7 +23,26 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 // Form validation
 if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
     http_response_code(400);
-    echo json_encode(['status' => 'error', 'message' => 'Please fill all required fields']);
+    echo json_encode([
+        'status' => 'error', 
+        'message' => 'Please fill all required fields',
+        'errors' => [
+            'name' => empty($_POST['name']) ? 'Name is required' : null,
+            'email' => empty($_POST['email']) ? 'Email is required' : null,
+            'message' => empty($_POST['message']) ? 'Message is required' : null
+        ]
+    ]);
+    exit;
+}
+
+// Email validation
+if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    http_response_code(400);
+    echo json_encode([
+        'status' => 'error', 
+        'message' => 'Please enter a valid email address',
+        'errors' => ['email' => 'Invalid email format']
+    ]);
     exit;
 }
 

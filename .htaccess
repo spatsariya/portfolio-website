@@ -4,6 +4,10 @@ RewriteEngine On
 # Set the base directory for the rewrite rules
 RewriteBase /
 
+# Custom Error Pages
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
 # Don't apply rules to existing files or directories
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

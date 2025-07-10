@@ -1103,6 +1103,7 @@ section {
 }
 
 .form-group {
+    position: relative;
     margin-bottom: 20px;
 }
 
@@ -1134,6 +1135,26 @@ section {
     border-color: var(--primary-color);
     outline: none;
     box-shadow: 0 0 0 2px rgba(110, 87, 224, 0.1);
+}
+
+.form-group input.error,
+.form-group textarea.error {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
+}
+
+.field-error {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.field-error::before {
+    content: '⚠';
+    font-size: 0.9rem;
 }
 
 .contact-form button {
@@ -1168,33 +1189,83 @@ section {
 
 .form-response {
     margin-top: 20px;
-    padding: 15px;
+}
+
+.form-message {
+    padding: 15px 20px;
     border-radius: 8px;
-    display: none;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    animation: slideIn 0.3s ease;
 }
 
-.form-response.success {
-    background-color: #e6f7e6;
-    color: #2e7d32;
-    border: 1px solid #a5d6a7;
-    display: block;
+.form-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
 }
 
-.form-response.error {
-    background-color: #fdecea;
-    color: #d32f2f;
+.form-message.success::before {
+    content: '✓';
+    background-color: #28a745;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
     border: 1px solid #f5c6cb;
-    display: block;
 }
 
-@media (max-width: 992px) {
-    .contact-content {
-        flex-direction: column;
+.form-message.error::before {
+    content: '✗';
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
     }
-    
-    .contact-info, .contact-form {
-        max-width: 100%;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
+
+/* Button loading state */
+.btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn .fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* ===== Footer ===== */

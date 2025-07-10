@@ -1,0 +1,49 @@
+{
+  "name": "shivam-patsariya-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website showcasing UI/UX design expertise",
+  "main": "index.php",
+  "scripts": {
+    "start": "php -S localhost:8000",
+    "dev": "php -S localhost:8000 -t .",
+    "minify-css": "cleancss -o css/style.min.css css/style.css css/certifications.css css/project-fixes.css",
+    "minify-js": "uglifyjs js/main.js js/certificate-icons.js js/certification-filter.js js/certification-init.js -o js/scripts.min.js",
+    "optimize-images": "imagemin images/**/*.{jpg,jpeg,png} --out-dir=images/optimized",
+    "build": "npm run minify-css && npm run minify-js",
+    "clean": "rm -f css/*.min.css js/*.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spatsariya/portfolio-website.git"
+  },
+  "keywords": [
+    "portfolio",
+    "ux-designer",
+    "ui-designer",
+    "responsive",
+    "php",
+    "javascript",
+    "css"
+  ],
+  "author": "Shivam Patsariya <contact@imshivam.com>",
+  "license": "All Rights Reserved",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4",
+    "imagemin": "^8.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^7.0.0",
+    "browser-sync": "^2.29.3"
+  },
+  "dependencies": {},
+  "engines": {
+    "php": ">=7.4",
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
