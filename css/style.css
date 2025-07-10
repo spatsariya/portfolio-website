@@ -1506,6 +1506,23 @@ section {
         display: flex;
     }
 
+    .header {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-85%);
+        top: 50px;
+        width: 50% !important;
+        z-index: 1000;
+        backdrop-filter: blur(15px);
+        transition: var(--transition);
+        padding: 20px 0;
+        border-radius: 100px;
+        width: 80%;
+        box-shadow: 0 10px 40px rgba(198, 231, 255, 0.4);
+        background: linear-gradient(135deg, rgba(251, 251, 251, 0.9), rgba(212, 246, 255, 0.8));
+        border: 1px solid rgba(198, 231, 255, 0.3);
+    }
+
     .projects-grid {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     }
