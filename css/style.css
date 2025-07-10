@@ -254,12 +254,14 @@ section {
     top: 80px;
     left: 0;
     width: 100%;
-    background-color: white;
+    background: linear-gradient(135deg, rgba(251, 251, 251, 0.95), rgba(212, 246, 255, 0.9));
     padding: 20px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px var(--shadow-light);
     transform: translateY(-200%);
     transition: var(--transition);
     z-index: 999;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(198, 231, 255, 0.3);
 }
 
 .mobile-menu.active {
@@ -1151,12 +1153,13 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-color);
     border-radius: 50%;
     margin-right: 15px;
     font-size: 1.2rem;
-    box-shadow: 0 5px 15px rgba(110, 87, 224, 0.3);
+    box-shadow: 0 8px 20px var(--shadow-light);
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 .contact-text h4 {
@@ -1182,25 +1185,29 @@ section {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: white;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(212, 246, 255, 0.7));
+    color: var(--dark-color);
     font-size: 1.2rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px var(--shadow-light);
     transition: var(--transition);
+    border: 2px solid rgba(198, 231, 255, 0.3);
 }
 
 .social-links a:hover {
-    background-color: var(--primary-color);
-    color: white;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--dark-color);
     transform: translateY(-3px);
+    box-shadow: 0 8px 25px var(--shadow-light);
 }
 
 .contact-form {
     flex: 1;
-    background-color: white;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(212, 246, 255, 0.5));
     padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    box-shadow: 0 15px 40px var(--shadow-light);
+    border: 1px solid rgba(198, 231, 255, 0.3);
+    backdrop-filter: blur(15px);
 }
 
 .form-group {
@@ -1219,11 +1226,13 @@ section {
 .form-group textarea {
     width: 100%;
     padding: 15px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
+    border: 2px solid rgba(198, 231, 255, 0.4);
+    border-radius: 10px;
     font-family: var(--body-font);
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
 }
 
 .form-group textarea {
@@ -1235,13 +1244,14 @@ section {
 .form-group textarea:focus {
     border-color: var(--primary-color);
     outline: none;
-    box-shadow: 0 0 0 2px rgba(110, 87, 224, 0.1);
+    box-shadow: 0 0 0 3px var(--shadow-light);
+    background: rgba(255, 255, 255, 0.95);
 }
 
 .form-group input.error,
 .form-group textarea.error {
     border-color: var(--secondary-color);
-    box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
+    box-shadow: 0 0 8px var(--shadow-warm);
 }
 
 .field-error {
@@ -1371,7 +1381,7 @@ section {
 
 /* ===== Footer ===== */
 .footer {
-    background-color: var(--dark-color);
+    background: linear-gradient(135deg, var(--dark-color) 0%, #34495e 100%);
     color: white;
     padding: 60px 0 20px;
 }
