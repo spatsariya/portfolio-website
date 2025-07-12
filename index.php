@@ -139,15 +139,16 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2021 - 2024</span>
-                    <h3>Designer</h3>
+                    <h3>Product Design Lead</h3>
                     <h4>Virgin Plus (Bell Canada)</h4>
-                    <p>Led the UI/UX design for the My Benefits platform, enhancing the user experience for employees accessing benefits information.</p>
+                    <p>Led the end-to-end redesign of the MyBenefits mobile app used by 1M+ active users, collaborating with PMs and engineers across iOS, Android, and web.</p>
                     <ul class="timeline-list">
-                        <li>Transformed complex benefits information into intuitive, user-friendly interfaces</li>
-                        <li>Implemented comprehensive design systems to ensure consistency across the platform</li>
-                        <li>Collaborated with cross-functional teams to align design with business objectives</li>
-                        <li>Conducted A/B testing to optimize user flows and increase platform adoption</li>
-                        <li>Incorporated accessibility standards to ensure inclusive design for all users</li>
+                        <li><strong>Redesigned the entire app experience</strong>, resolving major usability and accessibility issues, boosting the App Store rating from 1.3★ to 4.5★.</li>
+                        <li>Created and launched “GetOnThis” event ticket redemption flow, replacing clunky 3rd-party redirects with a seamless in-app journey.</li>
+                        <li>Introduced a gamified rewards system, leading to a 75% increase in feature engagement and a 55% boost in average session time.</li>
+                        <li>Rolled out a full UI/UX overhaul aligned with new brand identity, improving user retention and satisfaction.</li>
+                        <li><strong>Tools</strong>: Figma, InVision, Axure, Illustrator, After Effects, Keynote.</li>
+
                     </ul>
                 </div>
             </div>
