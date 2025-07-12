@@ -141,12 +141,12 @@
                     <span class="date">2021 - 2024</span>
                     <h3>Product Design Lead</h3>
                     <h4>Virgin Plus (Bell Canada)</h4>
-                    <p>Led the end-to-end redesign of the MyBenefits mobile app used by 1M+ active users, collaborating with PMs and engineers across iOS, Android, and web.</p>
+                    <p>Led the end-to-end redesign of the <strong>MyBenefits mobile app</strong> used by <strong>1M+ active users</strong>, collaborating with PMs and engineers across iOS, Android, and web.</p>
                     <ul class="timeline-list">
-                        <li><strong>Redesigned the entire app experience</strong>, resolving major usability and accessibility issues, boosting the App Store rating from 1.3★ to 4.5★.</li>
-                        <li>Created and launched “GetOnThis” event ticket redemption flow, replacing clunky 3rd-party redirects with a seamless in-app journey.</li>
-                        <li>Introduced a gamified rewards system, leading to a 75% increase in feature engagement and a 55% boost in average session time.</li>
-                        <li>Rolled out a full UI/UX overhaul aligned with new brand identity, improving user retention and satisfaction.</li>
+                        <li><strong>Redesigned the entire app experience</strong>, resolving major <strong>usability and accessibility issues</strong>, boosting the App Store rating from <strong>1.3★ to 4.5★.</strong></li>
+                        <li>Created and launched <strong>“GetOnThis”</strong> event ticket redemption flow, replacing clunky 3rd-party redirects with <strong>a seamless in-app journey.</strong></li>
+                        <li>Introduced a <strong>gamified rewards system</strong>, leading to a <strong>75% increase in feature engagement</strong> and a <strong>55% boost in average session time.</strong></li>
+                        <li>Rolled out a <strong>full UI/UX overhaul</strong> aligned with new brand identity, improving <strong>user retention and satisfaction.</strong></li>
                         <li><strong>Tools</strong>: Figma, InVision, Axure, Illustrator, After Effects, Keynote.</li>
 
                     </ul>
@@ -174,13 +174,13 @@
                     <span class="date">2021 - 2023</span>
                     <h3>Senior Analyst Visual Design</h3>
                     <h4>Accenture, ATCi</h4>
-                    <p>Led visual design initiatives for enterprise clients, focusing on creating effective and visually appealing digital experiences.</p>
+                    <p>Delivered high-impact visual content for internal teams and <strong>government clients in the US and India</strong>, aligned with learning and communication goals.</p>
                     <ul class="timeline-list">
-                        <li>Developed and implemented visual design strategies for enterprise-level clients</li>
-                        <li>Created design specifications and style guides for consistent implementation across products</li>
-                        <li>Conducted design reviews and provided expert feedback to improve design quality</li>
-                        <li>Collaborated with UX researchers to incorporate user insights into visual solutions</li>
-                        <li>Presented design concepts to stakeholders and addressed feedback constructively</li>
+                        <li>Designed <strong>learning content, explainer videos, emailers, and digital creatives</strong> for multiple L&D and training initiatives.</li>
+                        <li>Collaborated with <strong>team leads and external stakeholders</strong> to understand requirements and deliver on-brand, timely creative solutions.</li>
+                        <li>Improved <strong>turnaround time by 20%</strong> through efficient stakeholder communication and design iteration.</li>
+                        <li>Maintained consistent visual quality across formats including motion graphics, interactive media, and presentations.</li>
+                        <li><strong>Tools:</strong> Illustrator, Photoshop, Figma, After Effects, Premiere Pro, Adobe Animate, Camtasia, Pawtoon, SharePoint, SendGrid, Outlook.</li>
                     </ul>
                 </div>
             </div>
