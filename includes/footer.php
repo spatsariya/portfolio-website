@@ -8,10 +8,10 @@
                 </div>
                 <div class="social-links">
                     <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-                    <a href="#" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                    <a href="#" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div class="footer-nav">
                     <ul>
