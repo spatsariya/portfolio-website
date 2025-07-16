@@ -125,13 +125,14 @@
                     <span class="date">2022 - Present</span>
                     <h3>UI/UX Designer</h3>
                     <h4>rCycle</h4>
-                    <p>Leading design initiatives for sustainability-focused applications, creating user-centered solutions that promote environmental responsibility.</p>                    <ul class="timeline-list">
-                        <li>Redesigned the mobile app interface, resulting in a 35% increase in user engagement and a 42% improvement in user retention rates</li>
-                        <li>Led comprehensive user research, including user interviews, surveys, and usability testing, to identify pain points and create data-driven solutions</li>
-                        <li>Developed and implemented a modular design system that reduced design inconsistencies by 60% and accelerated development cycles by 25%</li>
-                        <li>Created responsive designs that improved accessibility scores from 72% to 98%, ensuring compliance with WCAG 2.1 standards</li>
-                        <li>Facilitated cross-functional design workshops that aligned stakeholders across product, engineering, and marketing teams on sustainable design practices</li>
-                        <li>Implemented user behavioral analytics that provided insights leading to a 28% increase in recycling activity among app users</li>
+                    <p>Leading design initiatives for <strong>sustainability-focused applications</strong>, creating <strong>user-centered solutions</strong> that promote <strong>environmental responsibility</strong>.</p>
+                    <ul class="timeline-list">
+                        <li>Redesigned the <strong>mobile app interface</strong>, resulting in a <strong>35%</strong> increase in <strong>user engagement</strong> and a <strong>42%</strong> improvement in <strong>user retention rates</strong></li>
+                        <li>Led comprehensive <strong>usability testing</strong>, to identify pain points and create data-driven solutions</li>
+                        <li>Developed and implemented a <strong>modular design system</strong> that reduced design inconsistencies by <strong>60%</strong> and accelerated development cycles by <strong>25%</strong></li>
+                        <li>Created responsive designs that improved <strong>accessibility scores</strong> from <strong>72%</strong> to <strong>98%</strong>, ensuring compliance with <strong>WCAG 2.1 standards</strong></li>
+                        <li>Facilitated <strong>cross-functional design workshops</strong> that aligned stakeholders across <strong>product, engineering, and marketing teams</strong> on sustainable design practices</li>
+                        <li>Implemented user behavioral analytics that provided insights leading to a <strong>28%</strong> increase in <strong>recycling activity</strong> among app users</li>
                     </ul>
                 </div>
             </div>
