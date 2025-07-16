@@ -1,4 +1,4 @@
-/* Solar Icons CSS */
+/* Solar Icons CSS - Bold Duotone Style */
 .solar-icon {
     display: inline-block;
     width: 16px;
@@ -33,6 +33,14 @@
 
 .solar-icon.contact {
     background-image: url('../icons/contact.svg');
+}
+
+.solar-icon.organizations {
+    background-image: url('../icons/organizations.svg');
+}
+
+.solar-icon.education {
+    background-image: url('../icons/education.svg');
 }
 
 /* Desktop Navigation Solar Icons */
