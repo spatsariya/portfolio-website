@@ -248,7 +248,7 @@
                     <span class="date">2018 - 2019</span>
                     <h3>Creative Director</h3>
                     <h4>MSS Payments</h4>
-                    <p>Designed and launched white-labeled mobile wallet and prepaid card apps for national and global banks, enabling millions to access seamless financial services.</p>
+                    <p>Designed and launched <strong>white-labeled mobile wallet and prepaid card apps</strong> for national and global banks, enabling millions to access seamless financial services.</p>
                     <ul class="timeline-list">
                         <li>Led end-to-end design for mobile wallets that allowed users to <strong>send/receive money</strong>, <strong>pay bills</strong>, <strong>buy tickets</strong>, and more — tailored for financial institutions and micro-finance clients.</li>
                         <li>Developed the UX/UI for <strong>India’s first user-controlled prepaid card system</strong>, enabling users to <strong>load funds</strong> and <strong>manage cards</strong> directly via <strong>app</strong> or <strong>web</strong>, <strong>secured with bank-level protocols.</strong></li>
@@ -325,15 +325,15 @@
                     <h3>Design Tools</h3>
                     <div class="skills-grid">
                         <div class="skill-item">
-                            <span class="skill-name">Figma</span>
+                            <span class="skill-name">Figma / Motiff / Framer</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
+                                <div class="skill-progress" data-progress="100"></div>
                             </div>
                         </div>
                         <div class="skill-item">
                             <span class="skill-name">Adobe XD</span>
                             <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
+                                <div class="skill-progress" data-progress="100"></div>
                             </div>
                         </div>
                         <div class="skill-item">
@@ -343,7 +343,7 @@
                             </div>
                         </div>
                         <div class="skill-item">
-                            <span class="skill-name">Adobe Photoshop</span>
+                            <span class="skill-name">Adobe Creative Suite</span>
                             <div class="skill-bar">
                                 <div class="skill-progress" data-progress="90"></div>
                             </div>
@@ -356,6 +356,37 @@
                     <div class="skills-tags">
                         <span class="skill-tag">UI Animation</span>
                         <span class="skill-tag">Design Systems</span>
+                        <span class="skill-tag">User-Centered Design</span>
+                        <span class="skill-tag">Accessibility</span>    
+                        <span class="skill-tag">Branding</span>
+                        <span class="skill-tag">Content Strategy</span>
+                        <span class="skill-tag">SEO Optimization</span>
+                        <span class="skill-tag">Agile Methodologies</span>
+                        <span class="skill-tag">Project Management</span>
+                        <span class="skill-tag">Cross-Functional Collaboration</span>
+                        <span class="skill-tag">Data-Driven Design</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Team Leadership</span>
+                        <span class="skill-tag">Mentorship</span>
+                        <span class="skill-tag">Agile/Scrum</span>
+                        <span class="skill-tag">Design Thinking</span>
+                        <span class="skill-tag">User Interface Design</span>
+                        <span class="skill-tag">User Experience Design</span>
+                        <span class="skill-tag">Mobile App Design</span>
+                        <span class="skill-tag">Web Design</span>
+                        <span class="skill-tag">Graphic Design</span>
+                        <span class="skill-tag">Visual Communication</span>
+                        <span class="skill-tag">Service Design</span>
+                        <span class="skill-tag">Design Research</span>
+                        <span class="skill-tag">User Testing</span>
+                        <span class="skill-tag">Usability Testing</span>
+                        <span class="skill-tag">Information Design</span>
+                        <span class="skill-tag">Content Design</span>
+                        <span class="skill-tag">Content Management</span>
+                        <span class="skill-tag">Content Strategy</span>
+                        <span class="skill-tag">Motion Design</span>
                         <span class="skill-tag">Information Architecture</span>
                         <span class="skill-tag">HTML/CSS</span>
                         <span class="skill-tag">JavaScript</span>
