@@ -47,7 +47,13 @@
         <div class="container">
             <div class="header-content">                <div class="logo">
                     <a href="index">
-                        <img src="images/logo.png" alt="Shivam Patsariya" class="logo-img">
+                        <!-- Logo Variations Available: 
+                             logo-sp.png (SP icon - current)
+                             logo-con.png (icon version)
+                             logo-v2.png (v2 variation)
+                             logo-v3.png (v3 variation)
+                             logo.png (original full logo) -->
+                        <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img">
                     </a>
                 </div>
                 <nav class="nav-menu">

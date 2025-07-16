@@ -231,10 +231,15 @@ section {
 }
 
 .logo-img {
-    height: 40px;
+    height: 45px;
     width: auto;
     max-width: 150px;
     object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
 }
 
 .nav-menu ul {
@@ -1568,8 +1573,8 @@ section {
     }
 
     .logo-img {
-        height: 35px;
-        max-width: 120px;
+        height: 38px;
+        max-width: 130px;
     }
     
     
@@ -1661,8 +1666,8 @@ section {
     }
 
     .logo-img {
-        height: 30px;
-        max-width: 100px;
+        height: 32px;
+        max-width: 110px;
     }
 
     .section-header {
