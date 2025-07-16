@@ -11,7 +11,7 @@
   <meta name="description" content="Explore the portfolio of Shivam Patsariya – a Toronto-based UI/UX Designer, Visual Strategist, and Content Creator. Expert in product design, branding, and web experiences for digital-first businesses.">
   <meta name="keywords" content="Shivam Patsariya, UI UX Designer Toronto, Visual Designer, Digital Product Designer, Portfolio, Personal Website, imShivam, Figma, Behance, Web Design, Freelance Designer">
   <meta name="author" content="Shivam Patsariya">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Favicon -->
     <link rel="icon" href="images/fav-ico.png" type="image/png">
     
