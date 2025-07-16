@@ -1477,22 +1477,25 @@ section {
     }
 
     .experience-timeline::before {
-        left: 20px;
+        left: 15px;
     }
 
     .timeline-dot {
-        left: 20px;
+        left: 15px;
     }
 
     .timeline-content {
-        width: calc(100% - 60px);
-        margin-left: 60px !important;
+        width: calc(100% - 45px);
+        margin-left: 45px !important;
+        padding: 25px 20px;
     }
 
     .timeline-item:nth-child(odd) .timeline-content::before,
     .timeline-item:nth-child(even) .timeline-content::before {
-        left: -10px;
+        left: -8px;
         right: auto;
+        width: 16px;
+        height: 16px;
     }
 }
 
@@ -1503,6 +1506,10 @@ section {
 
     h2 {
         font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 0 15px;
     }
 
     .nav-menu {
@@ -1552,11 +1559,63 @@ section {
         width: 280px;
         height: 280px;
     }
+
+    .skill-category {
+        padding: 25px 20px;
+    }
+
+    .about-stats {
+        gap: 20px;
+    }
 }
 
 @media (max-width: 576px) {
     section {
         padding: 60px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .experience-timeline {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .experience-timeline::before {
+        left: 15px;
+    }
+
+    .timeline-dot {
+        left: 15px;
+    }
+
+    .timeline-content {
+        width: calc(100% - 45px);
+        margin-left: 45px !important;
+        padding: 20px 15px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content::before,
+    .timeline-item:nth-child(even) .timeline-content::before {
+        left: -8px;
+        right: auto;
+        width: 16px;
+        height: 16px;
+    }
+
+    .skill-category {
+        padding: 20px 15px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .stat-item {
+        padding: 20px 15px;
     }
 
     .hero-section {
