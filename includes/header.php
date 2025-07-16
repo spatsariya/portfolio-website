@@ -46,7 +46,9 @@
     <header class="header">
         <div class="container">
             <div class="header-content">                <div class="logo">
-                    <a href="index">SP.</a>
+                    <a href="index">
+                        <img src="images/logo.png" alt="Shivam Patsariya" class="logo-img">
+                    </a>
                 </div>
                 <nav class="nav-menu">
                     <ul>
