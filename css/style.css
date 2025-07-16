@@ -637,7 +637,7 @@ section {
 
 .experience-timeline {
     position: relative;
-    max-width: 800px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -688,7 +688,7 @@ section {
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px var(--shadow-light);
-    width: calc(50% - 40px);
+    width: calc(50% - 25px);
     position: relative;
     border: 1px solid rgba(198, 231, 255, 0.3);
     backdrop-filter: blur(10px);
