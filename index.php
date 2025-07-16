@@ -158,13 +158,16 @@
                     <span class="date">2021 - 2023</span>
                     <h3>Senior Graphics Designer</h3>
                     <h4>Media.net</h4>
-                    <p>Created visual designs for digital advertising campaigns, optimizing user engagement and conversion rates.</p>
+                    <p>Produced high-volume, multi-format <strong>marketing creatives</strong> to support global ad campaigns, product launches, and app visibility.</p>
                     <ul class="timeline-list">
-                        <li>Developed compelling visual content for digital advertising campaigns across multiple platforms</li>
-                        <li>Collaborated with marketing teams to align design with campaign objectives and target audience</li>
-                        <li>Optimized designs for various ad formats and platforms to maximize engagement</li>
-                        <li>Maintained brand consistency while creating innovative visuals that stood out in competitive markets</li>
-                        <li>Provided art direction and mentorship to junior designers on the team</li>
+                        <li>Designed <strong>emailers, ad banners, app UI mockups, Play Store/App Store assets</strong>, and high-conversion <strong>animated ad videos.</strong></li>
+                        <li>Introduced <strong>component-based ad creative library</strong>, enabling scalable production across <strong>multiple dimensions and resolutions.</strong></li>
+                        <li>Implemented <strong>email templating system</strong> for faster creative delivery, reducing turnaround time by over <strong>30%</strong>.</li>
+                        <li>Collaborated with <strong>BDMs, analysts, PMs, and devs</strong> to ensure alignment on performance goals and cross-platform delivery.</li>
+                        <li>Led A/B testing initiatives that boosted creative performance and contributed to a <strong>33% increase in user reach</strong> and direct <strong>revenue growth.</strong></li>
+                        <li>Pioneered the use of <strong>animated ads</strong>, accelerating production cycles and campaign deployment.</li>
+                        <li><strong>Tools:</strong> Figma, After Effects, Premiere Pro, Illustrator, Photoshop, Google Ad Creative Generator.</li>
+
                     </ul>
                 </div>
             </div>
@@ -185,34 +188,41 @@
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="timeline-dot"></div>
+            <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2020 - 2023</span>
-                    <h3>Social Communication Manager</h3>
+                    <h3>Social Communication Manager & Admissions Manager</h3>
                     <h4>NIMS University, Jaipur</h4>
-                    <p>Managed social media presence and communication strategies, enhancing the university's digital footprint and engagement.</p>
+                    <p>Managed social media presence, communication strategies, and student admissions for 15 academic Graduatestreams and K–12 schooling, enhancing the university’s digital footprint and engagement.</p>
                     <ul class="timeline-list">
-                        <li>Developed and executed a comprehensive social media strategy across multiple platforms</li>
-                        <li>Created engaging content that increased student engagement and application rates</li>
-                        <li>Managed crisis communications and reputation management online</li>
-                        <li>Analyzed social media metrics to optimize content strategy and engagement</li>
-                        <li>Collaborated with departments to showcase university achievements and programs</li>
+                        <li>Developed and executed a comprehensive <strong>social media strategy</strong>, increasing student engagement and boosting application rates.</li>
+                        <li>Created engaging content and managed <strong>crisis communications</strong>, enhancing reputation management online.</li>
+                        <li>Directed <strong>lead generation</strong> through <strong>Google Ads</strong>, <strong>Meta Ads</strong>, and digital campaigns targeting domestic and international students.</li>
+                        <li>Streamlined <strong>lead distribution systems</strong> for call centers, improving conversion rates and optimizing the student admission pipeline.</li>
+                        <li>Supervised <strong>university entrance exams</strong> via online platforms, prepared merit lists, and communicated results.</li>
+                        <li>Regularly updated the <strong>university website</strong>, ensuring the latest sessions, regulations, and academic calendars were communicated effectively.</li>
+                        <li>Provided <strong>IT support</strong> across departments, ensuring smooth operations and resolving technical issues as needed.</li>
+                        <li>Delivered <strong>guest lectures</strong> on <strong>Branding, Design, and Digital Communication</strong> for <strong>Management and Fine Arts students</strong>.</li>
+                        <li>Facilitated <strong>online and in-person workshops</strong> for students, junior designers, and interns at <strong>InstiWitty Media Studios</strong>, <strong>NIMS University</strong>, and <strong>Virgin Plus</strong>.</li>
                     </ul>
                 </div>
             </div>
+
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2020 - 2021</span>
-                    <h3>Graphics Designer</h3>
+                    <h3>Product Designer</h3>
                     <h4>Flipkart</h4>
-                    <p>Created visual designs for one of India's largest e-commerce platforms, contributing to marketing campaigns and product experiences.</p>
+                    <p>Led the <strong>UX and visual design</strong> for multiple high-impact Flipkart initiatives including India’s <strong>first social commerce app</strong>, reaching millions of users.</p>
                     <ul class="timeline-list">
-                        <li>Designed graphics for high-impact promotional campaigns that drove significant sales increases</li>
-                        <li>Created visually compelling product presentations to enhance the shopping experience</li>
-                        <li>Collaborated with marketing teams to develop seasonal campaign materials</li>
-                        <li>Maintained brand consistency while innovating within the established visual language</li>
-                        <li>Optimized designs for various digital platforms and screen sizes</li>
+                        <li>Designed end-to-end interfaces for <strong>2Gud Social Commerce</strong> and <strong>Shopsy</strong>, enabling users to <strong>shop directly from video content</strong>, merging entertainment with e-commerce. </li>
+                        <li>Shaped the experience for <strong>reseller-driven social commerce</strong> through Shopsy, streamlining discovery, carting, and earning workflows. </li>
+                        <li>Delivered <strong>marketing assets</strong> for <strong>SuperCoin</strong>, <strong>2Gud</strong>, and <strong>Shopsy</strong> including <strong>push notifications</strong>, <strong>emailers</strong>, <strong>ad creatives</strong>, and <strong>promotional videos</strong>. </li>
+                        <li>Collaborated with <strong>merchandisers</strong>, <strong>business analysts</strong>, and <strong>devs</strong> to iterate rapidly and align with business growth targets. </li>
+                        <li>Contributed to the launch of <strong>Flipkart’s AI assistant “Flippi”</strong>, designing <strong>onboarding flows</strong>, <strong>micro-interactions</strong>, and <strong>animations</strong> for intuitive guidance. </li>
+                        <li>Achieved <strong>89% app engagement rate</strong> and drove app ratings to <strong>4.7★</strong> through polished UX and high-performance design. </li>
+                        <li>Tools: <strong>Figma</strong>, <strong>Photoshop</strong>, <strong>Illustrator</strong>, <strong>Lottie</strong>, <strong>Framer</strong>. </li>
                     </ul>
                 </div>
             </div>
@@ -222,13 +232,13 @@
                     <span class="date">2019 - 2020</span>
                     <h3>Customer Experience Lead</h3>
                     <h4>NextGen Invent Corporation</h4>
-                    <p>Led customer experience initiatives, focusing on optimizing user journeys and satisfaction across digital products.</p>
+                    <p>Led design initiatives to enhance <strong>client-facing websites</strong> and <strong>internal tools</strong>, focusing on usability, accessibility, and visual appeal.</p>
                     <ul class="timeline-list">
-                        <li>Conducted customer journey mapping to identify pain points and improvement opportunities</li>
-                        <li>Implemented experience improvements that increased customer satisfaction scores by 28%</li>
-                        <li>Collaborated with product teams to incorporate customer feedback into product roadmaps</li>
-                        <li>Established customer experience metrics and reporting frameworks</li>
-                        <li>Trained team members on customer-centric approaches to product development</li>
+                        <li>Designed <strong>social media creatives</strong>, <strong>promotional videos</strong>, and <strong>brand assets</strong> to support marketing campaigns and client acquisition.</li>
+                        <li><strong>Redesigned client websites and apps</strong>, resolving major <strong>usability</strong> and <strong>accessibility</strong> issues to improve engagement and user satisfaction.</li>
+                        <li>Collaborated closely with <strong>developers</strong> and <strong>PMs</strong> to execute seamless handoffs and align design with product functionality.</li>
+                        <li>Contributed to improved <strong>site rankings</strong> and <strong>user reach</strong> through design-driven enhancements across multiple client platforms.</li>
+                        <li>Tools: <strong>Figma</strong>, <strong>Adobe Creative Suite</strong>, <strong>Dreamweaver</strong>.</li>
                     </ul>
                 </div>
             </div>
@@ -238,13 +248,13 @@
                     <span class="date">2018 - 2019</span>
                     <h3>Creative Director</h3>
                     <h4>MSS Payments</h4>
-                    <p>Provided creative direction for digital payment solutions, focusing on creating intuitive and secure user experiences.</p>
+                    <p>Designed and launched white-labeled mobile wallet and prepaid card apps for national and global banks, enabling millions to access seamless financial services.</p>
                     <ul class="timeline-list">
-                        <li>Led the creative direction for a complete rebrand of the company's payment platforms</li>
-                        <li>Developed design guidelines that improved usability while maintaining security standards</li>
-                        <li>Managed a team of designers, ensuring high-quality deliverables and creative growth</li>
-                        <li>Collaborated with product managers to align visual design with business objectives</li>
-                        <li>Created innovative visual solutions for complex financial transactions</li>
+                        <li>Led end-to-end design for mobile wallets that allowed users to <strong>send/receive money</strong>, <strong>pay bills</strong>, <strong>buy tickets</strong>, and more — tailored for financial institutions and micro-finance clients.</li>
+                        <li>Developed the UX/UI for <strong>India’s first user-controlled prepaid card system</strong>, enabling users to <strong>load funds</strong> and <strong>manage cards</strong> directly via <strong>app</strong> or <strong>web</strong>, <strong>secured with bank-level protocols.</strong></li>
+                        <li>Partnered with <strong>developers</strong>, <strong>testers</strong>, <strong>BDMs</strong>, and <strong>client stakeholders</strong> to ensure regulatory and brand alignment.</li>
+                        <li>Boosted <strong>app engagement time</strong> by <strong>30%</strong>, resolved over <strong>100+</strong> broken flows, and raised app rating to <strong>4.5★</strong> through streamlined experience design.</li>
+                        <li>Tools: <strong>Illustrator</strong>, <strong>Sketch</strong>, <strong>Photoshop</strong>.</li>
                     </ul>
                 </div>
             </div>
@@ -252,15 +262,15 @@
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2016 - 2018</span>
-                    <h3>Software Engineer</h3>
+                    <h3>Software Engineer (UI/UX)</h3>
                     <h4>Launchers World Software</h4>
-                    <p>Developed front-end solutions with a focus on user experience, bridging the gap between design and functionality.</p>
+                    <p>Specialized in designing high-performance <strong>Android phone launchers</strong>, downloaded and loved by <strong>20M+</strong> users worldwide.</p>
                     <ul class="timeline-list">
-                        <li>Built responsive web applications using HTML, CSS, and JavaScript</li>
-                        <li>Collaborated with designers to implement visually appealing and functional interfaces</li>
-                        <li>Optimized application performance to enhance user experience</li>
-                        <li>Implemented front-end accessibility standards for inclusive design</li>
-                        <li>Participated in code reviews and contributed to best practice documentation</li>
+                        <li>Created and launched <strong>20+</strong> custom Android launchers, each featuring unique UI concepts and personalized themes — consistently rated <strong>4★+</strong> on the Play Store.</li>
+                        <li>Designed <strong>Play Store</strong> assets, including <strong>feature graphics</strong>, <strong>banners</strong>, and <strong>videos</strong>, that helped boost visibility and user acquisition.</li>
+                        <li>Developed and maintained <strong>WordPress</strong> websites to promote launcher products and support user engagement.</li>
+                        <li>Delivered polished UI design with a focus on <strong>performance</strong>, <strong>personalization</strong>, and <strong>aesthetic consistency</strong>.</li>
+                        <li>Tools: <strong>Illustrator</strong>, <strong>Photoshop</strong>, <strong>WordPress</strong>, <strong>Android Studio</strong> (design support only).</li>
                     </ul>
                 </div>
             </div>
