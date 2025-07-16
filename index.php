@@ -189,7 +189,7 @@
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="timeline-dot"></div>
+                <div class="timeline-dot"></div>
                 <div class="timeline-content">
                     <span class="date">2020 - 2023</span>
                     <h3>Social Communication Manager & Admissions Manager</h3>
