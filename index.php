@@ -12,7 +12,7 @@
     <div class="container">
         <div class="hero-content">
             <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">                <span class="hero-greeting">Hello, I'm</span>
-                <h1><span class="highlight">Shivam Patsariya</span></h1>
+                <h1><span class="highlight">Shivam </span></h1>
                 <h2>UI/UX Designer & Creative Innovator</h2>
                 <p class="hero-description">Transforming ideas into exceptional digital experiences that bridge user needs and business goals. With a focus on human-centered design, I craft intuitive interfaces that drive engagement, enhance satisfaction, and deliver measurable results.</p>
                 <div class="hero-cta">
