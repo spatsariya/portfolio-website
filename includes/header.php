@@ -58,14 +58,14 @@
                 </div>
                 <nav class="nav-menu">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#organizations">Organizations</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                        <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                        <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+                        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+                        <!-- <li><a href="#organizations"><i class="fas fa-building"></i> Organizations</a></li> -->
+                        <!-- <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li> -->
+                        <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
                     </ul>
                 </nav>
                 <div class="mobile-menu-btn">
@@ -78,14 +78,14 @@
     </header>
     <div class="mobile-menu">
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#organizations">Organizations</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#skills"><i class="fas fa-cogs"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+            <!-- <li><a href="#organizations"><i class="fas fa-building"></i> Organizations</a></li> -->
+            <!-- <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li> -->
+            <li><a href="#certifications"><i class="fas fa-certificate"></i> Certifications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </div>
     <main>

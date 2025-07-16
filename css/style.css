@@ -254,6 +254,20 @@ section {
     color: var(--text-color);
     font-weight: 500;
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-menu ul li a i {
+    font-size: 14px;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.nav-menu ul li a:hover i {
+    opacity: 1;
+    transform: scale(1.1);
 }
 
 .nav-menu ul li a::after {
@@ -316,8 +330,26 @@ section {
 .mobile-menu ul li a {
     color: var(--text-color);
     font-weight: 500;
-    display: block;
-    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.mobile-menu ul li a i {
+    font-size: 16px;
+    opacity: 0.8;
+    min-width: 20px;
+}
+
+.mobile-menu ul li a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.mobile-menu ul li a:hover i {
+    opacity: 1;
 }
 
 /* ===== Hero Section ===== */
