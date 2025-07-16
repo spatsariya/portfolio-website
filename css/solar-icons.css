@@ -1,0 +1,71 @@
+/* Solar Icons CSS */
+.solar-icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Solar Icons */
+.solar-icon.user {
+    background-image: url('../icons/user.svg');
+}
+
+.solar-icon.experience {
+    background-image: url('../icons/experience.svg');
+}
+
+.solar-icon.skills {
+    background-image: url('../icons/skills.svg');
+}
+
+.solar-icon.projects {
+    background-image: url('../icons/projects.svg');
+}
+
+.solar-icon.certifications {
+    background-image: url('../icons/certifications.svg');
+}
+
+.solar-icon.contact {
+    background-image: url('../icons/contact.svg');
+}
+
+/* Desktop Navigation Solar Icons */
+.nav-menu .solar-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+    opacity: 0.8;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(7%) saturate(1151%) hue-rotate(185deg) brightness(95%) contrast(86%);
+}
+
+.nav-menu ul li a:hover .solar-icon {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1919%) hue-rotate(201deg) brightness(103%) contrast(101%);
+}
+
+/* Mobile Navigation Solar Icons */
+.mobile-menu .solar-icon {
+    width: 16px;
+    height: 16px;
+    min-width: 20px;
+    opacity: 0.8;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(7%) saturate(1151%) hue-rotate(185deg) brightness(95%) contrast(86%);
+}
+
+.mobile-menu ul li a:hover .solar-icon {
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1919%) hue-rotate(201deg) brightness(103%) contrast(101%);
+}
+
+/* Animation on hover */
+.nav-menu ul li a:hover .solar-icon,
+.mobile-menu ul li a:hover .solar-icon {
+    transform: scale(1.1);
+}
