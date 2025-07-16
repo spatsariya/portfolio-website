@@ -182,7 +182,7 @@
                         <li>Designed <strong>learning content, explainer videos, emailers, and digital creatives</strong> for multiple L&D and training initiatives.</li>
                         <li>Collaborated with <strong>team leads and external stakeholders</strong> to understand requirements and deliver on-brand, timely creative solutions.</li>
                         <li>Improved <strong>turnaround time by 20%</strong> through efficient stakeholder communication and design iteration.</li>
-                        <li>Maintained consistent visual quality across formats including motion graphics, interactive media, and presentations.</li>
+                        <li>Maintained consistent visual quality across formats including <strong>motion graphics, interactive media, and presentations.</strong></li>
                         <li><strong>Tools:</strong> Illustrator, Photoshop, Figma, After Effects, Premiere Pro, Adobe Animate, Camtasia, Pawtoon, SharePoint, SendGrid, Outlook.</li>
                     </ul>
                 </div>
