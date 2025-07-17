@@ -13,8 +13,8 @@
   <meta name="author" content="Shivam Patsariya">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Favicon -->
-    <link rel="icon" href="images/fav-ico.gif" type="image/gif">
-    <link rel="apple-touch-icon" href="images/fav-ico.gif">
+    <link rel="icon" href="images/fav-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/fav-icon.png" type="image/png">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
     <meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
