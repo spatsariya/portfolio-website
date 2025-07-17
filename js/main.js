@@ -4,11 +4,20 @@
 
 // Initialize AOS animations
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS animations
+    // Initialize AOS animations with improved settings for better reliability
     AOS.init({
-        duration: 800,
-        once: false,
-        mirror: true
+        duration: 600,
+        once: true,
+        mirror: false,
+        offset: 50,
+        delay: 0,
+        easing: 'ease-out-cubic',
+        disable: function() {
+            // Disable AOS on very small screens or if user prefers reduced motion
+            var maxWidth = 768;
+            var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            return window.innerWidth < maxWidth || prefersReducedMotion;
+        }
     });
 
     // Mobile menu toggle
@@ -119,8 +128,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     detailsDiv.style.display = 'none';
                     this.setAttribute('data-expanded', 'false');
                     toggleText.textContent = 'View more';
+<<<<<<< HEAD
                     toggleIcon.classList.remove('fa-chevron-up');
                     toggleIcon.classList.add('fa-chevron-down');
+=======
+                    if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                        toggleIcon.src = 'icons/chevron-down.svg';
+                        toggleIcon.alt = 'Expand';
+                    }
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                     console.log(`Collapsed timeline item ${index + 1}`);
                 } else {
                     // Expand
@@ -130,8 +146,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     }, 10);
                     this.setAttribute('data-expanded', 'true');
                     toggleText.textContent = 'View less';
+<<<<<<< HEAD
                     toggleIcon.classList.remove('fa-chevron-down');
                     toggleIcon.classList.add('fa-chevron-up');
+=======
+                    if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                        toggleIcon.src = 'icons/chevron-up.svg';
+                        toggleIcon.alt = 'Collapse';
+                    }
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                     console.log(`Expanded timeline item ${index + 1}`);
                 }
             });
@@ -176,8 +199,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 timelineDetails.style.display = 'none';
                 this.setAttribute('data-expanded', 'false');
                 toggleText.textContent = 'View more';
+<<<<<<< HEAD
                 toggleIcon.classList.remove('fa-chevron-up');
                 toggleIcon.classList.add('fa-chevron-down');
+=======
+                if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                    toggleIcon.src = 'icons/chevron-down.svg';
+                    toggleIcon.alt = 'Expand';
+                }
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 console.log(`Manually collapsed item ${index + 1}`);
             } else {
                 // Expand
@@ -187,8 +217,15 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 10);
                 this.setAttribute('data-expanded', 'true');
                 toggleText.textContent = 'View less';
+<<<<<<< HEAD
                 toggleIcon.classList.remove('fa-chevron-down');
                 toggleIcon.classList.add('fa-chevron-up');
+=======
+                if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                    toggleIcon.src = 'icons/chevron-up.svg';
+                    toggleIcon.alt = 'Collapse';
+                }
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 console.log(`Manually expanded item ${index + 1}`);
             }
         });
