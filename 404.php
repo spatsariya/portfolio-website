@@ -9,7 +9,7 @@ include 'includes/header.php';
             <div class="error-animation" data-aos="fade-up">
                 <div class="error-number">404</div>
                 <div class="error-illustration">
-                    <i class="fas fa-search"></i>
+                    <span class="solar-icon search" style="width: 48px; height: 48px;"></span>
                 </div>
             </div>
             <div class="error-text" data-aos="fade-up" data-aos-delay="200">
@@ -17,10 +17,10 @@ include 'includes/header.php';
                 <p>Oops! The page you're looking for seems to have wandered off into the digital void. Don't worry, even the best designs sometimes need a redirect.</p>
                 <div class="error-actions">
                     <a href="/" class="btn btn-primary">
-                        <i class="fas fa-home"></i> Back to Home
+                        <span class="solar-icon home" style="width: 16px; height: 16px;"></span> Back to Home
                     </a>
                     <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Contact Me
+                        <span class="solar-icon envelope" style="width: 16px; height: 16px;"></span> Contact Me
                     </a>
                 </div>
             </div>
@@ -30,15 +30,15 @@ include 'includes/header.php';
             <h3>While you're here, check out:</h3>
             <div class="suggestion-links">
                 <a href="#projects" class="suggestion-item">
-                    <i class="fas fa-briefcase"></i>
+                    <span class="solar-icon briefcase" style="width: 20px; height: 20px;"></span>
                     <span>My Projects</span>
                 </a>
                 <a href="#experience" class="suggestion-item">
-                    <i class="fas fa-user-tie"></i>
+                    <span class="solar-icon user-tie" style="width: 20px; height: 20px;"></span>
                     <span>Experience</span>
                 </a>
                 <a href="#certifications" class="suggestion-item">
-                    <i class="fas fa-certificate"></i>
+                    <span class="solar-icon certificate" style="width: 20px; height: 20px;"></span>
                     <span>Certifications</span>
                 </a>
             </div>

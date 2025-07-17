@@ -23,9 +23,9 @@
                     <a href="#contact" class="btn btn-secondary">Let's Connect</a>
                 </div>
                 <div class="hero-social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><span class="solar-icon linkedin" style="width: 20px; height: 20px;"></span></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><span class="solar-icon dribbble" style="width: 20px; height: 20px;"></span></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><span class="solar-icon behance" style="width: 20px; height: 20px;"></span></a>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
@@ -52,7 +52,7 @@
     <div class="hero-scroll">
         <a href="#about">
             <span>Discover More</span>
-            <i class="fas fa-chevron-down"></i>
+            <span class="solar-icon chevron-down" style="width: 16px; height: 16px;"></span>
         </a>
     </div>
 </section>   
@@ -90,7 +90,7 @@
                         <span class="detail-value">Available for new opportunities</span>
                     </div>
                 </div>
-                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Get a copy of Resume <i class="fas fa-download"></i></a>
+                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Get a copy of Resume <span class="solar-icon download" style="width: 16px; height: 16px;"></span></a>
             </div>
             <div class="about-stats" data-aos="fade-left" data-aos-delay="100">
                 <div class="stat-item">
@@ -145,7 +145,7 @@
                         
                         <button class="timeline-toggle" data-expanded="false">
                             <span class="toggle-text">View more</span>
-                            <i class="fas fa-chevron-down toggle-icon"></i>
+                            <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;"></span>
                         </button>
                     </div>
                 </div>
@@ -518,7 +518,7 @@
         <div class="certifications-grid">
             <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="certification-icon">
-                    <i class="fas fa-building"></i>
+                    <span class="solar-icon building" style="width: 24px; height: 24px;"></span>
                 </div>
                 <div class="certification-content">
                     <h3>InstiWitty Media Studios</h3>
@@ -528,7 +528,7 @@
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
                 <div class="certification-icon">
-                    <i class="fas fa-heart"></i>
+                    <span class="solar-icon heart" style="width: 24px; height: 24px;"></span>
                 </div>
                 <div class="certification-content">
                     <h3>Aashayen Foundation</h3>
@@ -538,7 +538,7 @@
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
                 <div class="certification-icon">
-                    <i class="fas fa-graduation-cap"></i>
+                    <span class="solar-icon graduation-cap" style="width: 24px; height: 24px;"></span>
                 </div>
                 <div class="certification-content">
                     <h3>Microsoft Student Association</h3>
@@ -547,7 +547,7 @@
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
                 <div class="certification-icon">
-                    <i class="fas fa-paint-brush"></i>
+                    <span class="solar-icon paint-brush" style="width: 24px; height: 24px;"></span>
                 </div>
                 <div class="certification-content">
                     <h3>OmniCan</h3>
@@ -557,7 +557,7 @@
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
                 <div class="certification-icon">
-                    <i class="fas fa-paint-brush"></i>
+                    <span class="solar-icon paint-brush" style="width: 24px; height: 24px;"></span>
                 </div>
                 <div class="certification-content">
                     <h3>EazyHaven</h3>
@@ -567,7 +567,7 @@
             </div>
             <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
                 <div class="certification-icon">
-                    <i class="fas fa-certificate"></i>
+                    <span class="solar-icon certificate" style="width: 24px; height: 24px;"></span>
                 </div>
                 <div class="certification-content">
                     <h3>Dahej</h3>
@@ -644,7 +644,7 @@
                 <div class="contact-details">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                            <span class="solar-icon phone" style="width: 24px; height: 24px;"></span>
                         </div>
                         <div class="contact-text">
                             <h4>Phone</h4>
@@ -654,7 +654,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <span class="solar-icon envelope" style="width: 24px; height: 24px;"></span>
                         </div>
                         <div class="contact-text">
                             <h4>Email</h4>
@@ -663,7 +663,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="solar-icon map-marker" style="width: 24px; height: 24px;"></span>
                         </div>
                         <div class="contact-text">
                             <h4>Location</h4>
@@ -672,7 +672,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-calendar"></i>
+                            <span class="solar-icon calendar" style="width: 24px; height: 24px;"></span>
                         </div>
                         <div class="contact-text">
                             <h4>Availability</h4>
@@ -681,11 +681,11 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><span class="solar-icon linkedin" style="width: 20px; height: 20px;"></span></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><span class="solar-icon dribbble" style="width: 20px; height: 20px;"></span></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><span class="solar-icon behance" style="width: 20px; height: 20px;"></span></a>
+                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><span class="solar-icon instagram" style="width: 20px; height: 20px;"></span></a>
+                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><span class="solar-icon twitter" style="width: 20px; height: 20px;"></span></a>
                 </div>
             </div>
             <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm">
@@ -705,7 +705,7 @@
                         <label for="message">Your Message</label>
                         <textarea name="message" id="message" placeholder="Tell me about your project..." required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                    <button type="submit" class="btn btn-primary">Send Message <span class="solar-icon paper-plane" style="width: 16px; height: 16px;"></span></button>
                 </form>
                 <div id="form-response" class="form-response"></div>
             </div>

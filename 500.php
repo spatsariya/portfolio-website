@@ -9,7 +9,7 @@ include 'includes/header.php';
             <div class="error-animation" data-aos="fade-up">
                 <div class="error-number">500</div>
                 <div class="error-illustration">
-                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="solar-icon warning" style="width: 48px; height: 48px;"></span>
                 </div>
             </div>
             <div class="error-text" data-aos="fade-up" data-aos-delay="200">
@@ -17,10 +17,10 @@ include 'includes/header.php';
                 <p>Something went wrong on our end. I'm already working on fixing this issue. Please try again in a few moments, or feel free to reach out if the problem persists.</p>
                 <div class="error-actions">
                     <a href="/" class="btn btn-primary">
-                        <i class="fas fa-refresh"></i> Try Again
+                        <span class="solar-icon refresh" style="width: 16px; height: 16px;"></span> Try Again
                     </a>
                     <a href="#contact" class="btn btn-secondary">
-                        <i class="fas fa-envelope"></i> Report Issue
+                        <span class="solar-icon envelope" style="width: 16px; height: 16px;"></span> Report Issue
                     </a>
                 </div>
             </div>
@@ -30,15 +30,15 @@ include 'includes/header.php';
             <h3>Meanwhile, you can:</h3>
             <div class="suggestion-links">
                 <a href="/" class="suggestion-item">
-                    <i class="fas fa-home"></i>
+                    <span class="solar-icon home" style="width: 20px; height: 20px;"></span>
                     <span>Go Home</span>
                 </a>
                 <a href="mailto:contact@imshivam.com" class="suggestion-item">
-                    <i class="fas fa-envelope"></i>
+                    <span class="solar-icon envelope" style="width: 20px; height: 20px;"></span>
                     <span>Email Me</span>
                 </a>
                 <a href="https://www.linkedin.com/in/shivampatsariya/" class="suggestion-item" target="_blank">
-                    <i class="fab fa-linkedin"></i>
+                    <span class="solar-icon linkedin" style="width: 20px; height: 20px;"></span>
                     <span>LinkedIn</span>
                 </a>
             </div>

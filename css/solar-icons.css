@@ -43,6 +43,232 @@
     background-image: url('../icons/education.svg');
 }
 
+/* Content Solar Icons */
+.solar-icon.chevron-down {
+    background-image: url('../icons/chevron-down.svg');
+}
+
+.solar-icon.chevron-up {
+    background-image: url('../icons/chevron-up.svg');
+}
+
+.solar-icon.download {
+    background-image: url('../icons/download.svg');
+}
+
+.solar-icon.phone {
+    background-image: url('../icons/phone.svg');
+}
+
+.solar-icon.envelope {
+    background-image: url('../icons/envelope.svg');
+}
+
+.solar-icon.map-marker {
+    background-image: url('../icons/map-marker.svg');
+}
+
+.solar-icon.calendar {
+    background-image: url('../icons/calendar.svg');
+}
+
+.solar-icon.building {
+    background-image: url('../icons/building.svg');
+}
+
+.solar-icon.heart {
+    background-image: url('../icons/heart.svg');
+}
+
+.solar-icon.graduation-cap {
+    background-image: url('../icons/graduation-cap.svg');
+}
+
+.solar-icon.paint-brush {
+    background-image: url('../icons/paint-brush.svg');
+}
+
+.solar-icon.certificate {
+    background-image: url('../icons/certificate.svg');
+}
+
+.solar-icon.search {
+    background-image: url('../icons/search.svg');
+}
+
+.solar-icon.home {
+    background-image: url('../icons/home.svg');
+}
+
+.solar-icon.linkedin {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Network, IT, Programming/Programming.svg');
+}
+
+.solar-icon.behance {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Palette.svg');
+}
+
+.solar-icon.instagram {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Like/Heart.svg');
+}
+
+.solar-icon.twitter {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Messages, Conversation/Chat Round.svg');
+}
+
+.solar-icon.refresh {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Arrows/Refresh.svg');
+}
+
+.solar-icon.warning {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Essentional, UI/Danger Triangle.svg');
+}
+
+.solar-icon.palette {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Palette.svg');
+}
+
+.solar-icon.design-tools {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Ruler.svg');
+}
+
+.solar-icon.user-edit {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Users/User.svg');
+}
+
+.solar-icon.vector {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Three Squares.svg');
+}
+
+.solar-icon.sitemap {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Network, IT, Programming/Structure.svg');
+}
+
+.solar-icon.lightbulb {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Essentional, UI/Magic Stick.svg');
+}
+
+.solar-icon.chart-line {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Business, Statistic/Graph Up.svg');
+}
+
+.solar-icon.figma {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Essentional, UI/Figma.svg');
+}
+
+.solar-icon.briefcase {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/School/Case.svg');
+}
+
+.solar-icon.user-tie {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Users/User.svg');
+}
+
+.solar-icon.paper-plane {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Messages, Conversation/Plain.svg');
+}
+
+/* Additional Solar Icons for Certifications and Content */
+.solar-icon.code {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Network, IT, Programming/Code.svg');
+}
+
+.solar-icon.javascript {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Network, IT, Programming/Programming.svg');
+}
+
+.solar-icon.css {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Palette.svg');
+}
+
+.solar-icon.html {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Network, IT, Programming/Code.svg');
+}
+
+.solar-icon.shield {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Security/Shield Check.svg');
+}
+
+.solar-icon.vial {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Medicine/Flask.svg');
+}
+
+.solar-icon.bullhorn {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Video, Audio, Sound/Speaker.svg');
+}
+
+.solar-icon.chart-pie {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Business, Statistic/Pie Chart.svg');
+}
+
+.solar-icon.chart-bar {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Business, Statistic/Chart.svg');
+}
+
+.solar-icon.bullseye {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Essentional, UI/Target.svg');
+}
+
+.solar-icon.shopping-cart {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Shopping, Ecommerce/Cart 2.svg');
+}
+
+.solar-icon.google {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Search/Magnifer.svg');
+}
+
+.solar-icon.globe {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Map & Location/Global.svg');
+}
+
+.solar-icon.share {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Essentional, UI/Share.svg');
+}
+
+.solar-icon.youtube {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Video, Audio, Sound/Play Circle.svg');
+}
+
+.solar-icon.ad {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Palette.svg');
+}
+
+.solar-icon.tasks {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/List/List Check.svg');
+}
+
+.solar-icon.heartbeat {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Medicine/Heart.svg');
+}
+
+.solar-icon.first-aid {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Medicine/Medical Kit.svg');
+}
+
+.solar-icon.award {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Like/Medal Star.svg');
+}
+
+.solar-icon.language {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Network, IT, Programming/Translation.svg');
+}
+
+.solar-icon.user-graduate {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/School/Square Academic Cap.svg');
+}
+
+.solar-icon.adobe {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Palette.svg');
+}
+
+.solar-icon.sketch {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Design, Tools/Ruler.svg');
+}
+
+.solar-icon.universal-access {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold Duotone/Essentional, UI/Accessibility.svg');
+}
+
 /* Desktop Navigation Solar Icons */
 .nav-menu .solar-icon {
     width: 14px;
