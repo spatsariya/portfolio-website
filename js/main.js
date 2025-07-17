@@ -313,11 +313,11 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
 
-        // Hide/show header on scroll
+        // Hide/show header on scroll using top property instead of transform
         if (scrollTop > lastScrollTop && scrollTop > 200) {
-            header.style.transform = 'translateY(-100%)';
+            header.style.top = '-100px';
         } else {
-            header.style.transform = 'translateY(0)';
+            header.style.top = '20px';
         }
         lastScrollTop = scrollTop;
     });
