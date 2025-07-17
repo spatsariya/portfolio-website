@@ -128,15 +128,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     detailsDiv.style.display = 'none';
                     this.setAttribute('data-expanded', 'false');
                     toggleText.textContent = 'View more';
-<<<<<<< HEAD
                     toggleIcon.classList.remove('fa-chevron-up');
                     toggleIcon.classList.add('fa-chevron-down');
-=======
-                    if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                        toggleIcon.src = 'icons/chevron-down.svg';
-                        toggleIcon.alt = 'Expand';
-                    }
->>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                     console.log(`Collapsed timeline item ${index + 1}`);
                 } else {
                     // Expand
@@ -146,15 +139,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     }, 10);
                     this.setAttribute('data-expanded', 'true');
                     toggleText.textContent = 'View less';
-<<<<<<< HEAD
                     toggleIcon.classList.remove('fa-chevron-down');
                     toggleIcon.classList.add('fa-chevron-up');
-=======
-                    if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                        toggleIcon.src = 'icons/chevron-up.svg';
-                        toggleIcon.alt = 'Collapse';
-                    }
->>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                     console.log(`Expanded timeline item ${index + 1}`);
                 }
             });
@@ -199,15 +185,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 timelineDetails.style.display = 'none';
                 this.setAttribute('data-expanded', 'false');
                 toggleText.textContent = 'View more';
-<<<<<<< HEAD
                 toggleIcon.classList.remove('fa-chevron-up');
                 toggleIcon.classList.add('fa-chevron-down');
-=======
-                if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                    toggleIcon.src = 'icons/chevron-down.svg';
-                    toggleIcon.alt = 'Expand';
-                }
->>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 console.log(`Manually collapsed item ${index + 1}`);
             } else {
                 // Expand
@@ -217,15 +196,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 10);
                 this.setAttribute('data-expanded', 'true');
                 toggleText.textContent = 'View less';
-<<<<<<< HEAD
                 toggleIcon.classList.remove('fa-chevron-down');
                 toggleIcon.classList.add('fa-chevron-up');
-=======
-                if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                    toggleIcon.src = 'icons/chevron-up.svg';
-                    toggleIcon.alt = 'Collapse';
-                }
->>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 console.log(`Manually expanded item ${index + 1}`);
             }
         });
