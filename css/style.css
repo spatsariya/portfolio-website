@@ -206,8 +206,7 @@ section {
 }
 
 .header.scrolled {
-    padding: 15px 30px;
-    top: 10px;
+padding: 20px 30px;
     background: linear-gradient(135deg, rgb(251 251 251 / 95%), rgb(212 246 255 / 85%));
     box-shadow: 0 5px 30px rgba(198, 231, 255, 0.5);
 }
