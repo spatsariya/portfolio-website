@@ -4,11 +4,20 @@
 
 // Initialize AOS animations
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS animations
+    // Initialize AOS animations with improved settings for better reliability
     AOS.init({
-        duration: 800,
-        once: false,
-        mirror: true
+        duration: 600,
+        once: true,
+        mirror: false,
+        offset: 50,
+        delay: 0,
+        easing: 'ease-out-cubic',
+        disable: function() {
+            // Disable AOS on very small screens or if user prefers reduced motion
+            var maxWidth = 768;
+            var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            return window.innerWidth < maxWidth || prefersReducedMotion;
+        }
     });
 
     // Mobile menu toggle
