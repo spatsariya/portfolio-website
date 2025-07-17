@@ -145,7 +145,7 @@
                         
                         <button class="timeline-toggle" data-expanded="false">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                     </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                     </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -215,7 +215,7 @@
                     </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
                     </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -266,7 +266,7 @@
                     </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -288,7 +288,7 @@
                     </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -642,7 +642,7 @@
                         </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -665,7 +665,7 @@
                         </ul>
                         <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
                             <span class="toggle-text">View more</span>
-                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                            <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>

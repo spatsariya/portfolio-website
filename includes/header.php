@@ -35,7 +35,7 @@
       <!-- AOS Animation Library -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
       <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="css/certifications.css">
     <link rel="stylesheet" href="css/project-fixes.css">
     <link rel="stylesheet" href="css/solar-icons.css">
