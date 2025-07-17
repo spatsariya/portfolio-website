@@ -13,8 +13,18 @@
   <meta name="author" content="Shivam Patsariya">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Favicon -->
-    <link rel="icon" href="images/fav-ico.png" type="image/png">
-    
+    <link rel="icon" href="images/fav-ico.gif" type="image/gif">
+    <link rel="apple-touch-icon" href="images/fav-ico.gif">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
+    <meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
+    <meta property="og:image" content="https://imshivam.com/images/land-2.png" />
+    <meta property="og:url" content="https://imshivam.com/" />  
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
+    <meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
+    <meta name="twitter:image" content="https://imshivam.com/images/land-2.png" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
