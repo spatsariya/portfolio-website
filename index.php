@@ -7,6 +7,9 @@
 
 <?php include 'includes/header.php'; ?>
 
+<!-- Add the favicon link here -->
+<link rel="icon" type="image/gif" href="images/fav-ico.gif">
+
 <!-- Hero Section -->
 <section id="hero" class="hero-section">
     <div class="container">
