@@ -618,90 +618,82 @@
 
 <!-- Contact Section -->
 <section id="contact" class="contact-section">
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
+    <div class="container">        <div class="section-header" data-aos="fade-up">
             <h2>Get In Touch</h2>
             <div class="section-line"></div>
         </div>
         <p class="section-subheading">Let's collaborate on your next project</p>
-        
-        <!-- Intro Text -->
-        <div class="contact-intro" data-aos="fade-up" data-aos-delay="100">
-            <h3>Let's Create Something Amazing Together</h3>
-            <p>I'm always interested in hearing about new projects and opportunities. Whether you need a complete design overhaul or just want to discuss potential collaborations, I'm here to help turn your vision into reality.</p>
-        </div>
-        
-        <!-- Contact Form -->
-        <div class="contact-form" data-aos="fade-up" data-aos-delay="200">
-            <form action="process-form-simple.php" method="POST" id="contactForm">
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" placeholder="What's this about?">
-                </div>
-                <div class="form-group">
-                    <label for="message">Your Message</label>
-                    <textarea name="message" id="message" placeholder="Tell me about your project..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
-            </form>
-            <div id="form-response" class="form-response"></div>
-        </div>
-        
-        <!-- Contact Information -->
-        <div class="contact-info" data-aos="fade-up" data-aos-delay="300">
-            <div class="contact-details">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
+        <div class="contact-content">
+            <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
+                <h3>Let's Create Something Amazing Together</h3>
+                <p>I'm always interested in hearing about new projects and opportunities. Whether you need a complete design overhaul or just want to discuss potential collaborations, I'm here to help turn your vision into reality.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+1 (647) 333 9098</p>
+                            <p>+1 (647) 274 5418</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h4>Phone</h4>
-                        <p>+1 (647) 333 9098</p>
-                        <p>+1 (647) 274 5418</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>contact@imshivam.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>East York, Ontario, Canada</p>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p>contact@imshivam.com</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Availability</h4>
+                            <p>Open to freelance & full-time opportunities</p>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Location</h4>
-                        <p>East York, Ontario, Canada</p>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-calendar"></i>
-                    </div>
-                    <div class="contact-text">
-                        <h4>Availability</h4>
-                        <p>Open to freelance & full-time opportunities</p>
-                    </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
-                <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="What's this about?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <div id="form-response" class="form-response"></div>
             </div>
         </div>
     </div>
