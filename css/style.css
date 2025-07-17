@@ -731,7 +731,7 @@ padding: 20px 30px;
 }
 
 .experience-timeline::after {
-    /* content: ''; */
+    content: '';
     position: absolute;
     bottom: 40px;
     left: 50%;
@@ -2099,7 +2099,6 @@ padding: 20px 30px;
 .timeline-toggle .toggle-text {
     font-size: 0.85rem;
 }
-
 
 /* Responsive adjustments for timeline toggle */
 @media (max-width: 768px) {
