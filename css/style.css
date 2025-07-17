@@ -697,6 +697,20 @@ section {
     border-radius: 2px;
 }
 
+.experience-timeline::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+    border: 3px solid var(--light-color);
+    box-shadow: 0 4px 12px rgba(255, 221, 174, 0.6);
+}
+
 .timeline-item {
     position: relative;
     margin-bottom: 60px;
@@ -808,16 +822,26 @@ section {
     font-weight: 600;
     margin-bottom: 15px;
     border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 8px rgba(198, 231, 255, 0.3);
 }
 
 .timeline-content h3 {
     margin-bottom: 5px;
+    color: var(--dark-color);
+    font-weight: 700;
 }
 
 .timeline-content h4 {
     color: var(--gray-color);
     font-weight: 500;
     margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.timeline-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
 .timeline-list {
@@ -1577,6 +1601,14 @@ section {
     .experience-timeline::before {
         left: 15px;
         height: calc(100% - 20px);
+    }
+
+    .experience-timeline::after {
+        left: 15px;
+        bottom: 20px;
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--light-color);
     }
 
     .timeline-dot {
