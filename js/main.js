@@ -302,7 +302,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Header scroll effect
     const header = document.querySelector('.header');
-    let lastScrollTop = 0;
 
     window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -313,13 +312,8 @@ document.addEventListener('DOMContentLoaded', function() {
             header.classList.remove('scrolled');
         }
 
-        // Hide/show header on scroll using top property instead of transform
-        if (scrollTop > lastScrollTop && scrollTop > 200) {
-            header.style.top = '-100px';
-        } else {
-            header.style.top = '20px';
-        }
-        lastScrollTop = scrollTop;
+        // Keep header always visible - removed hide/show functionality
+        // Header will always stay in place
     });
 
     // Form submission
