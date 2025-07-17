@@ -145,13 +145,15 @@
 .certification-item::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 4px;
     background: linear-gradient(135deg, #C6E7FF, #FFDDAE);
     opacity: 0;
     transition: var(--transition);
+    border-radius: 15px 15px 0 0;
+    z-index: 2;
 }
 
 .certification-item:hover {
