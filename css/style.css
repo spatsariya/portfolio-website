@@ -698,7 +698,7 @@ section {
 }
 
 .experience-timeline::after {
-    /* content: ''; */
+    content: '';
     position: absolute;
     bottom: 40px;
     left: 50%;
