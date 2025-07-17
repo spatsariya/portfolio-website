@@ -2096,6 +2096,14 @@ padding: 20px 30px;
     transform: rotate(180deg);
 }
 
+.timeline-toggle[data-expanded="true"] .toggle-text::after {
+    content: " less";
+}
+
+.timeline-toggle[data-expanded="false"] .toggle-text::after {
+    content: " more";
+}
+
 .timeline-toggle .toggle-text {
     font-size: 0.85rem;
 }
