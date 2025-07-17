@@ -1963,3 +1963,51 @@ section {
         border-radius: 8px;
     }
 }
+
+/* ===== Scroll to Top Button ===== */
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--dark-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(198, 231, 255, 0.4);
+    transition: var(--transition);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100px);
+    z-index: 1000;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-to-top:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(198, 231, 255, 0.6);
+}
+
+.scroll-to-top:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive adjustments for scroll to top button */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.1rem;
+    }
+}

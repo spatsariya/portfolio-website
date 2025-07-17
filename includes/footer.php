@@ -29,7 +29,14 @@
                 <p>&copy; <?php echo date("Y"); ?> Shivam Patsariya. All rights reserved.</p>
             </div>
         </div>
-    </footer>    <!-- AOS Animation Library -->
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- AOS Animation Library -->
 
 
     
