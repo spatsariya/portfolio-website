@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleBtn.setAttribute('data-converted', 'true');
             toggleBtn.innerHTML = `
                 <span class="toggle-text">View more</span>
-                <img src="icons/arrow-down.svg" alt="Expand" class="toggle-icon">
+                <i class="fas fa-chevron-down toggle-icon"></i>
             `;
             
             // Move the timeline-list to details
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     this.setAttribute('data-expanded', 'false');
                     toggleText.textContent = 'View more';
                     if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                        toggleIcon.src = 'icons/arrow-down.svg';
+                        toggleIcon.src = 'icons/chevron-down.svg';
                         toggleIcon.alt = 'Expand';
                     }
                     console.log(`Collapsed timeline item ${index + 1}`);
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     this.setAttribute('data-expanded', 'true');
                     toggleText.textContent = 'View less';
                     if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                        toggleIcon.src = 'icons/arrow-up.svg';
+                        toggleIcon.src = 'icons/chevron-up.svg';
                         toggleIcon.alt = 'Collapse';
                     }
                     console.log(`Expanded timeline item ${index + 1}`);
@@ -157,10 +157,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Initialize timeline expandable after a short delay to ensure all content is loaded
-    // Disabled auto-conversion since all timeline items already have manual structure
-    // setTimeout(() => {
-    //     initializeTimelineExpandable();
-    // }, 500);
+    setTimeout(() => {
+        initializeTimelineExpandable();
+    }, 500);
     
     // Timeline Expandable Functionality for manually created elements
     const timelineToggles = document.querySelectorAll('.timeline-toggle');
@@ -191,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.setAttribute('data-expanded', 'false');
                 toggleText.textContent = 'View more';
                 if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                    toggleIcon.src = 'icons/arrow-down.svg';
+                    toggleIcon.src = 'icons/chevron-down.svg';
                     toggleIcon.alt = 'Expand';
                 }
                 console.log(`Manually collapsed item ${index + 1}`);
@@ -204,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.setAttribute('data-expanded', 'true');
                 toggleText.textContent = 'View less';
                 if (toggleIcon && toggleIcon.tagName === 'IMG') {
-                    toggleIcon.src = 'icons/arrow-up.svg';
+                    toggleIcon.src = 'icons/chevron-up.svg';
                     toggleIcon.alt = 'Collapse';
                 }
                 console.log(`Manually expanded item ${index + 1}`);

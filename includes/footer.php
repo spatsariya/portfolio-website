@@ -51,6 +51,6 @@
     <script src="js/certification-init.js"></script>
     
     <!-- Custom JavaScript -->
-    <script src="js/main.js?v=<?php echo time(); ?>"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
