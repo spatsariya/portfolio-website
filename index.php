@@ -145,7 +145,7 @@
                         
                         <button class="timeline-toggle" data-expanded="false">
                             <span class="toggle-text">View more</span>
-                            <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;"></span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
                         </button>
                     </div>
                 </div>
@@ -157,7 +157,8 @@
                     <h3>Product Design Lead</h3>
                     <h4>Virgin Plus (Bell Canada)</h4>
                     <p>Led the end-to-end redesign of the <strong>MyBenefits mobile app</strong> used by <strong>1M+ active users</strong>, collaborating with PMs and engineers across iOS, Android, and web.</p>
-                    <ul class="timeline-list">
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
                         <li><strong>Redesigned the entire app experience</strong>, resolving major <strong>usability and accessibility issues</strong>, boosting the App Store rating from <strong>1.3★ to 4.5★.</strong></li>
                         <li>Created and launched <strong>“GetOnThis”</strong> event ticket redemption flow, replacing clunky 3rd-party redirects with <strong>a seamless in-app journey.</strong></li>
                         <li>Introduced a <strong>gamified rewards system</strong>, leading to a <strong>75% increase in feature engagement</strong> and a <strong>55% boost in average session time.</strong></li>
@@ -165,6 +166,11 @@
                         <li><strong>Tools</strong>: Figma, InVision, Axure, Illustrator, After Effects, Keynote.</li>
 
                     </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -174,7 +180,8 @@
                     <h3>Senior Graphics Designer</h3>
                     <h4>Media.net</h4>
                     <p>Produced high-volume, multi-format <strong>marketing creatives</strong> to support global ad campaigns, product launches, and app visibility.</p>
-                    <ul class="timeline-list">
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
                         <li>Designed <strong>emailers, ad banners, app UI mockups, Play Store/App Store assets</strong>, and high-conversion <strong>animated ad videos.</strong></li>
                         <li>Introduced <strong>component-based ad creative library</strong>, enabling scalable production across <strong>multiple dimensions and resolutions.</strong></li>
                         <li>Implemented <strong>email templating system</strong> for faster creative delivery, reducing turnaround time by over <strong>30%</strong>.</li>
@@ -184,6 +191,11 @@
                         <li><strong>Tools:</strong> Figma, After Effects, Premiere Pro, Illustrator, Photoshop, Google Ad Creative Generator.</li>
 
                     </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -193,13 +205,19 @@
                     <h3>Senior Analyst Visual Design</h3>
                     <h4>Accenture, ATCi</h4>
                     <p>Delivered high-impact visual content for internal teams and <strong>government clients in the US and India</strong>, aligned with learning and communication goals.</p>
-                    <ul class="timeline-list">
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
                         <li>Designed <strong>learning content, explainer videos, emailers, and digital creatives</strong> for multiple L&D and training initiatives.</li>
                         <li>Collaborated with <strong>team leads and external stakeholders</strong> to understand requirements and deliver on-brand, timely creative solutions.</li>
                         <li>Improved <strong>turnaround time by 20%</strong> through efficient stakeholder communication and design iteration.</li>
                         <li>Maintained consistent visual quality across formats including <strong>motion graphics, interactive media, and presentations.</strong></li>
                         <li><strong>Tools:</strong> Illustrator, Photoshop, Figma, After Effects, Premiere Pro, Adobe Animate, Camtasia, Pawtoon, SharePoint, SendGrid, Outlook.</li>
                     </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -209,7 +227,8 @@
                     <h3>Social Communication Manager & Admissions Manager</h3>
                     <h4>NIMS University, Jaipur</h4>
                     <p>Managed social media presence, communication strategies, and student admissions for 15 academic Graduatestreams and K–12 schooling, enhancing the university’s digital footprint and engagement.</p>
-                    <ul class="timeline-list">
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
                         <li>Developed and executed a comprehensive <strong>social media strategy</strong>, increasing student engagement and boosting application rates.</li>
                         <li>Created engaging content and managed <strong>crisis communications</strong>, enhancing reputation management online.</li>
                         <li>Directed <strong>lead generation</strong> through <strong>Google Ads</strong>, <strong>Meta Ads</strong>, and digital campaigns targeting domestic and international students.</li>
@@ -220,6 +239,11 @@
                         <li>Delivered <strong>guest lectures</strong> on <strong>Branding, Design, and Digital Communication</strong> for <strong>Management and Fine Arts students</strong>.</li>
                         <li>Facilitated <strong>online and in-person workshops</strong> for students, junior designers, and interns at <strong>InstiWitty Media Studios</strong>, <strong>NIMS University</strong>, and <strong>Virgin Plus</strong>.</li>
                     </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
 
@@ -230,7 +254,8 @@
                     <h3>Product Designer</h3>
                     <h4>Flipkart</h4>
                     <p>Led the <strong>UX and visual design</strong> for multiple high-impact Flipkart initiatives including India’s <strong>first social commerce app</strong>, reaching millions of users.</p>
-                    <ul class="timeline-list">
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
                         <li>Designed end-to-end interfaces for <strong>2Gud Social Commerce</strong> and <strong>Shopsy</strong>, enabling users to <strong>shop directly from video content</strong>, merging entertainment with e-commerce. </li>
                         <li>Shaped the experience for <strong>reseller-driven social commerce</strong> through Shopsy, streamlining discovery, carting, and earning workflows. </li>
                         <li>Delivered <strong>marketing assets</strong> for <strong>SuperCoin</strong>, <strong>2Gud</strong>, and <strong>Shopsy</strong> including <strong>push notifications</strong>, <strong>emailers</strong>, <strong>ad creatives</strong>, and <strong>promotional videos</strong>. </li>
@@ -239,6 +264,11 @@
                         <li>Achieved <strong>89% app engagement rate</strong> and drove app ratings to <strong>4.7★</strong> through polished UX and high-performance design. </li>
                         <li>Tools: <strong>Figma</strong>, <strong>Photoshop</strong>, <strong>Illustrator</strong>, <strong>Lottie</strong>, <strong>Framer</strong>. </li>
                     </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -248,13 +278,19 @@
                     <h3>Customer Experience Lead</h3>
                     <h4>NextGen Invent Corporation</h4>
                     <p>Led design initiatives to enhance <strong>client-facing websites</strong> and <strong>internal tools</strong>, focusing on usability, accessibility, and visual appeal.</p>
-                    <ul class="timeline-list">
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
                         <li>Designed <strong>social media creatives</strong>, <strong>promotional videos</strong>, and <strong>brand assets</strong> to support marketing campaigns and client acquisition.</li>
                         <li><strong>Redesigned client websites and apps</strong>, resolving major <strong>usability</strong> and <strong>accessibility</strong> issues to improve engagement and user satisfaction.</li>
                         <li>Collaborated closely with <strong>developers</strong> and <strong>PMs</strong> to execute seamless handoffs and align design with product functionality.</li>
                         <li>Contributed to improved <strong>site rankings</strong> and <strong>user reach</strong> through design-driven enhancements across multiple client platforms.</li>
                         <li>Tools: <strong>Figma</strong>, <strong>Adobe Creative Suite</strong>, <strong>Dreamweaver</strong>.</li>
                     </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -596,13 +632,19 @@
                     <h3>Global Business Management</h3>
                     <h4>Fleming College, Ontario, Canada</h4>
                     <p>Specializing in international business strategies, cross-cultural management, and global marketing with a focus on digital transformation.</p>
-                    <ul class="timeline-list">
-                        <li>Global Business Strategies and Leadership</li>
-                        <li>International Marketing and Digital Branding</li>
-                        <li>Cross-Cultural Management and Communication</li>
-                        <li>Financial Management for Global Operations</li>
-                        <li>Digital Transformation and Innovation</li>
-                    </ul>
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
+                            <li>Global Business Strategies and Leadership</li>
+                            <li>International Marketing and Digital Branding</li>
+                            <li>Cross-Cultural Management and Communication</li>
+                            <li>Financial Management for Global Operations</li>
+                            <li>Digital Transformation and Innovation</li>
+                        </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
@@ -613,13 +655,19 @@
                     <h3>Computer Science Engineering</h3>
                     <h4>Jiwaji University, Madhya Pradesh, India</h4>
                     <p>Comprehensive education in computer science principles, programming, and software development with additional focus on design and user experience.</p>
-                    <ul class="timeline-list">
-                        <li>Data Structures and Algorithms</li>
-                        <li>Software Engineering and Development</li>
-                        <li>Database Management Systems</li>
-                        <li>Web Development and UI Design</li>
-                        <li>Computer Networks and Security</li>
-                    </ul>
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Software Engineering and Development</li>
+                            <li>Database Management Systems</li>
+                            <li>Web Development and UI Design</li>
+                            <li>Computer Networks and Security</li>
+                        </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
