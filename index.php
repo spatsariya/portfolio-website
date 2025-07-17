@@ -147,10 +147,14 @@
                             <span class="toggle-text">View more</span>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;"></span>
 =======
                             <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
 >>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
+=======
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+>>>>>>> parent of 3aa1e74 (icons update with Solar Icons)
 =======
                             <i class="fas fa-chevron-down toggle-icon"></i>
 >>>>>>> parent of 3aa1e74 (icons update with Solar Icons)
