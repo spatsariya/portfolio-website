@@ -2011,3 +2011,78 @@ section {
         font-size: 1.1rem;
     }
 }
+
+/* ===== Expandable Timeline Styles ===== */
+.timeline-expandable {
+    position: relative;
+}
+
+.timeline-details {
+    overflow: hidden;
+    transition: all 0.4s ease;
+    max-height: 0;
+    opacity: 0;
+}
+
+.timeline-details.expanded {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.timeline-toggle {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--dark-color);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 15px;
+    transition: var(--transition);
+    box-shadow: 0 2px 8px rgba(198, 231, 255, 0.3);
+}
+
+.timeline-toggle:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(198, 231, 255, 0.4);
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+    font-size: 0.8rem;
+}
+
+.timeline-toggle[data-expanded="true"] .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.timeline-toggle[data-expanded="true"] .toggle-text::after {
+    content: " less";
+}
+
+.timeline-toggle[data-expanded="false"] .toggle-text::after {
+    content: " more";
+}
+
+.timeline-toggle .toggle-text {
+    font-size: 0.85rem;
+}
+
+/* Responsive adjustments for timeline toggle */
+@media (max-width: 768px) {
+    .timeline-toggle {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        border-radius: 16px;
+    }
+    
+    .timeline-details.expanded {
+        max-height: 600px;
+    }
+}

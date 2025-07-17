@@ -129,14 +129,30 @@
                     <h3>UI/UX Designer</h3>
                     <h4>rCycle</h4>
                     <p>Leading design initiatives for <strong>sustainability-focused applications</strong>, creating <strong>user-centered solutions</strong> that promote <strong>environmental responsibility</strong>.</p>
-                    <ul class="timeline-list">
-                        <li>Redesigned the <strong>mobile app interface</strong>, resulting in a <strong>35%</strong> increase in <strong>user engagement</strong> and a <strong>42%</strong> improvement in <strong>user retention rates</strong></li>
-                        <li>Led comprehensive <strong>usability testing</strong>, to identify pain points and create data-driven solutions</li>
-                        <li>Developed and implemented a <strong>modular design system</strong> that reduced design inconsistencies by <strong>60%</strong> and accelerated development cycles by <strong>25%</strong></li>
-                        <li>Created responsive designs that improved <strong>accessibility scores</strong> from <strong>72%</strong> to <strong>98%</strong>, ensuring compliance with <strong>WCAG 2.1 standards</strong></li>
-                        <li>Facilitated <strong>cross-functional design workshops</strong> that aligned stakeholders across <strong>product, engineering, and marketing teams</strong> on sustainable design practices</li>
-                        <li>Implemented user behavioral analytics that provided insights leading to a <strong>28%</strong> increase in <strong>recycling activity</strong> among app users</li>
-                    </ul>
+                    
+                    <!-- Collapsible content -->
+                    <div class="timeline-expandable">
+                        <div class="timeline-summary">
+                            <ul class="timeline-list">
+                                <li>Redesigned the <strong>mobile app interface</strong>, resulting in a <strong>35%</strong> increase in <strong>user engagement</strong> and a <strong>42%</strong> improvement in <strong>user retention rates</strong></li>
+                                <li>Led comprehensive <strong>usability testing</strong>, to identify pain points and create data-driven solutions</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="timeline-details" style="display: none;">
+                            <ul class="timeline-list">
+                                <li>Developed and implemented a <strong>modular design system</strong> that reduced design inconsistencies by <strong>60%</strong> and accelerated development cycles by <strong>25%</strong></li>
+                                <li>Created responsive designs that improved <strong>accessibility scores</strong> from <strong>72%</strong> to <strong>98%</strong>, ensuring compliance with <strong>WCAG 2.1 standards</strong></li>
+                                <li>Facilitated <strong>cross-functional design workshops</strong> that aligned stakeholders across <strong>product, engineering, and marketing teams</strong> on sustainable design practices</li>
+                                <li>Implemented user behavioral analytics that provided insights leading to a <strong>28%</strong> increase in <strong>recycling activity</strong> among app users</li>
+                            </ul>
+                        </div>
+                        
+                        <button class="timeline-toggle" data-expanded="false">
+                            <span class="toggle-text">View more</span>
+                            <i class="fas fa-chevron-down toggle-icon"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
