@@ -699,9 +699,4 @@
     </div>
 </section>
 
-<!-- Scroll to Top Button -->
-<button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
-    <i class="fas fa-chevron-up"></i>
-</button>
-
 <?php include 'includes/footer.php'; ?>
