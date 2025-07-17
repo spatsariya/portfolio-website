@@ -128,8 +128,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     detailsDiv.style.display = 'none';
                     this.setAttribute('data-expanded', 'false');
                     toggleText.textContent = 'View more';
-                    toggleIcon.classList.remove('fa-chevron-up');
-                    toggleIcon.classList.add('fa-chevron-down');
+                    if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                        toggleIcon.src = 'icons/chevron-down.svg';
+                        toggleIcon.alt = 'Expand';
+                    }
                     console.log(`Collapsed timeline item ${index + 1}`);
                 } else {
                     // Expand
@@ -139,8 +141,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     }, 10);
                     this.setAttribute('data-expanded', 'true');
                     toggleText.textContent = 'View less';
-                    toggleIcon.classList.remove('fa-chevron-down');
-                    toggleIcon.classList.add('fa-chevron-up');
+                    if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                        toggleIcon.src = 'icons/chevron-up.svg';
+                        toggleIcon.alt = 'Collapse';
+                    }
                     console.log(`Expanded timeline item ${index + 1}`);
                 }
             });
@@ -185,8 +189,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 timelineDetails.style.display = 'none';
                 this.setAttribute('data-expanded', 'false');
                 toggleText.textContent = 'View more';
-                toggleIcon.classList.remove('fa-chevron-up');
-                toggleIcon.classList.add('fa-chevron-down');
+                if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                    toggleIcon.src = 'icons/chevron-down.svg';
+                    toggleIcon.alt = 'Expand';
+                }
                 console.log(`Manually collapsed item ${index + 1}`);
             } else {
                 // Expand
@@ -196,8 +202,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 10);
                 this.setAttribute('data-expanded', 'true');
                 toggleText.textContent = 'View less';
-                toggleIcon.classList.remove('fa-chevron-down');
-                toggleIcon.classList.add('fa-chevron-up');
+                if (toggleIcon && toggleIcon.tagName === 'IMG') {
+                    toggleIcon.src = 'icons/chevron-up.svg';
+                    toggleIcon.alt = 'Collapse';
+                }
                 console.log(`Manually expanded item ${index + 1}`);
             }
         });
