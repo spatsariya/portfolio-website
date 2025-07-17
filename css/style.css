@@ -190,26 +190,24 @@ section {
 .header {
     position: fixed;
     top: 20px;
-    left: 20px;
-    right: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1000;
     backdrop-filter: blur(5px);
     transition: var(--transition);
-    padding: 20px 20px;
+    padding: 20px 30px;
     border-radius: 100px;
+    width: 90%;
     max-width: 1200px;
-    margin: 0 auto;
     box-shadow: 0 10px 40px rgba(198, 231, 255, 0.4);
     background: linear-gradient(135deg, rgba(251, 251, 251, 0.9), rgba(212, 246, 255, 0.8));
     border: 1px solid rgba(198, 231, 255, 0.3);
 }
 
 .header.scrolled {
-        padding: 20px 20px;
-        top: 20px;
-    /* background-color: rgba(255, 255, 255, 0.98); */
-    /* background: linear-gradient(135deg, rgba(251, 251, 251, 0.95), rgba(212, 246, 255, 0.9)); */
-    background: linear-gradient(135deg, rgb(251 251 251 / 41%), rgb(212 246 255 / 32%));
+    padding: 15px 30px;
+    top: 10px;
+    background: linear-gradient(135deg, rgb(251 251 251 / 95%), rgb(212 246 255 / 85%));
     box-shadow: 0 5px 30px rgba(198, 231, 255, 0.5);
 }
 
@@ -1691,10 +1689,10 @@ section {
     .header {
         position: fixed;
         top: 20px;
-        left: 20px;
-        right: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
         max-width: 350px;
-        margin: 0 auto;
         z-index: 1000;
         backdrop-filter: blur(15px);
         transition: var(--transition);
