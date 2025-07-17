@@ -49,10 +49,84 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Timeline Expandable Functionality
+    // Timeline Expandable Functionality - Auto-convert existing timeline items
+    function initializeTimelineExpandable() {
+        const timelineItems = document.querySelectorAll('.timeline-item');
+        
+        timelineItems.forEach(item => {
+            const timelineContent = item.querySelector('.timeline-content');
+            const timelineList = timelineContent.querySelector('.timeline-list');
+            
+            // Skip if already has expandable structure or no timeline-list
+            if (timelineContent.querySelector('.timeline-expandable') || !timelineList) {
+                return;
+            }
+            
+            // Create expandable structure
+            const expandableDiv = document.createElement('div');
+            expandableDiv.className = 'timeline-expandable';
+            
+            const detailsDiv = document.createElement('div');
+            detailsDiv.className = 'timeline-details';
+            detailsDiv.style.display = 'none';
+            
+            const toggleBtn = document.createElement('button');
+            toggleBtn.className = 'timeline-toggle';
+            toggleBtn.setAttribute('data-expanded', 'false');
+            toggleBtn.innerHTML = `
+                <span class="toggle-text">View more</span>
+                <i class="fas fa-chevron-down toggle-icon"></i>
+            `;
+            
+            // Move the timeline-list to details
+            detailsDiv.appendChild(timelineList.cloneNode(true));
+            timelineList.remove();
+            
+            // Append to expandable div
+            expandableDiv.appendChild(detailsDiv);
+            expandableDiv.appendChild(toggleBtn);
+            
+            // Append expandable div to timeline content
+            timelineContent.appendChild(expandableDiv);
+            
+            // Add click event to this specific toggle button
+            toggleBtn.addEventListener('click', function() {
+                const toggleIcon = this.querySelector('.toggle-icon');
+                const toggleText = this.querySelector('.toggle-text');
+                const isExpanded = this.getAttribute('data-expanded') === 'true';
+                
+                if (isExpanded) {
+                    // Collapse
+                    detailsDiv.classList.remove('expanded');
+                    detailsDiv.style.display = 'none';
+                    this.setAttribute('data-expanded', 'false');
+                    toggleText.textContent = 'View more';
+                } else {
+                    // Expand
+                    detailsDiv.style.display = 'block';
+                    setTimeout(() => {
+                        detailsDiv.classList.add('expanded');
+                    }, 10);
+                    this.setAttribute('data-expanded', 'true');
+                    toggleText.textContent = 'View less';
+                }
+            });
+        });
+    }
+    
+    // Initialize timeline expandable
+    initializeTimelineExpandable();
+    
+    // Timeline Expandable Functionality for manually created elements
     const timelineToggles = document.querySelectorAll('.timeline-toggle');
     
     timelineToggles.forEach(toggle => {
+        // Skip if already has event listener (from auto-conversion)
+        if (toggle.hasAttribute('data-listener-added')) {
+            return;
+        }
+        
+        toggle.setAttribute('data-listener-added', 'true');
         toggle.addEventListener('click', function() {
             const timelineExpandable = this.closest('.timeline-expandable');
             const timelineDetails = timelineExpandable.querySelector('.timeline-details');
@@ -63,13 +137,17 @@ document.addEventListener('DOMContentLoaded', function() {
             if (isExpanded) {
                 // Collapse
                 timelineDetails.classList.remove('expanded');
+                timelineDetails.style.display = 'none';
                 this.setAttribute('data-expanded', 'false');
-                toggleText.textContent = 'View';
+                toggleText.textContent = 'View more';
             } else {
                 // Expand
-                timelineDetails.classList.add('expanded');
+                timelineDetails.style.display = 'block';
+                setTimeout(() => {
+                    timelineDetails.classList.add('expanded');
+                }, 10);
                 this.setAttribute('data-expanded', 'true');
-                toggleText.textContent = 'View';
+                toggleText.textContent = 'View less';
             }
         });
     });

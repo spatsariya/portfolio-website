@@ -2025,7 +2025,7 @@ section {
 }
 
 .timeline-details.expanded {
-    max-height: 500px;
+    max-height: 1000px;
     opacity: 1;
     margin-top: 10px;
 }
