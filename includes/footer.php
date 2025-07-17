@@ -7,11 +7,11 @@
                     <p>UI/UX & Visual Design Specialist</p>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><span class="solar-icon linkedin" style="width: 20px; height: 20px;"></span></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><span class="solar-icon dribbble" style="width: 20px; height: 20px;"></span></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><span class="solar-icon behance" style="width: 20px; height: 20px;"></span></a>
-                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><span class="solar-icon instagram" style="width: 20px; height: 20px;"></span></a>
-                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><span class="solar-icon twitter" style="width: 20px; height: 20px;"></span></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div class="footer-nav">
                     <ul>
@@ -33,7 +33,7 @@
     
     <!-- Scroll to Top Button -->
     <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
-        <span class="solar-icon chevron-up" style="width: 16px; height: 16px;"></span>
+        <i class="fas fa-chevron-up"></i>
     </button>
     
     <!-- AOS Animation Library -->
