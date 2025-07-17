@@ -90,7 +90,7 @@
                         <span class="detail-value">Available for new opportunities</span>
                     </div>
                 </div>
-                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Download CV <i class="fas fa-download"></i></a>
+                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Get a copy of Resume <i class="fas fa-download"></i></a>
             </div>
             <div class="about-stats" data-aos="fade-left" data-aos-delay="100">
                 <div class="stat-item">
