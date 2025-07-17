@@ -392,29 +392,27 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show/hide button based on scroll position
         window.addEventListener('scroll', function() {
             if (window.pageYOffset > 300) {
-                scrollToTopBtn.classList.add('show');
+                scrollToTopBtn.classList.add('visible');
             } else {
-                scrollToTopBtn.classList.remove('show');
+                scrollToTopBtn.classList.remove('visible');
             }
         });
         
         // Smooth scroll to top when button is clicked
-        scrollToTopBtn.addEventListener('click', function() {
+        scrollToTopBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Smooth scroll to top
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
             });
-        });
-        
-        // Add keyboard accessibility
-        scrollToTopBtn.addEventListener('keydown', function(e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                window.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            }
+            
+            // Add a subtle animation feedback
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = '';
+            }, 150);
         });
     }
 });

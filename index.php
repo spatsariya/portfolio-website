@@ -699,8 +699,8 @@
     </div>
 </section>
 
-<!-- Scroll to Top Button -->
-<button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+<!-- Go to Top Button -->
+<button id="scrollToTop" class="scroll-to-top" aria-label="Go to top">
     <i class="fas fa-chevron-up"></i>
 </button>
 
