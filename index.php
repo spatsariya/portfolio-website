@@ -145,7 +145,11 @@
                         
                         <button class="timeline-toggle" data-expanded="false">
                             <span class="toggle-text">View more</span>
+<<<<<<< HEAD
                             <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;"></span>
+=======
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                         </button>
                     </div>
                 </div>
@@ -165,6 +169,14 @@
                         <li><strong>Tools</strong>: Figma, InVision, Axure, Illustrator, After Effects, Keynote.</li>
 
                     </ul>
+<<<<<<< HEAD
+=======
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -184,6 +196,14 @@
                         <li><strong>Tools:</strong> Figma, After Effects, Premiere Pro, Illustrator, Photoshop, Google Ad Creative Generator.</li>
 
                     </ul>
+<<<<<<< HEAD
+=======
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -200,6 +220,14 @@
                         <li>Maintained consistent visual quality across formats including <strong>motion graphics, interactive media, and presentations.</strong></li>
                         <li><strong>Tools:</strong> Illustrator, Photoshop, Figma, After Effects, Premiere Pro, Adobe Animate, Camtasia, Pawtoon, SharePoint, SendGrid, Outlook.</li>
                     </ul>
+<<<<<<< HEAD
+=======
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -220,6 +248,14 @@
                         <li>Delivered <strong>guest lectures</strong> on <strong>Branding, Design, and Digital Communication</strong> for <strong>Management and Fine Arts students</strong>.</li>
                         <li>Facilitated <strong>online and in-person workshops</strong> for students, junior designers, and interns at <strong>InstiWitty Media Studios</strong>, <strong>NIMS University</strong>, and <strong>Virgin Plus</strong>.</li>
                     </ul>
+<<<<<<< HEAD
+=======
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
 
@@ -239,6 +275,14 @@
                         <li>Achieved <strong>89% app engagement rate</strong> and drove app ratings to <strong>4.7★</strong> through polished UX and high-performance design. </li>
                         <li>Tools: <strong>Figma</strong>, <strong>Photoshop</strong>, <strong>Illustrator</strong>, <strong>Lottie</strong>, <strong>Framer</strong>. </li>
                     </ul>
+<<<<<<< HEAD
+=======
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -255,6 +299,14 @@
                         <li>Contributed to improved <strong>site rankings</strong> and <strong>user reach</strong> through design-driven enhancements across multiple client platforms.</li>
                         <li>Tools: <strong>Figma</strong>, <strong>Adobe Creative Suite</strong>, <strong>Dreamweaver</strong>.</li>
                     </ul>
+<<<<<<< HEAD
+=======
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
@@ -596,6 +648,7 @@
                     <h3>Global Business Management</h3>
                     <h4>Fleming College, Ontario, Canada</h4>
                     <p>Specializing in international business strategies, cross-cultural management, and global marketing with a focus on digital transformation.</p>
+<<<<<<< HEAD
                     <ul class="timeline-list">
                         <li>Global Business Strategies and Leadership</li>
                         <li>International Marketing and Digital Branding</li>
@@ -603,6 +656,21 @@
                         <li>Financial Management for Global Operations</li>
                         <li>Digital Transformation and Innovation</li>
                     </ul>
+=======
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
+                            <li>Global Business Strategies and Leadership</li>
+                            <li>International Marketing and Digital Branding</li>
+                            <li>Cross-Cultural Management and Communication</li>
+                            <li>Financial Management for Global Operations</li>
+                            <li>Digital Transformation and Innovation</li>
+                        </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
@@ -613,6 +681,7 @@
                     <h3>Computer Science Engineering</h3>
                     <h4>Jiwaji University, Madhya Pradesh, India</h4>
                     <p>Comprehensive education in computer science principles, programming, and software development with additional focus on design and user experience.</p>
+<<<<<<< HEAD
                     <ul class="timeline-list">
                         <li>Data Structures and Algorithms</li>
                         <li>Software Engineering and Development</li>
@@ -620,6 +689,21 @@
                         <li>Web Development and UI Design</li>
                         <li>Computer Networks and Security</li>
                     </ul>
+=======
+                    <div class="timeline-expandable">
+                        <ul class="timeline-list">
+                            <li>Data Structures and Algorithms</li>
+                            <li>Software Engineering and Development</li>
+                            <li>Database Management Systems</li>
+                            <li>Web Development and UI Design</li>
+                            <li>Computer Networks and Security</li>
+                        </ul>
+                        <button class="timeline-toggle" data-aos="fade-up" data-aos-delay="300">
+                            <span class="toggle-text">View more</span>
+                            <img src="icons/chevron-down.svg" alt="Expand" class="toggle-icon">
+                        </button>
+                    </div>
+>>>>>>> parent of eb45879 (sdfcdsvcfdzxczx)
                 </div>
             </div>
         </div>
