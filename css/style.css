@@ -1434,6 +1434,19 @@ padding: 20px 30px;
     box-sizing: border-box;
 }
 
+/* Fieldset styling */
+fieldset {
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+}
+
+legend {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .form-group {
     position: relative;
     margin-bottom: 20px;
