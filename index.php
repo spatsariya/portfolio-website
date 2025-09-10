@@ -23,9 +23,9 @@
                     <a href="#contact" class="btn btn-secondary">Let's Connect</a>
                 </div>
                 <div class="hero-social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><span class="solar-icon linkedin" style="width: 20px; height: 20px;"></span></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><span class="solar-icon dribbble" style="width: 20px; height: 20px;"></span></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><span class="solar-icon behance" style="width: 20px; height: 20px;"></span></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="width: 20px; height: 20px;"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble" style="width: 20px; height: 20px;"></i></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance" style="width: 20px; height: 20px;"></i></a>
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
@@ -52,7 +52,7 @@
     <div class="hero-scroll">
         <a href="#about">
             <span>Discover More</span>
-            <span class="solar-icon chevron-down" style="width: 16px; height: 16px;"></span>
+            <i class="fas fa-chevron-down" style="width: 16px; height: 16px;"></i>
         </a>
     </div>
 </section>   
@@ -92,7 +92,7 @@
                         <span class="detail-value">Available for new opportunities</span>
                     </div>
                 </div>
-                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Get a copy of Resume <span class="solar-icon download" style="width: 16px; height: 16px;"></span></a>
+                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Get a copy of Resume <i class="fas fa-download" style="width: 16px; height: 16px;"></i></a>
             </div>
             <div class="about-stats" data-aos="fade-left" data-aos-delay="100">
                 <div class="stat-item">
@@ -147,7 +147,7 @@
                         
                         <button class="timeline-toggle" data-expanded="false" aria-expanded="false" aria-controls="timeline-details-1" aria-label="Expand to view more details about this role">
                             <span class="toggle-text">View</span>
-                            <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;" aria-hidden="true"></span>
+                            <i class="fas fa-chevron-down toggle-icon" style="width: 16px; height: 16px;" aria-hidden="true"></i>
                         </button>
                     </div>
                 </div>
@@ -646,7 +646,7 @@
                 <div class="contact-details">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <span class="solar-icon phone" style="width: 24px; height: 24px;"></span>
+                            <i class="fas fa-phone" style="width: 24px; height: 24px;"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Phone</h4>
@@ -656,7 +656,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <span class="solar-icon envelope" style="width: 24px; height: 24px;"></span>
+                            <i class="fas fa-envelope" style="width: 24px; height: 24px;"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Email</h4>
@@ -665,7 +665,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <span class="solar-icon map-marker" style="width: 24px; height: 24px;"></span>
+                            <i class="fas fa-map-marker-alt" style="width: 24px; height: 24px;"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Location</h4>
@@ -674,7 +674,7 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <span class="solar-icon calendar" style="width: 24px; height: 24px;"></span>
+                            <i class="fas fa-calendar-alt" style="width: 24px; height: 24px;"></i>
                         </div>
                         <div class="contact-text">
                             <h4>Availability</h4>
@@ -683,11 +683,11 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><span class="solar-icon linkedin" style="width: 20px; height: 20px;"></span></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><span class="solar-icon dribbble" style="width: 20px; height: 20px;"></span></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><span class="solar-icon behance" style="width: 20px; height: 20px;"></span></a>
-                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><span class="solar-icon instagram" style="width: 20px; height: 20px;"></span></a>
-                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><span class="solar-icon twitter" style="width: 20px; height: 20px;"></span></a>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="width: 20px; height: 20px;"></i></a>
+                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble" style="width: 20px; height: 20px;"></i></a> -->
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance" style="width: 20px; height: 20px;"></i></a>
+                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="width: 20px; height: 20px;"></i></a>
+                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="width: 20px; height: 20px;"></i></a>
                 </div>
             </div>
             <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm" novalidate>
@@ -714,7 +714,7 @@
                         <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
                     </div>
                     </fieldset>
-                    <button type="submit" class="btn btn-primary" aria-describedby="submit-help">Send Message <span class="solar-icon paper-plane" style="width: 16px; height: 16px;" aria-hidden="true"></span></button>
+                    <button type="submit" class="btn btn-primary" aria-describedby="submit-help">Send Message <i class="fas fa-paper-plane" style="width: 16px; height: 16px;" aria-hidden="true"></i></button>
                     <div id="submit-help" class="form-help">Your message will be sent directly to Shivam Patsariya</div>
                 </form>
                 <div id="form-response" class="form-response" role="status" aria-live="polite"></div>

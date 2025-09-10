@@ -77,3 +77,209 @@
 .mobile-menu ul li a:hover .solar-icon {
     transform: scale(1.1);
 }
+
+/* Social Media and Action Icons */
+.solar-icon.linkedin {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg');
+}
+
+.solar-icon.behance {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/behance.svg');
+}
+
+.solar-icon.instagram {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg');
+}
+
+.solar-icon.twitter {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg');
+}
+
+.solar-icon.dribbble {
+    background-image: url('https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dribbble.svg');
+}
+
+/* Contact and Action Icons */
+.solar-icon.phone {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Call/Phone.svg');
+}
+
+.solar-icon.envelope {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Messages, Conversation/Letter.svg');
+}
+
+.solar-icon.map-marker {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Map & Location/Map Point.svg');
+}
+
+.solar-icon.calendar {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Time/Calendar.svg');
+}
+
+.solar-icon.chevron-down {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Arrows/Alt Arrow Down.svg');
+}
+
+.solar-icon.download {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Arrows Action/Download.svg');
+}
+
+.solar-icon.paper-plane {
+    background-image: url('../Solar-Icon-Set-main/icons/SVG/Bold/Messages, Conversation/Plain 2.svg');
+}
+
+/* Social Media Icons Styling */
+.social-links .solar-icon {
+    width: 20px;
+    height: 20px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(7%) saturate(1151%) hue-rotate(185deg) brightness(95%) contrast(86%);
+}
+
+.social-links a:hover .solar-icon {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1919%) hue-rotate(201deg) brightness(103%) contrast(101%);
+}
+
+/* Contact Icons Styling */
+.contact-icon .solar-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1919%) hue-rotate(201deg) brightness(103%) contrast(101%);
+}
+
+/* Hero Section Icon Styling */
+.hero-social-links .solar-icon {
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(7%) saturate(1151%) hue-rotate(185deg) brightness(95%) contrast(86%);
+}
+
+.hero-social-links a:hover .solar-icon {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: brightness(0) saturate(100%) invert(54%) sepia(98%) saturate(1919%) hue-rotate(201deg) brightness(103%) contrast(101%);
+}
+
+/* Scroll Down Icon */
+.hero-scroll .solar-icon {
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+    filter: brightness(0) saturate(100%) invert(33%) sepia(7%) saturate(1151%) hue-rotate(185deg) brightness(95%) contrast(86%);
+}
+
+/* Download and Action Icons */
+.btn .solar-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    opacity: 0.9;
+}
+
+/* Timeline Toggle Icons */
+.timeline-toggle .solar-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.timeline-toggle[data-expanded="true"] .solar-icon {
+    transform: rotate(180deg);
+}
+
+/* Font Awesome Icons Styling */
+/* Social Media Icons */
+.hero-social-links i {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    opacity: 1;
+    transition: all 0.3s ease;
+    color: #2c3e50; /* Dark color fallback */
+    color: var(--dark-color);
+}
+
+.hero-social-links a:hover i {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #C6E7FF; /* Primary color fallback */
+    color: var(--primary-color);
+}
+
+.social-links i {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    opacity: 1;
+    color: #2c3e50; /* Dark color fallback */
+    color: var(--dark-color);
+}
+
+.social-links a:hover i {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #C6E7FF; /* Primary color fallback */
+    color: var(--primary-color);
+}
+
+/* Contact Icons */
+.contact-icon i {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    opacity: 1;
+    color: #C6E7FF; /* Primary color fallback */
+    color: var(--primary-color);
+}
+
+/* Button Icons */
+.btn i {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    margin-left: 8px;
+    opacity: 0.9;
+    color: inherit; /* Inherit button text color */
+}
+
+/* Hero Scroll Icon */
+.hero-scroll i {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    opacity: 0.8;
+    color: #2c3e50; /* Dark color fallback */
+    color: var(--dark-color);
+}
+
+/* Timeline Toggle Icons */
+.timeline-toggle i {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    color: inherit; /* Inherit button text color */
+}
+
+.timeline-toggle[data-expanded="true"] i {
+    transform: rotate(180deg);
+}
+
+/* Ensure Font Awesome icons are visible with proper contrast */
+i.fab, i.fas {
+    line-height: 1;
+    font-style: normal;
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
