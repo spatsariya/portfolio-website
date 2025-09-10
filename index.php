@@ -146,7 +146,7 @@
                         </div>
                         
                         <button class="timeline-toggle" data-expanded="false">
-                            <span class="toggle-text">View more</span>
+                            <span class="toggle-text">View</span>
                             <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;"></span>
                         </button>
                     </div>

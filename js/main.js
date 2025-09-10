@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleBtn.setAttribute('data-expanded', 'false');
             toggleBtn.setAttribute('data-converted', 'true');
             toggleBtn.innerHTML = `
-                <span class="toggle-text">View more</span>
+                <span class="toggle-text">View</span>
                 <i class="fas fa-chevron-down toggle-icon"></i>
             `;
             
@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     detailsDiv.classList.remove('expanded');
                     detailsDiv.style.display = 'none';
                     this.setAttribute('data-expanded', 'false');
-                    toggleText.textContent = 'View more';
+                    toggleText.textContent = 'View';
                     toggleIcon.classList.remove('fa-chevron-up');
                     toggleIcon.classList.add('fa-chevron-down');
                     console.log(`Collapsed timeline item ${index + 1}`);
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         detailsDiv.classList.add('expanded');
                     }, 10);
                     this.setAttribute('data-expanded', 'true');
-                    toggleText.textContent = 'View less';
+                    toggleText.textContent = 'View';
                     toggleIcon.classList.remove('fa-chevron-down');
                     toggleIcon.classList.add('fa-chevron-up');
                     console.log(`Expanded timeline item ${index + 1}`);
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 timelineDetails.classList.remove('expanded');
                 timelineDetails.style.display = 'none';
                 this.setAttribute('data-expanded', 'false');
-                toggleText.textContent = 'View more';
+                toggleText.textContent = 'View';
                 toggleIcon.classList.remove('fa-chevron-up');
                 toggleIcon.classList.add('fa-chevron-down');
                 console.log(`Manually collapsed item ${index + 1}`);
@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     timelineDetails.classList.add('expanded');
                 }, 10);
                 this.setAttribute('data-expanded', 'true');
-                toggleText.textContent = 'View less';
+                toggleText.textContent = 'View';
                 toggleIcon.classList.remove('fa-chevron-down');
                 toggleIcon.classList.add('fa-chevron-up');
                 console.log(`Manually expanded item ${index + 1}`);

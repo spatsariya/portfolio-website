@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Collapse
                 timelineDetails.classList.remove('expanded');
                 this.setAttribute('data-expanded', 'false');
-                toggleText.textContent = 'View';
+                toggleText.textContent = 'View more';
             } else {
                 // Expand
                 timelineDetails.classList.add('expanded');
                 this.setAttribute('data-expanded', 'true');
-                toggleText.textContent = 'View';
+                toggleText.textContent = 'View less';
             }
         });
     });
