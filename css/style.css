@@ -1373,13 +1373,13 @@ padding: 20px 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--dark-color);
+    background: #2c3e50 !important;
+    color: white !important;
     border-radius: 50%;
     margin-right: 15px;
     font-size: 1.2rem;
-    box-shadow: 0 8px 20px var(--shadow-light);
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 20px rgba(44, 62, 80, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .contact-text h4 {

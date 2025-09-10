@@ -236,8 +236,7 @@
     height: 24px;
     font-size: 24px;
     opacity: 1;
-    color: #C6E7FF; /* Primary color fallback */
-    color: var(--primary-color);
+    color: white !important;
 }
 
 /* Button Icons */
