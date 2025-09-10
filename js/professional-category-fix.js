@@ -11,82 +11,75 @@ document.addEventListener('DOMContentLoaded', function() {
     const allButton = document.querySelector('.cert-filter-btn[data-filter="all"]');
     
     if (professionalButton && professionalCategory) {
-        console.log('Professional category setup - ready to fix filtering');
+        // Professional category setup - ready to fix filtering
         
         // Make sure the professional category has proper attributes
         professionalCategory.setAttribute('data-category-type', 'professional');
         
         // Force professional category to be visible initially
         if (window.getComputedStyle(professionalCategory).display === 'none') {
-            console.log('Professional category was initially hidden - fixing...');
             professionalCategory.style.display = 'block';
         }
-        
-        // Add a special click handler for the professional button
-        professionalButton.addEventListener('click', function(e) {
-            console.log('Professional button clicked');
-            
-            // Show the professional category IMMEDIATELY
-            professionalCategory.style.display = 'block';
-            professionalCategory.classList.add('active-category');
-            
-            // Add a special class to the body to help with CSS targeting
-            document.body.classList.add('show-professional');
-            
-            // Hide all other categories
-            document.querySelectorAll('.cert-category').forEach(cat => {
-                if (cat.id !== 'professional-category') {
-                    cat.style.display = 'none';
-                    cat.classList.remove('active-category');
-                }
-            });
-            
-            // Also set it again after a slight delay to override any other scripts
-            setTimeout(() => {
-                professionalCategory.style.display = 'block';
-                professionalCategory.classList.add('active-category');
-            }, 50);
-        });
-        
-        // Also monitor all button clicks to reset properly
-        if (allButton) {
-            allButton.addEventListener('click', function() {
-                professionalCategory.style.display = 'block';
-                document.body.classList.remove('show-professional');
-            });
-        }
-        
-        // Monitor all other filter buttons
-        filterButtons.forEach(btn => {
-            if (btn !== professionalButton && btn !== allButton) {
-                btn.addEventListener('click', function() {
-                    // When any other category button is clicked, make sure professional is hidden
-                    professionalCategory.style.display = 'none';
-                    professionalCategory.classList.remove('active-category');
-                    document.body.classList.remove('show-professional');
-                });
-            }
-        });
     }
     
-    // Add a global event listener to catch any display changes to professional category
+    // Enhanced professional category filtering logic
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filterValue = this.getAttribute('data-filter');
+            
+            // Special handling for professional category filter
+            if (filterValue === 'professional' && professionalCategory) {
+                // Force show professional category
+                professionalCategory.style.display = 'block';
+                professionalCategory.classList.add('active-category');
+                
+                // Make sure it's visible and properly styled
+                setTimeout(() => {
+                    if (window.getComputedStyle(professionalCategory).display === 'none') {
+                        professionalCategory.style.display = 'block !important';
+                        professionalCategory.style.opacity = '1';
+                        professionalCategory.style.transform = 'translateY(0)';
+                    }
+                }, 100);
+            }
+            
+            // Special handling for 'all' filter to ensure professional category is shown
+            if (filterValue === 'all' && professionalCategory) {
+                professionalCategory.style.display = 'block';
+                professionalCategory.classList.add('active-category');
+            }
+        });
+    });
+    
+    // Ensure professional category is always properly styled when visible
     const observer = new MutationObserver(function(mutations) {
         mutations.forEach(function(mutation) {
-            if (mutation.target === professionalCategory && 
-                mutation.attributeName === 'style' &&
-                professionalButton.classList.contains('active')) {
-                    
-                // If the professional button is active but the category is hidden, show it
-                if (professionalCategory.style.display === 'none') {
-                    professionalCategory.style.display = 'block';
-                    console.log('Corrected professional category visibility');
+            if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
+                const target = mutation.target;
+                if (target.id === 'professional-category') {
+                    // If professional category became visible, ensure it's properly styled
+                    if (window.getComputedStyle(target).display !== 'none') {
+                        target.style.opacity = '1';
+                        target.style.transform = 'translateY(0)';
+                    }
                 }
             }
         });
     });
     
-    // Start observing the professional category for attribute changes
     if (professionalCategory) {
-        observer.observe(professionalCategory, { attributes: true });
+        observer.observe(professionalCategory, {
+            attributes: true,
+            attributeFilter: ['style']
+        });
     }
+    
+    // Final fallback - force professional category to be visible after page load
+    setTimeout(() => {
+        if (professionalCategory && window.getComputedStyle(professionalCategory).display === 'none') {
+            professionalCategory.style.display = 'block';
+            professionalCategory.style.opacity = '1';
+            professionalCategory.style.transform = 'translateY(0)';
+        }
+    }, 1000);
 });

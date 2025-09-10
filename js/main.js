@@ -95,29 +95,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Timeline Expandable Functionality - Auto-convert existing timeline items
     function initializeTimelineExpandable() {
-        console.log('=== TIMELINE INITIALIZATION START ===');
         const timelineItems = document.querySelectorAll('.timeline-item');
-        console.log('Found timeline items:', timelineItems.length);
-        
         let convertedCount = 0;
         
         timelineItems.forEach((item, index) => {
             const timelineContent = item.querySelector('.timeline-content');
             const timelineList = timelineContent ? timelineContent.querySelector('.timeline-list') : null;
             
-            console.log(`Timeline item ${index + 1}:`, {
-                hasContent: !!timelineContent,
-                hasList: !!timelineList,
-                hasExpandable: timelineContent ? !!timelineContent.querySelector('.timeline-expandable') : false
-            });
-            
             // Skip if already has expandable structure or no timeline-list
             if (!timelineContent || !timelineList || timelineContent.querySelector('.timeline-expandable')) {
-                console.log(`Skipping timeline item ${index + 1} - already converted or no list`);
                 return;
             }
             
-            console.log(`*** CONVERTING timeline item ${index + 1} ***`);
             convertedCount++;
             
             // Create expandable structure
@@ -150,12 +139,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Add click event to this specific toggle button
             toggleBtn.addEventListener('click', function() {
-                console.log(`*** TOGGLE CLICKED for timeline item ${index + 1} ***`);
                 const toggleIcon = this.querySelector('.toggle-icon');
                 const toggleText = this.querySelector('.toggle-text');
                 const isExpanded = this.getAttribute('data-expanded') === 'true';
-                
-                console.log('Current state:', isExpanded ? 'expanded' : 'collapsed');
                 
                 if (isExpanded) {
                     // Collapse
@@ -165,7 +151,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     toggleText.textContent = 'View';
                     toggleIcon.classList.remove('fa-chevron-up');
                     toggleIcon.classList.add('fa-chevron-down');
-                    console.log(`Collapsed timeline item ${index + 1}`);
                 } else {
                     // Expand
                     detailsDiv.style.display = 'block';
@@ -176,15 +161,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     toggleText.textContent = 'View';
                     toggleIcon.classList.remove('fa-chevron-down');
                     toggleIcon.classList.add('fa-chevron-up');
-                    console.log(`Expanded timeline item ${index + 1}`);
                 }
             });
-            
-            console.log(`Successfully converted timeline item ${index + 1}`);
         });
-        
-        console.log(`=== CONVERSION COMPLETE: ${convertedCount} items converted ===`);
-        console.log('=== TIMELINE INITIALIZATION END ===');
     }
     
     // Initialize timeline expandable after a short delay to ensure all content is loaded
@@ -198,21 +177,16 @@ document.addEventListener('DOMContentLoaded', function() {
     timelineToggles.forEach((toggle, index) => {
         // Skip if already has event listener (from auto-conversion)
         if (toggle.hasAttribute('data-listener-added') || toggle.hasAttribute('data-converted')) {
-            console.log(`Skipping manual toggle ${index + 1} - already has listener or is converted`);
             return;
         }
         
-        console.log(`Adding manual listener to toggle ${index + 1}`);
         toggle.setAttribute('data-listener-added', 'true');
         toggle.addEventListener('click', function() {
-            console.log(`*** MANUAL TOGGLE CLICKED for item ${index + 1} ***`);
             const timelineExpandable = this.closest('.timeline-expandable');
             const timelineDetails = timelineExpandable.querySelector('.timeline-details');
             const toggleIcon = this.querySelector('.toggle-icon');
             const toggleText = this.querySelector('.toggle-text');
             const isExpanded = this.getAttribute('data-expanded') === 'true';
-            
-            console.log('Manual toggle current state:', isExpanded ? 'expanded' : 'collapsed');
             
             if (isExpanded) {
                 // Collapse
@@ -222,7 +196,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 toggleText.textContent = 'View';
                 toggleIcon.classList.remove('fa-chevron-up');
                 toggleIcon.classList.add('fa-chevron-down');
-                console.log(`Manually collapsed item ${index + 1}`);
             } else {
                 // Expand
                 timelineDetails.style.display = 'block';
@@ -233,7 +206,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 toggleText.textContent = 'View';
                 toggleIcon.classList.remove('fa-chevron-down');
                 toggleIcon.classList.add('fa-chevron-up');
-                console.log(`Manually expanded item ${index + 1}`);
             }
         });
     });
@@ -384,8 +356,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const timestamp = Date.now();
             const formAction = `./process-form-simple.php?v=${timestamp}`;
             
-            console.log('Submitting to:', formAction); // Debug log
-            
             fetch(formAction, {
                 method: 'POST',
                 body: formData,
@@ -404,7 +374,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             })
             .catch(error => {
-                console.error('Form submission error:', error);
                 showFormMessage('Network error. Please check your connection and try again.', 'error');
             })
             .finally(() => {
