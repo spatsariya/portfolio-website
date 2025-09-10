@@ -690,109 +690,90 @@
                     <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="width: 20px; height: 20px;"></i></a>
                 </div>
             </div>
-            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm" novalidate>
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
+                <!-- Traditional Form Submission - No AJAX to avoid server routing issues -->
+                <form action="process-form-simple.php" method="POST" id="contactForm" novalidate>
                     <fieldset>
                         <legend class="sr-only">Contact Information Form</legend>
-                    <div class="form-group">
-                        <label for="name">Your Name <span aria-label="required">*</span></label>
-                        <input type="text" name="name" id="name" placeholder="Enter your name" required aria-describedby="name-error">
-                        <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Your Email <span aria-label="required">*</span></label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required aria-describedby="email-error">
-                        <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" placeholder="What's this about?" aria-describedby="subject-help">
-                        <div id="subject-help" class="form-help">Optional: Brief description of your inquiry</div>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message <span aria-label="required">*</span></label>
-                        <textarea name="message" id="message" placeholder="Tell me about your project..." required aria-describedby="message-error"></textarea>
-                        <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
-                    </div>
+                        
+                        <div class="form-group">
+                            <label for="name">Your Name <span aria-label="required">*</span></label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required aria-describedby="name-error">
+                            <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email <span aria-label="required">*</span></label>
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required aria-describedby="email-error">
+                            <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" name="subject" id="subject" placeholder="What's this about?" aria-describedby="subject-help">
+                            <div id="subject-help" class="form-help">Optional: Brief description of your inquiry</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message <span aria-label="required">*</span></label>
+                            <textarea name="message" id="message" placeholder="Tell me about your project..." required aria-describedby="message-error"></textarea>
+                            <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
                     </fieldset>
-                    <button type="submit" class="btn btn-primary" aria-describedby="submit-help">Send Message <i class="fas fa-paper-plane" style="width: 16px; height: 16px;" aria-hidden="true"></i></button>
+                    
+                    <button type="submit" class="btn btn-primary" aria-describedby="submit-help">
+                        Send Message <i class="fas fa-paper-plane" style="width: 16px; height: 16px;" aria-hidden="true"></i>
+                    </button>
                     <div id="submit-help" class="form-help">Your message will be sent directly to Shivam Patsariya</div>
                 </form>
-                <div id="form-response" class="form-response" role="status" aria-live="polite"></div>
                 
-                <!-- Inline Contact Form Handler to bypass cache issues -->
+                <!-- Simple client-side validation only -->
                 <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    const contactFormInline = document.getElementById('contactForm');
-                    const formResponseInline = document.getElementById('form-response');
+                    const contactForm = document.getElementById('contactForm');
                     
-                    if (contactFormInline) {
-                        contactFormInline.addEventListener('submit', function(e) {
-                            e.preventDefault();
+                    if (contactForm) {
+                        contactForm.addEventListener('submit', function(e) {
+                            // Simple validation before traditional submission
+                            const name = document.getElementById('name').value.trim();
+                            const email = document.getElementById('email').value.trim();
+                            const message = document.getElementById('message').value.trim();
                             
-                            console.log('Inline form handler triggered');
+                            let isValid = true;
                             
-                            // Convert FormData to URL-encoded string to avoid server issues
-                            const formData = new FormData(this);
-                            const urlEncodedData = new URLSearchParams();
+                            // Clear previous errors
+                            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
                             
-                            for (const pair of formData) {
-                                urlEncodedData.append(pair[0], pair[1]);
+                            if (!name) {
+                                document.getElementById('name-error').textContent = 'Name is required';
+                                isValid = false;
                             }
                             
-                            console.log('Form data:', Object.fromEntries(urlEncodedData));
+                            if (!email) {
+                                document.getElementById('email-error').textContent = 'Email is required';
+                                isValid = false;
+                            } else if (!email.includes('@')) {
+                                document.getElementById('email-error').textContent = 'Please enter a valid email';
+                                isValid = false;
+                            }
                             
+                            if (!message) {
+                                document.getElementById('message-error').textContent = 'Message is required';
+                                isValid = false;
+                            }
+                            
+                            if (!isValid) {
+                                e.preventDefault();
+                                return false;
+                            }
+                            
+                            // Show loading state for better UX
                             const submitBtn = this.querySelector('button[type="submit"]');
-                            const originalText = submitBtn.innerHTML;
-                            
-                            // Show loading state
                             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
                             submitBtn.disabled = true;
                             
-                            // Clear previous messages
-                            formResponseInline.innerHTML = '';
-                            
-                            // Use multiple fallback URLs to avoid any routing issues
-                            const formActions = [
-                                'https://imshivam.com/process-form-simple.php',
-                                './process-form-simple.php',
-                                '/process-form-simple.php'
-                            ];
-                            
-                            let formAction = formActions[0]; // Start with absolute URL
-                            
-                            console.log('Submitting to:', formAction);
-                            
-                            fetch(formAction, {
-                                method: 'POST',
-                                body: urlEncodedData,
-                                headers: {
-                                    'X-Requested-With': 'XMLHttpRequest',
-                                    'Content-Type': 'application/x-www-form-urlencoded',
-                                    'Cache-Control': 'no-cache'
-                                }
-                            })
-                            .then(response => {
-                                console.log('Response status:', response.status);
-                                return response.json();
-                            })
-                            .then(data => {
-                                console.log('Response data:', data);
-                                if (data.status === 'success') {
-                                    formResponseInline.innerHTML = `<div class="form-message success">${data.message}</div>`;
-                                    contactFormInline.reset();
-                                } else {
-                                    formResponseInline.innerHTML = `<div class="form-message error">${data.message}</div>`;
-                                }
-                            })
-                            .catch(error => {
-                                console.error('Form submission error:', error);
-                                formResponseInline.innerHTML = '<div class="form-message error">Network error. Please try again or contact s.patsariya@gmail.com directly.</div>';
-                            })
-                            .finally(() => {
-                                // Restore button
-                                submitBtn.innerHTML = originalText;
-                                submitBtn.disabled = false;
-                            });
+                            // Allow traditional form submission to proceed
+                            return true;
                         });
                     }
                 });
