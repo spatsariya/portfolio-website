@@ -731,7 +731,16 @@
                             
                             console.log('Inline form handler triggered');
                             
+                            // Convert FormData to URL-encoded string to avoid server issues
                             const formData = new FormData(this);
+                            const urlEncodedData = new URLSearchParams();
+                            
+                            for (const pair of formData) {
+                                urlEncodedData.append(pair[0], pair[1]);
+                            }
+                            
+                            console.log('Form data:', Object.fromEntries(urlEncodedData));
+                            
                             const submitBtn = this.querySelector('button[type="submit"]');
                             const originalText = submitBtn.innerHTML;
                             
@@ -742,16 +751,23 @@
                             // Clear previous messages
                             formResponseInline.innerHTML = '';
                             
-                            // Use absolute path to avoid any routing issues
-                            const formAction = '/process-form-simple.php';
+                            // Use multiple fallback URLs to avoid any routing issues
+                            const formActions = [
+                                'https://imshivam.com/process-form-simple.php',
+                                './process-form-simple.php',
+                                '/process-form-simple.php'
+                            ];
+                            
+                            let formAction = formActions[0]; // Start with absolute URL
                             
                             console.log('Submitting to:', formAction);
                             
                             fetch(formAction, {
                                 method: 'POST',
-                                body: formData,
+                                body: urlEncodedData,
                                 headers: {
                                     'X-Requested-With': 'XMLHttpRequest',
+                                    'Content-Type': 'application/x-www-form-urlencoded',
                                     'Cache-Control': 'no-cache'
                                 }
                             })
