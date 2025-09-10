@@ -2,6 +2,7 @@
 /**
  * Simple Contact Form Processing for Shivam Patsariya's Portfolio
  * Fallback version using PHP mail() function
+ * Updated to handle server routing issues
  */
 
 // Disable error display for production
@@ -13,31 +14,46 @@ ini_set('error_log', 'php-mail-errors.log');
 // Set the content type to JSON
 header('Content-Type: application/json');
 
-// Check if the request is a POST
-if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    error_log("Non-POST request received: " . $_SERVER['REQUEST_METHOD']);
+// Handle server routing issues - check for form data in both POST and GET
+$form_data = [];
+$request_method = $_SERVER['REQUEST_METHOD'];
+
+// Log the request for debugging
+error_log("Request method: " . $request_method);
+error_log("POST data: " . print_r($_POST, true));
+error_log("GET data: " . print_r($_GET, true));
+
+// Check if we have form data in POST or GET (due to server routing issues)
+if ($request_method === 'POST' && !empty($_POST)) {
+    $form_data = $_POST;
+} elseif ($request_method === 'GET' && !empty($_GET)) {
+    // Server converted POST to GET - use GET data
+    $form_data = $_GET;
+    error_log("Server converted POST to GET - using GET data");
+} else {
+    error_log("No form data received in either POST or GET");
     http_response_code(405);
     echo json_encode(['status' => 'error', 'message' => 'Method not allowed']);
     exit;
 }
 
 // Form validation
-if (empty($_POST['name']) || empty($_POST['email']) || empty($_POST['message'])) {
+if (empty($form_data['name']) || empty($form_data['email']) || empty($form_data['message'])) {
     http_response_code(400);
     echo json_encode([
         'status' => 'error', 
         'message' => 'Please fill all required fields',
         'errors' => [
-            'name' => empty($_POST['name']) ? 'Name is required' : null,
-            'email' => empty($_POST['email']) ? 'Email is required' : null,
-            'message' => empty($_POST['message']) ? 'Message is required' : null
+            'name' => empty($form_data['name']) ? 'Name is required' : null,
+            'email' => empty($form_data['email']) ? 'Email is required' : null,
+            'message' => empty($form_data['message']) ? 'Message is required' : null
         ]
     ]);
     exit;
 }
 
 // Email validation
-if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+if (!filter_var($form_data['email'], FILTER_VALIDATE_EMAIL)) {
     http_response_code(400);
     echo json_encode([
         'status' => 'error', 
@@ -48,10 +64,10 @@ if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
 }
 
 // Sanitize inputs but keep original structure
-$name = htmlspecialchars($_POST['name']);
-$email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-$message = htmlspecialchars($_POST['message']);
-$subject = !empty($_POST['subject']) ? htmlspecialchars($_POST['subject']) : 'Contact Form Submission from Portfolio';
+$name = htmlspecialchars($form_data['name']);
+$email = filter_var($form_data['email'], FILTER_SANITIZE_EMAIL);
+$message = htmlspecialchars($form_data['message']);
+$subject = !empty($form_data['subject']) ? htmlspecialchars($form_data['subject']) : 'Contact Form Submission from Portfolio';
 
 try {
     // Set email recipient
