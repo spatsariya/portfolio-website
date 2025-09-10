@@ -20,10 +20,8 @@
 /* Category titles */
 .cert-category-title {
     margin-bottom: 30px;
-    background: linear-gradient(135deg, #C6E7FF, #FFDDAE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #2c3e50;
+    font-weight: 600;
     font-size: 24px;
     padding-bottom: 15px;
     border-bottom: 2px dashed rgba(198, 231, 255, 0.5);
@@ -430,24 +428,25 @@ body.show-professional #professional-category,
 
 /* Certificate count badges */
 .cert-count-badge {
-    background-color: var(--primary-color);
+    background-color: #2c3e50;
     color: white;
-    font-size: 12px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 700;
     border-radius: 20px;
-    padding: 2px 8px;
+    padding: 4px 10px;
     margin-left: 10px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1;
+    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.3);
 }
 
 /* Filter button count badges */
 .filter-count-badge {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: var(--primary-color);
-    font-size: 10px;
+    background-color: #2c3e50;
+    color: white;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 50%;
     width: 18px;
