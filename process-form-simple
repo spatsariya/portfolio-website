@@ -1,9 +1,0 @@
-<?php
-/**
- * Backup Contact Form Processing (without .php extension)
- * This handles server routing that strips .php extensions
- */
-
-// Include the main processing file
-require_once 'process-form-simple.php';
-?>

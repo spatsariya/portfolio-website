@@ -3,6 +3,60 @@
  * Shivam Patsariya Portfolio Website
  * A modern UX designer portfolio showcasing experience, skills, projects, and certifications
  */
+
+// Handle contact form submission
+$form_success = false;
+$form_error = '';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
+    // Validate form data
+    $name = trim($_POST['name'] ?? '');
+    $email = trim($_POST['email'] ?? '');
+    $subject = trim($_POST['subject'] ?? 'Contact Form Submission from Portfolio');
+    $message = trim($_POST['message'] ?? '');
+    
+    // Basic validation
+    if (empty($name) || empty($email) || empty($message)) {
+        $form_error = 'Please fill all required fields.';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $form_error = 'Please enter a valid email address.';
+    } else {
+        // Sanitize inputs
+        $name = htmlspecialchars($name);
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $subject = htmlspecialchars($subject);
+        $message = htmlspecialchars($message);
+        
+        // Prepare email content (same format as working mail-test)
+        $to = "s.patsariya@gmail.com";
+        $email_subject = "[Portfolio Contact] $subject";
+        
+        $email_content = "Contact Form Submission\n";
+        $email_content .= "========================\n\n";
+        $email_content .= "Name: $name\n";
+        $email_content .= "Email: $email\n";
+        $email_content .= "Subject: $subject\n";
+        $email_content .= "Submitted: " . date('Y-m-d H:i:s') . "\n\n";
+        $email_content .= "Message:\n";
+        $email_content .= "--------\n";
+        $email_content .= "$message\n";
+        $email_content .= "--------\n\n";
+        $email_content .= "This message was sent from the portfolio contact form.";
+        
+        // Set headers (same as working mail-test)
+        $headers = "From: Portfolio Contact <no-reply@imshivam.com>\r\n";
+        $headers .= "Reply-To: $name <$email>\r\n";
+        $headers .= "X-Mailer: Portfolio Contact Form\r\n";
+        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        
+        // Send email using same method as mail-test
+        if (mail($to, $email_subject, $email_content, $headers)) {
+            $form_success = true;
+        } else {
+            $form_error = 'Sorry, there was an error sending your message. Please try again.';
+        }
+    }
+}
 ?>
 
 <?php include 'includes/header.php'; ?>
@@ -691,32 +745,47 @@
                 </div>
             </div>
             <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
-                <!-- Traditional Form Submission - No AJAX to avoid server routing issues -->
-                <form action="process-form-simple.php" method="POST" id="contactForm" novalidate>
+                <!-- Display success or error messages -->
+                <?php if ($form_success): ?>
+                    <div class="form-message success" role="alert">
+                        <i class="fas fa-check-circle"></i> Thank you! Your message has been sent successfully. I'll get back to you soon.
+                    </div>
+                <?php elseif ($form_error): ?>
+                    <div class="form-message error" role="alert">
+                        <i class="fas fa-exclamation-circle"></i> <?php echo htmlspecialchars($form_error); ?>
+                    </div>
+                <?php endif; ?>
+                
+                <!-- Contact Form -->
+                <form action="#contact" method="POST" id="contactForm" novalidate>
+                    <input type="hidden" name="contact_form" value="1">
                     <fieldset>
                         <legend class="sr-only">Contact Information Form</legend>
                         
                         <div class="form-group">
                             <label for="name">Your Name <span aria-label="required">*</span></label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name" required aria-describedby="name-error">
+                            <input type="text" name="name" id="name" placeholder="Enter your name" required 
+                                   value="<?php echo htmlspecialchars($_POST['name'] ?? ''); ?>" aria-describedby="name-error">
                             <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                         
                         <div class="form-group">
                             <label for="email">Your Email <span aria-label="required">*</span></label>
-                            <input type="email" name="email" id="email" placeholder="Enter your email" required aria-describedby="email-error">
+                            <input type="email" name="email" id="email" placeholder="Enter your email" required 
+                                   value="<?php echo htmlspecialchars($_POST['email'] ?? ''); ?>" aria-describedby="email-error">
                             <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                         
                         <div class="form-group">
                             <label for="subject">Subject</label>
-                            <input type="text" name="subject" id="subject" placeholder="What's this about?" aria-describedby="subject-help">
+                            <input type="text" name="subject" id="subject" placeholder="What's this about?" 
+                                   value="<?php echo htmlspecialchars($_POST['subject'] ?? ''); ?>" aria-describedby="subject-help">
                             <div id="subject-help" class="form-help">Optional: Brief description of your inquiry</div>
                         </div>
                         
                         <div class="form-group">
                             <label for="message">Your Message <span aria-label="required">*</span></label>
-                            <textarea name="message" id="message" placeholder="Tell me about your project..." required aria-describedby="message-error"></textarea>
+                            <textarea name="message" id="message" placeholder="Tell me about your project..." required aria-describedby="message-error"><?php echo htmlspecialchars($_POST['message'] ?? ''); ?></textarea>
                             <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
                     </fieldset>
@@ -726,58 +795,6 @@
                     </button>
                     <div id="submit-help" class="form-help">Your message will be sent directly to Shivam Patsariya</div>
                 </form>
-                
-                <!-- Simple client-side validation only -->
-                <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const contactForm = document.getElementById('contactForm');
-                    
-                    if (contactForm) {
-                        contactForm.addEventListener('submit', function(e) {
-                            // Simple validation before traditional submission
-                            const name = document.getElementById('name').value.trim();
-                            const email = document.getElementById('email').value.trim();
-                            const message = document.getElementById('message').value.trim();
-                            
-                            let isValid = true;
-                            
-                            // Clear previous errors
-                            document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-                            
-                            if (!name) {
-                                document.getElementById('name-error').textContent = 'Name is required';
-                                isValid = false;
-                            }
-                            
-                            if (!email) {
-                                document.getElementById('email-error').textContent = 'Email is required';
-                                isValid = false;
-                            } else if (!email.includes('@')) {
-                                document.getElementById('email-error').textContent = 'Please enter a valid email';
-                                isValid = false;
-                            }
-                            
-                            if (!message) {
-                                document.getElementById('message-error').textContent = 'Message is required';
-                                isValid = false;
-                            }
-                            
-                            if (!isValid) {
-                                e.preventDefault();
-                                return false;
-                            }
-                            
-                            // Show loading state for better UX
-                            const submitBtn = this.querySelector('button[type="submit"]');
-                            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                            submitBtn.disabled = true;
-                            
-                            // Allow traditional form submission to proceed
-                            return true;
-                        });
-                    }
-                });
-                </script>
             </div>
         </div>
     </div>
