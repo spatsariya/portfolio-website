@@ -64,7 +64,7 @@ html.aos-animate [data-aos] {
 }
 
 /* Global Focus Styles */
-*:focus {
+*:focus:not(input):not(textarea) {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
@@ -1469,9 +1469,8 @@ padding: 20px 30px;
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: var(--primary-color);
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 3px var(--shadow-light);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(198, 231, 255, 0.4);
     background: rgba(255, 255, 255, 0.95);
 }
 
