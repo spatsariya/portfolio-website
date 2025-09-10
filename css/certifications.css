@@ -459,8 +459,9 @@ body.show-professional #professional-category,
 }
 
 .cert-filter-btn.active .filter-count-badge {
-    background-color: rgba(255, 255, 255, 0.9);
-    color: var(--primary-color);
+    background-color: #2c3e50;
+    color: white;
+    transform: scale(1.1);
 }
 
 .cert-filter-btn:hover .filter-count-badge {
