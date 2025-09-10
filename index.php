@@ -134,7 +134,7 @@
                     
                     <!-- Collapsible content -->
                     <div class="timeline-expandable">
-                        <div class="timeline-details" style="display: none;">
+                        <div class="timeline-details" id="timeline-details-1" style="display: none;" role="region" aria-label="Additional role details">
                             <ul class="timeline-list">
                                 <li>Redesigned the <strong>mobile app interface</strong>, resulting in a <strong>35%</strong> increase in <strong>user engagement</strong> and a <strong>42%</strong> improvement in <strong>user retention rates</strong></li>
                                 <li>Led comprehensive <strong>usability testing</strong>, to identify pain points and create data-driven solutions</li>
@@ -145,9 +145,9 @@
                             </ul>
                         </div>
                         
-                        <button class="timeline-toggle" data-expanded="false">
+                        <button class="timeline-toggle" data-expanded="false" aria-expanded="false" aria-controls="timeline-details-1" aria-label="Expand to view more details about this role">
                             <span class="toggle-text">View</span>
-                            <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;"></span>
+                            <span class="solar-icon chevron-down toggle-icon" style="width: 16px; height: 16px;" aria-hidden="true"></span>
                         </button>
                     </div>
                 </div>
@@ -426,16 +426,16 @@
             <h2>My Projects</h2>
             <div class="section-line"></div>
         </div>
-        <div class="projects-filter" data-aos="fade-up" data-aos-delay="100">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
-            <button class="filter-btn" data-filter="web">Websites</button>
-            <button class="filter-btn" data-filter="branding">Branding</button>
+        <div class="projects-filter" data-aos="fade-up" data-aos-delay="100" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile Apps</button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">Websites</button>
+            <button class="filter-btn" data-filter="branding" aria-pressed="false">Branding</button>
         </div>
         <div class="projects-grid">
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
                 <div class="project-image">
-                    <img src="images/content/virgin-plus.webp" alt="Virgin Plus" loading="lazy">
+                    <img src="images/content/virgin-plus.webp" alt="Virgin Plus MyBenefits mobile app redesign showcasing improved user interface and user experience" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>Virgin Plus My Benefits</h3>
@@ -447,7 +447,7 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
                 <div class="project-image">
-                    <img src="images/content/instiwitty-blog.webp" alt="InstiWitty Read Write Express" loading="lazy">
+                    <img src="images/content/instiwitty-blog.webp" alt="InstiWitty Read Write Express blog platform design featuring clean typography and user-friendly interface" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>InstiWitty Read Write Express</h3>
@@ -459,7 +459,7 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
                 <div class="project-image">
-                    <img src="images/content/beingshivam-blog.webp" alt="BeingShivam Online" loading="lazy">
+                    <img src="images/content/beingshivam-blog.webp" alt="BeingShivam Online personal blog website design with modern layout and engaging content presentation" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>BeingShivam Online</h3>
@@ -471,7 +471,7 @@
             </div>
             <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
                 <div class="project-image">
-                    <img src="images/content/aafdn.webp" alt="NGO Website" loading="lazy">
+                    <img src="images/content/aafdn.webp" alt="NGO website design for advocacy organization featuring accessible design and clear call-to-action elements" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>NPO/NGO Website</h3>
@@ -483,7 +483,7 @@
             </div>
             <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
                 <div class="project-image">
-                    <img src="images/content/rCycle.png" alt="rCycle App">
+                    <img src="images/content/rCycle.png" alt="rCycle sustainability mobile application interface design promoting environmental responsibility and recycling" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>rCycle Mobile App</h3>
@@ -496,7 +496,7 @@
             
             <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="600">
                 <div class="project-image">
-                    <img src="images/content/flipkart-graphics.png" alt="Flipkart Graphics">
+                    <img src="images/content/flipkart-graphics.png" alt="Flipkart marketing graphics and promotional materials showcasing visual design and brand consistency" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>Flipkart Graphics Design</h3>
@@ -690,26 +690,34 @@
                     <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><span class="solar-icon twitter" style="width: 20px; height: 20px;"></span></a>
                 </div>
             </div>
-            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm">
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm" novalidate>
+                    <fieldset>
+                        <legend class="sr-only">Contact Information Form</legend>
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                        <label for="name">Your Name <span aria-label="required">*</span></label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required aria-describedby="name-error">
+                        <div id="name-error" class="error-message" role="alert" aria-live="polite"></div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                        <label for="email">Your Email <span aria-label="required">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required aria-describedby="email-error">
+                        <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" name="subject" id="subject" placeholder="What's this about?">
+                        <input type="text" name="subject" id="subject" placeholder="What's this about?" aria-describedby="subject-help">
+                        <div id="subject-help" class="form-help">Optional: Brief description of your inquiry</div>
                     </div>
                     <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message" placeholder="Tell me about your project..." required></textarea>
+                        <label for="message">Your Message <span aria-label="required">*</span></label>
+                        <textarea name="message" id="message" placeholder="Tell me about your project..." required aria-describedby="message-error"></textarea>
+                        <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message <span class="solar-icon paper-plane" style="width: 16px; height: 16px;"></span></button>
+                    </fieldset>
+                    <button type="submit" class="btn btn-primary" aria-describedby="submit-help">Send Message <span class="solar-icon paper-plane" style="width: 16px; height: 16px;" aria-hidden="true"></span></button>
+                    <div id="submit-help" class="form-help">Your message will be sent directly to Shivam Patsariya</div>
                 </form>
-                <div id="form-response" class="form-response"></div>
+                <div id="form-response" class="form-response" role="status" aria-live="polite"></div>
             </div>
         </div>
     </div>

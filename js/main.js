@@ -20,25 +20,54 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Mobile menu toggle
+    // Mobile menu toggle with accessibility improvements
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const mobileMenu = document.querySelector('.mobile-menu');
     
-    if (mobileMenuBtn) {
-        mobileMenuBtn.addEventListener('click', function() {
-            this.classList.toggle('active');
+    if (mobileMenuBtn && mobileMenu) {
+        // Add keyboard support for mobile menu button
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileMenuBtn.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                toggleMobileMenu();
+            }
+        });
+
+        function toggleMobileMenu() {
+            const isActive = mobileMenuBtn.classList.toggle('active');
             mobileMenu.classList.toggle('active');
             
+            // Update ARIA attributes for accessibility
+            mobileMenuBtn.setAttribute('aria-expanded', isActive);
+            mobileMenu.setAttribute('aria-hidden', !isActive);
+            
             // Animate hamburger icon
-            const spans = this.querySelectorAll('span');
-            if (this.classList.contains('active')) {
+            const spans = mobileMenuBtn.querySelectorAll('span');
+            if (isActive) {
                 spans[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
                 spans[1].style.opacity = '0';
                 spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+                
+                // Focus management - focus first menu item when opening
+                const firstMenuItem = mobileMenu.querySelector('a');
+                if (firstMenuItem) {
+                    setTimeout(() => firstMenuItem.focus(), 100);
+                }
             } else {
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';
                 spans[2].style.transform = 'none';
+                
+                // Return focus to menu button when closing
+                mobileMenuBtn.focus();
+            }
+        }
+
+        // Handle Escape key to close menu
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
+                toggleMobileMenu();
             }
         });
     }
@@ -47,9 +76,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
     mobileMenuLinks.forEach(link => {
         link.addEventListener('click', function() {
-            mobileMenu.classList.remove('active');
-            if (mobileMenuBtn) {
+            if (mobileMenu && mobileMenuBtn) {
+                mobileMenu.classList.remove('active');
                 mobileMenuBtn.classList.remove('active');
+                
+                // Update ARIA attributes
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+                
+                // Reset hamburger icon
                 const spans = mobileMenuBtn.querySelectorAll('span');
                 spans[0].style.transform = 'none';
                 spans[1].style.opacity = '1';

@@ -40,21 +40,12 @@
     <link rel="stylesheet" href="css/project-fixes.css">
     <link rel="stylesheet" href="css/solar-icons.css">
 
-    <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
-<meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
-<meta property="og:image" content="https://imshivam.com/images/land-2.png" />
-<meta property="og:url" content="https://imshivam.com/" />
-<meta property="og:type" content="website" />
-
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
-<meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
-<meta name="twitter:image" content="https://imshivam.com/images/land-2.png" />
-
 </head>
 <body>
-    <header class="header">
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <header class="header" role="banner">
         <div class="container">
             <div class="header-content">                <div class="logo">
                     <a href="index">
@@ -67,7 +58,7 @@
                         <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img">
                     </a>
                 </div>
-                <nav class="nav-menu">
+                <nav class="nav-menu" role="navigation" aria-label="Main navigation">
                     <ul>
                         <li><a href="#about"><span class="solar-icon user"></span> About</a></li>
                         <li><a href="#experience"><span class="solar-icon experience"></span> Experience</a></li>
@@ -79,15 +70,15 @@
                         <li><a href="#contact"><span class="solar-icon contact"></span> Contact</a></li>
                     </ul>
                 </nav>
-                <div class="mobile-menu-btn">
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
             </div>
         </div>
     </header>
-    <div class="mobile-menu">
+    <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
         <ul>
             <li><a href="#about"><span class="solar-icon user"></span> About</a></li>
             <li><a href="#experience"><span class="solar-icon experience"></span> Experience</a></li>
@@ -98,5 +89,5 @@
             <li><a href="#certifications"><span class="solar-icon certifications"></span> Certifications</a></li>
             <li><a href="#contact"><span class="solar-icon contact"></span> Contact</a></li>
         </ul>
-    </div>
-    <main>
+    </nav>
+    <main id="main-content" role="main">
