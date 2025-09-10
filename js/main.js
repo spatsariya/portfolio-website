@@ -380,9 +380,15 @@ document.addEventListener('DOMContentLoaded', function() {
             // Clear previous messages
             formResponse.innerHTML = '';
             
-            fetch(contactForm.action, {
+            // Use explicit relative URL to avoid any routing issues
+            const formAction = './process-form-simple.php';
+            
+            fetch(formAction, {
                 method: 'POST',
-                body: formData
+                body: formData,
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
             })
             .then(response => response.json())
             .then(data => {

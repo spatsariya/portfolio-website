@@ -15,6 +15,7 @@ header('Content-Type: application/json');
 
 // Check if the request is a POST
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    error_log("Non-POST request received: " . $_SERVER['REQUEST_METHOD']);
     http_response_code(405);
     echo json_encode(['status' => 'error', 'message' => 'Method not allowed']);
     exit;

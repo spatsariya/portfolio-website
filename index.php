@@ -690,7 +690,7 @@
                     <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="width: 20px; height: 20px;"></i></a>
                 </div>
             </div>
-            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="process-form-simple.php" method="POST" id="contactForm" novalidate>
+            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">                <form action="debug-contact.php" method="POST" id="contactForm" novalidate>
                     <fieldset>
                         <legend class="sr-only">Contact Information Form</legend>
                     <div class="form-group">
