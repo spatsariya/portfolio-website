@@ -360,9 +360,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Header will always stay in place
     });
 
-    // Form submission
-    const contactForm = document.getElementById('contactForm');
-    const formResponse = document.getElementById('form-response');
+    // Form submission - DISABLED - Using inline handler in HTML to avoid cache issues
+    const contactForm = document.getElementById('contactForm-DISABLED');
+    const formResponse = document.getElementById('form-response-DISABLED');
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
@@ -380,14 +380,18 @@ document.addEventListener('DOMContentLoaded', function() {
             // Clear previous messages
             formResponse.innerHTML = '';
             
-            // Use explicit relative URL to avoid any routing issues
-            const formAction = './process-form-simple.php';
+            // Use explicit full relative URL with cache busting
+            const timestamp = Date.now();
+            const formAction = `./process-form-simple.php?v=${timestamp}`;
+            
+            console.log('Submitting to:', formAction); // Debug log
             
             fetch(formAction, {
                 method: 'POST',
                 body: formData,
                 headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
+                    'X-Requested-With': 'XMLHttpRequest',
+                    'Cache-Control': 'no-cache'
                 }
             })
             .then(response => response.json())

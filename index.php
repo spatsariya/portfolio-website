@@ -718,6 +718,69 @@
                     <div id="submit-help" class="form-help">Your message will be sent directly to Shivam Patsariya</div>
                 </form>
                 <div id="form-response" class="form-response" role="status" aria-live="polite"></div>
+                
+                <!-- Inline Contact Form Handler to bypass cache issues -->
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const contactFormInline = document.getElementById('contactForm');
+                    const formResponseInline = document.getElementById('form-response');
+                    
+                    if (contactFormInline) {
+                        contactFormInline.addEventListener('submit', function(e) {
+                            e.preventDefault();
+                            
+                            console.log('Inline form handler triggered');
+                            
+                            const formData = new FormData(this);
+                            const submitBtn = this.querySelector('button[type="submit"]');
+                            const originalText = submitBtn.innerHTML;
+                            
+                            // Show loading state
+                            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                            submitBtn.disabled = true;
+                            
+                            // Clear previous messages
+                            formResponseInline.innerHTML = '';
+                            
+                            // Use absolute path to avoid any routing issues
+                            const formAction = '/process-form-simple.php';
+                            
+                            console.log('Submitting to:', formAction);
+                            
+                            fetch(formAction, {
+                                method: 'POST',
+                                body: formData,
+                                headers: {
+                                    'X-Requested-With': 'XMLHttpRequest',
+                                    'Cache-Control': 'no-cache'
+                                }
+                            })
+                            .then(response => {
+                                console.log('Response status:', response.status);
+                                return response.json();
+                            })
+                            .then(data => {
+                                console.log('Response data:', data);
+                                if (data.status === 'success') {
+                                    formResponseInline.innerHTML = `<div class="form-message success">${data.message}</div>`;
+                                    contactFormInline.reset();
+                                } else {
+                                    formResponseInline.innerHTML = `<div class="form-message error">${data.message}</div>`;
+                                }
+                            })
+                            .catch(error => {
+                                console.error('Form submission error:', error);
+                                formResponseInline.innerHTML = '<div class="form-message error">Network error. Please try again or contact s.patsariya@gmail.com directly.</div>';
+                            })
+                            .finally(() => {
+                                // Restore button
+                                submitBtn.innerHTML = originalText;
+                                submitBtn.disabled = false;
+                            });
+                        });
+                    }
+                });
+                </script>
             </div>
         </div>
     </div>
