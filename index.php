@@ -4,6 +4,16 @@
  * A modern UX designer portfolio showcasing experience, skills, projects, and certifications
  */
 
+// Include configuration file (not tracked in git)
+if (file_exists('config.php')) {
+    require_once 'config.php';
+} else {
+    // Fallback values for development/demo
+    define('HCAPTCHA_SECRET', 'YOUR_HCAPTCHA_SECRET_KEY');
+    define('HCAPTCHA_SITEKEY', '2b96e9ce-d828-41b8-99e6-718a9e145f74');
+    define('CONTACT_EMAIL', 's.patsariya@gmail.com');
+}
+
 // Handle contact form submission
 $form_success = false;
 $form_error = '';
@@ -14,46 +24,76 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     $email = trim($_POST['email'] ?? '');
     $subject = trim($_POST['subject'] ?? 'Contact Form Submission from Portfolio');
     $message = trim($_POST['message'] ?? '');
+    $hcaptcha_response = $_POST['h-captcha-response'] ?? '';
     
     // Basic validation
     if (empty($name) || empty($email) || empty($message)) {
         $form_error = 'Please fill all required fields.';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $form_error = 'Please enter a valid email address.';
+    } elseif (empty($hcaptcha_response)) {
+        $form_error = 'Please complete the captcha verification.';
     } else {
-        // Sanitize inputs
-        $name = htmlspecialchars($name);
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-        $subject = htmlspecialchars($subject);
-        $message = htmlspecialchars($message);
+        // Verify hCaptcha using config
+        $hcaptcha_secret = HCAPTCHA_SECRET;
+        $hcaptcha_verify_url = 'https://hcaptcha.com/siteverify';
         
-        // Prepare email content (same format as working mail-test)
-        $to = "s.patsariya@gmail.com";
-        $email_subject = "[Portfolio Contact] $subject";
+        $hcaptcha_data = [
+            'secret' => $hcaptcha_secret,
+            'response' => $hcaptcha_response,
+            'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
+        ];
         
-        $email_content = "Contact Form Submission\n";
-        $email_content .= "========================\n\n";
-        $email_content .= "Name: $name\n";
-        $email_content .= "Email: $email\n";
-        $email_content .= "Subject: $subject\n";
-        $email_content .= "Submitted: " . date('Y-m-d H:i:s') . "\n\n";
-        $email_content .= "Message:\n";
-        $email_content .= "--------\n";
-        $email_content .= "$message\n";
-        $email_content .= "--------\n\n";
-        $email_content .= "This message was sent from the portfolio contact form.";
+        $hcaptcha_options = [
+            'http' => [
+                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                'method' => 'POST',
+                'content' => http_build_query($hcaptcha_data)
+            ]
+        ];
         
-        // Set headers (same as working mail-test)
-        $headers = "From: Portfolio Contact <no-reply@imshivam.com>\r\n";
-        $headers .= "Reply-To: $name <$email>\r\n";
-        $headers .= "X-Mailer: Portfolio Contact Form\r\n";
-        $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+        $hcaptcha_context = stream_context_create($hcaptcha_options);
+        $hcaptcha_result = file_get_contents($hcaptcha_verify_url, false, $hcaptcha_context);
+        $hcaptcha_response_data = json_decode($hcaptcha_result, true);
         
-        // Send email using same method as mail-test
-        if (mail($to, $email_subject, $email_content, $headers)) {
-            $form_success = true;
+        if (!$hcaptcha_response_data['success']) {
+            $form_error = 'Captcha verification failed. Please try again.';
         } else {
-            $form_error = 'Sorry, there was an error sending your message. Please try again.';
+            // Sanitize inputs
+            $name = htmlspecialchars($name);
+            $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+            $subject = htmlspecialchars($subject);
+            $message = htmlspecialchars($message);
+            
+            // Prepare email content (same format as working mail-test)
+            $to = CONTACT_EMAIL;
+            $email_subject = "[Portfolio Contact] $subject";
+            
+            $email_content = "Contact Form Submission\n";
+            $email_content .= "========================\n\n";
+            $email_content .= "Name: $name\n";
+            $email_content .= "Email: $email\n";
+            $email_content .= "Subject: $subject\n";
+            $email_content .= "Submitted: " . date('Y-m-d H:i:s') . "\n";
+            $email_content .= "IP Address: " . ($_SERVER['REMOTE_ADDR'] ?? 'Unknown') . "\n\n";
+            $email_content .= "Message:\n";
+            $email_content .= "--------\n";
+            $email_content .= "$message\n";
+            $email_content .= "--------\n\n";
+            $email_content .= "This message was sent from the portfolio contact form with hCaptcha verification.";
+            
+            // Set headers (same as working mail-test)
+            $headers = "From: Portfolio Contact <no-reply@imshivam.com>\r\n";
+            $headers .= "Reply-To: $name <$email>\r\n";
+            $headers .= "X-Mailer: Portfolio Contact Form\r\n";
+            $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+            
+            // Send email using same method as mail-test
+            if (mail($to, $email_subject, $email_content, $headers)) {
+                $form_success = true;
+            } else {
+                $form_error = 'Sorry, there was an error sending your message. Please try again.';
+            }
         }
     }
 }
@@ -787,6 +827,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                             <label for="message">Your Message <span aria-label="required">*</span></label>
                             <textarea name="message" id="message" placeholder="Tell me about your project..." required aria-describedby="message-error"><?php echo htmlspecialchars($_POST['message'] ?? ''); ?></textarea>
                             <div id="message-error" class="error-message" role="alert" aria-live="polite"></div>
+                        </div>
+                        
+                        <!-- hCaptcha -->
+                        <div class="form-group">
+                            <div class="h-captcha" data-sitekey="2b96e9ce-d828-41b8-99e6-718a9e145f74" data-theme="light"></div>
                         </div>
                     </fieldset>
                     
