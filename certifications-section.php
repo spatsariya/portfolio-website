@@ -16,8 +16,8 @@
             <button class="cert-filter-btn" data-filter="professional">Professional Qualifications</button>
         </div>
         
-        <!-- Category 1: Design & UX/UI -->        <div class="cert-category" id="design-category">
-            <h3 class="cert-category-title" data-aos="fade-up"><i class="fas fa-palette"></i> Design & UX/UI</h3>
+        <!-- Category 1: Design & UX/UI -->        <div class="cert-category" id="design-category" data-category-type="design">
+            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-palette"></i></span><span>Design & UX/UI</span></h3>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -173,8 +173,8 @@
         </div>
         
         <!-- Category 2: Programming & Development -->
-        <div class="cert-category" id="development-category">
-            <h3 class="cert-category-title" data-aos="fade-up"><i class="fas fa-code"></i> Programming & Development</h3>
+        <div class="cert-category" id="development-category" data-category-type="development">
+            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-code"></i></span><span>Programming & Development</span></h3>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -240,8 +240,8 @@
         </div>
 
         <!-- Category 3: Digital Marketing -->
-        <div class="cert-category" id="marketing-category">
-            <h3 class="cert-category-title" data-aos="fade-up"><i class="fas fa-bullhorn"></i> Digital Marketing</h3>
+        <div class="cert-category" id="marketing-category" data-category-type="marketing">
+            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-bullhorn"></i></span><span>Digital Marketing</span></h3>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -347,8 +347,8 @@
         </div>
 
         <!-- Category 4: Business & Management -->
-        <div class="cert-category" id="business-category">
-            <h3 class="cert-category-title" data-aos="fade-up"><i class="fas fa-briefcase"></i> Business & Management</h3>
+        <div class="cert-category" id="business-category" data-category-type="business">
+            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span><span>Business & Management</span></h3>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -364,8 +364,8 @@
         </div>
 
         <!-- Category 5: Healthcare & Safety -->
-        <div class="cert-category" id="healthcare-category">
-            <h3 class="cert-category-title" data-aos="fade-up"><i class="fas fa-heartbeat"></i> Healthcare & Safety</h3>
+        <div class="cert-category" id="healthcare-category" data-category-type="healthcare">
+            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-heartbeat"></i></span><span>Healthcare & Safety</span></h3>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -391,8 +391,8 @@
         </div>
 
         <!-- Category 6: Professional Qualifications -->
-        <div class="cert-category" id="professional-category">
-            <h3 class="cert-category-title" data-aos="fade-up"><i class="fas fa-award"></i> Professional Qualifications</h3>
+        <div class="cert-category" id="professional-category" data-category-type="professional">
+            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-award"></i></span><span>Professional Qualifications</span></h3>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">

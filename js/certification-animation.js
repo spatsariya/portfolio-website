@@ -6,6 +6,7 @@
 window.addEventListener('load', function() {
     // Add animation order to certification items for staggered animation
     const certItems = document.querySelectorAll('.certification-item');
+    const certSection = document.querySelector('.certifications-section');
     
     // Set a random delay between 0-5 for each item
     certItems.forEach((item, index) => {
@@ -32,49 +33,68 @@ window.addEventListener('load', function() {
     const filterButtons = document.querySelectorAll('.cert-filter-btn');
     const categories = document.querySelectorAll('.cert-category');
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            // Update active button state
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            
-            const filter = this.getAttribute('data-filter');
-            
-            // Show/hide categories with smooth animation
-            if (filter === 'all') {
-                categories.forEach(category => {
-                    category.style.display = 'block';
-                    setTimeout(() => {
-                        category.style.opacity = '1';
-                    }, 50);
-                });
-            } else {
-                categories.forEach(category => {
-                    const categoryId = category.getAttribute('id');
-                    
-                    if (categoryId === filter + '-category') {
-                        category.style.display = 'block';
-                        setTimeout(() => {
-                            category.style.opacity = '1';
-                        }, 50);
-                    } else {
-                        category.style.opacity = '0';
-                        setTimeout(() => {
-                            category.style.display = 'none';
-                        }, 500);
-                    }
-                });
-            }
-            
-            // Reset animation for newly visible items
-            const visibleItems = document.querySelectorAll('.cert-category[style*="display: block"] .certification-item');
-            visibleItems.forEach((item, index) => {
-                item.style.animation = 'none';
-                setTimeout(() => {
-                    item.style.animation = '';
-                    item.style.setProperty('--animation-order', index % 10);
-                }, 10);
+    if (!filterButtons.length || !categories.length) {
+        return;
+    }
+
+    categories.forEach(category => {
+        if (!category.dataset.categoryType && category.id) {
+            category.dataset.categoryType = category.id.replace('-category', '');
+        }
+        category.style.opacity = '1';
+    });
+
+    function refreshVisibleCategoryAnimations() {
+        const visibleItems = document.querySelectorAll('.cert-category:not(.is-hidden) .certification-item');
+        visibleItems.forEach((item, index) => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+            item.style.animation = 'none';
+            item.style.setProperty('--animation-order', index % 10);
+            requestAnimationFrame(() => {
+                item.style.animation = '';
             });
         });
+    }
+
+    function refreshAOS() {
+        if (typeof AOS !== 'undefined' && typeof AOS.refreshHard === 'function') {
+            AOS.refreshHard();
+        } else if (typeof AOS !== 'undefined' && typeof AOS.refresh === 'function') {
+            AOS.refresh();
+        }
+    }
+
+    function filterCategories(filterValue) {
+        filterButtons.forEach(btn => {
+            btn.classList.toggle('active', btn.getAttribute('data-filter') === filterValue);
+        });
+
+        categories.forEach(category => {
+            const categoryType = category.dataset.categoryType || 'unknown';
+            const shouldShow = filterValue === 'all' || categoryType === filterValue;
+
+            category.classList.toggle('is-hidden', !shouldShow);
+            category.classList.toggle('active-category', shouldShow);
+            category.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+            category.style.display = shouldShow ? 'block' : 'none';
+            category.style.opacity = shouldShow ? '1' : '0';
+        });
+
+        refreshVisibleCategoryAnimations();
+        refreshAOS();
+    }
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter') || 'all';
+            filterCategories(filter);
+        });
     });
+
+    if (certSection) {
+        certSection.setAttribute('data-cert-filter-ready', 'true');
+    }
+
+    filterCategories('all');
 });

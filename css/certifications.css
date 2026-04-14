@@ -52,12 +52,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    padding-left: 2px;
     margin-bottom: 18px;
     color: var(--text-color) !important;
     font-size: 1.35rem;
 }
 
-.cert-category-title i {
+.cert-category-icon {
     width: 40px;
     height: 40px;
     display: inline-flex;
@@ -67,11 +68,25 @@
     background: var(--surface-muted);
     border: 1px solid rgba(188, 174, 155, 0.4);
     color: var(--text-color);
+    flex-shrink: 0;
+}
+
+.cert-category-title i {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.cert-category-title span:last-child {
+    display: inline-block;
 }
 
 .certification-item {
     animation: none;
     opacity: 1;
+}
+
+.cert-category.is-hidden {
+    display: none;
 }
 
 .certification-item::before,
