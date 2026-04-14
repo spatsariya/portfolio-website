@@ -132,7 +132,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="hero-portrait-card">
                     <div class="image-cutout">
-                        <img src="images/cutout-main.png" alt="Shivam Patsariya - UX Designer">
+                        <img src="images/waving-shivam.gif" alt="Shivam Patsariya waving - UI/UX Designer">
                     </div>
                     <div class="hero-card-details">
                         <div>
