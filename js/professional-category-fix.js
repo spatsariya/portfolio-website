@@ -3,12 +3,11 @@
  * This script ensures the Professional Qualifications category shows correctly
  * when filtered
  */
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     // Get all filter buttons
     const filterButtons = document.querySelectorAll('.cert-filter-btn');
     const professionalButton = document.querySelector('.cert-filter-btn[data-filter="professional"]');
     const professionalCategory = document.getElementById('professional-category');
-    const allButton = document.querySelector('.cert-filter-btn[data-filter="all"]');
     
     if (professionalButton && professionalCategory) {
         // Professional category setup - ready to fix filtering
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Make sure it's visible and properly styled
                 setTimeout(() => {
                     if (window.getComputedStyle(professionalCategory).display === 'none') {
-                        professionalCategory.style.display = 'block !important';
+                        professionalCategory.style.display = 'block';
                         professionalCategory.style.opacity = '1';
                         professionalCategory.style.transform = 'translateY(0)';
                     }
@@ -50,30 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    
-    // Ensure professional category is always properly styled when visible
-    const observer = new MutationObserver(function(mutations) {
-        mutations.forEach(function(mutation) {
-            if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-                const target = mutation.target;
-                if (target.id === 'professional-category') {
-                    // If professional category became visible, ensure it's properly styled
-                    if (window.getComputedStyle(target).display !== 'none') {
-                        target.style.opacity = '1';
-                        target.style.transform = 'translateY(0)';
-                    }
-                }
-            }
-        });
-    });
-    
-    if (professionalCategory) {
-        observer.observe(professionalCategory, {
-            attributes: true,
-            attributeFilter: ['style']
-        });
-    }
-    
+
     // Final fallback - force professional category to be visible after page load
     setTimeout(() => {
         if (professionalCategory && window.getComputedStyle(professionalCategory).display === 'none') {

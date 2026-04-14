@@ -2,7 +2,7 @@
  * Certification Initialization Script
  * Handles the initialization and setup of certification filtering system
  */
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     // Wait for DOM to be fully loaded
     setTimeout(function() {
         // Initialize certification filtering system

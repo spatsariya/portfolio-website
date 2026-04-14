@@ -2,7 +2,7 @@
  * Enhanced Certifications Filter Script
  * Handles filtering and categorization of certifications
  */
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     // Configuration
     const filterButtonsSelector = '.cert-filter-btn';
     const certificationItemsSelector = '.certification-item';

@@ -3,7 +3,7 @@
  * Adds staggered animations to certification items
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     // Add animation order to certification items for staggered animation
     const certItems = document.querySelectorAll('.certification-item');
     

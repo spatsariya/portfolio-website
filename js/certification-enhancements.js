@@ -3,7 +3,7 @@
  */
 
 /* Add a subtle gradient background to the entire certification-section */
-document.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
     // Add animation delay to filter buttons
     const filterButtons = document.querySelectorAll('.cert-filter-btn');
     filterButtons.forEach((btn, index) => {
