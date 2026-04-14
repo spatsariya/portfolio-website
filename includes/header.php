@@ -28,7 +28,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -51,7 +51,8 @@
     
     <header class="header" role="banner">
         <div class="container">
-            <div class="header-content">                <div class="logo">
+            <div class="header-content">
+                <div class="logo">
                     <a href="index">
                         <!-- Logo Variations Available: 
                              logo-sp.png (SP icon - current)
@@ -64,16 +65,17 @@
                 </div>
                 <nav class="nav-menu" role="navigation" aria-label="Main navigation">
                     <ul>
-                        <li><a href="#about"><span class="solar-icon user"></span> About</a></li>
-                        <li><a href="#experience"><span class="solar-icon experience"></span> Experience</a></li>
-                        <li><a href="#skills"><span class="solar-icon skills"></span> Skills</a></li>
-                        <li><a href="#projects"><span class="solar-icon projects"></span> Projects</a></li>
-                        <!-- <li><a href="#organizations"><i class="fas fa-building"></i> Organizations</a></li> -->
-                        <!-- <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li> -->
-                        <li><a href="#certifications"><span class="solar-icon certifications"></span> Certifications</a></li>
-                        <li><a href="#contact"><span class="solar-icon contact"></span> Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="header-actions">
+                    <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-secondary header-resume">Resume</a>
+                </div>
                 <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                     <span></span>
                     <span></span>
@@ -84,14 +86,13 @@
     </header>
     <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
         <ul>
-            <li><a href="#about"><span class="solar-icon user"></span> About</a></li>
-            <li><a href="#experience"><span class="solar-icon experience"></span> Experience</a></li>
-            <li><a href="#skills"><span class="solar-icon skills"></span> Skills</a></li>
-            <li><a href="#projects"><span class="solar-icon projects"></span> Projects</a></li>
-            <!-- <li><a href="#organizations"><span class="solar-icon building"></span> Organizations</a></li> -->
-            <!-- <li><a href="#education"><span class="solar-icon education"></span> Education</a></li> -->
-            <li><a href="#certifications"><span class="solar-icon certifications"></span> Certifications</a></li>
-            <li><a href="#contact"><span class="solar-icon contact"></span> Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
     <main id="main-content" role="main">

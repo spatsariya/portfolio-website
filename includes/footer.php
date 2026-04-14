@@ -2,31 +2,36 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
+                <div class="footer-brand">
+                    <p class="footer-label">imShivam</p>
                     <h3>Shivam Patsariya</h3>
-                    <p>UI/UX & Visual Design Specialist</p>
+                    <p>Product-focused UI/UX designer building clear, credible, human-centered digital experiences.</p>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
-                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                </div>
-                <div class="footer-nav">
+                <div class="footer-links">
+                    <h4>Explore</h4>
                     <ul>
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#organizations">Organizations</a></li>
-                        <li><a href="#education">Education</a></li>
+                        <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                        <li><a href="https://www.behance.net/shivampatsariya" target="_blank" rel="noreferrer">Behance</a></li>
+                        <li><a href="https://www.instagram.com/savvyshivam/" target="_blank" rel="noreferrer">Instagram</a></li>
+                        <li><a href="https://twitter.com/spatsariya" target="_blank" rel="noreferrer">Twitter</a></li>
+                        <li><a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" rel="noreferrer">Resume</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
                 <p>&copy; <?php echo date("Y"); ?> Shivam Patsariya. All rights reserved.</p>
+                <p>Designed with a calm SaaS mindset—less sparkle, more substance.</p>
             </div>
         </div>
     </footer>

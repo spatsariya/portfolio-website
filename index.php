@@ -108,10 +108,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 <section id="hero" class="hero-section">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">                <span class="hero-greeting">Hello, I'm</span>
-                <h1><span class="highlight">Shivam </span></h1>
-                <h2>UI/UX Designer & Creative Innovator</h2>
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                <span class="hero-kicker">Product Design • UX Strategy • Visual Systems</span>
+                <span class="hero-greeting">Hello, I'm Shivam.</span>
+                <h1>Designing digital products that feel clear, credible, and ready to scale.</h1>
+                <h2>UI/UX Designer & Creative Innovator with 10+ years building user-centered experiences.</h2>
                 <p class="hero-description">Transforming ideas into exceptional digital experiences that bridge user needs and business goals. With a focus on human-centered design, I craft intuitive interfaces that drive engagement, enhance satisfaction, and deliver measurable results.</p>
+                <div class="hero-proof-list" aria-label="Professional highlights">
+                    <span>Based in Ontario, Canada</span>
+                    <span>Available for freelance & full-time roles</span>
+                    <span>Product, mobile, web, and brand experience</span>
+                </div>
                 <div class="hero-cta">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Let's Connect</a>
@@ -123,8 +130,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                 </div>
             </div>
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
-                <div class="image-cutout">
-                    <img src="images/cutout-main.png" alt="Shivam Patsariya - UX Designer">
+                <div class="hero-portrait-card">
+                    <div class="image-cutout">
+                        <img src="images/cutout-main.png" alt="Shivam Patsariya - UX Designer">
+                    </div>
+                    <div class="hero-card-details">
+                        <div>
+                            <p class="hero-card-label">Currently focused on</p>
+                            <strong>Product design, UX research, design systems, and growth-oriented digital experiences.</strong>
+                        </div>
+                        <div>
+                            <p class="hero-card-label">Open to</p>
+                            <strong>Senior product design, UX leadership, and consulting opportunities.</strong>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-stats-highlight">
                     <div class="stat-highlight">
@@ -577,7 +596,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             </div>
             <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
                 <div class="project-image">
-                    <img src="images/content/rCycle.png" alt="rCycle sustainability mobile application interface design promoting environmental responsibility and recycling" loading="lazy">
+                    <img src="images/land-2.png" alt="rCycle sustainability mobile application concept and interface presentation" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>rCycle Mobile App</h3>
@@ -590,7 +609,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             
             <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="600">
                 <div class="project-image">
-                    <img src="images/content/flipkart-graphics.png" alt="Flipkart marketing graphics and promotional materials showcasing visual design and brand consistency" loading="lazy">
+                    <img src="images/land.png" alt="Flipkart marketing graphics and promotional campaign design showcase" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>Flipkart Graphics Design</h3>
