@@ -4,21 +4,37 @@
 
 // Initialize AOS animations
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS animations with improved settings for better reliability
-    AOS.init({
-        duration: 600,
-        once: true,
-        mirror: false,
-        offset: 50,
-        delay: 0,
-        easing: 'ease-out-cubic',
-        disable: function() {
-            // Disable AOS on very small screens or if user prefers reduced motion
-            var maxWidth = 768;
-            var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            return window.innerWidth < maxWidth || prefersReducedMotion;
+    // First-load interaction safety: ensure pointer interactions are never globally blocked
+    function ensurePageInteractive() {
+        if (document.documentElement) {
+            document.documentElement.style.pointerEvents = 'auto';
         }
-    });
+        if (document.body) {
+            document.body.style.pointerEvents = 'auto';
+        }
+    }
+
+    ensurePageInteractive();
+    window.addEventListener('load', ensurePageInteractive, { once: true });
+    setTimeout(ensurePageInteractive, 1200);
+
+    // Initialize AOS animations with improved settings for better reliability
+    if (typeof AOS !== 'undefined' && typeof AOS.init === 'function') {
+        AOS.init({
+            duration: 600,
+            once: true,
+            mirror: false,
+            offset: 50,
+            delay: 0,
+            easing: 'ease-out-cubic',
+            disable: function() {
+                // Disable AOS on very small screens or if user prefers reduced motion
+                var maxWidth = 768;
+                var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                return window.innerWidth < maxWidth || prefersReducedMotion;
+            }
+        });
+    }
 
     // Mobile menu toggle with accessibility improvements
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
@@ -291,7 +307,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 const category = item.getAttribute('data-category');
                 if (filter === 'all' || category === filter) {
                     item.style.display = 'block';
-                    AOS.refresh();
+                    if (typeof AOS !== 'undefined' && typeof AOS.refresh === 'function') {
+                        AOS.refresh();
+                    }
                 } else {
                     item.style.display = 'none';
                 }

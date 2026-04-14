@@ -404,10 +404,14 @@ padding: 20px 30px;
     backdrop-filter: blur(15px);
     border: 1px solid rgba(198, 231, 255, 0.3);
     border-radius: 15px;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .mobile-menu.active {
     transform: translateX(-50%) translateY(0);
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .mobile-menu ul li {
@@ -1182,10 +1186,12 @@ padding: 20px 30px;
     opacity: 0;
     transition: var(--transition);
     backdrop-filter: blur(5px);
+    pointer-events: none;
 }
 
 .project-item:hover .project-overlay {
     opacity: 1;
+    pointer-events: auto;
 }
 
 .project-info {
