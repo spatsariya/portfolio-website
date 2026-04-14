@@ -28,15 +28,19 @@
   "author": "Shivam Patsariya <contact@imshivam.com>",
   "license": "All Rights Reserved",
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "clean-css-cli": "^5.6.2",
-    "uglify-js": "^3.17.4",
     "imagemin": "^8.0.1",
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-webp": "^7.0.0",
-    "browser-sync": "^2.29.3"
+    "uglify-js": "^3.17.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.8.0",
+    "motion": "^12.38.0"
+  },
   "engines": {
     "php": ">=7.4",
     "node": ">=14.0.0"

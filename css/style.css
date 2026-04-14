@@ -107,24 +107,17 @@ a:focus {
 }
 
 :root {
-    --primary-color: #C6E7FF;        /* Soft Blue */
-    --secondary-color: #FFDDAE;       /* Warm Peach */
-    --accent-color: #D4F6FF;          /* Light Cyan */
-    --dark-color: #2c3e50;            /* Soft Dark Blue */
-    --light-color: #FBFBFB;           /* Almost White */
-    --gray-color: #6c757d;            /* Soft Gray */
-    --text-color: #2c3e50;            /* Soft Dark for text */
-    --body-font: 'Poppins', sans-serif;
-    --heading-font: 'Poppins', sans-serif;
-    --transition: all 0.3s ease;
+    --primary-color: #4f46e5;        /* Indigo-600 - Professional Primary */
+    --secondary-color: #f59e0b;       /* Amber-500 - Warm Accent */
+    --accent-color: #d1d5db;          /* Gray-300 - Subtle Accent */
+    --dark-color: #1f2937;            /* Gray-800 - Deep Charcoal for text */
+    --light-color: #f9fafb;           /* Gray-50 - Off-white background */
+    --gray-color: #6b7280;            /* Gray-500 - Muted text/details */
+    --text-color: #1f2937;            /* Gray-800 - Main text color */
+    --body-font: 'Inter', sans-serif;
+    --heading-font: 'Inter', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); /* Smoother transition */
     --container-width: 1200px;
-    
-    /* Additional color variations */
-    --primary-dark: #a3d4f7;          /* Darker primary */
-    --secondary-dark: #ffcc85;        /* Darker secondary */
-    --text-light: rgba(44, 62, 80, 0.7);
-    --shadow-light: rgba(198, 231, 255, 0.3);
-    --shadow-warm: rgba(255, 221, 174, 0.3);
 }
 
 /* Prevent horizontal overflow globally */
@@ -219,7 +212,7 @@ section {
     display: inline-block;
     padding: 12px 30px;
     border-radius: 50px;
-    font-weight: 500;
+    font-weight: 600;
     transition: var(--transition);
     cursor: pointer;
     border: none;
@@ -227,31 +220,31 @@ section {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    background-color: var(--primary-color);
     color: var(--dark-color);
-    border: 2px solid transparent;
+    border: 2px solid var(--primary-color);
     font-weight: 600;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+    background-color: var(--primary-dark);
     color: var(--dark-color);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px var(--shadow-light);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.4);
 }
 
 .btn-secondary {
-    background: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
-    color: var(--dark-color);
-    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
     font-weight: 600;
 }
 
 .btn-secondary:hover {
-    background: linear-gradient(135deg, var(--secondary-dark), var(--secondary-color));
+    background-color: var(--primary-color);
     color: var(--dark-color);
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px var(--shadow-warm);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
 }
 
 .highlight {
