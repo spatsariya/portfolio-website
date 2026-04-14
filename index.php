@@ -546,13 +546,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <button class="filter-btn" data-filter="branding" aria-pressed="false">Branding</button>
         </div>
         <div class="projects-grid">
-            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
                 <div class="project-image">
                     <img src="images/content/virgin-plus.webp" alt="Virgin Plus MyBenefits mobile app redesign showcasing improved user interface and user experience" loading="lazy">
                     <div class="project-overlay">
                         <div class="project-info">
                             <h3>Virgin Plus My Benefits</h3>
-                            <p>UI/UX Design, Web Design</p>
+                            <p>UI/UX Design, Rewards Experience</p>
                             <a href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&node-id=13-83&starting-point-node-id=13%3A83&t=URGumBC1RI91aJOu-1" class="btn-view-project">View Project</a>
                         </div>
                     </div>
@@ -602,6 +602,126 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                             <h3>rCycle Mobile App</h3>
                             <p>UI/UX Design, Mobile App</p>
                             <a href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&node-id=13-83&starting-point-node-id=13%3A83&t=URGumBC1RI91aJOu-1" class="btn-view-project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="450">
+                <div class="project-image">
+                    <img src="images/sqr-2.png" alt="Radiology with Tears mobile product concept and interface showcase" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Radiology with Tears</h3>
+                            <p>Healthcare UX, Mobile App</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
+                <div class="project-image">
+                    <img src="images/sqr.png" alt="Radiology Resident mobile learning application design presentation" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Radiology Resident</h3>
+                            <p>Medical Education, Mobile App</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="550">
+                <div class="project-image">
+                    <img src="images/land.png" alt="Dr Outlier healthcare mobile app product design showcase" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Dr Outlier</h3>
+                            <p>Product Design, Healthcare App</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="600">
+                <div class="project-image">
+                    <img src="images/land-2.png" alt="Subscription Manager mobile utility app design presentation" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Subscription Manager</h3>
+                            <p>Utility App, Subscription UX</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="650">
+                <div class="project-image">
+                    <img src="images/sqr-2.png" alt="Play Classic entertainment mobile app interface design" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Play Classic</h3>
+                            <p>Entertainment App, Mobile UX</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="700">
+                <div class="project-image">
+                    <img src="images/land.png" alt="Shopsy social commerce mobile experience design showcase" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Shopsy</h3>
+                            <p>Social Commerce, Mobile App</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="750">
+                <div class="project-image">
+                    <img src="images/land-2.png" alt="2Gud social commerce mobile product design showcase" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>2Gud</h3>
+                            <p>Mobile Commerce, Product Design</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="800">
+                <div class="project-image">
+                    <img src="images/sqr.png" alt="PayQwik wallet and payments mobile app interface design" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>PayQwik</h3>
+                            <p>Fintech, Wallet Experience</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="850">
+                <div class="project-image">
+                    <img src="images/sqr-2.png" alt="Cashier merchant payments mobile app design presentation" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Cashier</h3>
+                            <p>Merchant Payments, Mobile App</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="900">
+                <div class="project-image">
+                    <img src="images/land.png" alt="Circuit Launcher Android launcher design and interface showcase" loading="lazy">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h3>Circuit Launcher</h3>
+                            <p>Android Launcher, UI Design</p>
+                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
                         </div>
                     </div>
                 </div>

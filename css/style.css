@@ -946,6 +946,8 @@ section + section {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    position: relative;
+    cursor: pointer;
 }
 
 .project-item:hover {
@@ -960,28 +962,46 @@ section + section {
     background: var(--surface-muted);
 }
 
+.project-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(17, 19, 24, 0.16);
+    opacity: 0;
+    transition: opacity var(--transition);
+    pointer-events: none;
+}
+
 .project-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 260ms ease, filter 260ms ease;
 }
 
 .project-overlay {
-    position: static;
-    width: auto;
-    height: auto;
-    opacity: 1;
-    display: block;
-    background: transparent;
-    backdrop-filter: none;
-    pointer-events: auto;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 18px;
+    opacity: 0;
+    background: linear-gradient(to top, rgba(17, 19, 24, 0.88), rgba(17, 19, 24, 0.56) 45%, rgba(17, 19, 24, 0.12));
+    transition: opacity var(--transition);
+    pointer-events: none;
 }
 
 .project-info {
-    padding: 22px;
-    transform: none;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(188, 174, 155, 0.28);
+    box-shadow: 0 16px 34px rgba(17, 19, 24, 0.16);
+    transform: translateY(14px);
     color: inherit;
     text-align: left;
+    transition: transform var(--transition), opacity var(--transition);
 }
 
 .project-info h3 {
@@ -989,7 +1009,9 @@ section + section {
 }
 
 .project-info p {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
+    font-size: 0.95rem;
+    line-height: 1.55;
 }
 
 .btn-view-project {
@@ -1009,6 +1031,28 @@ section + section {
     background: var(--text-color);
     border-color: var(--text-color);
     color: #fff;
+}
+
+.project-item:hover .project-image::after,
+.project-item:focus-within .project-image::after {
+    opacity: 1;
+}
+
+.project-item:hover .project-overlay,
+.project-item:focus-within .project-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.project-item:hover .project-info,
+.project-item:focus-within .project-info {
+    transform: translateY(0);
+}
+
+.project-item:hover .project-image img,
+.project-item:focus-within .project-image img {
+    transform: scale(1.03);
+    filter: saturate(0.92);
 }
 
 /* ===== Certifications & Organizations Base ===== */
@@ -1424,6 +1468,33 @@ legend {
 
     .timeline-content {
         padding: 24px;
+    }
+
+    .project-overlay {
+        position: static;
+        inset: auto;
+        display: block;
+        padding: 0;
+        opacity: 1;
+        background: transparent;
+        pointer-events: auto;
+    }
+
+    .project-image::after {
+        display: none;
+    }
+
+    .project-info {
+        border-radius: 0;
+        border: 0;
+        box-shadow: none;
+        transform: none;
+        padding: 22px;
+        background: transparent;
+    }
+
+    .project-image img {
+        transition: none;
     }
 
     .social-links,
