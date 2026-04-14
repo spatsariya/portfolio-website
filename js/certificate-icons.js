@@ -16,9 +16,9 @@ const CERTIFICATE_ICONS = {
     "Figma": "fab fa-figma",
     "Graphic Design": "fas fa-palette",
     "Accessibility": "fas fa-universal-access",
-    "Illustrator": "fab fa-adobe",
-    "Sketch": "fab fa-sketch",
-    "Adobe XD": "fab fa-adobe",
+    "Illustrator": "fas fa-pen-nib",
+    "Sketch": "fas fa-compass-drafting",
+    "Adobe XD": "fas fa-object-group",
     
     // Programming & Development Icons
     "JavaScript": "fab fa-js",

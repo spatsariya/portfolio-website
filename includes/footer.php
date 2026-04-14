@@ -46,15 +46,6 @@
 
     
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <!-- Certificate Icons -->
-    <script src="js/certificate-icons.js"></script>
-    
-    <!-- Enhanced Certification Filters -->
-    <script src="js/certification-filter.js"></script>
-    
-    <!-- Certification Initialization -->
-    <script src="js/certification-init.js"></script>
-    
     <!-- Custom JavaScript -->
     <script src="js/main.js?v=<?php echo time(); ?>"></script>
 </body>

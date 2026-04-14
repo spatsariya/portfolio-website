@@ -131,7 +131,7 @@
                 </div>
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="certification-icon">
-                        <i class="fab fa-adobe"></i>
+                        <i class="fas fa-pen-nib"></i>
                     </div>
                     <div class="certification-content">
                         <h3>Illustrator CC Masterclass</h3>
@@ -141,7 +141,7 @@
                 </div>
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="certification-icon">
-                        <i class="fab fa-sketch"></i>
+                        <i class="fas fa-compass-drafting"></i>
                     </div>
                     <div class="certification-content">
                         <h3>Sketch Design</h3>
@@ -151,7 +151,7 @@
                 </div>
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
                     <div class="certification-icon">
-                        <i class="fab fa-adobe"></i>
+                        <i class="fas fa-object-group"></i>
                     </div>
                     <div class="certification-content">
                         <h3>Adobe XD Course</h3>
