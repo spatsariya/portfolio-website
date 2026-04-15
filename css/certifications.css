@@ -96,6 +96,7 @@
 .cert-bg-animation,
 .floating-cert-element {
     display: none !important;
+    pointer-events: none !important;
 }
 
 .certification-issuer::before {
@@ -150,6 +151,7 @@
     display: none;
     align-items: center;
     justify-content: center;
+    pointer-events: none;
     box-shadow: var(--shadow-md);
 }
 

@@ -109,122 +109,95 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Timeline Expandable Functionality - Auto-convert existing timeline items
-    function initializeTimelineExpandable() {
-        const timelineItems = document.querySelectorAll('.timeline-item');
-        let convertedCount = 0;
-        
-        timelineItems.forEach((item, index) => {
-            const timelineContent = item.querySelector('.timeline-content');
-            const timelineList = timelineContent ? timelineContent.querySelector('.timeline-list') : null;
-            
-            // Skip if already has expandable structure or no timeline-list
-            if (!timelineContent || !timelineList || timelineContent.querySelector('.timeline-expandable')) {
-                return;
-            }
-            
-            convertedCount++;
-            
-            // Create expandable structure
-            const expandableDiv = document.createElement('div');
-            expandableDiv.className = 'timeline-expandable';
-            
-            const detailsDiv = document.createElement('div');
-            detailsDiv.className = 'timeline-details';
-            detailsDiv.style.display = 'none';
-            
-            const toggleBtn = document.createElement('button');
-            toggleBtn.className = 'timeline-toggle';
-            toggleBtn.setAttribute('data-expanded', 'false');
-            toggleBtn.setAttribute('data-converted', 'true');
-            toggleBtn.innerHTML = `
-                <span class="toggle-text">View</span>
-                <i class="fas fa-chevron-down toggle-icon"></i>
-            `;
-            
-            // Move the timeline-list to details
-            detailsDiv.appendChild(timelineList.cloneNode(true));
-            timelineList.remove();
-            
-            // Append to expandable div
-            expandableDiv.appendChild(detailsDiv);
-            expandableDiv.appendChild(toggleBtn);
-            
-            // Append expandable div to timeline content
-            timelineContent.appendChild(expandableDiv);
-            
-            // Add click event to this specific toggle button
-            toggleBtn.addEventListener('click', function() {
-                const toggleIcon = this.querySelector('.toggle-icon');
-                const toggleText = this.querySelector('.toggle-text');
-                const isExpanded = this.getAttribute('data-expanded') === 'true';
-                
-                if (isExpanded) {
-                    // Collapse
-                    detailsDiv.classList.remove('expanded');
-                    detailsDiv.style.display = 'none';
-                    this.setAttribute('data-expanded', 'false');
-                    toggleText.textContent = 'View';
-                    toggleIcon.classList.remove('fa-chevron-up');
-                    toggleIcon.classList.add('fa-chevron-down');
-                } else {
-                    // Expand
-                    detailsDiv.style.display = 'block';
-                    setTimeout(() => {
-                        detailsDiv.classList.add('expanded');
-                    }, 10);
-                    this.setAttribute('data-expanded', 'true');
-                    toggleText.textContent = 'View';
-                    toggleIcon.classList.remove('fa-chevron-down');
-                    toggleIcon.classList.add('fa-chevron-up');
-                }
-            });
-        });
+    // Timeline Expandable Functionality
+    function setTimelineExpandedState(toggleBtn, detailsDiv, isExpanded) {
+        const toggleIcon = toggleBtn.querySelector('.toggle-icon');
+        const toggleText = toggleBtn.querySelector('.toggle-text');
+
+        toggleBtn.setAttribute('data-expanded', isExpanded ? 'true' : 'false');
+        toggleBtn.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
+        detailsDiv.hidden = !isExpanded;
+        detailsDiv.style.display = isExpanded ? 'block' : 'none';
+        detailsDiv.classList.toggle('expanded', isExpanded);
+        detailsDiv.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
+
+        if (toggleText) {
+            toggleText.textContent = isExpanded ? 'Hide' : 'View';
+        }
+
+        if (toggleIcon) {
+            toggleIcon.classList.toggle('fa-chevron-up', isExpanded);
+            toggleIcon.classList.toggle('fa-chevron-down', !isExpanded);
+        }
     }
-    
-    // Initialize timeline expandable after a short delay to ensure all content is loaded
-    setTimeout(() => {
-        initializeTimelineExpandable();
-    }, 500);
-    
-    // Timeline Expandable Functionality for manually created elements
-    const timelineToggles = document.querySelectorAll('.timeline-toggle');
-    
-    timelineToggles.forEach((toggle, index) => {
-        // Skip if already has event listener (from auto-conversion)
-        if (toggle.hasAttribute('data-listener-added') || toggle.hasAttribute('data-converted')) {
+
+    function bindTimelineToggle(toggleBtn, detailsDiv) {
+        if (!toggleBtn || !detailsDiv || toggleBtn.hasAttribute('data-listener-added')) {
             return;
         }
-        
-        toggle.setAttribute('data-listener-added', 'true');
-        toggle.addEventListener('click', function() {
-            const timelineExpandable = this.closest('.timeline-expandable');
-            const timelineDetails = timelineExpandable.querySelector('.timeline-details');
-            const toggleIcon = this.querySelector('.toggle-icon');
-            const toggleText = this.querySelector('.toggle-text');
+
+        toggleBtn.setAttribute('data-listener-added', 'true');
+        setTimelineExpandedState(toggleBtn, detailsDiv, toggleBtn.getAttribute('data-expanded') === 'true');
+
+        toggleBtn.addEventListener('click', function() {
             const isExpanded = this.getAttribute('data-expanded') === 'true';
-            
-            if (isExpanded) {
-                // Collapse
-                timelineDetails.classList.remove('expanded');
-                timelineDetails.style.display = 'none';
-                this.setAttribute('data-expanded', 'false');
-                toggleText.textContent = 'View';
-                toggleIcon.classList.remove('fa-chevron-up');
-                toggleIcon.classList.add('fa-chevron-down');
-            } else {
-                // Expand
-                timelineDetails.style.display = 'block';
-                setTimeout(() => {
-                    timelineDetails.classList.add('expanded');
-                }, 10);
-                this.setAttribute('data-expanded', 'true');
-                toggleText.textContent = 'View';
-                toggleIcon.classList.remove('fa-chevron-down');
-                toggleIcon.classList.add('fa-chevron-up');
-            }
+            setTimelineExpandedState(this, detailsDiv, !isExpanded);
         });
-    });
+    }
+
+    function initializeTimelineExpandable() {
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        timelineItems.forEach(item => {
+            const timelineContent = item.querySelector('.timeline-content');
+            if (!timelineContent) {
+                return;
+            }
+
+            let timelineExpandable = timelineContent.querySelector('.timeline-expandable');
+            let detailsDiv = timelineExpandable ? timelineExpandable.querySelector('.timeline-details') : null;
+            let toggleBtn = timelineExpandable ? timelineExpandable.querySelector('.timeline-toggle') : null;
+
+            if (!timelineExpandable) {
+                const timelineList = timelineContent.querySelector('.timeline-list');
+
+                if (!timelineList) {
+                    return;
+                }
+
+                timelineExpandable = document.createElement('div');
+                timelineExpandable.className = 'timeline-expandable';
+
+                detailsDiv = document.createElement('div');
+                detailsDiv.className = 'timeline-details';
+                detailsDiv.hidden = true;
+
+                toggleBtn = document.createElement('button');
+                toggleBtn.className = 'timeline-toggle';
+                toggleBtn.setAttribute('type', 'button');
+                toggleBtn.setAttribute('data-expanded', 'false');
+                toggleBtn.innerHTML = `
+                    <span class="toggle-text">View</span>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                `;
+
+                detailsDiv.appendChild(timelineList);
+                timelineExpandable.appendChild(detailsDiv);
+                timelineExpandable.appendChild(toggleBtn);
+                timelineContent.appendChild(timelineExpandable);
+            }
+
+            if (!detailsDiv.id) {
+                detailsDiv.id = `timeline-details-${Math.random().toString(36).slice(2, 10)}`;
+            }
+
+            toggleBtn.setAttribute('type', 'button');
+            toggleBtn.setAttribute('aria-controls', detailsDiv.id);
+            bindTimelineToggle(toggleBtn, detailsDiv);
+        });
+    }
+
+    initializeTimelineExpandable();
 
     // Stats animation functionality
     function animateStats() {
