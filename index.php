@@ -575,7 +575,40 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
                 <div class="timeline-content">
-                    <span class="date">2022 - Present</span>
+                    <span class="date">2024 - Present</span>
+                    <h3>Product Consultant – AI Prototyping Lead</h3>
+                    <h4>Omnican Canada</h4>
+                    <p>Leading rapid development of <strong>AI-assisted prototypes</strong> and <strong>full-stack applications</strong> across <strong>healthcare</strong> and <strong>SaaS platforms</strong>, turning ideas into working MVPs for validation and iteration.</p>
+
+                    <div class="timeline-expandable">
+                        <div class="timeline-details" id="timeline-details-omnican" style="display: none;" role="region" aria-label="Additional role details">
+                            <ul class="timeline-list">
+                                <li>Translate <strong>stakeholder ideas</strong> into <strong>functional product prototypes</strong> ready for testing and decision-making</li>
+                                <li>Use <strong>AI tools</strong> and <strong>LLM workflows</strong> to generate application logic and accelerate development</li>
+                                <li>Design <strong>system architecture</strong>, <strong>UI flows</strong>, and <strong>backend structure</strong> simultaneously for faster delivery</li>
+                                <li>Build and deploy <strong>working MVPs</strong> for validation, stakeholder demos, and rapid iteration</li>
+                                <li>Document <strong>product logic</strong>, <strong>prompt architecture</strong>, and key <strong>technical decisions</strong> for continuity and scale</li>
+                                <li><strong>Radiology Without Tears (RWT)</strong> — Built the full web platform and mobile applications using AI-assisted workflows, designed the medical learning interface, and structured the content system for a healthcare learning platform</li>
+                                <li><strong>Radiology Resident</strong> — Developed the full-stack web platform including frontend, backend, and database architecture, and built a responsive learning experience for radiology residents</li>
+                                <li><strong>Subscription Manager</strong> — Built a SaaS application for subscription tracking using <strong>React</strong>, <strong>Next.js</strong>, and <strong>Supabase</strong>, with a responsive cross-platform interface</li>
+                                <li><strong>Dr. Outlier</strong> — Developed a working web application prototype with data visualization and medical content features</li>
+                                <li><strong>Web Authenticator</strong> — Built a secure authentication system prototype with login workflows, session management, and authentication logic</li>
+                                <li><strong>AI Radiology Report Builder</strong> — Designed and prototyped an AI-assisted reporting system for generating structured radiology reports using prompt-driven workflows and medical templates</li>
+                                <li><strong>Radiology Clinic Appointment System</strong> — Built a healthcare scheduling platform covering patient booking, appointment management, clinic operations, and a scalable responsive web interface</li>
+                            </ul>
+                        </div>
+
+                        <button class="timeline-toggle" data-expanded="false" aria-expanded="false" aria-controls="timeline-details-omnican" aria-label="Expand to view more details about this role">
+                            <span class="toggle-text">View</span>
+                            <i class="fas fa-chevron-down toggle-icon" style="width: 16px; height: 16px;" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="date">2024 - 2024</span>
                     <h3>UI/UX Designer</h3>
                     <h4>rCycle</h4>
                     <p>Leading design initiatives for <strong>sustainability-focused applications</strong>, creating <strong>user-centered solutions</strong> that promote <strong>environmental responsibility</strong>.</p>
