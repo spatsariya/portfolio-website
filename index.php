@@ -230,60 +230,83 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     </div>
 </section>
 
-<!-- Independent work: products, radiology and books -->
+<!-- Featured work: accessible, responsive editorial bento -->
 <section id="highlights" class="highlights-section" aria-labelledby="highlights-heading">
-    <style>
-        .highlights-section { padding: 90px 0; background: var(--bg-color, #10121a); color: var(--text-color, #fff); }
-        .highlights-section .highlights-intro { max-width: 740px; margin: 0 auto 36px; text-align: center; line-height: 1.7; opacity: .85; }
-        .highlights-section .highlights-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-        .highlights-section .highlight-card { padding: 30px; border: 1px solid rgba(148,163,184,.25); border-radius: 18px; background: rgba(148,163,184,.06); }
-        .highlights-section .highlight-card h3 { font-size: 1.35rem; margin: 0 0 16px; color: inherit; }
-        .highlights-section .highlight-card p { margin: 0 0 16px; line-height: 1.7; opacity: .87; }
-        .highlights-section .highlight-card ul { margin: 0; padding-left: 19px; line-height: 1.9; }
-        .highlights-section .highlight-card li { padding-left: 2px; }
-        .highlights-section .highlight-card a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
-        .highlights-section .highlight-eyebrow { display: block; font-size: .8rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 12px; opacity: .7; }
-        @media (max-width: 900px) { .highlights-section .highlights-grid { grid-template-columns: 1fr; } }
-        @media (max-width: 600px) { .highlights-section { padding: 60px 0; } .highlights-section .highlight-card { padding: 24px; } }
-    </style>
-    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2 id="highlights-heading">Beyond the Design Canvas</h2>
-            <div class="section-line"></div>
-        </div>
-        <p class="highlights-intro">A selection of the learning platforms, digital products and books I've brought to life.</p>
-        <div class="highlights-grid">
-            <article class="highlight-card" data-aos="fade-up">
-                <span class="highlight-eyebrow">Developer · Radiology education</span>
-                <h3>Building better learning tools</h3>
-                <p>Developer of digital experiences for radiology education and AI-assisted learning.</p>
-                <ul>
-                    <li>Radiology without Tears (RWT)</li>
-                    <li>RWT Smart AI</li>
-                </ul>
-            </article>
-            <article class="highlight-card" data-aos="fade-up" data-aos-delay="100">
-                <span class="highlight-eyebrow">Creator · Digital products</span>
-                <h3>Products I've created</h3>
-                <p>From specialist education to everyday tools, I bring ideas from concept into working products.</p>
-                <ul>
-                    <li><a href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer">Radiology Resident</a></li>
-                    <li><a href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Subscription Manager</a></li>
-                    <li>IAuthiq</li>
-                    <li>Kinfolk</li>
-                </ul>
-            </article>
-            <article class="highlight-card" data-aos="fade-up" data-aos-delay="200">
-                <span class="highlight-eyebrow">Published author · Fiction</span>
-                <h3>Stories beyond the screen</h3>
-                <p>Published author exploring imaginative worlds and the human experience.</p>
-                <ul>
-                    <li><cite>The Blueprint of Broken Things</cite></li>
-                    <li><cite>Realm of Imagination</cite></li>
-                </ul>
-            </article>
-        </div>
+<style>
+.highlights-section{--hi-text:#f7f8ff;--hi-muted:#ccd3e5;--hi-line:rgba(227,233,255,.2);padding:clamp(72px,9vw,120px) 0;background:#0c1120;color:var(--hi-text);position:relative;isolation:isolate;overflow:hidden}
+.highlights-section:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 10% 5%,rgba(63,112,196,.22),transparent 40%),radial-gradient(ellipse at 90% 85%,rgba(137,81,168,.16),transparent 42%);pointer-events:none}
+.highlights-section .highlights-kicker{display:block;text-align:center;font-size:.84rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#a9c9ff;margin-bottom:12px}
+.highlights-section .section-header h2{color:var(--hi-text)}
+.highlights-section .highlights-intro{text-align:center;max-width:650px;margin:16px auto 44px;color:var(--hi-muted);line-height:1.75;font-size:1.05rem}
+.highlights-section .highlights-grid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:20px;align-items:stretch}
+.highlights-section .highlight-card{--accent:#95c7ff;position:relative;display:flex;flex-direction:column;min-width:0;padding:clamp(23px,2.8vw,36px);border:1px solid var(--hi-line);border-radius:24px;background:#18233a;overflow:hidden;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease}
+.highlights-section .highlight-card[data-theme="product"]{--accent:#a8e6c1;background:#142b2c}
+.highlights-section .highlight-card[data-theme="books"]{--accent:#f6caa8;background:#352638}
+.highlights-section .highlight-card:before{content:"";position:absolute;width:190px;height:190px;right:-90px;top:-110px;border-radius:50%;background:var(--accent);opacity:.12;filter:blur(8px);pointer-events:none}
+.highlights-section .highlight-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px}
+.highlights-section .highlight-icon{width:54px;height:54px;display:grid;place-items:center;border-radius:16px;background:rgba(255,255,255,.09);color:var(--accent)}
+.highlights-section .highlight-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.highlights-section .highlight-index{font-size:.8rem;color:var(--hi-muted);letter-spacing:.13em}
+.highlights-section .highlight-eyebrow{font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:750;margin-bottom:12px}
+.highlights-section .highlight-card h3{font-size:clamp(1.45rem,2vw,1.9rem);line-height:1.2;letter-spacing:-.025em;color:var(--hi-text);margin:0 0 14px}
+.highlights-section .highlight-card p{color:var(--hi-muted);line-height:1.7;margin:0 0 26px}
+.highlights-section .highlight-items{list-style:none;padding:0;margin:auto 0 0;display:grid;gap:10px}
+.highlights-section .highlight-items li{min-width:0}
+.highlights-section .highlight-items a,.highlights-section .highlight-items .highlight-entry{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--hi-line);background:rgba(0,0,0,.16);border-radius:13px;color:var(--hi-text);text-decoration:none;min-height:62px}
+.highlights-section .highlight-items a{transition:background .2s ease,border-color .2s ease}
+.highlights-section .highlight-items a:hover{background:rgba(255,255,255,.10);border-color:var(--accent)}
+.highlights-section .highlight-monogram{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.11);color:var(--accent);font-weight:800;font-size:.77rem}
+.highlights-section .highlight-entry-text{flex:1;min-width:0;font-size:.95rem;font-weight:650;line-height:1.4;overflow-wrap:anywhere}
+.highlights-section .highlight-arrow{color:var(--accent);font-weight:800;flex:none;font-size:1.1rem}
+.highlights-section .highlight-items cite{font-style:italic}
+.highlights-section a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.highlights-section .highlight-card:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 20px 36px rgba(0,0,0,.18)}}
+@media(max-width:1050px){.highlights-section .highlights-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.highlights-section .highlight-card:first-child{grid-column:1/-1}}
+@media(max-width:650px){.highlights-section .highlights-grid{grid-template-columns:1fr;gap:16px}.highlights-section .highlight-card:first-child{grid-column:auto}.highlights-section .highlights-intro{margin-bottom:28px}.highlights-section .highlight-card{border-radius:20px}}
+@media(prefers-reduced-motion:reduce){.highlights-section .highlight-card,.highlights-section .highlight-items a{transition:none}}
+</style>
+<div class="container">
+    <span class="highlights-kicker">More than pixels</span>
+    <div class="section-header">
+        <h2 id="highlights-heading">Beyond the Design Canvas</h2>
+        <div class="section-line"></div>
     </div>
+    <p class="highlights-intro">I design experiences, build digital products, and write stories. Explore the different sides of my work.</p>
+    <div class="highlights-grid">
+        <article class="highlight-card" data-theme="radiology">
+            <div class="highlight-top"><span class="highlight-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3v26M3 16h26M8 8l16 16M24 8 8 24"/><circle cx="16" cy="16" r="6"/></svg></span><span class="highlight-index">01 / 03</span></div>
+            <span class="highlight-eyebrow">Developer · Radiology</span>
+            <h3>Making complex learning feel simpler.</h3>
+            <p>Developing radiology education experiences and AI-assisted tools built around how people actually learn.</p>
+            <ul class="highlight-items">
+                <li><span class="highlight-entry"><span class="highlight-monogram" aria-hidden="true">RWT</span><span class="highlight-entry-text">Radiology without Tears</span></span></li>
+                <li><span class="highlight-entry"><span class="highlight-monogram" aria-hidden="true">AI</span><span class="highlight-entry-text">RWT Smart AI</span></span></li>
+            </ul>
+        </article>
+        <article class="highlight-card" data-theme="product">
+            <div class="highlight-top"><span class="highlight-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="4" y="4" width="10" height="10" rx="2"/><rect x="18" y="4" width="10" height="10" rx="2"/><rect x="4" y="18" width="10" height="10" rx="2"/><path d="M18 23h10m-5-5v10"/></svg></span><span class="highlight-index">02 / 03</span></div>
+            <span class="highlight-eyebrow">Founder mindset · Product creator</span>
+            <h3>From an idea to something real.</h3>
+            <p>Creating useful digital products across education, productivity, identity, and community.</p>
+            <ul class="highlight-items">
+                <li><a href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer" aria-label="Radiology Resident (opens in a new tab)"><span class="highlight-monogram" aria-hidden="true">RR</span><span class="highlight-entry-text">Radiology Resident</span><span class="highlight-arrow" aria-hidden="true">↗</span></a></li>
+                <li><a href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer" aria-label="Subscription Manager (opens in a new tab)"><span class="highlight-monogram" aria-hidden="true">SM</span><span class="highlight-entry-text">Subscription Manager</span><span class="highlight-arrow" aria-hidden="true">↗</span></a></li>
+                <li><span class="highlight-entry"><span class="highlight-monogram" aria-hidden="true">IA</span><span class="highlight-entry-text">IAuthiq</span></span></li>
+                <li><span class="highlight-entry"><span class="highlight-monogram" aria-hidden="true">KF</span><span class="highlight-entry-text">Kinfolk</span></span></li>
+            </ul>
+        </article>
+        <article class="highlight-card" data-theme="books">
+            <div class="highlight-top"><span class="highlight-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 27c-3-2-7-3-12-3V5c5 0 9 1 12 3 3-2 7-3 12-3v19c-5 0-9 1-12 3Z"/><path d="M16 8v19"/></svg></span><span class="highlight-index">03 / 03</span></div>
+            <span class="highlight-eyebrow">Published author · Books</span>
+            <h3>Building worlds with words.</h3>
+            <p>When I'm not designing interfaces, I explore imagination, emotion, and the human experience through writing.</p>
+            <ul class="highlight-items">
+                <li><span class="highlight-entry"><span class="highlight-monogram" aria-hidden="true">01</span><span class="highlight-entry-text"><cite>The Blueprint of Broken Things</cite></span></span></li>
+                <li><span class="highlight-entry"><span class="highlight-monogram" aria-hidden="true">02</span><span class="highlight-entry-text"><cite>Realm of Imagination</cite></span></span></li>
+            </ul>
+        </article>
+    </div>
+</div>
 </section>
 
 <!-- Projects Section -->
