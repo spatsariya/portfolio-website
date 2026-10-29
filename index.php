@@ -183,6 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="about-text" data-aos="fade-right" data-aos-delay="100">
                 <p>I am a versatile professional with expertise in Management, Engineering, and Design. As a UI/UX and Visual Design Specialist, I create human-centered digital experiences that solve real problems and help businesses connect with their audience through intuitive and engaging products.</p>
                 <p>My design approach combines analytical thinking with creative vision, resulting in experiences that are both functional and delightful. I believe that great design should be invisible, allowing users to achieve their goals effortlessly.</p>
+                <p>Beyond design, I develop radiology learning tools and AI-powered experiences, create digital products, and write fiction. My work includes Radiology without Tears, RWT Smart AI, Radiology Resident, Subscription Manager, IAuthiq, and Kinfolk.</p>
                 <div class="about-details">
                     <div class="detail-item">
                         <span class="detail-label">Name:</span>
@@ -225,6 +226,62 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                     <div class="stat-text">LinkedIn<br>Followers</div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Independent work: products, radiology and books -->
+<section id="highlights" class="highlights-section" aria-labelledby="highlights-heading">
+    <style>
+        .highlights-section { padding: 90px 0; background: var(--bg-color, #10121a); color: var(--text-color, #fff); }
+        .highlights-section .highlights-intro { max-width: 740px; margin: 0 auto 36px; text-align: center; line-height: 1.7; opacity: .85; }
+        .highlights-section .highlights-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+        .highlights-section .highlight-card { padding: 30px; border: 1px solid rgba(148,163,184,.25); border-radius: 18px; background: rgba(148,163,184,.06); }
+        .highlights-section .highlight-card h3 { font-size: 1.35rem; margin: 0 0 16px; color: inherit; }
+        .highlights-section .highlight-card p { margin: 0 0 16px; line-height: 1.7; opacity: .87; }
+        .highlights-section .highlight-card ul { margin: 0; padding-left: 19px; line-height: 1.9; }
+        .highlights-section .highlight-card li { padding-left: 2px; }
+        .highlights-section .highlight-card a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+        .highlights-section .highlight-eyebrow { display: block; font-size: .8rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 12px; opacity: .7; }
+        @media (max-width: 900px) { .highlights-section .highlights-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 600px) { .highlights-section { padding: 60px 0; } .highlights-section .highlight-card { padding: 24px; } }
+    </style>
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <h2 id="highlights-heading">Beyond the Design Canvas</h2>
+            <div class="section-line"></div>
+        </div>
+        <p class="highlights-intro">A selection of the learning platforms, digital products and books I've brought to life.</p>
+        <div class="highlights-grid">
+            <article class="highlight-card" data-aos="fade-up">
+                <span class="highlight-eyebrow">Developer · Radiology education</span>
+                <h3>Building better learning tools</h3>
+                <p>Developer of digital experiences for radiology education and AI-assisted learning.</p>
+                <ul>
+                    <li>Radiology without Tears (RWT)</li>
+                    <li>RWT Smart AI</li>
+                </ul>
+            </article>
+            <article class="highlight-card" data-aos="fade-up" data-aos-delay="100">
+                <span class="highlight-eyebrow">Creator · Digital products</span>
+                <h3>Products I've created</h3>
+                <p>From specialist education to everyday tools, I bring ideas from concept into working products.</p>
+                <ul>
+                    <li><a href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer">Radiology Resident</a></li>
+                    <li><a href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Subscription Manager</a></li>
+                    <li>IAuthiq</li>
+                    <li>Kinfolk</li>
+                </ul>
+            </article>
+            <article class="highlight-card" data-aos="fade-up" data-aos-delay="200">
+                <span class="highlight-eyebrow">Published author · Fiction</span>
+                <h3>Stories beyond the screen</h3>
+                <p>Published author exploring imaginative worlds and the human experience.</p>
+                <ul>
+                    <li><cite>The Blueprint of Broken Things</cite></li>
+                    <li><cite>Realm of Imagination</cite></li>
+                </ul>
+            </article>
         </div>
     </div>
 </section>
