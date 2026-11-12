@@ -43,13 +43,13 @@
                 <nav class="footer-links" aria-label="Footer site navigation">
                     <h4>Explore</h4>
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#about">About</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#experience">Experience</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#skills">Skills</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects">Projects</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#education">Education</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications">Certifications</a></li>
+                        <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-links" aria-label="Footer social navigation">
