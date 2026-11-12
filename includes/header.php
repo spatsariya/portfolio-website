@@ -11,10 +11,10 @@
   <meta name="description" content="Explore the portfolio of Shivam Patsariya – a Toronto-based UI/UX Designer, Visual Strategist, and Content Creator. Expert in product design, branding, and web experiences for digital-first businesses.">
   <meta name="keywords" content="Shivam Patsariya, UI UX Designer Toronto, Visual Designer, Digital Product Designer, Portfolio, Personal Website, imShivam, Figma, Behance, Web Design, Freelance Designer">
   <meta name="author" content="Shivam Patsariya">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="icon" href="images/fav-icon.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/fav-icon.png" type="image/png">
+    <link rel="icon" href="images/logo-con.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/logo-con.png">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
     <meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
@@ -25,24 +25,23 @@
     <meta name="twitter:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
     <meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
     <meta name="twitter:image" content="https://imshivam.com/images/land-2.png" />
+    <!-- Prioritize the lightweight hero portrait over the previous 6.7 MB GIF -->
+    <link rel="preload" as="image" href="images/cutout-main.png" fetchpriority="high">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      <!-- AOS Animation Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
-    <!-- hCaptcha -->
-    <script src="https://js.hcaptcha.com/1/api.js" async defer></script>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <!-- hCaptcha loads near the contact form, not on the first screen. -->
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo filemtime(__DIR__ . '/../css/style.css'); ?>">
     <link rel="stylesheet" href="css/certifications.css?v=<?php echo filemtime(__DIR__ . '/../css/certifications.css'); ?>">
-    <link rel="stylesheet" href="css/project-fixes.css">
-    <link rel="stylesheet" href="css/solar-icons.css">
+    <link rel="stylesheet" href="css/project-fixes.css?v=<?php echo filemtime(__DIR__ . '/../css/project-fixes.css'); ?>">
+    <link rel="stylesheet" href="css/solar-icons.css?v=<?php echo filemtime(__DIR__ . '/../css/solar-icons.css'); ?>">
 
 </head>
 <body>
@@ -53,14 +52,14 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index">
+                    <a href="/" aria-label="Shivam Patsariya, home">
                         <!-- Logo Variations Available: 
                              logo-sp.png (SP icon - current)
                              logo-con.png (icon version)
                              logo-v2.png (v2 variation)
                              logo-v3.png (v3 variation)
                              logo.png (original full logo) -->
-                        <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img">
+                        <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img" width="150" height="42" decoding="async">
                     </a>
                 </div>
                 <nav class="nav-menu" role="navigation" aria-label="Main navigation">
@@ -68,15 +67,15 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#projects">Work</a></li>
                         <li><a href="#certifications">Certifications</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="header-actions">
-                    <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-secondary header-resume">Resume</a>
+                    <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary header-resume">Resume <span aria-hidden="true">↗</span></a>
                 </div>
-                <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                <button class="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -84,7 +83,7 @@
             </div>
         </div>
     </header>
-    <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+    <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true" inert>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
