@@ -40,7 +40,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/certifications.css">
+    <link rel="stylesheet" href="css/certifications.css?v=<?php echo filemtime(__DIR__ . '/../css/certifications.css'); ?>">
     <link rel="stylesheet" href="css/project-fixes.css">
     <link rel="stylesheet" href="css/solar-icons.css">
 
