@@ -426,4 +426,4 @@
 </section>
 
 <!-- Certification filtering -->
-<script src="js/certification-animation.js"></script>
+<script src="js/certification-animation.js?v=<?php echo filemtime(__DIR__ . '/js/certification-animation.js'); ?>"></script>
