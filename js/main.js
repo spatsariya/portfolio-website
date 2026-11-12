@@ -120,9 +120,12 @@ document.addEventListener('DOMContentLoaded', function() {
         detailsDiv.style.display = isExpanded ? 'block' : 'none';
         detailsDiv.classList.toggle('expanded', isExpanded);
         detailsDiv.setAttribute('aria-hidden', isExpanded ? 'false' : 'true');
+        const roleHeading = toggleBtn.closest('.timeline-content')?.querySelector('h3');
+        const roleName = roleHeading ? roleHeading.textContent.trim() : 'this entry';
+        toggleBtn.setAttribute('aria-label', (isExpanded ? 'Hide details for ' : 'View details for ') + roleName);
 
         if (toggleText) {
-            toggleText.textContent = isExpanded ? 'Hide' : 'View';
+            toggleText.textContent = isExpanded ? 'Hide details' : 'View details';
         }
 
         if (toggleIcon) {
@@ -235,32 +238,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
         observer.observe(statsSection);
-    }
-
-    // Skills progress animation
-    function animateSkills() {
-        const skillBars = document.querySelectorAll('.skill-progress');
-        skillBars.forEach(bar => {
-            const progress = bar.getAttribute('data-progress');
-            bar.style.width = '0%';
-            setTimeout(() => {
-                bar.style.width = progress + '%';
-            }, 100);
-        });
-    }
-
-    // Trigger skills animation on scroll
-    const skillsSection = document.querySelector('.skills-section');
-    if (skillsSection) {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateSkills();
-                    observer.disconnect();
-                }
-            });
-        });
-        observer.observe(skillsSection);
     }
 
     // Projects filter: keep the featured grid and the expandable index in sync.
