@@ -26,7 +26,7 @@
     <meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
     <meta name="twitter:image" content="https://imshivam.com/images/land-2.png" />
     <!-- Prioritize the lightweight hero portrait over the previous 6.7 MB GIF -->
-    <link rel="preload" as="image" href="images/cutout-main.png" fetchpriority="high">
+    <link rel="preload" as="image" href="images/shivam-portrait.webp" type="image/webp" fetchpriority="high">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
