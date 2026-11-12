@@ -124,9 +124,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                 </div>
             </div>
             <figure class="hero-visual">
-                <div class="hero-portrait">
-                    <img src="images/shivam-portrait.webp" alt="Photograph of Shivam Patsariya" width="800" height="1000" fetchpriority="high" loading="eager" decoding="async">
-                    <span class="hero-portrait-index" aria-hidden="true">SP / 01</span>
+                <div class="hero-artwork">
+                    <div class="hero-artwork-pattern" aria-hidden="true"></div>
+                    <div class="hero-poster-rail" aria-hidden="true">
+                        <span>DESIGN / BUILD / WRITE</span>
+                        <span>EST. 2016</span>
+                    </div>
+                    <div class="hero-portrait">
+                        <img src="images/shivam-portrait.webp" alt="Photograph of Shivam Patsariya" width="800" height="1000" fetchpriority="high" loading="eager" decoding="async">
+                        <span class="hero-portrait-index" aria-hidden="true">FIG. 01 / SHIVAM</span>
+                    </div>
+                    <span class="hero-artwork-corner" aria-hidden="true">SP.</span>
                 </div>
                 <figcaption class="hero-image-caption">
                     <span>Designing with curiosity. Building with purpose.</span>
