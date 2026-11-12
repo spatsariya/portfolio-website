@@ -172,60 +172,79 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 
 
 
-<!-- About Section -->
-<section id="about" class="about-section">
+<!-- About: editorial introduction -->
+<section id="about" class="about-section" aria-labelledby="about-heading">
+<style>
+#about.about-section{background:#f4f2ec;color:#24372b;padding:clamp(82px,9vw,138px) 0}
+#about .container{max-width:1200px}
+#about .about-header{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(240px,.54fr);gap:clamp(26px,6vw,110px);align-items:end;margin-bottom:clamp(46px,6vw,84px)}
+#about .about-kicker{display:block;font-size:.75rem;letter-spacing:.15em;font-weight:750;text-transform:uppercase;color:#677a68;margin-bottom:19px}
+#about .about-header h2{font-size:clamp(3rem,6vw,5.8rem);font-weight:650;line-height:1.02;letter-spacing:-.065em;margin:0;color:#25392b}
+#about .about-header h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#637f68}
+#about .about-header>p{font-size:clamp(.98rem,1.45vw,1.1rem);line-height:1.73;color:#637166;max-width:360px;margin:0 0 7px}
+#about .about-main{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(265px,.66fr);gap:clamp(34px,7vw,115px);align-items:start;border-top:1px solid #cdd5ca;padding:clamp(30px,4.2vw,52px) 0 clamp(44px,6vw,78px)}
+#about .about-story{max-width:690px}
+#about .about-story .about-intro{font-size:clamp(1.38rem,2.35vw,2.2rem);line-height:1.43;letter-spacing:-.039em;font-weight:590;color:#273d2e;margin:0 0 28px}
+#about .about-story p:not(.about-intro){font-size:1.04rem;line-height:1.78;color:#657367;margin:0 0 20px}
+#about .about-actions{display:flex;gap:13px 25px;align-items:center;flex-wrap:wrap;margin-top:33px}
+#about .about-resume{display:inline-flex;align-items:center;gap:14px;min-height:49px;padding:11px 20px;background:#263e30;color:#fff;border:1px solid #263e30;border-radius:4px;font-size:.91rem;font-weight:700;text-decoration:none;transition:background-color .2s ease}
+#about .about-resume:hover{background:#172c20;color:#fff}
+#about .about-contact-link{color:#28523a;border-bottom:1px solid #73947d;min-height:36px;display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:.9rem;text-decoration:none}
+#about .about-contact-link:hover{border-bottom-color:#28523a}
+#about .about-profile{padding:clamp(25px,3.5vw,39px);background:#e3e9df;border:1px solid #d4ded1}
+#about .about-profile h3{font-size:.73rem;letter-spacing:.14em;text-transform:uppercase;font-weight:750;color:#647967;margin:0 0 26px}
+#about .profile-row{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;align-items:start;padding:15px 0;border-top:1px solid #c8d4c6}
+#about .profile-row:last-child{padding-bottom:0}
+#about .profile-row dt{font-size:.75rem;letter-spacing:.025em;color:#687d6b;font-weight:650}
+#about .profile-row dd{font-size:.9rem;line-height:1.55;color:#293f30;font-weight:650;overflow-wrap:anywhere;margin:0}
+#about .profile-row dd a{color:#244e35;border-bottom:1px solid #9bad9d;text-decoration:none}
+#about .profile-row dd a:hover{border-bottom-color:#244e35}
+#about .about-proof{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid #cbd3c8}
+#about .about-stat{padding:28px 24px 5px 0;min-width:0}
+#about .about-stat+.about-stat{padding-left:clamp(14px,2vw,30px);border-left:1px solid #cbd3c8}
+#about .about-stat .stat-number{font-family:var(--heading-font);font-size:clamp(2.1rem,3.4vw,3.45rem);letter-spacing:-.05em;line-height:1.1;color:#2b4734;font-weight:650;display:block;margin-bottom:9px}
+#about .about-stat .stat-text{font-size:.86rem;color:#6c786d;line-height:1.45}
+#about a:focus-visible{outline:3px solid #357249;outline-offset:5px}
+@media(max-width:950px){#about .about-header{grid-template-columns:1fr;gap:24px}#about .about-main{grid-template-columns:1fr;gap:34px}#about .about-profile{max-width:none}}
+@media(max-width:650px){#about .about-proof{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:18px}#about .about-stat:nth-child(3){padding-left:0;border-left:0}#about .about-stat:nth-child(n+3){border-top:1px solid #cbd3c8;padding-top:23px}#about .about-story .about-intro{font-size:clamp(1.4rem,5.5vw,1.9rem)}}
+@media(max-width:400px){#about .profile-row{grid-template-columns:1fr;gap:4px}}
+@media(prefers-reduced-motion:reduce){#about .about-resume{transition:none}}
+</style>
     <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>About Me</h2>
-            <div class="section-line"></div>
+        <header class="about-header">
+            <div>
+                <span class="about-kicker">A little about me / Shivam Patsariya</span>
+                <h2 id="about-heading">Design, engineering,<br><em>and the space between.</em></h2>
+            </div>
+            <p>I bring together the detail of visual design, the logic of engineering, and a broader view of how products work.</p>
+        </header>
+        <div class="about-main">
+            <div class="about-story">
+                <p class="about-intro">I'm a UI/UX and visual designer who enjoys making complicated things feel simple.</p>
+                <p>My background is in computer science engineering, and I later studied global business management. That mix shapes the way I work: I look at the people using a product, the system behind it, and the decisions needed to make it useful.</p>
+                <p>I've worked across mobile apps, web platforms, branding, and product teams. Outside client work, I build independent software, explore healthcare education tools, and write fiction.</p>
+                <p>For me, good design isn't about more decoration. It's about clarity, thoughtful details, and something that works when people actually use it.</p>
+                <div class="about-actions">
+                    <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" rel="noopener noreferrer" class="about-resume">View my resume <span aria-hidden="true">↗</span></a>
+                    <a href="#contact" class="about-contact-link">Get in touch <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <aside class="about-profile" aria-label="Profile at a glance">
+                <h3>A few details</h3>
+                <dl>
+                    <div class="profile-row"><dt>Name</dt><dd>Shivam Patsariya</dd></div>
+                    <div class="profile-row"><dt>Email</dt><dd><a href="mailto:contact@imshivam.com">contact@imshivam.com</a></dd></div>
+                    <div class="profile-row"><dt>Based in</dt><dd>East York, Ontario, Canada</dd></div>
+                    <div class="profile-row"><dt>Languages</dt><dd>English · Hindi</dd></div>
+                    <div class="profile-row"><dt>Availability</dt><dd>Open to new opportunities</dd></div>
+                </dl>
+            </aside>
         </div>
-        <div class="about-content">
-            <div class="about-text" data-aos="fade-right" data-aos-delay="100">
-                <p>I am a versatile professional with expertise in Management, Engineering, and Design. As a UI/UX and Visual Design Specialist, I create human-centered digital experiences that solve real problems and help businesses connect with their audience through intuitive and engaging products.</p>
-                <p>My design approach combines analytical thinking with creative vision, resulting in experiences that are both functional and delightful. I believe that great design should be invisible, allowing users to achieve their goals effortlessly.</p>
-                <p>Beyond design, I develop radiology learning tools and AI-powered experiences, create digital products, and write fiction. My work includes Radiology without Tears, RWT Smart AI, Radiology Resident, Subscription Manager, IAuthiq, and Kinfolk.</p>
-                <div class="about-details">
-                    <div class="detail-item">
-                        <span class="detail-label">Name:</span>
-                        <span class="detail-value">Shivam Patsariya</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Email:</span>
-                        <span class="detail-value">contact@imshivam.com</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Location:</span>
-                        <span class="detail-value">East York, Ontario, Canada</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Languages:</span>
-                        <span class="detail-value">English (Native), Hindi (Native)</span>
-                    </div>
-                    <div class="detail-item">
-                        <span class="detail-label">Availability:</span>
-                        <span class="detail-value">Available for new opportunities</span>
-                    </div>
-                </div>
-                <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" class="btn btn-primary download-cv">Get a copy of Resume <i class="fas fa-download" style="width: 16px; height: 16px;"></i></a>
-            </div>
-            <div class="about-stats" data-aos="fade-left" data-aos-delay="100">
-                <div class="stat-item">
-                    <div class="stat-number" data-count="50">50+</div>
-                    <div class="stat-text">Projects<br>Completed</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="10">10+</div>
-                    <div class="stat-text">Years of<br>Experience</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="15">15+</div>
-                    <div class="stat-text">Happy<br>Clients</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" data-count="4000">4000+</div>
-                    <div class="stat-text">LinkedIn<br>Followers</div>
-                </div>
-            </div>
+        <div class="about-stats about-proof" aria-label="Portfolio at a glance">
+            <div class="about-stat"><span class="stat-number" data-count="50">50+</span><span class="stat-text">Projects completed</span></div>
+            <div class="about-stat"><span class="stat-number" data-count="10">10+</span><span class="stat-text">Years of experience</span></div>
+            <div class="about-stat"><span class="stat-number" data-count="15">15+</span><span class="stat-text">Clients</span></div>
+            <div class="about-stat"><span class="stat-number" data-count="4000">4.0k+</span><span class="stat-text">LinkedIn followers</span></div>
         </div>
     </div>
 </section>
