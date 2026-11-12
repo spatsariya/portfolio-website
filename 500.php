@@ -1,5 +1,9 @@
 <?php
 http_response_code(500);
+$seoIsHomepage = false;
+$seoTitle = 'Server Error | Shivam Patsariya';
+$seoDescription = 'An unexpected server error occurred. Visit the main Shivam Patsariya portfolio or try again later.';
+$seoRobots = 'noindex, nofollow';
 include 'includes/header.php';
 ?>
 
@@ -19,7 +23,7 @@ include 'includes/header.php';
                     <a href="/" class="btn btn-primary">
                         <i class="fas fa-refresh"></i> Try Again
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
+                    <a href="/#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Report Issue
                     </a>
                 </div>
