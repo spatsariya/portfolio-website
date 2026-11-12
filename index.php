@@ -410,10 +410,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     <div class="container">
         <header class="work-head">
             <div>
-                <span class="work-kicker">Projects / Selected work</span>
-                <h2 id="projects-heading">Work worth<br>looking closer at.</h2>
+                <span class="work-kicker">Portfolio / 16 projects</span>
+                <h2 id="projects-heading">Selected work.</h2>
             </div>
-            <p>Digital experiences, websites, and visual systems. A mix of client projects, independent experiments, and work I've helped bring to life.</p>
+            <p>A selection of mobile products, publishing platforms, and nonprofit websites. Explore the featured work or browse the full project index.</p>
         </header>
         <div class="projects-filter" role="group" aria-label="Filter projects by category">
             <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All <span aria-hidden="true">/ 16</span></button>
