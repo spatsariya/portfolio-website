@@ -352,214 +352,209 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 </div>
 </section>
 
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
+<!-- Projects Section: curated screenshots + honest project index -->
+<section id="projects" class="projects-section" aria-labelledby="projects-heading">
+<style>
+/* Editorial selected work: scoped to this section so the rest of the site is unchanged. */
+.projects-section{background:#f6f5ef;color:#202822;border-top:1px solid #e6e2d9}
+.projects-section .container{max-width:1200px}
+.projects-section .work-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(270px,.7fr);align-items:end;gap:42px;margin-bottom:34px}
+.projects-section .work-kicker,.projects-section .work-label{display:block;color:#566558;font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem}
+.projects-section .work-kicker{margin-bottom:17px}
+.projects-section .work-head h2{color:#202822;font-size:clamp(3rem,6vw,5.6rem);line-height:1.02;letter-spacing:-.065em;font-weight:650;margin:0}
+.projects-section .work-head p{color:#626a61;font-size:1.06rem;line-height:1.65;max-width:370px;margin:0 0 7px}
+.projects-section .projects-filter{display:flex;justify-content:flex-start;align-items:center;gap:9px;margin:0 0 20px;flex-wrap:wrap}
+.projects-section .projects-filter .filter-btn{border-radius:6px;background:transparent;color:#5a665e;border:1px solid #d1d6cb;font-size:.87rem;font-weight:650;padding:9px 16px;min-height:44px;transition:background .18s ease,color .18s ease,border-color .18s ease}
+.projects-section .projects-filter .filter-btn:hover,.projects-section .projects-filter .filter-btn.active{background:#243e31;border-color:#243e31;color:#fff}
+.projects-section .filter-btn:focus-visible,.projects-section a:focus-visible,.projects-section summary:focus-visible{outline:3px solid #37694a;outline-offset:4px}
+.projects-section .projects-count{font-size:.87rem;color:#667064;min-height:1.4em;margin-bottom:42px}
+.projects-section .work-label{margin-bottom:18px}
+.projects-section .projects-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:18px;margin-bottom:42px}
+.projects-section .project-item[hidden],.projects-section #featured-projects[hidden],.projects-section #more-projects[hidden]{display:none!important}
+.projects-section .project-item{border:0;border-radius:0;box-shadow:none;cursor:default;min-width:0}
+.projects-section .work-card{grid-column:span 2;background:#fff;border:1px solid #d9dcd2;display:flex;flex-direction:column;overflow:hidden;transition:box-shadow .2s ease,transform .2s ease}
+.projects-section .work-card:hover{transform:translateY(-3px);box-shadow:0 15px 35px rgba(22,37,28,.08)}
+.projects-section .work-card--lead{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);background:#e2e9df}
+.projects-section .work-media{display:block;position:relative;overflow:hidden;aspect-ratio:16/10;background:#d5ded5}
+.projects-section .work-card--lead .work-media{height:100%;min-height:390px;aspect-ratio:auto}
+.projects-section .work-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s ease;position:absolute;inset:0}
+.projects-section .work-card:hover .work-media img{transform:scale(1.035)}
+.projects-section .work-copy{padding:24px 25px 26px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.projects-section .work-card--lead .work-copy{padding:clamp(32px,4.8vw,61px);justify-content:center}
+.projects-section .work-category{display:block;font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#596b5c;margin-bottom:22px}
+.projects-section .work-card h3{font-size:clamp(1.4rem,2.2vw,1.95rem);letter-spacing:-.045em;line-height:1.12;color:#23352a;margin:0 0 13px}
+.projects-section .work-card--lead h3{font-size:clamp(2.3rem,4.2vw,4rem);line-height:1.02;margin-bottom:18px}
+.projects-section .work-card p{font-size:.97rem;line-height:1.62;color:#667167;margin:0 0 27px}
+.projects-section .work-card--lead p{font-size:1.05rem;max-width:330px}
+.projects-section .work-action{margin-top:auto;color:#264b37;border-bottom:1px solid #264b37;text-decoration:none;padding-bottom:5px;font-size:.9rem;font-weight:700;display:inline-flex;gap:12px;transition:gap .2s ease}
+.projects-section .work-action:hover{gap:18px}
+.projects-section .project-more{border-top:1px solid #cdd2c8;padding-top:28px}
+.projects-section .project-more summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;cursor:pointer;min-height:56px;padding:4px 0 17px;color:#273b2e;font-weight:650;font-size:clamp(1.1rem,2.1vw,1.5rem);letter-spacing:-.03em}
+.projects-section .project-more summary::-webkit-details-marker{display:none}
+.projects-section .project-more summary .more-label{display:flex;align-items:center;gap:19px;flex-wrap:wrap}
+.projects-section .project-more summary .more-kicker{font-size:.69rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#718073}
+.projects-section .project-more summary .more-toggle{border:1px solid #c9d0c7;border-radius:50%;width:38px;height:38px;display:grid;place-items:center;flex:none;font-size:1.2rem;transition:transform .2s ease}
+.projects-section .project-more[open] summary .more-toggle{transform:rotate(45deg)}
+.projects-section .project-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 26px;padding:18px 0 0}
+.projects-section .index-entry{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:center;padding:19px 0;border-bottom:1px solid #d7dbd2;background:transparent;color:#253a2d;min-width:0}
+.projects-section .index-entry:hover{transform:none;box-shadow:none}
+.projects-section .index-number{font-size:.75rem;color:#849084;font-weight:750;align-self:start;padding-top:5px}
+.projects-section .index-entry h3{font-size:1.12rem;letter-spacing:-.03em;line-height:1.25;margin:0 0 6px;color:#26382c;font-weight:680}
+.projects-section .index-entry p{font-size:.82rem;color:#657065;margin:0}
+.projects-section .index-link{font-size:.8rem;white-space:nowrap;color:#285641;text-decoration:none;border-bottom:1px solid #aebfaf;padding-bottom:3px;font-weight:700}
+.projects-section .index-link:hover{border-color:#285641}
+@media(max-width:990px){.projects-section .work-head{grid-template-columns:1fr;gap:18px}.projects-section .work-card{grid-column:span 3}.projects-section .work-card--lead{grid-column:1/-1}.projects-section .project-index{grid-template-columns:1fr}}
+@media(max-width:700px){.projects-section .work-head{margin-bottom:29px}.projects-section .work-head h2{font-size:clamp(2.7rem,13vw,4.3rem)}.projects-section .projects-count{margin-bottom:30px}.projects-section .projects-grid{gap:14px}.projects-section .work-card,.projects-section .work-card--lead{grid-column:1/-1;display:flex}.projects-section .work-card--lead .work-media{height:auto;min-height:0;aspect-ratio:16/10}.projects-section .work-card--lead .work-copy{padding:27px}.projects-section .work-card--lead h3{font-size:2.45rem}.projects-section .work-copy{padding:23px}.projects-section .index-entry{grid-template-columns:28px minmax(0,1fr);gap:9px}.projects-section .index-link{grid-column:2;justify-self:start}.projects-section .project-more summary .more-label{gap:8px}}
+@media(prefers-reduced-motion:reduce){.projects-section .work-card,.projects-section .work-media img,.projects-section .work-action,.projects-section .project-more summary .more-toggle{transition:none}}
+</style>
     <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>My Projects</h2>
-            <div class="section-line"></div>
+        <header class="work-head">
+            <div>
+                <span class="work-kicker">Projects / Selected work</span>
+                <h2 id="projects-heading">Work worth<br>looking closer at.</h2>
+            </div>
+            <p>Digital experiences, websites, and visual systems. A mix of client projects, independent experiments, and work I've helped bring to life.</p>
+        </header>
+        <div class="projects-filter" role="group" aria-label="Filter projects by category">
+            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All <span aria-hidden="true">/ 16</span></button>
+            <button class="filter-btn" type="button" data-filter="mobile" aria-pressed="false">Mobile apps</button>
+            <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Websites</button>
+            <button class="filter-btn" type="button" data-filter="branding" aria-pressed="false">Branding</button>
         </div>
-        <div class="projects-filter" data-aos="fade-up" data-aos-delay="100" role="group" aria-label="Filter projects by category">
-            <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-            <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile Apps</button>
-            <button class="filter-btn" data-filter="web" aria-pressed="false">Websites</button>
-            <button class="filter-btn" data-filter="branding" aria-pressed="false">Branding</button>
-        </div>
-        <div class="projects-grid">
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
-                <div class="project-image">
-                    <img src="images/content/virgin-plus.webp" alt="Virgin Plus MyBenefits mobile app redesign showcasing improved user interface and user experience" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Virgin Plus My Benefits</h3>
-                            <p>UI/UX Design, Rewards Experience</p>
-                            <a href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&node-id=13-83&starting-point-node-id=13%3A83&t=URGumBC1RI91aJOu-1" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
+        <p class="projects-count" id="projects-count" role="status" aria-live="polite">4 featured projects · 12 more to explore</p>
+        <div id="featured-projects">
+            <span class="work-label">01 / Featured projects</span>
+            <div class="projects-grid">
+
+            <article class="project-item work-card work-card--lead" data-category="mobile">
+                <a class="work-media" href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&amp;node-id=13-83&amp;starting-point-node-id=13%3A83&amp;t=URGumBC1RI91aJOu-1" target="_blank" rel="noopener noreferrer" aria-label="View Virgin Plus My Benefits project (opens in a new tab)">
+                    <img src="images/content/virgin-plus.webp" alt="Virgin Plus My Benefits app interface and rewards screens" loading="lazy">
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">01 / Mobile experience · UX design</span>
+                    <h3>Virgin Plus My Benefits</h3>
+                    <p>A rewards experience designed around everyday benefits, clear navigation, and easier discovery.</p>
+                    <a class="work-action" href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&amp;node-id=13-83&amp;starting-point-node-id=13%3A83&amp;t=URGumBC1RI91aJOu-1" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
                 </div>
-            </div>
-            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="100">
-                <div class="project-image">
-                    <img src="images/content/instiwitty-blog.webp" alt="InstiWitty Read Write Express blog platform design featuring clean typography and user-friendly interface" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>InstiWitty Read Write Express</h3>
-                            <p>Platform for freelance authors, 2015-2023</p>
-                            <a href="https://www.instiwitty.com/" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
+            </article>
+
+            <article class="project-item work-card" data-category="web">
+                <a class="work-media" href="https://www.instiwitty.com/" target="_blank" rel="noopener noreferrer" aria-label="View InstiWitty project (opens in a new tab)">
+                    <img src="images/content/instiwitty-blog.webp" alt="InstiWitty publishing platform website shown on desktop" loading="lazy">
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">02 / Publishing platform · Web</span>
+                    <h3>InstiWitty</h3>
+                    <p>A content platform built for people who read, write, and share stories.</p>
+                    <a class="work-action" href="https://www.instiwitty.com/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
                 </div>
-            </div>
-            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="200">
-                <div class="project-image">
-                    <img src="images/content/beingshivam-blog.webp" alt="BeingShivam Online personal blog website design with modern layout and engaging content presentation" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>BeingShivam Online</h3>
-                            <p>Personal Tech Blog, 2016-2021</p>
-                            <a href="https://www.beingshivam.com/" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
+            </article>
+
+            <article class="project-item work-card" data-category="web">
+                <a class="work-media" href="https://www.beingshivam.com/" target="_blank" rel="noopener noreferrer" aria-label="View BeingShivam Online project (opens in a new tab)">
+                    <img src="images/content/beingshivam-blog.webp" alt="BeingShivam Online technology blog homepage" loading="lazy">
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">03 / Personal publishing · Web</span>
+                    <h3>BeingShivam Online</h3>
+                    <p>An independent technology blog, with content and discovery at its core.</p>
+                    <a class="work-action" href="https://www.beingshivam.com/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
                 </div>
-            </div>
-            <div class="project-item" data-category="web" data-aos="fade-up" data-aos-delay="300">
-                <div class="project-image">
-                    <img src="images/content/aafdn.webp" alt="NGO website design for advocacy organization featuring accessible design and clear call-to-action elements" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>NPO/NGO Website</h3>
-                            <p>Website Design, 2015-2018</p>
-                            <a href="https://www.aashayenfoundation.org/" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
+            </article>
+
+            <article class="project-item work-card" data-category="web">
+                <a class="work-media" href="https://www.aashayenfoundation.org/" target="_blank" rel="noopener noreferrer" aria-label="View Aashayen Foundation project (opens in a new tab)">
+                    <img src="images/content/aafdn.webp" alt="Aashayen Foundation nonprofit website homepage" loading="lazy">
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">04 / Nonprofit · Web design</span>
+                    <h3>Aashayen Foundation</h3>
+                    <p>A web presence for a nonprofit, with a clear focus on its mission and community.</p>
+                    <a class="work-action" href="https://www.aashayenfoundation.org/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
                 </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="400">
-                <div class="project-image">
-                    <img src="images/land-2.png" alt="rCycle sustainability mobile application concept and interface presentation" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>rCycle Mobile App</h3>
-                            <p>UI/UX Design, Mobile App</p>
-                            <a href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&node-id=13-83&starting-point-node-id=13%3A83&t=URGumBC1RI91aJOu-1" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="450">
-                <div class="project-image">
-                    <img src="images/sqr-2.png" alt="Radiology with Tears mobile product concept and interface showcase" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Radiology with Tears</h3>
-                            <p>Healthcare UX, Mobile App</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
-                <div class="project-image">
-                    <img src="images/sqr.png" alt="Radiology Resident mobile learning application design presentation" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Radiology Resident</h3>
-                            <p>Medical Education, Mobile App</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="550">
-                <div class="project-image">
-                    <img src="images/land.png" alt="Dr Outlier healthcare mobile app product design showcase" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Dr Outlier</h3>
-                            <p>Product Design, Healthcare App</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="600">
-                <div class="project-image">
-                    <img src="images/land-2.png" alt="Subscription Manager mobile utility app design presentation" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Subscription Manager</h3>
-                            <p>Utility App, Subscription UX</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="650">
-                <div class="project-image">
-                    <img src="images/sqr-2.png" alt="Play Classic entertainment mobile app interface design" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Play Classic</h3>
-                            <p>Entertainment App, Mobile UX</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="700">
-                <div class="project-image">
-                    <img src="images/land.png" alt="Shopsy social commerce mobile experience design showcase" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Shopsy</h3>
-                            <p>Social Commerce, Mobile App</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="750">
-                <div class="project-image">
-                    <img src="images/land-2.png" alt="2Gud social commerce mobile product design showcase" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>2Gud</h3>
-                            <p>Mobile Commerce, Product Design</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="800">
-                <div class="project-image">
-                    <img src="images/sqr.png" alt="PayQwik wallet and payments mobile app interface design" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>PayQwik</h3>
-                            <p>Fintech, Wallet Experience</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="850">
-                <div class="project-image">
-                    <img src="images/sqr-2.png" alt="Cashier merchant payments mobile app design presentation" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Cashier</h3>
-                            <p>Merchant Payments, Mobile App</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-item" data-category="mobile" data-aos="fade-up" data-aos-delay="900">
-                <div class="project-image">
-                    <img src="images/land.png" alt="Circuit Launcher Android launcher design and interface showcase" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Circuit Launcher</h3>
-                            <p>Android Launcher, UI Design</p>
-                            <a href="#contact" class="btn-view-project">Ask for Case Study</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="project-item" data-category="branding" data-aos="fade-up" data-aos-delay="600">
-                <div class="project-image">
-                    <img src="images/land.png" alt="Flipkart marketing graphics and promotional campaign design showcase" loading="lazy">
-                    <div class="project-overlay">
-                        <div class="project-info">
-                            <h3>Flipkart Graphics Design</h3>
-                            <p>Branding, Visual Design</p>
-                            <a href="https://www.flipkart.com/" class="btn-view-project">View Project</a>
-                        </div>
-                    </div>
-                </div>
+            </article>
             </div>
         </div>
+        <details class="project-more" id="more-projects">
+            <summary>
+                <span class="more-label"><span class="more-kicker">02 / Project index</span>Explore 12 more projects</span>
+                <span class="more-toggle" aria-hidden="true">+</span>
+            </summary>
+            <div class="project-index">
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">05</span>
+                <div><h3>rCycle</h3><p>Sustainability · Mobile app</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">06</span>
+                <div><h3>Radiology without Tears</h3><p>Healthcare learning · Mobile</p></div>
+                <a class="index-link" href="https://rwtradiology.com/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">07</span>
+                <div><h3>Radiology Resident</h3><p>Medical education · Mobile</p></div>
+                <a class="index-link" href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">08</span>
+                <div><h3>Dr Outlier</h3><p>Healthcare · Product design</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">09</span>
+                <div><h3>Subscription Manager</h3><p>Subscription tracking · App</p></div>
+                <a class="index-link" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Visit product <span aria-hidden="true">↗</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">10</span>
+                <div><h3>Play Classic</h3><p>Entertainment · Mobile</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">11</span>
+                <div><h3>Shopsy</h3><p>Social commerce · Mobile</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">12</span>
+                <div><h3>2Gud</h3><p>Commerce · Mobile</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">13</span>
+                <div><h3>PayQwik</h3><p>Payments · Fintech</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">14</span>
+                <div><h3>Cashier</h3><p>Merchant payments · Mobile</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">15</span>
+                <div><h3>Circuit Launcher</h3><p>Android launcher · UI</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+
+            <article class="project-item index-entry" data-category="branding">
+                <span class="index-number">16</span>
+                <div><h3>Flipkart Graphics Design</h3><p>Brand and marketing graphics</p></div>
+                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
+            </article>
+            </div>
+        </details>
     </div>
 </section>
 
