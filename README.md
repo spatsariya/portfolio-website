@@ -80,15 +80,19 @@ portfolio-website/
 ## ⚙️ Configuration
 
 ### Contact Form Setup
-The website includes multiple form processing options:
+The contact form is processed by `index.php` and uses PHP's `mail()` function.
+It no longer needs an hCaptcha key or third-party verification service.
 
-- **Simple PHP Mail**: `process-form-simple.php` (uses PHP's mail() function)
-- **PHPMailer**: `process-form-phpmailer.php` (SMTP support)
+Protection in `includes/contact-protection.php`:
+- A hidden honeypot field rejects automated submissions.
+- A per-session form token and a 3-second minimum form age reduce cross-site and instant submissions.
+- Per-IP throttling permits up to 5 attempts in 15 minutes and 15 attempts in 24 hours.
+- Rate-limit counters are stored as timestamp-only files under the server's private temporary directory, with session fallback when that directory is unavailable.
+- Required fields, email formats and message lengths are checked server-side.
 
-Update the recipient email in your chosen form processor:
-```php
-$to = "your-email@domain.com";
-```
+**Hosting requirements:** PHP 7.4+, working sessions, permission to write temporary files for full IP throttling, and a configured PHP `mail()` transport. The secret/configuration for mail delivery must remain outside Git; `config.php` is ignored. You can set `CONTACT_EMAIL` in that file. CAPTCHA credentials are no longer used.
+
+To test: open the contact form, wait at least 3 seconds, fill it out and submit once. Check the recipient mailbox and PHP error logs if mail delivery fails. Do not use old `mail-test.php` or `test-mail.php` routes; they were removed because unauthenticated visits could send mail.
 
 ### URL Rewriting
 The `.htaccess` file provides:
