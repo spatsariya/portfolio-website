@@ -38,3 +38,21 @@ AddDefaultCharset UTF-8
 
 # Set default document
 DirectoryIndex index.php
+
+# Compression (when mod_deflate is available)
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# Static asset caching (when mod_expires is available)
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/webp "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/svg+xml "access plus 1 month"
+ExpiresByType text/css "access plus 7 days"
+ExpiresByType application/javascript "access plus 7 days"
+ExpiresByType text/javascript "access plus 7 days"
+</IfModule>
