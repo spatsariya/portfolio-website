@@ -101,72 +101,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 
 <?php include 'includes/header.php'; ?>
 
-<!-- Hero Section -->
-<section id="hero" class="hero-section">
+<!-- Hero: personal editorial introduction -->
+<section id="hero" class="hero-section" aria-labelledby="hero-heading">
     <div class="container">
         <div class="hero-content">
-            <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
-                <span class="hero-kicker">Product Design • UX Strategy • Visual Systems</span>
-                <span class="hero-greeting">Hello, I'm Shivam.</span>
-                <h1>Designing digital products that feel clear, credible, and ready to scale.</h1>
-                <h2>UI/UX Designer & Creative Innovator with 10+ years building user-centered experiences.</h2>
-                <p class="hero-description">Transforming ideas into exceptional digital experiences that bridge user needs and business goals. With a focus on human-centered design, I craft intuitive interfaces that drive engagement, enhance satisfaction, and deliver measurable results.</p>
-                <div class="hero-proof-list" aria-label="Professional highlights">
-                    <span>Based in Ontario, Canada</span>
-                    <span>Available for freelance & full-time roles</span>
-                    <span>Product, mobile, web, and brand experience</span>
+            <div class="hero-text">
+                <div class="hero-eyebrow">
+                    <span class="hero-eyebrow-rule" aria-hidden="true"></span>
+                    <span>Shivam Patsariya / UI·UX &amp; Product Design</span>
                 </div>
+                <h1 id="hero-heading">Complex ideas.<br><em>Clear experiences.</em></h1>
+                <p class="hero-intro">I'm Shivam. I design digital products that make complicated things feel simple.</p>
+                <p class="hero-description">With a background in engineering, visual design, and business, I connect what people need with what teams can actually build.</p>
                 <div class="hero-cta">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+                    <a href="#projects" class="hero-primary-action">Explore my work <span aria-hidden="true">↗</span></a>
+                    <a href="#contact" class="hero-secondary-action">Let's talk <span aria-hidden="true">↗</span></a>
                 </div>
-                <div class="hero-social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="width: 20px; height: 20px;"></i></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble" style="width: 20px; height: 20px;"></i></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance" style="width: 20px; height: 20px;"></i></a>
-                </div>
-            </div>
-            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
-                <div class="hero-portrait-card">
-                    <div class="image-cutout">
-                        <img src="images/cutout-main.png" alt="Portrait of Shivam Patsariya, UI/UX and product designer" width="800" height="900" fetchpriority="high" loading="eager" decoding="async">
-                    </div>
-                    <div class="hero-card-details">
-                        <div>
-                            <p class="hero-card-label">Currently focused on</p>
-                            <strong>Product design, UX research, design systems, and growth-oriented digital experiences.</strong>
-                        </div>
-                        <div>
-                            <p class="hero-card-label">Open to</p>
-                            <strong>Senior product design, UX leadership, and consulting opportunities.</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-stats-highlight">
-                    <div class="stat-highlight">
-                        <span class="stat-number" data-count="10">10+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat-highlight">
-                        <span class="stat-number" data-count="50">50</span>
-                        <span class="stat-label">Projects Delivered</span>
-                    </div>
-                    <div class="stat-highlight">
-                        <span class="stat-number" data-count="15">15</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
+                <div class="hero-social-links" aria-label="Find me online">
+                    <span>Elsewhere</span>
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" rel="noopener noreferrer">Behance <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
-        </div> 
+            <figure class="hero-visual">
+                <div class="hero-portrait">
+                    <img src="images/cutout-main.png" alt="Illustrated portrait of Shivam Patsariya" width="800" height="900" fetchpriority="high" loading="eager" decoding="async">
+                    <span class="hero-portrait-index" aria-hidden="true">SP / 01</span>
+                </div>
+                <figcaption class="hero-image-caption">
+                    <span>Designing with curiosity. Building with purpose.</span>
+                    <span>Based in Ontario, Canada</span>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="hero-bottom">
+            <div class="hero-metrics" aria-label="Experience at a glance">
+                <div><strong>10+</strong><span>Years of experience</span></div>
+                <div><strong>50+</strong><span>Projects delivered</span></div>
+                <div><strong>15+</strong><span>Clients</span></div>
+            </div>
+            <a class="hero-next" href="#about">More about me <span aria-hidden="true">↓</span></a>
+        </div>
     </div>
-    <div class="hero-scroll">
-        <a href="#about">
-            <span>Discover More</span>
-            <i class="fas fa-chevron-down" style="width: 16px; height: 16px;"></i>
-        </a>
-    </div>
-</section>   
-
+</section>
 
 
 <!-- About: editorial introduction -->
