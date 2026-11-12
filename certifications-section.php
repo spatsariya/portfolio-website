@@ -1,23 +1,29 @@
-<!-- Certifications Section -->
-<section id="certifications" class="certifications-section">    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>My Certifications</h2>
-            <div class="section-line"></div>
+<!-- Certifications Section: an editorial credential index -->
+<section id="certifications" class="certifications-section" aria-labelledby="certifications-heading">
+    <div class="container">
+        <header class="certifications-heading">
+            <div>
+                <span class="certifications-kicker">Credentials / Continuous learning</span>
+                <h2 id="certifications-heading">Learning, <em>on record.</em></h2>
+            </div>
+            <div class="certifications-aside">
+                <p>Courses, specializations, and professional qualifications across design, technology, business, and beyond.</p>
+                <span>36 credentials &nbsp;·&nbsp; 6 fields</span>
+            </div>
+        </header>
+        <div class="certification-filters" role="group" aria-label="Filter credentials by category">
+            <button class="cert-filter-btn active" type="button" data-filter="all" aria-pressed="true">All <span class="filter-count" aria-hidden="true">36</span></button>
+            <button class="cert-filter-btn" type="button" data-filter="design" aria-pressed="false">Design &amp; UX/UI <span class="filter-count" aria-hidden="true">15</span></button>
+            <button class="cert-filter-btn" type="button" data-filter="development" aria-pressed="false">Programming &amp; Development <span class="filter-count" aria-hidden="true">6</span></button>
+            <button class="cert-filter-btn" type="button" data-filter="marketing" aria-pressed="false">Digital Marketing <span class="filter-count" aria-hidden="true">10</span></button>
+            <button class="cert-filter-btn" type="button" data-filter="business" aria-pressed="false">Business &amp; Management <span class="filter-count" aria-hidden="true">1</span></button>
+            <button class="cert-filter-btn" type="button" data-filter="healthcare" aria-pressed="false">Healthcare &amp; Safety <span class="filter-count" aria-hidden="true">2</span></button>
+            <button class="cert-filter-btn" type="button" data-filter="professional" aria-pressed="false">Professional Qualifications <span class="filter-count" aria-hidden="true">2</span></button>
         </div>
-        <p class="section-subheading" data-aos="fade-up" data-aos-delay="50">Professional development and continuous learning journey</p>
-        
-        <div class="certification-filters" data-aos="fade-up" data-aos-delay="100">
-            <button class="cert-filter-btn active" data-filter="all">All</button>
-            <button class="cert-filter-btn" data-filter="design">Design & UX/UI</button>
-            <button class="cert-filter-btn" data-filter="development">Programming & Development</button>
-            <button class="cert-filter-btn" data-filter="marketing">Digital Marketing</button>
-            <button class="cert-filter-btn" data-filter="business">Business & Management</button>
-            <button class="cert-filter-btn" data-filter="healthcare">Healthcare & Safety</button>
-            <button class="cert-filter-btn" data-filter="professional">Professional Qualifications</button>
-        </div>
-        
-        <!-- Category 1: Design & UX/UI -->        <div class="cert-category" id="design-category" data-category-type="design">
-            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-palette"></i></span><span>Design & UX/UI</span></h3>
+        <p class="certifications-hint" id="certifications-hint" role="status" aria-live="polite">Select a category or expand a row to explore the credentials.</p>
+
+        <!-- Category 1: Design & UX/UI -->        <details class="cert-category" id="design-category" data-category-type="design">
+            <summary class="cert-category-title"><span class="cert-category-number" aria-hidden="true">01</span><span class="cert-category-name">Design & UX/UI</span><span class="cert-category-count">15 credentials</span><span class="cert-category-expander" aria-hidden="true">+</span></summary>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -170,11 +176,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
         
         <!-- Category 2: Programming & Development -->
-        <div class="cert-category" id="development-category" data-category-type="development">
-            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-code"></i></span><span>Programming & Development</span></h3>
+        <details class="cert-category" id="development-category" data-category-type="development">
+            <summary class="cert-category-title"><span class="cert-category-number" aria-hidden="true">02</span><span class="cert-category-name">Programming & Development</span><span class="cert-category-count">6 credentials</span><span class="cert-category-expander" aria-hidden="true">+</span></summary>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -237,11 +243,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
 
         <!-- Category 3: Digital Marketing -->
-        <div class="cert-category" id="marketing-category" data-category-type="marketing">
-            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-bullhorn"></i></span><span>Digital Marketing</span></h3>
+        <details class="cert-category" id="marketing-category" data-category-type="marketing">
+            <summary class="cert-category-title"><span class="cert-category-number" aria-hidden="true">03</span><span class="cert-category-name">Digital Marketing</span><span class="cert-category-count">10 credentials</span><span class="cert-category-expander" aria-hidden="true">+</span></summary>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -344,11 +350,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
 
         <!-- Category 4: Business & Management -->
-        <div class="cert-category" id="business-category" data-category-type="business">
-            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-briefcase"></i></span><span>Business & Management</span></h3>
+        <details class="cert-category" id="business-category" data-category-type="business">
+            <summary class="cert-category-title"><span class="cert-category-number" aria-hidden="true">04</span><span class="cert-category-name">Business & Management</span><span class="cert-category-count">1 credential</span><span class="cert-category-expander" aria-hidden="true">+</span></summary>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -361,11 +367,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
 
         <!-- Category 5: Healthcare & Safety -->
-        <div class="cert-category" id="healthcare-category" data-category-type="healthcare">
-            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-heartbeat"></i></span><span>Healthcare & Safety</span></h3>
+        <details class="cert-category" id="healthcare-category" data-category-type="healthcare">
+            <summary class="cert-category-title"><span class="cert-category-number" aria-hidden="true">05</span><span class="cert-category-name">Healthcare & Safety</span><span class="cert-category-count">2 credentials</span><span class="cert-category-expander" aria-hidden="true">+</span></summary>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -388,11 +394,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
 
         <!-- Category 6: Professional Qualifications -->
-        <div class="cert-category" id="professional-category" data-category-type="professional">
-            <h3 class="cert-category-title" data-aos="fade-up"><span class="cert-category-icon" aria-hidden="true"><i class="fas fa-award"></i></span><span>Professional Qualifications</span></h3>
+        <details class="cert-category" id="professional-category" data-category-type="professional">
+            <summary class="cert-category-title"><span class="cert-category-number" aria-hidden="true">06</span><span class="cert-category-name">Professional Qualifications</span><span class="cert-category-count">2 credentials</span><span class="cert-category-expander" aria-hidden="true">+</span></summary>
             <div class="certifications-grid">
                 <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
                     <div class="certification-icon">
@@ -415,7 +421,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </details>
     </div>
 </section>
 
