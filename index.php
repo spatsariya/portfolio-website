@@ -284,6 +284,42 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 @media(max-width:900px){.highlights-section .highlights-heading{grid-template-columns:1fr;gap:22px}.highlights-section .highlight-story--product{grid-template-columns:1fr}.highlights-section .product-stage{padding-top:8px;padding-bottom:42px}.highlights-section .highlights-heading h2{max-width:700px}}
 @media(max-width:680px){.highlights-section .highlights-grid{grid-template-columns:1fr;grid-template-areas:"product" "learning" "books";gap:14px}.highlights-section .highlight-story--product{min-height:0}.highlights-section .story-meta{margin-bottom:30px}.highlights-section .highlight-story h3{font-size:clamp(2rem,9vw,3.3rem)}.highlights-section .product-stage{padding:0 26px 34px}.highlights-section .product-feature{min-height:132px}.highlights-section .product-mini{padding:16px;min-height:100px}.highlights-section .book-display{min-height:240px}}
 @media(prefers-reduced-motion:reduce){.highlights-section .story-link,.highlights-section .learning-visual img{transition:none}}
+
+/* 2026 showcase refinements: linked products, healthcare projects and published covers. */
+.highlights-section .product-stage{gap:13px}
+.highlights-section .product-feature{min-height:190px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
+.highlights-section .product-feature:hover{transform:translateY(-3px);box-shadow:15px 18px 0 rgba(45,64,46,.1)}
+.highlights-section .product-feature .visit{display:inline-flex;align-self:flex-start;gap:6px;border-bottom:1px solid currentColor;padding-bottom:3px}
+.highlights-section .product-feature .small-label{color:#657565}
+.highlights-section .product-subgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.highlights-section a.product-mini{color:#f4f5eb;text-decoration:none;min-height:122px;transition:transform .2s ease,filter .2s ease;gap:15px}
+.highlights-section a.product-mini:hover{transform:translateY(-3px);filter:brightness(1.08)}
+.highlights-section a.product-mini:nth-child(2){color:#24392b}
+.highlights-section a.product-mini:nth-child(3){background:#3d5049;color:#f4f5eb}
+.highlights-section .product-mini strong{font-size:clamp(.95rem,1.5vw,1.2rem);line-height:1.25}
+.highlights-section .product-mini .mini-arrow{align-self:flex-end;font-size:1rem}
+.highlights-section .product-footnote{margin-top:3px}
+.highlights-section .healthcare-projects{padding:10px clamp(26px,4vw,54px) 38px;display:grid;gap:11px}
+.highlights-section .healthcare-project{display:flex;justify-content:space-between;align-items:center;gap:16px;text-decoration:none;background:#f7f7f2;border:1px solid #cad0c8;padding:22px 24px;color:#253b2e;transition:transform .2s ease,background .2s ease}
+.highlights-section .healthcare-project:hover{background:#fff;transform:translateX(3px)}
+.highlights-section .healthcare-project small{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#66766b;margin-bottom:7px;font-weight:700}
+.highlights-section .healthcare-project strong{display:block;font-size:clamp(1.25rem,2vw,1.65rem);letter-spacing:-.04em;line-height:1.12}
+.highlights-section .healthcare-project .health-arrow{font-size:1.25rem}
+.highlights-section .book-display{min-height:300px;gap:clamp(18px,3vw,38px);align-items:flex-start;padding:18px clamp(16px,3vw,34px) 28px}
+.highlights-section .book-cover{position:relative;width:clamp(132px,39%,190px);height:auto;aspect-ratio: .63;display:block;overflow:hidden;padding:0;box-shadow:9px 14px 20px rgba(61,43,35,.17);border-left:0;text-decoration:none;background:#243039;transform:rotate(-5deg);transition:transform .25s ease}
+.highlights-section .book-cover:nth-child(2){background:#251a48;transform:translateY(-8px) rotate(5deg)}
+.highlights-section .book-cover:after{display:none}
+.highlights-section .book-cover:hover{transform:rotate(-2deg) translateY(-6px)}
+.highlights-section .book-cover:nth-child(2):hover{transform:rotate(2deg) translateY(-14px)}
+.highlights-section .book-cover img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:2}
+.highlights-section .book-cover .cover-fallback{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:20px;color:#e8d8b8;font-family:Georgia,'Times New Roman',serif}
+.highlights-section .book-cover:nth-child(2) .cover-fallback{color:#f4d7f7}
+.highlights-section .book-cover .cover-fallback span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-family:inherit}
+.highlights-section .book-cover .cover-fallback strong{font-size:1.42rem;font-family:inherit;font-weight:400;line-height:1.1}
+.highlights-section .books-note{margin:2px 30px 30px}
+@media(max-width:780px){.highlights-section .product-subgrid{grid-template-columns:1fr 1fr}.highlights-section a.product-mini{min-height:116px}}
+@media(max-width:430px){.highlights-section .product-subgrid{grid-template-columns:1fr}.highlights-section a.product-mini{min-height:92px}.highlights-section .book-cover{width:42%}}
+@media(prefers-reduced-motion:reduce){.highlights-section .product-feature,.highlights-section a.product-mini,.highlights-section .healthcare-project,.highlights-section .book-cover{transition:none}}
 </style>
 <div class="container">
     <header class="highlights-heading">
@@ -298,31 +334,45 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="story-content">
                 <div class="story-meta"><span>01 / Independent products</span><span>Built & shipped</span></div>
                 <h3>Ideas are better when they're real.</h3>
-                <p>Side projects have a way of becoming real products. These are a few I've been building, from everyday utilities to tools for specific communities.</p>
-                <a class="story-link" href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer">Explore Radiology Resident <span aria-hidden="true">↗</span></a>
+                <p>Side projects have a way of becoming real products. Here are a few I've been building, from everyday utilities to tools for specific communities.</p>
+                <a class="story-link" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Explore Subscription Manager <span aria-hidden="true">↗</span></a>
             </div>
-            <div class="product-stage" aria-label="Independent products">
-                <div class="product-feature">
-                    <span class="small-label">01 — Learning platform</span>
-                    <strong>Radiology<br>Resident</strong>
-                    <a class="visit" href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Radiology Resident (opens in a new tab)">Visit product ↗</a>
-                </div>
+            <div class="product-stage" aria-label="Independent digital products">
+                <a class="product-feature" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Subscription Manager (opens in a new tab)">
+                    <span class="small-label">Featured product / Subscription utility</span>
+                    <strong>Subscription<br>Manager</strong>
+                    <span class="visit">Visit product <span aria-hidden="true">↗</span></span>
+                </a>
                 <div class="product-subgrid">
-                    <div class="product-mini"><span>02 — Utility</span><strong>Subscription Manager</strong></div>
-                    <div class="product-mini"><span>03 — Identity</span><strong>IAuthiq</strong></div>
+                    <a class="product-mini" href="https://spatsariya.github.io/whatsapp-tools/#download" target="_blank" rel="noopener noreferrer" aria-label="Explore WhatsApp Tools (opens in a new tab)">
+                        <span>02 / Desktop tools</span><strong>WhatsApp Tools</strong><span class="mini-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="product-mini" href="https://www.iauthiq.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore IAuthiq (opens in a new tab)">
+                        <span>03 / Identity</span><strong>IAuthiq</strong><span class="mini-arrow" aria-hidden="true">↗</span>
+                    </a>
+                    <a class="product-mini" href="https://kinfolk.sbs/" target="_blank" rel="noopener noreferrer" aria-label="Explore Kinfolk (opens in a new tab)">
+                        <span>04 / Family</span><strong>Kinfolk</strong><span class="mini-arrow" aria-hidden="true">↗</span>
+                    </a>
                 </div>
-                <a class="story-link" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Visit Subscription Manager <span aria-hidden="true">↗</span></a>
-                <span class="product-footnote">Also exploring: Kinfolk</span>
+                <span class="product-footnote">Four independent projects. Each one is a different kind of problem to solve.</span>
             </div>
         </article>
         <article class="highlight-story highlight-story--learning">
             <div class="story-content">
-                <div class="story-meta"><span>02 / Healthcare education</span><span>In progress</span></div>
-                <h3>Learning shouldn't feel like decoding.</h3>
-                <p>I'm developing radiology education and AI-assisted learning tools with one goal: make difficult subjects easier to understand.</p>
+                <div class="story-meta"><span>02 / Healthcare</span><span>Learning & tools</span></div>
+                <h3>Making specialist knowledge easier to use.</h3>
+                <p>Exploring clearer ways to learn, communicate, and work in radiology through dedicated digital tools.</p>
             </div>
-            <div class="learning-visual"><img src="images/sqr.png" alt="Radiology Resident healthcare learning application concept" loading="lazy"></div>
-            <div class="learning-caption"><span>Radiology without Tears</span><span>RWT Smart AI</span></div>
+            <div class="healthcare-projects">
+                <a class="healthcare-project" href="https://rwtradiology.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Radiology without Tears (opens in a new tab)">
+                    <span><small>Radiology education</small><strong>Radiology without Tears</strong></span>
+                    <span class="health-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="healthcare-project" href="https://radverba.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit RadVerba (opens in a new tab)">
+                    <span><small>Radiology tools</small><strong>RadVerba</strong></span>
+                    <span class="health-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
         </article>
         <article class="highlight-story highlight-story--books">
             <div class="story-content">
@@ -330,11 +380,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                 <h3>Some ideas need words, not pixels.</h3>
                 <p>Outside the screen, I write stories about imagination, emotion, and everything that makes us human.</p>
             </div>
-            <div class="book-display" aria-label="Books by Shivam Patsariya, represented by typographic artwork">
-                <div class="book-cover"><small>Fiction / Shivam Patsariya</small><strong>The Blueprint of Broken Things</strong></div>
-                <div class="book-cover"><small>Fiction / Shivam Patsariya</small><strong>Realm of Imagination</strong></div>
+            <div class="book-display" aria-label="Published books by Shivam Patsariya">
+                <a class="book-cover" href="https://www.amazon.in/-/hi/Shivam-Patsariya-ebook/dp/B0GX2YP4PL" target="_blank" rel="noopener noreferrer" aria-label="The Blueprint of Broken Things on Amazon (opens in a new tab)">
+                    <span class="cover-fallback"><span>Shivam Patsariya</span><strong>The Blueprint of Broken Things</strong></span>
+                    <img src="https://images-na.ssl-images-amazon.com/images/P/B0GX2YP4PL.01.L.jpg" alt="Cover of The Blueprint of Broken Things by Shivam Patsariya" loading="lazy">
+                </a>
+                <a class="book-cover" href="https://www.amazon.in/Shivam-Patsariya-ebook/dp/B0GXTR8545?ref_=ast_author_dp&amp;th=1&amp;psc=1" target="_blank" rel="noopener noreferrer" aria-label="Realm of Imagination on Amazon (opens in a new tab)">
+                    <span class="cover-fallback"><span>Shivam Patsariya</span><strong>Realm of Imagination</strong></span>
+                    <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXTR8545.01.L.jpg" alt="Cover of Realm of Imagination by Shivam Patsariya" loading="lazy">
+                </a>
             </div>
-            <p class="books-note">Typographic representations, not official book covers.</p>
+            <p class="books-note">Select a cover to view the book on Amazon <span aria-hidden="true">↗</span></p>
         </article>
     </div>
 </div>
