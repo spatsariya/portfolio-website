@@ -477,7 +477,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
         </div>
         <details class="project-more" id="more-projects">
             <summary>
-                <span class="more-label"><span class="more-kicker">02 / Project index</span>Explore 12 more projects</span>
+                <span class="more-label"><span class="more-kicker">02 / Project index</span><span id="more-projects-label">Explore 12 more projects</span></span>
                 <span class="more-toggle" aria-hidden="true">+</span>
             </summary>
             <div class="project-index">
