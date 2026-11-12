@@ -125,7 +125,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             </div>
             <figure class="hero-visual">
                 <div class="hero-portrait">
-                    <img src="images/cutout-main.png" alt="Illustrated portrait of Shivam Patsariya" width="800" height="900" fetchpriority="high" loading="eager" decoding="async">
+                    <img src="images/shivam-portrait.webp" alt="Photograph of Shivam Patsariya" width="800" height="1000" fetchpriority="high" loading="eager" decoding="async">
                     <span class="hero-portrait-index" aria-hidden="true">SP / 01</span>
                 </div>
                 <figcaption class="hero-image-caption">
