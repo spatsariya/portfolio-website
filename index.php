@@ -558,127 +558,111 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     </div>
 </section>
 
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
+<!-- Skills Section: editorial capabilities -->
+<section id="skills" class="skills-section" aria-labelledby="skills-heading">
+<style>
+/* Scoped editorial skills layout */
+#skills{background:#f6f5ef;color:#202822;padding:clamp(80px,9vw,138px) 0;border-top:1px solid #e3e4db}
+#skills .container{max-width:1200px}
+#skills .skills-lead{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.55fr);gap:clamp(28px,6vw,110px);align-items:end;margin-bottom:clamp(42px,6.5vw,88px)}
+#skills .skills-kicker{display:block;margin-bottom:20px;font-size:.75rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase;color:#566858}
+#skills .skills-lead h2{font-size:clamp(2.85rem,6.2vw,5.9rem);line-height:1.01;font-weight:650;letter-spacing:-.064em;color:#202822;margin:0;max-width:830px}
+#skills .skills-lead h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+#skills .skills-lead p{color:#626c63;font-size:clamp(1rem,1.5vw,1.13rem);line-height:1.75;max-width:360px;margin:0 0 6px}
+#skills .skills-body{display:grid;grid-template-columns:minmax(190px,.48fr) minmax(0,1.52fr);gap:clamp(30px,5vw,85px);border-top:1px solid #cbd1c8;padding-top:36px}
+#skills .skills-aside{position:relative}
+#skills .skills-aside span{display:block;font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:#6b796e;margin-bottom:17px}
+#skills .skills-aside p{font-size:clamp(1.28rem,2vw,1.9rem);line-height:1.35;color:#283d30;font-weight:600;letter-spacing:-.035em;max-width:280px;margin:0}
+#skills .capability-list{display:grid;gap:0;list-style:none;padding:0;margin:0}
+#skills .capability-item{display:grid;grid-template-columns:44px minmax(0,1fr);gap:22px;padding:30px 0 32px;border-bottom:1px solid #d7dcd2;align-items:start}
+#skills .capability-item:first-child{padding-top:0}
+#skills .capability-number{font-size:.81rem;font-weight:750;color:#839083;letter-spacing:.07em;padding-top:6px}
+#skills .capability-item h3{font-size:clamp(1.55rem,2.5vw,2.35rem);line-height:1.13;letter-spacing:-.047em;font-weight:650;color:#223729;margin:0 0 11px}
+#skills .capability-item p{font-size:1rem;color:#68736b;line-height:1.62;margin:0 0 16px;max-width:660px}
+#skills .capability-topics{display:flex;flex-wrap:wrap;gap:8px 18px}
+#skills .capability-topics span{font-size:.87rem;line-height:1.4;font-weight:600;color:#3b5747}
+#skills .capability-topics span:not(:last-child)::after{content:"/";color:#aebcaf;margin-left:18px}
+#skills .toolbox{display:grid;grid-template-columns:minmax(190px,.48fr) minmax(0,1.52fr);gap:clamp(30px,5vw,85px);padding:32px 0 0;margin-top:48px;border-top:1px solid #cbd1c8}
+#skills .toolbox h3{font-size:.76rem;letter-spacing:.13em;text-transform:uppercase;font-weight:750;color:#6b796e;margin:0}
+#skills .tool-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px}
+#skills .tool-group strong{font-size:.9rem;display:block;margin-bottom:12px;color:#253c2d;font-weight:700}
+#skills .tool-group p{color:#667168;line-height:1.7;font-size:.97rem;margin:0}
+#skills .skills-footer{margin:33px 0 0;font-size:.83rem;color:#7b867c}
+@media(max-width:920px){#skills .skills-lead{grid-template-columns:1fr;gap:24px}#skills .skills-body,#skills .toolbox{grid-template-columns:1fr;gap:24px}#skills .skills-aside p{max-width:550px}#skills .tool-groups{gap:22px}}
+@media(max-width:600px){#skills .capability-item{grid-template-columns:27px 1fr;gap:14px;padding:26px 0}#skills .capability-topics{gap:8px 13px}#skills .capability-topics span:not(:last-child)::after{margin-left:13px}#skills .tool-groups{grid-template-columns:1fr;gap:22px}#skills .skills-footer{margin-top:25px}}
+</style>
     <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>My Skills</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="skills-content">
-            <div class="skills-text" data-aos="fade-right" data-aos-delay="100">
-                <p>I combine creative thinking with technical expertise to deliver exceptional user experiences. My diverse skill set allows me to handle all aspects of the design process, from research and ideation to prototyping and implementation.</p>
+        <header class="skills-lead">
+            <div>
+                <span class="skills-kicker">Capabilities / My approach</span>
+                <h2 id="skills-heading">Thinking in systems.<br><em>Designing for people.</em></h2>
             </div>
-            
-            <div class="skills-categories">
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Design Process</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <span class="skill-name">User Research</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Wireframing</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Prototyping</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Usability Testing</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="80"></div>
-                            </div>
+            <p>My work moves from understanding the problem to shaping the experience and getting it ready to build. These are the disciplines I bring together.</p>
+        </header>
+
+        <div class="skills-body">
+            <div class="skills-aside">
+                <span>01 / What I do</span>
+                <p>From the first question to the final interaction.</p>
+            </div>
+            <ol class="capability-list">
+                <li class="capability-item">
+                    <span class="capability-number" aria-hidden="true">01</span>
+                    <div>
+                        <h3>Research &amp; direction</h3>
+                        <p>Understand what people need, make sense of constraints, and turn messy problems into clear design priorities.</p>
+                        <div class="capability-topics" aria-label="Research and direction skills">
+                            <span>User research</span><span>Usability testing</span><span>Information architecture</span><span>User flows</span>
                         </div>
                     </div>
+                </li>
+                <li class="capability-item">
+                    <span class="capability-number" aria-hidden="true">02</span>
+                    <div>
+                        <h3>Product &amp; interface design</h3>
+                        <p>Design usable, expressive interfaces across mobile and web, with careful attention to how they behave in real life.</p>
+                        <div class="capability-topics" aria-label="Product and interface design skills">
+                            <span>UX/UI design</span><span>Wireframing</span><span>Prototyping</span><span>Interaction design</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="capability-item">
+                    <span class="capability-number" aria-hidden="true">03</span>
+                    <div>
+                        <h3>Systems &amp; delivery</h3>
+                        <p>Create the structure teams need to ship consistently, collaborate with engineers, and improve products after launch.</p>
+                        <div class="capability-topics" aria-label="Systems and delivery skills">
+                            <span>Design systems</span><span>Accessibility</span><span>Responsive design</span><span>A/B testing</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="capability-item">
+                    <span class="capability-number" aria-hidden="true">04</span>
+                    <div>
+                        <h3>Visual communication</h3>
+                        <p>Make complex ideas easier to understand through visual hierarchy, motion, branding, and clear content.</p>
+                        <div class="capability-topics" aria-label="Visual communication skills">
+                            <span>Visual design</span><span>Branding</span><span>Motion design</span><span>Content strategy</span>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="toolbox" aria-label="Tools and technical capabilities">
+            <h3>02 / The toolkit</h3>
+            <div class="tool-groups">
+                <div class="tool-group">
+                    <strong>Design &amp; prototyping</strong>
+                    <p>Figma · Motiff · Framer · Adobe Creative Suite · Sketch · Adobe XD</p>
                 </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
-                    <h3>Design Tools</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">
-                            <span class="skill-name">Figma / Motiff / Framer</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Adobe XD</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Sketch</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Adobe Creative Suite</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-progress="90"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
-                    <h3>Additional Skills</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag">UI Animation</span>
-                        <span class="skill-tag">Design Systems</span>
-                        <span class="skill-tag">User-Centered Design</span>
-                        <span class="skill-tag">Accessibility</span>    
-                        <span class="skill-tag">Branding</span>
-                        <span class="skill-tag">Content Strategy</span>
-                        <span class="skill-tag">SEO Optimization</span>
-                        <span class="skill-tag">Agile Methodologies</span>
-                        <span class="skill-tag">Project Management</span>
-                        <span class="skill-tag">Cross-Functional Collaboration</span>
-                        <span class="skill-tag">Data-Driven Design</span>
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Critical Thinking</span>
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Mentorship</span>
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">Design Thinking</span>
-                        <span class="skill-tag">User Interface Design</span>
-                        <span class="skill-tag">User Experience Design</span>
-                        <span class="skill-tag">Mobile App Design</span>
-                        <span class="skill-tag">Web Design</span>
-                        <span class="skill-tag">Graphic Design</span>
-                        <span class="skill-tag">Visual Communication</span>
-                        <span class="skill-tag">Service Design</span>
-                        <span class="skill-tag">Design Research</span>
-                        <span class="skill-tag">User Testing</span>
-                        <span class="skill-tag">Usability Testing</span>
-                        <span class="skill-tag">Information Design</span>
-                        <span class="skill-tag">Content Design</span>
-                        <span class="skill-tag">Content Management</span>
-                        <span class="skill-tag">Content Strategy</span>
-                        <span class="skill-tag">Motion Design</span>
-                        <span class="skill-tag">Information Architecture</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Responsive Design</span>
-                        <span class="skill-tag">Interaction Design</span>
-                        <span class="skill-tag">Visual Design</span>
-                        <span class="skill-tag">User Flows</span>
-                        <span class="skill-tag">A/B Testing</span>
-                    </div>
+                <div class="tool-group">
+                    <strong>Build &amp; collaboration</strong>
+                    <p>HTML/CSS · JavaScript · Product strategy · Cross-functional collaboration · Project management</p>
                 </div>
             </div>
         </div>
+        <p class="skills-footer">Tools change. Good judgment, clarity, and craft stay useful.</p>
     </div>
 </section>
 
