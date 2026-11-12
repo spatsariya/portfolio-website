@@ -1076,8 +1076,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                         </div>
                         <div class="contact-text">
                             <h4>Phone</h4>
-                            <p>+1 (647) 333 9098</p>
-                            <p>+1 (647) 274 5418</p>
+                            <p><strong>India:</strong> <a href="tel:+918770496690">+91 87704 96690</a></p>
+                            <p><strong>Canada / US:</strong> <a href="tel:+16472745418">+1 (647) 274 5418</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
