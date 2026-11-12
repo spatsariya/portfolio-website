@@ -666,13 +666,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     </div>
 </section>
 
-<!-- Experience Section -->
-<section id="experience" class="experience-section">    <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>My Experience</h2>
-            <div class="section-line"></div>
-        </div>
-        <p class="section-subheading">Building expertise across design and technology</p>
+<!-- Experience Section: editorial career history -->
+<section id="experience" class="experience-section" aria-labelledby="experience-heading">
+<style>
+/* Scoped career timeline: does not affect the education section. */
+#experience{background:#edf0e9;color:#24332a;padding:clamp(83px,9vw,138px) 0}
+#experience .container{max-width:1200px}
+#experience .experience-lead{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(260px,.6fr);gap:clamp(25px,7vw,110px);align-items:end;margin-bottom:clamp(44px,6vw,82px)}
+#experience .experience-kicker{display:block;margin-bottom:20px;font-size:.75rem;font-weight:750;letter-spacing:.15em;text-transform:uppercase;color:#687768}
+#experience .experience-lead h2{font-size:clamp(2.9rem,6vw,5.65rem);line-height:1.02;letter-spacing:-.065em;font-weight:650;color:#223329;margin:0;max-width:780px}
+#experience .experience-lead h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+#experience .experience-lead p{font-size:clamp(1rem,1.45vw,1.12rem);line-height:1.68;color:#606b61;max-width:370px;margin:0 0 6px}
+#experience .experience-timeline{max-width:none;margin:0;display:grid;gap:0;border-top:1px solid #c6cec2}
+#experience .timeline-item{margin:0;border-bottom:1px solid #c6cec2}
+#experience .timeline-item .timeline-content{display:grid;grid-template-columns:minmax(145px,.28fr) minmax(0,1fr);grid-template-rows:repeat(4,auto);column-gap:clamp(22px,6vw,95px);align-items:start;box-shadow:none;background:transparent;border:0;border-radius:0;transform:none;min-width:0;padding:clamp(30px,4vw,48px) 6px!important}
+#experience .timeline-item:hover,#experience .timeline-item:hover .timeline-content{transform:none;box-shadow:none}
+#experience .timeline-item:first-child .timeline-content{background:#e0e9dd;padding-left:clamp(20px,3vw,38px)!important;padding-right:clamp(20px,3vw,38px)!important}
+#experience .timeline-content .date{grid-column:1;grid-row:1/span 4;display:block;background:transparent;border:0;border-radius:0;margin:7px 0 0;padding:0;min-height:0;color:#5d705f;font-size:.88rem;letter-spacing:.025em;font-weight:750}
+#experience .timeline-content h3{grid-column:2;color:#23372a;font-size:clamp(1.55rem,2.7vw,2.5rem);line-height:1.17;letter-spacing:-.045em;font-weight:650;margin:0 0 7px}
+#experience .timeline-content h4{grid-column:2;color:#657368;font-size:1rem;font-weight:650;line-height:1.4;margin:0 0 14px}
+#experience .timeline-content > p{grid-column:2;color:#59685e;font-size:.98rem;line-height:1.7;max-width:780px;margin:0}
+#experience .timeline-content > p strong{color:#3a5341;font-weight:700}
+#experience .timeline-content .timeline-expandable{grid-column:2;margin:15px 0 0}
+#experience .timeline-content > .timeline-list{grid-column:2}
+#experience .timeline-toggle{background:transparent;border:0;border-radius:0;padding:0 0 7px;min-height:39px;margin:0;color:#2c5b40;font-size:.88rem;font-weight:750;border-bottom:1px solid #71917a;display:inline-flex;align-items:center;gap:12px;cursor:pointer;transition:gap .2s ease}
+#experience .timeline-toggle:hover{color:#183e2a;gap:17px;background:transparent}
+#experience .timeline-toggle:focus-visible{outline:3px solid #2c6842;outline-offset:5px}
+#experience .timeline-toggle .toggle-icon{transition:transform .2s ease}
+#experience .timeline-details{padding:17px 0 0;color:#526258;max-width:800px}
+#experience .timeline-list{display:grid;gap:12px;list-style:none;padding:0;margin:0}
+#experience .timeline-list li{line-height:1.65;font-size:.93rem;padding-left:18px;color:#526358}
+#experience .timeline-list li::before{background:#799d82;width:6px;height:6px;top:.66em}
+#experience .timeline-details .timeline-list{padding:9px 0 16px}
+#experience .timeline-item:nth-child(odd) .timeline-content::before,#experience .timeline-item:nth-child(even) .timeline-content::before{display:none}
+@media(max-width:880px){#experience .experience-lead{grid-template-columns:1fr;gap:24px}#experience .timeline-item .timeline-content{grid-template-columns:minmax(115px,.25fr) minmax(0,1fr);gap:0 26px}}
+@media(max-width:650px){#experience .timeline-item .timeline-content{display:block;padding:30px 0!important}#experience .timeline-item:first-child .timeline-content{padding:28px 21px!important}#experience .timeline-content .date{margin:0 0 16px;font-size:.83rem}#experience .timeline-content h3{font-size:clamp(1.5rem,6.4vw,2rem)}#experience .timeline-content h4{margin-bottom:13px}#experience .timeline-content .timeline-expandable{margin-top:16px}}
+@media(prefers-reduced-motion:reduce){#experience .timeline-toggle,#experience .timeline-toggle .toggle-icon{transition:none}}
+</style>
+
+    <div class="container">
+        <header class="experience-lead">
+            <div>
+                <span class="experience-kicker">Experience / 2016–present</span>
+                <h2 id="experience-heading">Work, across <em>disciplines.</em></h2>
+            </div>
+            <p>From interface design and creative direction to leading product experiences and building working prototypes. A look at the teams, roles, and problems that shaped my practice.</p>
+        </header>
         <div class="experience-timeline">
             <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
                 <div class="timeline-dot"></div>
