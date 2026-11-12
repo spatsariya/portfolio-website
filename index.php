@@ -1058,65 +1058,107 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 <?php include 'certifications-section.php'; ?>
 
 
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">        <div class="section-header" data-aos="fade-up">
-            <h2>Get In Touch</h2>
-            <div class="section-line"></div>
-        </div>
-        <p class="section-subheading">Let's collaborate on your next project</p>
+<!-- Contact Section: editorial closing and preserved message form -->
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+<style>
+/* Contact: an editorial closing section, scoped so the existing form logic stays intact. */
+#contact.contact-section{background:#1c3026;color:#f5f5eb;padding:clamp(84px,9vw,138px) 0}
+#contact .container{max-width:1200px}
+#contact .contact-head{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.55fr);gap:clamp(26px,6vw,110px);align-items:end;padding-bottom:clamp(40px,6vw,70px);margin-bottom:clamp(36px,5vw,58px);border-bottom:1px solid rgba(245,245,235,.2)}
+#contact .contact-kicker{display:block;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:750;color:#aac4ad;margin:0 0 22px}
+#contact .contact-head h2{font-size:clamp(3rem,6.8vw,6.65rem);line-height:.98;letter-spacing:-.065em;font-weight:650;color:#f7f6ef;max-width:920px;margin:0}
+#contact .contact-head h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400;color:#c2d9bf}
+#contact .contact-head p{font-size:clamp(1rem,1.45vw,1.12rem);line-height:1.72;color:#b6c8b9;margin:0 0 6px;max-width:350px}
+#contact .contact-content{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,6vw,94px);align-items:start}
+#contact .contact-info{padding:0;border:0;border-radius:0;box-shadow:none;background:transparent}
+#contact .contact-info h3{color:#f6f7ef;font-size:clamp(1.65rem,3vw,2.7rem);font-weight:640;letter-spacing:-.048em;line-height:1.13;margin:0 0 18px}
+#contact .contact-info>p{color:#b7c8ba;font-size:1.04rem;line-height:1.7;max-width:460px;margin:0 0 36px}
+#contact .contact-details{display:block;margin:0;border-top:1px solid rgba(242,249,239,.2)}
+#contact .contact-item{display:grid;grid-template-columns:minmax(98px,.32fr) minmax(0,1fr);gap:12px;align-items:start;padding:23px 0;border:0;border-bottom:1px solid rgba(242,249,239,.2);border-radius:0;background:transparent;min-width:0}
+#contact .contact-icon{display:none}
+#contact .contact-text{min-width:0}
+#contact .contact-item h4{font-size:.76rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:#a3bba7;margin:3px 0 0}
+#contact .contact-item p{color:#edf3e9;font-size:.96rem;line-height:1.55;margin:0 0 9px}
+#contact .contact-item p:last-child{margin-bottom:0}
+#contact .contact-item p strong{color:#abc2af;font-size:.8rem;display:block;line-height:1.6;font-weight:600;letter-spacing:.015em}
+#contact .contact-item p a{color:#f6f9f2;font-size:1.08rem;font-weight:600;line-height:1.45;text-decoration:none;border-bottom:1px solid rgba(210,231,210,.45);padding-bottom:2px;overflow-wrap:anywhere}
+#contact .contact-item p a:hover{border-bottom-color:#fff}
+#contact .contact-item .contact-mail-link{font-size:1rem}
+#contact .contact-socials{display:flex;flex-wrap:wrap;gap:10px 24px;padding-top:30px}
+#contact .contact-socials a{color:#cedccb;text-decoration:none;font-size:.88rem;font-weight:650;display:inline-flex;align-items:center;gap:7px;min-height:40px;border-bottom:1px solid rgba(206,220,203,.35);transition:color .2s ease,border-color .2s ease}
+#contact .contact-socials a:hover{color:#fff;border-bottom-color:#fff}
+#contact .contact-form{border:1px solid #d9dfd4;border-radius:0;background:#f8f8f3;box-shadow:none;padding:clamp(26px,4.3vw,52px);color:#25392d}
+#contact .contact-form-intro{border-bottom:1px solid #d6ded3;padding-bottom:27px;margin-bottom:30px}
+#contact .contact-form-label{display:block;color:#647c68;font-size:.72rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;margin-bottom:18px}
+#contact .contact-form-intro h3{font-size:clamp(1.8rem,2.65vw,2.8rem);line-height:1.1;font-weight:650;color:#253b2b;letter-spacing:-.05em;margin:0 0 14px}
+#contact .contact-form-intro p{color:#68796b;line-height:1.6;font-size:.96rem;margin:0}
+#contact .contact-form fieldset{min-width:0}
+#contact .contact-form .form-group{margin-bottom:20px}
+#contact .contact-form .form-group label{display:block;margin-bottom:9px;color:#354b3a;font-size:.85rem;font-weight:700}
+#contact .contact-form .form-group input,#contact .contact-form .form-group textarea{display:block;width:100%;border:1px solid #cdd7ca;border-radius:4px;min-height:52px;padding:14px 16px;color:#263c2c;background:#fff;font-size:.96rem;box-shadow:none;transition:border-color .2s ease,box-shadow .2s ease}
+#contact .contact-form .form-group textarea{min-height:148px;resize:vertical}
+#contact .contact-form .form-group input:focus,#contact .contact-form .form-group textarea:focus{outline:none;border-color:#476d50;box-shadow:0 0 0 3px rgba(60,105,69,.12)}
+#contact .contact-form .form-group input::placeholder,#contact .contact-form .form-group textarea::placeholder{color:#939f95}
+#contact .contact-form .form-help{font-size:.8rem;color:#78867b;line-height:1.5}
+#contact .contact-form .btn.btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:56px;border-radius:4px;border:1px solid #244834;background:#244834;color:#fff;font-size:.97rem;font-weight:700;transition:background-color .2s ease,transform .2s ease}
+#contact .contact-form .btn.btn-primary:hover{background:#193b29;transform:translateY(-2px)}
+#contact .contact-form .btn.btn-primary:focus-visible,#contact .contact-socials a:focus-visible,#contact .contact-item a:focus-visible{outline:3px solid #b1d1b3;outline-offset:4px}
+#contact .contact-form #submit-help{text-align:center;margin-top:13px}
+#contact .contact-form .h-captcha{max-width:100%;overflow:hidden}
+#contact .form-message{border-radius:4px;line-height:1.4}
+@media(max-width:1000px){#contact .contact-head{grid-template-columns:1fr;gap:24px}#contact .contact-content{grid-template-columns:1fr;gap:40px}#contact .contact-info>p{max-width:700px}#contact .contact-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 25px}}
+@media(max-width:620px){#contact .contact-head h2{font-size:clamp(3rem,12vw,4.65rem)}#contact .contact-details{grid-template-columns:1fr}#contact .contact-item{grid-template-columns:90px 1fr}#contact .contact-form{padding:25px 20px}#contact .contact-content{gap:38px}}
+@media(max-width:360px){#contact .contact-item{grid-template-columns:1fr;gap:10px}#contact .contact-item h4{margin:0}}
+@media(prefers-reduced-motion:reduce){#contact .contact-socials a,#contact .contact-form .btn.btn-primary,#contact .contact-form .form-group input,#contact .contact-form .form-group textarea{transition:none}}
+</style>
+    <div class="container">
+        <header class="contact-head">
+            <div>
+                <span class="contact-kicker">Contact / Start a conversation</span>
+                <h2 id="contact-heading">Have something in mind?<br><em>Let's talk.</em></h2>
+            </div>
+            <p>From product experiences to new ideas worth testing, I'm always interested in a thoughtful collaboration.</p>
+        </header>
         <div class="contact-content">
-            <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
-                <h3>Let's Create Something Amazing Together</h3>
-                <p>I'm always interested in hearing about new projects and opportunities. Whether you need a complete design overhaul or just want to discuss potential collaborations, I'm here to help turn your vision into reality.</p>
+            <div class="contact-info" data-aos="fade-up">
+                <h3>You can reach me directly.</h3>
+                <p>Prefer email or a call? Choose whatever works for you. I'm happy to discuss design work, product opportunities, and new collaborations.</p>
                 <div class="contact-details">
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone" style="width: 24px; height: 24px;"></i>
-                        </div>
+                        <h4>Phone</h4>
                         <div class="contact-text">
-                            <h4>Phone</h4>
-                            <p><strong>India:</strong> <a href="tel:+918770496690">+91 87704 96690</a></p>
-                            <p><strong>Canada / US:</strong> <a href="tel:+16472745418">+1 (647) 274 5418</a></p>
+                            <p><strong>India</strong><a href="tel:+918770496690">+91 87704 96690</a></p>
+                            <p><strong>Canada / US</strong><a href="tel:+16472745418">+1 (647) 274 5418</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope" style="width: 24px; height: 24px;"></i>
-                        </div>
+                        <h4>Email</h4>
                         <div class="contact-text">
-                            <h4>Email</h4>
-                            <p>contact@imshivam.com</p>
+                            <p><a class="contact-mail-link" href="mailto:contact@imshivam.com">contact@imshivam.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt" style="width: 24px; height: 24px;"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Location</h4>
-                            <p>East York, Ontario, Canada</p>
-                        </div>
+                        <h4>Location</h4>
+                        <div class="contact-text"><p>East York, Ontario, Canada</p></div>
                     </div>
                     <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-calendar-alt" style="width: 24px; height: 24px;"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h4>Availability</h4>
-                            <p>Open to freelance & full-time opportunities</p>
-                        </div>
+                        <h4>Availability</h4>
+                        <div class="contact-text"><p>Open to freelance &amp; full-time opportunities</p></div>
                     </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin" style="width: 20px; height: 20px;"></i></a>
-                    <!-- <a href="#" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble" style="width: 20px; height: 20px;"></i></a> -->
-                    <a href="https://www.behance.net/shivampatsariya" target="_blank" aria-label="Behance"><i class="fab fa-behance" style="width: 20px; height: 20px;"></i></a>
-                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" style="width: 20px; height: 20px;"></i></a>
-                    <a href="https://twitter.com/spatsariya" target="_blank" aria-label="Twitter"><i class="fab fa-twitter" style="width: 20px; height: 20px;"></i></a>
-                </div>
+                <nav class="contact-socials" aria-label="Social profiles">
+                    <a href="https://www.linkedin.com/in/shivampatsariya/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.behance.net/shivampatsariya" target="_blank" rel="noopener noreferrer">Behance <span aria-hidden="true">↗</span></a>
+                    <a href="https://www.instagram.com/savvyshivam/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
+                    <a href="https://twitter.com/spatsariya" target="_blank" rel="noopener noreferrer">Twitter <span aria-hidden="true">↗</span></a>
+                </nav>
             </div>
-            <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
+            <div class="contact-form contact-form-editorial" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-form-intro">
+                    <span class="contact-form-label">Or send a message</span>
+                    <h3>Tell me what you're working on.</h3>
+                    <p>A little context is all I need to get the conversation started.</p>
+                </div>
                 <!-- Display success or error messages -->
                 <?php if ($form_success): ?>
                     <div class="form-message success" role="alert">
@@ -1174,6 +1216,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                 </form>
             </div>
         </div>
+
     </div>
 </section>
 
