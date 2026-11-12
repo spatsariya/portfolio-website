@@ -1,5 +1,9 @@
 <?php
 http_response_code(404);
+$seoIsHomepage = false;
+$seoTitle = 'Page Not Found | Shivam Patsariya';
+$seoDescription = 'This page isn\'t available. Return to Shivam Patsariya\'s design portfolio to explore projects, experience, and ways to get in touch.';
+$seoRobots = 'noindex, follow';
 include 'includes/header.php';
 ?>
 
@@ -19,7 +23,7 @@ include 'includes/header.php';
                     <a href="/" class="btn btn-primary">
                         <i class="fas fa-home"></i> Back to Home
                     </a>
-                    <a href="#contact" class="btn btn-secondary">
+                    <a href="/#contact" class="btn btn-secondary">
                         <i class="fas fa-envelope"></i> Contact Me
                     </a>
                 </div>
@@ -29,15 +33,15 @@ include 'includes/header.php';
         <div class="error-suggestions" data-aos="fade-up" data-aos-delay="400">
             <h3>While you're here, check out:</h3>
             <div class="suggestion-links">
-                <a href="#projects" class="suggestion-item">
+                <a href="/#projects" class="suggestion-item">
                     <i class="fas fa-briefcase"></i>
                     <span>My Projects</span>
                 </a>
-                <a href="#experience" class="suggestion-item">
+                <a href="/#experience" class="suggestion-item">
                     <i class="fas fa-user-tie"></i>
                     <span>Experience</span>
                 </a>
-                <a href="#certifications" class="suggestion-item">
+                <a href="/#certifications" class="suggestion-item">
                     <i class="fas fa-certificate"></i>
                     <span>Certifications</span>
                 </a>
