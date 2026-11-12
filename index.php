@@ -101,9 +101,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 
 <?php include 'includes/header.php'; ?>
 
-<!-- Add the favicon link here -->
-<link rel="icon" type="image/gif" href="images/fav-ico.gif">
-
 <!-- Hero Section -->
 <section id="hero" class="hero-section">
     <div class="container">
@@ -132,7 +129,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="hero-portrait-card">
                     <div class="image-cutout">
-                        <img src="images/waving-shivam.gif" alt="Shivam Patsariya waving - UI/UX Designer">
+                        <img src="images/cutout-main.png" alt="Portrait of Shivam Patsariya, UI/UX and product designer" width="800" height="900" fetchpriority="high" loading="eager" decoding="async">
                     </div>
                     <div class="hero-card-details">
                         <div>
