@@ -165,7 +165,7 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
                     </div>
                     <div class="header-actions">
                         <span class="header-availability"><span class="availability-dot" aria-hidden="true"></span>Open to opportunities</span>
-                        <a href="#contact" class="header-contact">Let's talk <span aria-hidden="true">↗</span></a>
+                        <a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact" class="header-contact">Let's talk <span aria-hidden="true">↗</span></a>
                         <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary header-resume">Resume <span aria-hidden="true">↗</span></a>
                     </div>
                     <button class="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -180,27 +180,27 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
                     <span class="nav-band-label">Explore / Portfolio</span>
                     <nav class="nav-menu" aria-label="Main navigation">
                         <ul>
-                            <li><a href="#about"><span class="nav-index" aria-hidden="true">01</span>About</a></li>
-                            <li><a href="#experience"><span class="nav-index" aria-hidden="true">02</span>Experience</a></li>
-                            <li><a href="#skills"><span class="nav-index" aria-hidden="true">03</span>Skills</a></li>
-                            <li><a href="#projects"><span class="nav-index" aria-hidden="true">04</span>Projects</a></li>
-                            <li><a href="#certifications"><span class="nav-index" aria-hidden="true">05</span>Credentials</a></li>
-                            <li><a href="#contact"><span class="nav-index" aria-hidden="true">06</span>Contact</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#about"><span class="nav-index" aria-hidden="true">01</span>About</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#experience"><span class="nav-index" aria-hidden="true">02</span>Experience</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#skills"><span class="nav-index" aria-hidden="true">03</span>Skills</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects"><span class="nav-index" aria-hidden="true">04</span>Projects</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications"><span class="nav-index" aria-hidden="true">05</span>Credentials</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact"><span class="nav-index" aria-hidden="true">06</span>Contact</a></li>
                         </ul>
                     </nav>
-                    <a class="nav-band-shortcut" href="#projects">Selected work <span aria-hidden="true">↗</span></a>
+                    <a class="nav-band-shortcut" href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects">Selected work <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </div>
     </header>
     <nav class="mobile-menu" id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true" inert>
         <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#about">About</a></li>
+            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#experience">Experience</a></li>
+            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#skills">Skills</a></li>
+            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects">Projects</a></li>
+            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications">Certifications</a></li>
+            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact">Contact</a></li>
             <li><a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank">Resume</a></li>
         </ul>
     </nav>
