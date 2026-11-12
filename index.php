@@ -917,120 +917,139 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     </div>
 </section>
 
-<!-- Organizations Section -->
-<section id="organizations" class="organizations-section">
+<!-- Organizations & communities -->
+<section id="organizations" class="organizations-section" aria-labelledby="organizations-heading">
+<style>
+#organizations{background:#f4f2ec;color:#24352b;padding:clamp(76px,9vw,132px) 0}
+#organizations .container{max-width:1200px}
+#organizations .org-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(255px,.55fr);gap:clamp(28px,7vw,110px);align-items:end;margin-bottom:clamp(40px,5vw,65px)}
+#organizations .org-kicker{display:block;font-size:.75rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#647567;margin-bottom:19px}
+#organizations .org-header h2{font-size:clamp(2.9rem,5.8vw,5.5rem);font-weight:650;letter-spacing:-.065em;line-height:1.03;color:#24352b;margin:0}
+#organizations .org-header h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+#organizations .org-header p{max-width:375px;line-height:1.7;color:#657167;font-size:1.04rem;margin:0 0 7px}
+#organizations .org-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 clamp(20px,5vw,72px)}
+#organizations .org-record{display:grid;grid-template-columns:35px minmax(0,1fr);gap:16px;align-items:start;border-top:1px solid #cdd2c9;padding:clamp(22px,3vw,34px) 0;min-width:0}
+#organizations .org-number{color:#889587;font-size:.8rem;font-weight:750;letter-spacing:.04em;padding-top:6px}
+#organizations .org-record h3{font-size:clamp(1.27rem,1.9vw,1.75rem);font-weight:650;letter-spacing:-.04em;line-height:1.2;color:#253a2c;margin:0 0 12px}
+#organizations .org-role{font-size:.95rem;color:#4c5f50;margin:0 0 6px;font-weight:650}
+#organizations .org-date{color:#7b887b;font-size:.83rem}
+@media(max-width:810px){#organizations .org-header{grid-template-columns:1fr;gap:22px}}
+@media(max-width:600px){#organizations .org-grid{grid-template-columns:1fr}#organizations .org-record{padding:24px 0}}
+</style>
     <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Organizations</h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="certifications-grid">
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="certification-icon">
-                    <span class="solar-icon building" style="width: 24px; height: 24px;"></span>
-                </div>
-                <div class="certification-content">
-                    <h3>InstiWitty Media Studios</h3>
-                    <p class="certification-issuer">Director</p>
-                    <p class="certification-date">May 2018 - Present</p>
-                </div>
+        <header class="org-header">
+            <div>
+                <span class="org-kicker">Communities / Ventures / Leadership</span>
+                <h2 id="organizations-heading">Beyond the <em>day job.</em></h2>
             </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="certification-icon">
-                    <span class="solar-icon heart" style="width: 24px; height: 24px;"></span>
-                </div>
-                <div class="certification-content">
-                    <h3>Aashayen Foundation</h3>
-                    <p class="certification-issuer">Founder & President</p>
-                    <p class="certification-date">2015 - Present</p>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="300">
-                <div class="certification-icon">
-                    <span class="solar-icon graduation-cap" style="width: 24px; height: 24px;"></span>
-                </div>
-                <div class="certification-content">
-                    <h3>Microsoft Student Association</h3>
-                    <p class="certification-issuer">Student Ambassador</p>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <span class="solar-icon paint-brush" style="width: 24px; height: 24px;"></span>
-                </div>
-                <div class="certification-content">
-                    <h3>OmniCan</h3>
-                    <p class="certification-issuer">Founder</p>
-                    <p class="certification-date">2023 - Present</p>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="400">
-                <div class="certification-icon">
-                    <span class="solar-icon paint-brush" style="width: 24px; height: 24px;"></span>
-                </div>
-                <div class="certification-content">
-                    <h3>EazyHaven</h3>
-                    <p class="certification-issuer">Founder</p>
-                    <p class="certification-date">2021 - Present</p>
-                </div>
-            </div>
-            <div class="certification-item" data-aos="fade-up" data-aos-delay="500">
-                <div class="certification-icon">
-                    <span class="solar-icon certificate" style="width: 24px; height: 24px;"></span>
-                </div>
-                <div class="certification-content">
-                    <h3>Dahej</h3>
-                    <p class="certification-issuer">City Leader</p>
-                    <p class="certification-date">2014 - 2015</p>
-                </div>
-            </div>
+            <p>Studios, initiatives, and communities I've helped lead or contribute to, across design, education, and social impact.</p>
+        </header>
+        <div class="org-grid" aria-label="Organizations and roles">
+            <article class="org-record">
+                <span class="org-number" aria-hidden="true">01</span>
+                <div><h3>InstiWitty Media Studios</h3><p class="org-role">Director</p><p class="org-date">May 2018 – Present</p></div>
+            </article>
+            <article class="org-record">
+                <span class="org-number" aria-hidden="true">02</span>
+                <div><h3>Aashayen Foundation</h3><p class="org-role">Founder &amp; President</p><p class="org-date">2015 – Present</p></div>
+            </article>
+            <article class="org-record">
+                <span class="org-number" aria-hidden="true">03</span>
+                <div><h3>Microsoft Student Association</h3><p class="org-role">Student Ambassador</p></div>
+            </article>
+            <article class="org-record">
+                <span class="org-number" aria-hidden="true">04</span>
+                <div><h3>OmniCan</h3><p class="org-role">Founder</p><p class="org-date">2023 – Present</p></div>
+            </article>
+            <article class="org-record">
+                <span class="org-number" aria-hidden="true">05</span>
+                <div><h3>EazyHaven</h3><p class="org-role">Founder</p><p class="org-date">2021 – Present</p></div>
+            </article>
+            <article class="org-record">
+                <span class="org-number" aria-hidden="true">06</span>
+                <div><h3>Dahej</h3><p class="org-role">City Leader</p><p class="org-date">2014 – 2015</p></div>
+            </article>
         </div>
     </div>
 </section>
 
-<!-- Education Section -->
-<section id="education" class="experience-section">
+<!-- Education -->
+<section id="education" class="experience-section education-editorial" aria-labelledby="education-heading">
+<style>
+#education.education-editorial{background:#e8ece5;color:#24372c;padding:clamp(77px,9vw,132px) 0}
+#education .container{max-width:1200px}
+#education .education-header{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.58fr);gap:clamp(25px,7vw,100px);align-items:end;margin-bottom:clamp(39px,6vw,70px)}
+#education .education-kicker{display:block;font-size:.75rem;font-weight:750;letter-spacing:.14em;text-transform:uppercase;color:#697c6a;margin-bottom:19px}
+#education .education-header h2{font-size:clamp(2.9rem,5.9vw,5.65rem);letter-spacing:-.065em;line-height:1.03;font-weight:650;color:#24372c;margin:0}
+#education .education-header h2 em{font-family:Georgia,'Times New Roman',serif;font-weight:400}
+#education .education-header p{max-width:365px;line-height:1.7;font-size:1.04rem;color:#647365;margin:0 0 7px}
+#education .education-list{display:grid;border-top:1px solid #c3cdc0}
+#education .education-record{display:grid;grid-template-columns:minmax(145px,.35fr) minmax(0,1fr);gap:clamp(28px,6vw,100px);padding:clamp(30px,4vw,52px) 0;border-bottom:1px solid #c3cdc0}
+#education .education-years{font-weight:750;font-size:.92rem;color:#68806e;letter-spacing:.015em;margin:5px 0 0}
+#education .education-type{display:block;font-size:.74rem;font-weight:750;text-transform:uppercase;letter-spacing:.11em;color:#5b745f;margin-bottom:16px}
+#education .education-record h3{font-size:clamp(1.9rem,3.6vw,3.25rem);font-weight:650;letter-spacing:-.055em;line-height:1.13;color:#243a2d;margin:0 0 11px}
+#education .education-school{color:#496150;font-weight:650;font-size:1rem;margin:0 0 14px}
+#education .education-description{font-size:1rem;line-height:1.7;color:#5e6e61;margin:0;max-width:750px}
+#education .education-details{margin-top:24px;border-top:1px solid #ccd5c9;padding-top:14px}
+#education .education-details summary{cursor:pointer;list-style:none;display:inline-flex;align-items:center;gap:12px;color:#29543b;font-size:.9rem;font-weight:750;min-height:34px}
+#education .education-details summary::-webkit-details-marker{display:none}
+#education .education-details summary:after{content:"+";font-size:1.22rem;line-height:1;transition:transform .2s ease}
+#education .education-details[open] summary:after{transform:rotate(45deg)}
+#education .education-details summary:focus-visible{outline:3px solid #2b6947;outline-offset:4px}
+#education .education-details ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 25px;list-style:none;margin:18px 0 0;padding:0}
+#education .education-details li{font-size:.92rem;line-height:1.55;color:#596d5d;position:relative;padding-left:15px}
+#education .education-details li:before{content:"";background:#839d85;width:5px;height:5px;border-radius:50%;position:absolute;left:0;top:.66em}
+@media(max-width:810px){#education .education-header{grid-template-columns:1fr;gap:22px}}
+@media(max-width:620px){#education .education-record{grid-template-columns:1fr;gap:18px}#education .education-details ul{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){#education .education-details summary:after{transition:none}}
+</style>
     <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Education</h2>
-            <div class="section-line"></div>
-        </div>
-        <p class="section-subheading">Academic foundation and continuous learning</p>
-        <div class="experience-timeline">
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="date">2024 - 2025</span>
-                    <h4>Graduate Certificate</h4>
+        <header class="education-header">
+            <div>
+                <span class="education-kicker">Education / Foundations</span>
+                <h2 id="education-heading">Two worlds.<br><em>One perspective.</em></h2>
+            </div>
+            <p>Engineering taught me how systems work. Business taught me how decisions travel. Design connects the two.</p>
+        </header>
+        <div class="education-list">
+            <article class="education-record">
+                <p class="education-years">2024 – 2025</p>
+                <div>
+                    <span class="education-type">Graduate Certificate</span>
                     <h3>Global Business Management</h3>
-                    <h4>Fleming College, Ontario, Canada</h4>
-                    <p>Specializing in international business strategies, cross-cultural management, and global marketing with a focus on digital transformation.</p>
-                    <ul class="timeline-list">
-                        <li>Global Business Strategies and Leadership</li>
-                        <li>International Marketing and Digital Branding</li>
-                        <li>Cross-Cultural Management and Communication</li>
-                        <li>Financial Management for Global Operations</li>
-                        <li>Digital Transformation and Innovation</li>
-                    </ul>
+                    <p class="education-school">Fleming College · Ontario, Canada</p>
+                    <p class="education-description">Specializing in international business strategies, cross-cultural management, and global marketing with a focus on digital transformation.</p>
+                    <details class="education-details">
+                        <summary>Coursework &amp; areas of study</summary>
+                        <ul>
+                            <li>Global Business Strategies and Leadership</li>
+                            <li>International Marketing and Digital Branding</li>
+                            <li>Cross-Cultural Management and Communication</li>
+                            <li>Financial Management for Global Operations</li>
+                            <li>Digital Transformation and Innovation</li>
+                        </ul>
+                    </details>
                 </div>
-            </div>
-            <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="date">2012 - 2016</span>
-                    <h4>Bachelors in Engineering (BE)</h4>
+            </article>
+            <article class="education-record">
+                <p class="education-years">2012 – 2016</p>
+                <div>
+                    <span class="education-type">Bachelor of Engineering (BE)</span>
                     <h3>Computer Science Engineering</h3>
-                    <h4>Jiwaji University, Madhya Pradesh, India</h4>
-                    <p>Comprehensive education in computer science principles, programming, and software development with additional focus on design and user experience.</p>
-                    <ul class="timeline-list">
-                        <li>Data Structures and Algorithms</li>
-                        <li>Software Engineering and Development</li>
-                        <li>Database Management Systems</li>
-                        <li>Web Development and UI Design</li>
-                        <li>Computer Networks and Security</li>
-                    </ul>
+                    <p class="education-school">Jiwaji University · Madhya Pradesh, India</p>
+                    <p class="education-description">Comprehensive education in computer science principles, programming, and software development with additional focus on design and user experience.</p>
+                    <details class="education-details">
+                        <summary>Coursework &amp; areas of study</summary>
+                        <ul>
+                            <li>Data Structures and Algorithms</li>
+                            <li>Software Engineering and Development</li>
+                            <li>Database Management Systems</li>
+                            <li>Web Development and UI Design</li>
+                            <li>Computer Networks and Security</li>
+                        </ul>
+                    </details>
                 </div>
-            </div>
+            </article>
         </div>
     </div>
 </section>
