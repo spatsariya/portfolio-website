@@ -13,8 +13,9 @@
   <meta name="author" content="Shivam Patsariya">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="icon" href="images/logo-con.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/logo-con.png">
+    <link rel="icon" href="images/shivam-sp-favicon.ico" sizes="any">
+    <link rel="icon" href="images/shivam-sp-favicon.png" type="image/png" sizes="64x64">
+    <link rel="apple-touch-icon" href="images/shivam-sp-touch.png" sizes="180x180">
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
     <meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
@@ -53,7 +54,7 @@
                     <div class="header-brand">
                         <div class="logo">
                             <a href="/" aria-label="Shivam Patsariya, home">
-                                <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img" width="150" height="42" decoding="async">
+                                <img src="images/shivam-logo-header.webp" alt="Shivam Patsariya, SP monogram and wordmark" class="logo-img" width="760" height="239" decoding="async">
                             </a>
                         </div>
                         <div class="brand-context" aria-label="Designer, developer and writer">
