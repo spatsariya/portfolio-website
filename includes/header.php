@@ -1,31 +1,132 @@
 <?php
 /**
- * Header Component for Shivam Patsariya's Portfolio
+ * Shared SEO metadata. Error pages can override these variables before including the header.
+ * The homepage is the only indexable page in this single-page portfolio.
  */
+$seoTitle = $seoTitle ?? 'Shivam Patsariya | UI/UX & Product Designer Portfolio';
+$seoDescription = $seoDescription ?? 'Explore Shivam Patsariya’s UI/UX and product design portfolio, featuring mobile apps, websites, design systems, healthcare tools, and independent products.';
+$seoRobots = $seoRobots ?? 'index, follow, max-image-preview:large';
+$seoCanonical = $seoCanonical ?? 'https://imshivam.com/';
+$seoIsHomepage = $seoIsHomepage ?? true;
+$seoImage = 'https://imshivam.com/images/shivam-portrait.webp';
+$seoTitleSafe = htmlspecialchars($seoTitle, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$seoDescriptionSafe = htmlspecialchars($seoDescription, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+$seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-  <title>Shivam Patsariya | UI/UX Designer & Digital Strategist | imShivam</title>
-  <meta name="description" content="Explore the portfolio of Shivam Patsariya – a Toronto-based UI/UX Designer, Visual Strategist, and Content Creator. Expert in product design, branding, and web experiences for digital-first businesses.">
-  <meta name="keywords" content="Shivam Patsariya, UI UX Designer Toronto, Visual Designer, Digital Product Designer, Portfolio, Personal Website, imShivam, Figma, Behance, Web Design, Freelance Designer">
-  <meta name="author" content="Shivam Patsariya">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php echo $seoTitleSafe; ?></title>
+    <meta name="description" content="<?php echo $seoDescriptionSafe; ?>">
+    <meta name="robots" content="<?php echo $seoRobotsSafe; ?>">
+    <meta name="author" content="Shivam Patsariya">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1ea">
+    <?php if ($seoIsHomepage): ?>
+    <link rel="canonical" href="https://imshivam.com/">
+    <?php endif; ?>
     <!-- Favicon -->
     <link rel="icon" href="images/shivam-sp-favicon.ico" sizes="any">
     <link rel="icon" href="images/shivam-sp-favicon.png" type="image/png" sizes="64x64">
     <link rel="apple-touch-icon" href="images/shivam-sp-touch.png" sizes="180x180">
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
-    <meta property="og:description" content="View the creative portfolio of Shivam Patsariya – Product Designer, Content Creator, and Visual Branding Expert." />
-    <meta property="og:image" content="https://imshivam.com/images/land-2.png" />
-    <meta property="og:url" content="https://imshivam.com/" />  
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Shivam Patsariya | UI/UX Designer & Digital Strategist" />
-    <meta name="twitter:description" content="Portfolio of Shivam Patsariya – UI/UX Designer based in Toronto. Crafting intuitive digital experiences." />
-    <meta name="twitter:image" content="https://imshivam.com/images/land-2.png" />
+    <?php if ($seoIsHomepage): ?>
+    <!-- Social previews use the same canonical URL and the real hero portrait. -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shivam Patsariya Portfolio">
+    <meta property="og:locale" content="en_CA">
+    <meta property="og:title" content="<?php echo $seoTitleSafe; ?>">
+    <meta property="og:description" content="<?php echo $seoDescriptionSafe; ?>">
+    <meta property="og:url" content="https://imshivam.com/">
+    <meta property="og:image" content="https://imshivam.com/images/shivam-portrait.webp">
+    <meta property="og:image:secure_url" content="https://imshivam.com/images/shivam-portrait.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="1000">
+    <meta property="og:image:alt" content="Portrait of UI/UX and product designer Shivam Patsariya">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<?php echo $seoTitleSafe; ?>">
+    <meta name="twitter:description" content="<?php echo $seoDescriptionSafe; ?>">
+    <meta name="twitter:image" content="https://imshivam.com/images/shivam-portrait.webp">
+    <meta name="twitter:image:alt" content="Portrait of Shivam Patsariya">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://imshivam.com/#person",
+      "name": "Shivam Patsariya",
+      "alternateName": "imShivam",
+      "url": "https://imshivam.com/",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://imshivam.com/images/shivam-portrait.webp",
+        "width": 800,
+        "height": 1000
+      },
+      "jobTitle": "UI/UX and Product Designer",
+      "description": "UI/UX and visual designer with a background in computer science engineering and global business management.",
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Jiwaji University"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Fleming College"
+        }
+      ],
+      "knowsAbout": [
+        "Product design",
+        "User experience design",
+        "User interface design",
+        "Visual design",
+        "Design systems",
+        "Prototyping",
+        "Web design"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/shivampatsariya/",
+        "https://www.behance.net/shivampatsariya",
+        "https://www.instagram.com/savvyshivam/",
+        "https://github.com/spatsariya"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://imshivam.com/#website",
+      "url": "https://imshivam.com/",
+      "name": "Shivam Patsariya Portfolio",
+      "inLanguage": "en-CA",
+      "publisher": {
+        "@id": "https://imshivam.com/#person"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://imshivam.com/#webpage",
+      "url": "https://imshivam.com/",
+      "name": "Shivam Patsariya | UI/UX & Product Designer Portfolio",
+      "description": "Explore the UX/UI and product design portfolio of Shivam Patsariya, featuring digital products, visual design and independent projects.",
+      "inLanguage": "en-CA",
+      "isPartOf": {
+        "@id": "https://imshivam.com/#website"
+      },
+      "about": {
+        "@id": "https://imshivam.com/#person"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://imshivam.com/images/shivam-portrait.webp",
+        "width": 800,
+        "height": 1000
+      }
+    }
+  ]
+}
+    </script>
+    <?php endif; ?>
     <!-- Prioritize the lightweight hero portrait over the previous 6.7 MB GIF -->
     <link rel="preload" as="image" href="images/shivam-portrait.webp" type="image/webp" fetchpriority="high">
     <!-- Google Fonts -->
