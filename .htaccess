@@ -4,6 +4,15 @@ RewriteEngine On
 # Set the base directory for the rewrite rules
 RewriteBase /
 
+# One canonical host; avoid duplicate www and non-www indexing.
+RewriteCond %{HTTP_HOST} ^www\.imshivam\.com$ [NC]
+RewriteRule ^ https://imshivam.com%{REQUEST_URI} [R=301,L]
+
+# Redirect a direct /index.php request in a single hop to the homepage.
+# THE_REQUEST prevents redirect loops when Apache rewrites / internally.
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
 # Custom Error Pages
 ErrorDocument 404 /404.php
 ErrorDocument 500 /500.php
