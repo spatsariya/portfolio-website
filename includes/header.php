@@ -46,38 +46,48 @@
     <!-- Skip Navigation Link for Accessibility -->
     <a href="#main-content" class="skip-nav">Skip to main content</a>
     
-    <header class="header" role="banner">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="/" aria-label="Shivam Patsariya, home">
-                        <!-- Logo Variations Available: 
-                             logo-sp.png (SP icon - current)
-                             logo-con.png (icon version)
-                             logo-v2.png (v2 variation)
-                             logo-v3.png (v3 variation)
-                             logo.png (original full logo) -->
-                        <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img" width="150" height="42" decoding="async">
-                    </a>
+    <header class="header site-header" role="banner">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-brand">
+                        <div class="logo">
+                            <a href="/" aria-label="Shivam Patsariya, home">
+                                <img src="images/logo-sp.png" alt="Shivam Patsariya" class="logo-img" width="150" height="42" decoding="async">
+                            </a>
+                        </div>
+                        <div class="brand-context" aria-label="Designer, developer and writer">
+                            <strong>DESIGN · BUILD · WRITE</strong>
+                            <span>Independent work &amp; ideas</span>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <span class="header-availability"><span class="availability-dot" aria-hidden="true"></span>Open to opportunities</span>
+                        <a href="#contact" class="header-contact">Let's talk <span aria-hidden="true">↗</span></a>
+                        <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary header-resume">Resume <span aria-hidden="true">↗</span></a>
+                    </div>
+                    <button class="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
-                <nav class="nav-menu" role="navigation" aria-label="Main navigation">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Work</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="header-actions">
-                    <a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary header-resume">Resume <span aria-hidden="true">↗</span></a>
+            </div>
+        </div>
+        <div class="header-nav-band">
+            <div class="container">
+                <div class="nav-band-inner">
+                    <span class="nav-band-label">Explore / Portfolio</span>
+                    <nav class="nav-menu" aria-label="Main navigation">
+                        <ul>
+                            <li><a href="#about"><span class="nav-index" aria-hidden="true">01</span>About</a></li>
+                            <li><a href="#experience"><span class="nav-index" aria-hidden="true">02</span>Experience</a></li>
+                            <li><a href="#skills"><span class="nav-index" aria-hidden="true">03</span>Skills</a></li>
+                            <li><a href="#projects"><span class="nav-index" aria-hidden="true">04</span>Projects</a></li>
+                            <li><a href="#certifications"><span class="nav-index" aria-hidden="true">05</span>Credentials</a></li>
+                            <li><a href="#contact"><span class="nav-index" aria-hidden="true">06</span>Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a class="nav-band-shortcut" href="#projects">Selected work <span aria-hidden="true">↗</span></a>
                 </div>
-                <button class="mobile-menu-btn" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
             </div>
         </div>
     </header>
