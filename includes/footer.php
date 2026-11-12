@@ -75,12 +75,42 @@
         <i class="fas fa-chevron-up"></i>
     </button>
     
-    <!-- AOS Animation Library -->
-
-
-    
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <!-- Custom JavaScript -->
-    <script src="js/main.js?v=<?php echo time(); ?>"></script>
+    <!-- Core behaviors: cached by file modification time instead of an ever-changing timestamp. -->
+    <script src="js/main.js?v=<?php echo filemtime(__DIR__ . '/../js/main.js'); ?>" defer></script>
+    <!-- hCaptcha is loaded only when someone approaches or interacts with the contact form. -->
+    <script>
+    (function () {
+        var form = document.getElementById('contactForm');
+        var captcha = form && form.querySelector('.h-captcha');
+        if (!captcha) return;
+        var loaded = false;
+        function loadCaptcha() {
+            if (loaded) return;
+            loaded = true;
+            window.portfolioCaptchaReady = function () {
+                if (window.hcaptcha && typeof window.hcaptcha.render === 'function') {
+                    window.hcaptcha.render(captcha, { sitekey: captcha.getAttribute('data-sitekey') });
+                }
+            };
+            var script = document.createElement('script');
+            script.src = 'https://js.hcaptcha.com/1/api.js?render=explicit&onload=portfolioCaptchaReady';
+            script.async = true;
+            document.head.appendChild(script);
+        }
+        form.addEventListener('focusin', loadCaptcha, { once: true });
+        form.addEventListener('pointerdown', loadCaptcha, { once: true, passive: true });
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function (entries) {
+                if (entries.some(function (entry) { return entry.isIntersecting; })) {
+                    loadCaptcha();
+                    observer.disconnect();
+                }
+            }, { rootMargin: '1000px 0px' });
+            observer.observe(form);
+        } else {
+            loadCaptcha();
+        }
+    })();
+    </script>
 </body>
 </html>
