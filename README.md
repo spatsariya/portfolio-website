@@ -139,6 +139,26 @@ Primary colors are defined in CSS custom properties:
 - CSS and JavaScript are modular for easy maintenance
 - Lazy loading implemented for below-the-fold content
 
+## 🔎 Search Engine Optimization
+
+The site's canonical indexable URL is **https://imshivam.com/**. The portfolio is a single-page website, so its About, Experience, Skills, Projects, and Contact anchors are **not** separate sitemap entries.
+
+Current implementation:
+- `includes/header.php` provides a unique title and description, self-referencing canonical, Open Graph/Twitter preview tags, and JSON-LD describing a `Person`, `WebSite`, and `WebPage`.
+- `robots.txt` points to `https://imshivam.com/sitemap.xml`, which lists only the canonical homepage.
+- `.htaccess` redirects `www` and explicit `/index.php` to the canonical home URL. Template fragments include a `noindex` response header where `mod_headers` is available.
+- 404 and 500 pages set their own titles and `noindex` metadata rather than inheriting homepage metadata.
+- The main heading and image alt attributes describe the visible page content.
+
+**After deployment (requires site owner access):**
+1. Open `https://imshivam.com/robots.txt` and `https://imshivam.com/sitemap.xml` and confirm HTTP 200 responses.
+2. In [Google Search Console](https://search.google.com/search-console), verify ownership of the domain and submit `https://imshivam.com/sitemap.xml` once.
+3. Use URL Inspection for `https://imshivam.com/` to check indexing, rendered HTML, chosen canonical, and crawlability.
+4. Validate the JSON-LD using [Schema Markup Validator](https://validator.schema.org/) and audit search appearance, queries, coverage, and Core Web Vitals in Search Console.
+5. Update on-page content and this metadata when your portfolio changes. Don't invent reviews, rankings, certifications, or schema fields for SEO.
+
+**Note:** A sitemap and schema improve discoverability and interpretation; they do not guarantee indexing, rich results, rankings, or a specific Lighthouse score.
+
 ## 📄 License
 
 This project is created by Shivam Patsariya. All rights reserved.
