@@ -4,10 +4,10 @@
  * Scoped to #certifications; organization and other portfolio cards are unaffected.
  */
 #certifications.certifications-section{
-    background:#f7f6f1;
-    color:#26382b;
+    background:var(--bg);
+    color:var(--text-color);
     padding:clamp(78px,9vw,136px) 0;
-    border-top:1px solid #dce2d8;
+    border-top:1px solid var(--line-color);
 }
 #certifications .container{max-width:1200px}
 #certifications .certifications-heading{
@@ -23,7 +23,7 @@
     font-weight:750;
     letter-spacing:.15em;
     text-transform:uppercase;
-    color:#687767;
+    color:var(--text-soft);
     margin-bottom:20px;
 }
 #certifications .certifications-heading h2{
@@ -31,7 +31,7 @@
     line-height:1.03;
     letter-spacing:-.065em;
     font-weight:650;
-    color:#24392b;
+    color:var(--text-color);
     margin:0;
 }
 #certifications .certifications-heading h2 em{
@@ -39,13 +39,13 @@
     font-weight:400;
 }
 #certifications .certifications-aside p{
-    color:#657266;
+    color:var(--text-muted);
     font-size:clamp(.98rem,1.5vw,1.12rem);
     line-height:1.7;
     margin:0 0 19px;
 }
 #certifications .certifications-aside>span{
-    color:#5d715d;
+    color:var(--text-muted);
     font-size:.77rem;
     font-weight:750;
     text-transform:uppercase;
@@ -65,9 +65,9 @@
     gap:10px;
     min-height:43px;
     padding:8px 13px;
-    border:1px solid #cbd3c8;
+    border:1px solid var(--line-color);
     border-radius:6px;
-    color:#57685c;
+    color:var(--text-muted);
     background:transparent;
     font-size:.84rem;
     font-weight:650;
@@ -78,26 +78,26 @@
 #certifications .cert-filter-btn .filter-count{
     font-size:.72rem;
     font-weight:700;
-    color:#839185;
+    color:var(--text-soft);
     font-variant-numeric:tabular-nums;
 }
 #certifications .cert-filter-btn:hover,
 #certifications .cert-filter-btn.active{
-    background:#2b4735;
-    border-color:#2b4735;
+    background:var(--primary-color);
+    border-color:var(--primary-color);
     color:#fff;
 }
 #certifications .cert-filter-btn.active .filter-count,
-#certifications .cert-filter-btn:hover .filter-count{color:#dce7dc}
+#certifications .cert-filter-btn:hover .filter-count{color:var(--surface-strong)}
 #certifications .cert-filter-btn:focus-visible,
 #certifications .cert-category summary:focus-visible{
-    outline:3px solid #2d714a;
+    outline:3px solid var(--text-muted);
     outline-offset:4px;
 }
 #certifications .certifications-hint{
     margin:0 0 36px;
     font-size:.85rem;
-    color:#768277;
+    color:var(--text-soft);
     min-height:1.5em;
 }
 #certifications .cert-category{
@@ -105,12 +105,12 @@
     margin:0;
     padding:0;
     border:0;
-    border-top:1px solid #cdd5cb;
+    border-top:1px solid var(--line-color);
     border-radius:0;
     background:transparent;
     box-shadow:none;
 }
-#certifications .cert-category:last-of-type{border-bottom:1px solid #cdd5cb}
+#certifications .cert-category:last-of-type{border-bottom:1px solid var(--line-color)}
 #certifications .cert-category[hidden],
 #certifications .cert-category.is-hidden{display:none!important}
 #certifications .cert-category-title{
@@ -122,14 +122,14 @@
     padding:clamp(22px,3.1vw,37px) 0;
     margin:0;
     border:0;
-    color:#273b2d!important;
+    color:var(--text-color)!important;
     font-size:inherit;
     cursor:pointer;
 }
 #certifications .cert-category-title::-webkit-details-marker{display:none}
 #certifications .cert-category-number{
     font-size:.76rem;
-    color:#8a988a;
+    color:var(--line-strong);
     letter-spacing:.04em;
     font-weight:750;
 }
@@ -141,7 +141,7 @@
 }
 #certifications .cert-category-count{
     font-size:.79rem;
-    color:#788779;
+    color:var(--text-soft);
     font-weight:600;
     white-space:nowrap;
     letter-spacing:0;
@@ -151,16 +151,16 @@
     width:36px;
     height:36px;
     place-items:center;
-    border:1px solid #ccd5cb;
+    border:1px solid var(--line-color);
     border-radius:50%;
-    color:#41634b;
+    color:var(--primary-color);
     font-size:1.3rem;
     font-weight:400;
     transition:transform .2s ease,background-color .2s ease;
 }
 #certifications .cert-category[open] .cert-category-expander{
     transform:rotate(45deg);
-    background:#e3e9e0;
+    background:var(--surface-muted);
 }
 #certifications .cert-category[open] .cert-category-title{padding-bottom:24px}
 #certifications .certifications-grid{
@@ -180,13 +180,13 @@
     height:auto;
     background:transparent;
     border:0;
-    border-top:1px solid #e0e4dc;
+    border-top:1px solid var(--line-color);
     border-radius:0;
     box-shadow:none;
     animation:none;
     transform:none;
     opacity:1!important;
-    color:#273b2e;
+    color:var(--text-color);
 }
 #certifications .certifications-grid{counter-reset:certificate}
 #certifications .certification-item::before{
@@ -200,7 +200,7 @@
     border-radius:0;
     background:transparent;
     box-shadow:none;
-    color:#95a094;
+    color:var(--line-strong);
     font-size:.73rem;
     letter-spacing:.03em;
     font-weight:750;
@@ -215,7 +215,7 @@
 #certifications .certification-content{min-width:0}
 #certifications .certification-content h3{
     margin:0 0 9px;
-    color:#263d2d;
+    color:var(--text-color);
     font-size:clamp(.96rem,1.3vw,1.09rem);
     font-weight:650;
     line-height:1.4;
@@ -223,7 +223,7 @@
 }
 #certifications .certification-issuer{
     display:block;
-    color:#6d786c;
+    color:var(--text-soft);
     font-size:.88rem;
     line-height:1.55;
     margin:0 0 5px;
@@ -236,7 +236,7 @@
     min-height:0;
     border:0;
     background:transparent;
-    color:#879185;
+    color:var(--text-soft);
     padding:0;
     margin:0;
     font-size:.8rem;
