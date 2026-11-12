@@ -233,7 +233,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 <!-- Beyond the canvas: editorial showcase -->
 <section id="highlights" class="highlights-section" aria-labelledby="highlights-heading">
 <style>
-/* Self-contained so the rest of the portfolio keeps its existing styling. */
 .highlights-section{--ink:#202822;--muted:#5c625b;--line:#d9d9cf;background:#f6f5ef;color:var(--ink);padding:clamp(76px,9vw,132px) 0}
 .highlights-section .container{max-width:1200px}
 .highlights-section .highlights-heading{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(250px,.65fr);gap:clamp(22px,6vw,90px);align-items:end;margin-bottom:clamp(35px,5vw,64px)}
@@ -252,74 +251,44 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 .highlights-section .highlight-story p{font-size:1rem;line-height:1.7;color:#4c554d;margin:0 0 25px;max-width:420px}
 .highlights-section .story-link{display:inline-flex;align-items:center;gap:10px;color:#243b2e;font-size:.91rem;font-weight:750;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:5px;transition:gap .2s ease}
 .highlights-section .story-link:hover{gap:17px}
-.highlights-section .highlight-story a:focus-visible{outline:3px solid #2b5f43;outline-offset:5px}
+.highlights-section a:focus-visible{outline:3px solid #2b5f43;outline-offset:5px}
 .highlights-section .product-stage{padding:36px clamp(26px,4vw,54px);display:flex;flex-direction:column;justify-content:center;gap:12px;position:relative}
 .highlights-section .product-stage:before{content:"";position:absolute;inset:12% 12% 7% 4%;border:1px solid rgba(55,79,58,.17);border-radius:50%;transform:rotate(-18deg);pointer-events:none}
-.highlights-section .product-feature{position:relative;background:#fcfcf8;border:1px solid #c6cbc0;padding:23px 26px;min-height:140px;box-shadow:12px 14px 0 rgba(45,64,46,.08);display:flex;flex-direction:column;justify-content:space-between}
+.highlights-section .product-feature{position:relative;background:#fcfcf8;border:1px solid #c6cbc0;padding:23px 26px;min-height:142px;box-shadow:12px 14px 0 rgba(45,64,46,.08);display:flex;flex-direction:column;justify-content:space-between;color:#233c2d;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
 .highlights-section .product-feature .small-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.13em;color:#737d73;font-weight:700}
 .highlights-section .product-feature strong{display:block;font-size:clamp(1.35rem,2.4vw,2.3rem);font-weight:650;letter-spacing:-.045em;line-height:1.1;color:#233c2d}
-.highlights-section .product-feature .visit{font-size:.84rem;font-weight:700;color:#245e42;text-decoration:none;align-self:flex-end}
-.highlights-section .product-feature .visit:hover{text-decoration:underline}
-.highlights-section .product-subgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;position:relative}
-.highlights-section .product-mini{background:#294438;color:#f4f5eb;padding:20px 21px;min-height:112px;display:flex;flex-direction:column;justify-content:space-between}
+.highlights-section .product-feature .visit{font-size:.84rem;font-weight:700;color:#245e42;align-self:flex-end}
+.highlights-section .product-feature:hover{transform:translateY(-3px);box-shadow:12px 18px 0 rgba(45,64,46,.1)}
+.highlights-section .product-subgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;position:relative}
+.highlights-section .product-mini{background:#294438;color:#f4f5eb;padding:20px 18px;min-height:122px;display:flex;flex-direction:column;justify-content:space-between;gap:15px;text-decoration:none;transition:transform .2s ease,filter .2s ease}
 .highlights-section .product-mini:nth-child(2){background:#c8d1bf;color:#24392b}
-.highlights-section .product-mini span{font-size:.67rem;text-transform:uppercase;letter-spacing:.12em;opacity:.76}
-.highlights-section .product-mini strong{font-size:1.12rem;letter-spacing:-.025em}
-.highlights-section .product-footnote{color:#536454;font-size:.78rem;margin-top:5px;position:relative}
+.highlights-section .product-mini:nth-child(3){background:#d8dfd2;color:#24392b}
+.highlights-section .product-mini:hover{transform:translateY(-3px);filter:brightness(1.04)}
+.highlights-section .product-mini span{font-size:.65rem;text-transform:uppercase;letter-spacing:.1em;opacity:.8}
+.highlights-section .product-mini strong{font-size:clamp(.9rem,1.25vw,1.1rem);line-height:1.2;letter-spacing:-.025em}
+.highlights-section .product-mini .mini-arrow{align-self:flex-end;font-size:1rem;font-weight:700}
 .highlights-section .highlight-story--learning .story-meta,.highlights-section .highlight-story--books .story-meta{margin-bottom:27px}
-.highlights-section .highlight-story--learning .story-content,.highlights-section .highlight-story--books .story-content{padding-bottom:24px}
+.highlights-section .highlight-story--learning .story-content,.highlights-section .highlight-story--books .story-content{padding-bottom:18px}
 .highlights-section .highlight-story--learning h3,.highlights-section .highlight-story--books h3{font-size:clamp(1.95rem,3vw,3rem)}
-.highlights-section .learning-visual{margin:0 clamp(26px,4vw,54px) 30px;min-height:210px;background:#d3d8d5;overflow:hidden;position:relative}
-.highlights-section .learning-visual img{display:block;width:100%;height:100%;max-height:290px;object-fit:cover;transition:transform .45s ease}
-.highlights-section .highlight-story--learning:hover .learning-visual img{transform:scale(1.025)}
-.highlights-section .learning-caption{display:flex;flex-wrap:wrap;gap:8px;margin:0 clamp(26px,4vw,54px) 35px}
-.highlights-section .learning-caption span{font-size:.79rem;color:#465448;border:1px solid #c1c8bf;padding:8px 11px}
-.highlights-section .book-display{display:flex;align-items:end;justify-content:center;gap:clamp(13px,3vw,30px);padding:12px 30px 45px;min-height:285px}
-.highlights-section .book-cover{width:clamp(130px,35%,190px);aspect-ratio: .71;box-shadow:9px 14px 18px rgba(61,43,35,.17),inset 5px 0 8px rgba(0,0,0,.12);display:flex;flex-direction:column;justify-content:space-between;padding:clamp(17px,2vw,25px);transform:rotate(-7deg);background:#343c3a;color:#f7ead9;border-left:5px solid rgba(255,255,255,.13)}
-.highlights-section .book-cover:nth-child(2){background:#b86c51;color:#fff4df;transform:translateY(-16px) rotate(7deg)}
-.highlights-section .book-cover small{font-size:.57rem;text-transform:uppercase;letter-spacing:.15em;opacity:.85}
-.highlights-section .book-cover strong{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(1.14rem,2.1vw,1.9rem);line-height:1.1;letter-spacing:-.035em}
-.highlights-section .book-cover:after{content:"";width:33%;height:1px;background:currentColor;opacity:.7}
-.highlights-section .books-note{font-size:.78rem;color:#665b54;margin:-19px 30px 31px;text-align:center}
+.highlights-section .health-projects{display:grid;gap:12px;margin:8px clamp(26px,4vw,54px) clamp(26px,4vw,54px)}
+.highlights-section .health-project{display:flex;align-items:center;justify-content:space-between;gap:20px;border:1px solid #c9cfc7;background:#f5f6f0;padding:20px 22px;min-height:107px;color:#213c32;text-decoration:none;transition:background .2s ease,transform .2s ease}
+.highlights-section .health-project:nth-child(2){background:#d9e1d8}
+.highlights-section .health-project:hover{background:#fff;transform:translateX(3px)}
+.highlights-section .health-project small{font-size:.67rem;letter-spacing:.1em;text-transform:uppercase;color:#647369;font-weight:700}
+.highlights-section .health-project strong{display:block;font-size:clamp(1rem,1.5vw,1.26rem);margin-top:7px;line-height:1.25;letter-spacing:-.03em}
+.highlights-section .health-project .health-arrow{font-size:1.4rem;flex:none}
+.highlights-section .book-display{display:flex;align-items:end;justify-content:center;gap:clamp(13px,3vw,30px);padding:18px 26px clamp(38px,4vw,58px);min-height:315px}
+.highlights-section .book-cover{display:block;position:relative;width:clamp(128px,36%,192px);aspect-ratio: .62;box-shadow:9px 14px 18px rgba(61,43,35,.17);transform:rotate(-6deg);background:#24303a;color:#f7ead9;text-decoration:none;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.highlights-section .book-cover:nth-child(2){background:#201631;transform:translateY(-13px) rotate(6deg)}
+.highlights-section .book-cover:hover{transform:translateY(-10px) rotate(-3deg);box-shadow:13px 19px 25px rgba(61,43,35,.22)}
+.highlights-section .book-cover:nth-child(2):hover{transform:translateY(-22px) rotate(3deg)}
+.highlights-section .book-cover img{width:100%;height:100%;object-fit:cover;display:block;position:relative;z-index:2}
+.highlights-section .book-cover .cover-fallback{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:16px;font:1.25rem/1.2 Georgia,'Times New Roman',serif;text-align:center;z-index:1}
+.highlights-section .books-note{text-align:center;font-size:.82rem;color:#665b54;margin:-22px 26px 28px}
 @media(max-width:900px){.highlights-section .highlights-heading{grid-template-columns:1fr;gap:22px}.highlights-section .highlight-story--product{grid-template-columns:1fr}.highlights-section .product-stage{padding-top:8px;padding-bottom:42px}.highlights-section .highlights-heading h2{max-width:700px}}
-@media(max-width:680px){.highlights-section .highlights-grid{grid-template-columns:1fr;grid-template-areas:"product" "learning" "books";gap:14px}.highlights-section .highlight-story--product{min-height:0}.highlights-section .story-meta{margin-bottom:30px}.highlights-section .highlight-story h3{font-size:clamp(2rem,9vw,3.3rem)}.highlights-section .product-stage{padding:0 26px 34px}.highlights-section .product-feature{min-height:132px}.highlights-section .product-mini{padding:16px;min-height:100px}.highlights-section .book-display{min-height:240px}}
-@media(prefers-reduced-motion:reduce){.highlights-section .story-link,.highlights-section .learning-visual img{transition:none}}
-
-/* 2026 showcase refinements: linked products, healthcare projects and published covers. */
-.highlights-section .product-stage{gap:13px}
-.highlights-section .product-feature{min-height:190px;text-decoration:none;transition:transform .2s ease,box-shadow .2s ease}
-.highlights-section .product-feature:hover{transform:translateY(-3px);box-shadow:15px 18px 0 rgba(45,64,46,.1)}
-.highlights-section .product-feature .visit{display:inline-flex;align-self:flex-start;gap:6px;border-bottom:1px solid currentColor;padding-bottom:3px}
-.highlights-section .product-feature .small-label{color:#657565}
-.highlights-section .product-subgrid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
-.highlights-section a.product-mini{color:#f4f5eb;text-decoration:none;min-height:122px;transition:transform .2s ease,filter .2s ease;gap:15px}
-.highlights-section a.product-mini:hover{transform:translateY(-3px);filter:brightness(1.08)}
-.highlights-section a.product-mini:nth-child(2){color:#24392b}
-.highlights-section a.product-mini:nth-child(3){background:#3d5049;color:#f4f5eb}
-.highlights-section .product-mini strong{font-size:clamp(.95rem,1.5vw,1.2rem);line-height:1.25}
-.highlights-section .product-mini .mini-arrow{align-self:flex-end;font-size:1rem}
-.highlights-section .product-footnote{margin-top:3px}
-.highlights-section .healthcare-projects{padding:10px clamp(26px,4vw,54px) 38px;display:grid;gap:11px}
-.highlights-section .healthcare-project{display:flex;justify-content:space-between;align-items:center;gap:16px;text-decoration:none;background:#f7f7f2;border:1px solid #cad0c8;padding:22px 24px;color:#253b2e;transition:transform .2s ease,background .2s ease}
-.highlights-section .healthcare-project:hover{background:#fff;transform:translateX(3px)}
-.highlights-section .healthcare-project small{display:block;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:#66766b;margin-bottom:7px;font-weight:700}
-.highlights-section .healthcare-project strong{display:block;font-size:clamp(1.25rem,2vw,1.65rem);letter-spacing:-.04em;line-height:1.12}
-.highlights-section .healthcare-project .health-arrow{font-size:1.25rem}
-.highlights-section .book-display{min-height:300px;gap:clamp(18px,3vw,38px);align-items:flex-start;padding:18px clamp(16px,3vw,34px) 28px}
-.highlights-section .book-cover{position:relative;width:clamp(132px,39%,190px);height:auto;aspect-ratio: .63;display:block;overflow:hidden;padding:0;box-shadow:9px 14px 20px rgba(61,43,35,.17);border-left:0;text-decoration:none;background:#243039;transform:rotate(-5deg);transition:transform .25s ease}
-.highlights-section .book-cover:nth-child(2){background:#251a48;transform:translateY(-8px) rotate(5deg)}
-.highlights-section .book-cover:after{display:none}
-.highlights-section .book-cover:hover{transform:rotate(-2deg) translateY(-6px)}
-.highlights-section .book-cover:nth-child(2):hover{transform:rotate(2deg) translateY(-14px)}
-.highlights-section .book-cover img{display:block;width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:2}
-.highlights-section .book-cover .cover-fallback{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:20px;color:#e8d8b8;font-family:Georgia,'Times New Roman',serif}
-.highlights-section .book-cover:nth-child(2) .cover-fallback{color:#f4d7f7}
-.highlights-section .book-cover .cover-fallback span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;font-family:inherit}
-.highlights-section .book-cover .cover-fallback strong{font-size:1.42rem;font-family:inherit;font-weight:400;line-height:1.1}
-.highlights-section .books-note{margin:2px 30px 30px}
-@media(max-width:780px){.highlights-section .product-subgrid{grid-template-columns:1fr 1fr}.highlights-section a.product-mini{min-height:116px}}
-@media(max-width:430px){.highlights-section .product-subgrid{grid-template-columns:1fr}.highlights-section a.product-mini{min-height:92px}.highlights-section .book-cover{width:42%}}
-@media(prefers-reduced-motion:reduce){.highlights-section .product-feature,.highlights-section a.product-mini,.highlights-section .healthcare-project,.highlights-section .book-cover{transition:none}}
+@media(max-width:680px){.highlights-section .highlights-grid{grid-template-columns:1fr;grid-template-areas:"product" "learning" "books";gap:14px}.highlights-section .highlight-story--product{min-height:0}.highlights-section .story-meta{margin-bottom:30px}.highlights-section .highlight-story h3{font-size:clamp(2rem,9vw,3.3rem)}.highlights-section .product-stage{padding:0 26px 34px}.highlights-section .product-feature{min-height:132px}.highlights-section .product-subgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.highlights-section .product-mini{padding:16px;min-height:100px}.highlights-section .book-display{min-height:260px}}
+@media(max-width:390px){.highlights-section .product-subgrid{grid-template-columns:1fr}.highlights-section .product-mini{min-height:78px}}
+@media(prefers-reduced-motion:reduce){.highlights-section .story-link,.highlights-section .product-feature,.highlights-section .product-mini,.highlights-section .health-project,.highlights-section .book-cover{transition:none}}
 </style>
 <div class="container">
     <header class="highlights-heading">
@@ -334,63 +303,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="story-content">
                 <div class="story-meta"><span>01 / Independent products</span><span>Built & shipped</span></div>
                 <h3>Ideas are better when they're real.</h3>
-                <p>Side projects have a way of becoming real products. Here are a few I've been building, from everyday utilities to tools for specific communities.</p>
+                <p>Side projects have a way of becoming real products. These are a few I've been building, from everyday utilities to tools for specific communities.</p>
                 <a class="story-link" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Explore Subscription Manager <span aria-hidden="true">↗</span></a>
             </div>
-            <div class="product-stage" aria-label="Independent digital products">
-                <a class="product-feature" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Subscription Manager (opens in a new tab)">
-                    <span class="small-label">Featured product / Subscription utility</span>
+            <div class="product-stage" aria-label="Independent products">
+                <a class="product-feature" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer" aria-label="Subscription Manager, opens in a new tab">
+                    <span class="small-label">01 — Featured product / Subscription tracking</span>
                     <strong>Subscription<br>Manager</strong>
-                    <span class="visit">Visit product <span aria-hidden="true">↗</span></span>
+                    <span class="visit">Visit product ↗</span>
                 </a>
                 <div class="product-subgrid">
-                    <a class="product-mini" href="https://spatsariya.github.io/whatsapp-tools/#download" target="_blank" rel="noopener noreferrer" aria-label="Explore WhatsApp Tools (opens in a new tab)">
-                        <span>02 / Desktop tools</span><strong>WhatsApp Tools</strong><span class="mini-arrow" aria-hidden="true">↗</span>
-                    </a>
-                    <a class="product-mini" href="https://www.iauthiq.com/" target="_blank" rel="noopener noreferrer" aria-label="Explore IAuthiq (opens in a new tab)">
-                        <span>03 / Identity</span><strong>IAuthiq</strong><span class="mini-arrow" aria-hidden="true">↗</span>
-                    </a>
-                    <a class="product-mini" href="https://kinfolk.sbs/" target="_blank" rel="noopener noreferrer" aria-label="Explore Kinfolk (opens in a new tab)">
-                        <span>04 / Family</span><strong>Kinfolk</strong><span class="mini-arrow" aria-hidden="true">↗</span>
-                    </a>
+                    <a class="product-mini" href="https://spatsariya.github.io/whatsapp-tools/#download" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Tools, opens in a new tab"><span>02 — Desktop tools</span><strong>WhatsApp Tools</strong><span class="mini-arrow" aria-hidden="true">↗</span></a>
+                    <a class="product-mini" href="https://www.iauthiq.com/" target="_blank" rel="noopener noreferrer" aria-label="IAuthiq, opens in a new tab"><span>03 — Identity</span><strong>IAuthiq</strong><span class="mini-arrow" aria-hidden="true">↗</span></a>
+                    <a class="product-mini" href="https://kinfolk.sbs/" target="_blank" rel="noopener noreferrer" aria-label="Kinfolk, opens in a new tab"><span>04 — Family & community</span><strong>Kinfolk</strong><span class="mini-arrow" aria-hidden="true">↗</span></a>
                 </div>
-                <span class="product-footnote">Four independent projects. Each one is a different kind of problem to solve.</span>
             </div>
         </article>
         <article class="highlight-story highlight-story--learning">
             <div class="story-content">
-                <div class="story-meta"><span>02 / Healthcare</span><span>Learning & tools</span></div>
-                <h3>Making specialist knowledge easier to use.</h3>
-                <p>Exploring clearer ways to learn, communicate, and work in radiology through dedicated digital tools.</p>
+                <div class="story-meta"><span>02 / Healthcare education</span><span>Digital tools</span></div>
+                <h3>Learning shouldn't feel like decoding.</h3>
+                <p>Healthcare projects focused on making radiology learning and communication clearer and easier to access.</p>
             </div>
-            <div class="healthcare-projects">
-                <a class="healthcare-project" href="https://rwtradiology.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit Radiology without Tears (opens in a new tab)">
-                    <span><small>Radiology education</small><strong>Radiology without Tears</strong></span>
-                    <span class="health-arrow" aria-hidden="true">↗</span>
-                </a>
-                <a class="healthcare-project" href="https://radverba.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit RadVerba (opens in a new tab)">
-                    <span><small>Radiology tools</small><strong>RadVerba</strong></span>
-                    <span class="health-arrow" aria-hidden="true">↗</span>
-                </a>
+            <div class="health-projects" aria-label="Healthcare projects">
+                <a class="health-project" href="https://rwtradiology.com/" target="_blank" rel="noopener noreferrer" aria-label="Radiology without Tears, opens in a new tab"><span><small>01 / Radiology education</small><strong>Radiology without Tears</strong></span><span class="health-arrow" aria-hidden="true">↗</span></a>
+                <a class="health-project" href="https://radverba.com/" target="_blank" rel="noopener noreferrer" aria-label="RadVerba, opens in a new tab"><span><small>02 / Healthcare technology</small><strong>RadVerba</strong></span><span class="health-arrow" aria-hidden="true">↗</span></a>
             </div>
         </article>
         <article class="highlight-story highlight-story--books">
             <div class="story-content">
-                <div class="story-meta"><span>03 / Writing</span><span>Fiction</span></div>
+                <div class="story-meta"><span>03 / Writing</span><span>Published books</span></div>
                 <h3>Some ideas need words, not pixels.</h3>
                 <p>Outside the screen, I write stories about imagination, emotion, and everything that makes us human.</p>
             </div>
             <div class="book-display" aria-label="Published books by Shivam Patsariya">
-                <a class="book-cover" href="https://www.amazon.in/-/hi/Shivam-Patsariya-ebook/dp/B0GX2YP4PL" target="_blank" rel="noopener noreferrer" aria-label="The Blueprint of Broken Things on Amazon (opens in a new tab)">
-                    <span class="cover-fallback"><span>Shivam Patsariya</span><strong>The Blueprint of Broken Things</strong></span>
-                    <img src="https://images-na.ssl-images-amazon.com/images/P/B0GX2YP4PL.01.L.jpg" alt="Cover of The Blueprint of Broken Things by Shivam Patsariya" loading="lazy">
+                <a class="book-cover" href="https://www.amazon.in/-/hi/Shivam-Patsariya-ebook/dp/B0GX2YP4PL" target="_blank" rel="noopener noreferrer" aria-label="The Blueprint of Broken Things, view on Amazon (opens in a new tab)">
+                    <span class="cover-fallback">The Blueprint of Broken Things</span>
+                    <img src="https://m.media-amazon.com/images/P/B0GX2YP4PL.01._SCLZZZZZZZ_SX500_.jpg" alt="Cover of The Blueprint of Broken Things by Shivam Patsariya" loading="lazy" width="313" height="522" onerror="this.remove()">
                 </a>
-                <a class="book-cover" href="https://www.amazon.in/Shivam-Patsariya-ebook/dp/B0GXTR8545?ref_=ast_author_dp&amp;th=1&amp;psc=1" target="_blank" rel="noopener noreferrer" aria-label="Realm of Imagination on Amazon (opens in a new tab)">
-                    <span class="cover-fallback"><span>Shivam Patsariya</span><strong>Realm of Imagination</strong></span>
-                    <img src="https://images-na.ssl-images-amazon.com/images/P/B0GXTR8545.01.L.jpg" alt="Cover of Realm of Imagination by Shivam Patsariya" loading="lazy">
+                <a class="book-cover" href="https://www.amazon.in/Shivam-Patsariya-ebook/dp/B0GXTR8545?ref_=ast_author_dp&amp;th=1&amp;psc=1" target="_blank" rel="noopener noreferrer" aria-label="Realm of Imagination, view on Amazon (opens in a new tab)">
+                    <span class="cover-fallback">Realm of Imagination</span>
+                    <img src="https://m.media-amazon.com/images/P/B0GXTR8545.01._SCLZZZZZZZ_SX500_.jpg" alt="Cover of Realm of Imagination by Shivam Patsariya" loading="lazy" width="326" height="522" onerror="this.remove()">
                 </a>
             </div>
-            <p class="books-note">Select a cover to view the book on Amazon <span aria-hidden="true">↗</span></p>
+            <p class="books-note">Select a cover to view the book on Amazon ↗</p>
         </article>
     </div>
 </div>
