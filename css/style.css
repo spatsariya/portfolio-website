@@ -74,7 +74,7 @@ html.aos-animate [data-aos] {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 110px;
+    scroll-padding-top: 148px;
     overflow-x: hidden;
 }
 
@@ -1483,6 +1483,8 @@ legend {
 }
 
 @media (max-width: 920px) {
+    html { scroll-padding-top: 88px; }
+
     section {
         padding: 88px 0;
     }
