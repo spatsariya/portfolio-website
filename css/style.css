@@ -303,7 +303,7 @@ section + section {
 .site-header .header-brand{display:flex;align-items:center;min-width:0;gap:26px}
 .site-header .logo{flex:none}
 .site-header .logo a{display:inline-flex;align-items:center;min-height:48px}
-.site-header .logo-img{height:45px;width:auto;display:block}
+.site-header .logo-img{height:54px;width:auto;display:block}
 .site-header .brand-context{
     border-left:1px solid var(--line-color);
     padding-left:25px;
@@ -514,7 +514,7 @@ section + section {
 }
 @media(max-width:620px){
     .site-header .header-content{min-height:70px}
-    .site-header .logo-img{height:38px}
+    .site-header .logo-img{height:43px}
     .site-header .brand-context{display:none}
     .site-header .container{width:min(100% - 32px,1200px)}
     .mobile-menu{top:70px;padding-left:16px;padding-right:16px}
@@ -782,6 +782,127 @@ section + section {
 }
 @media(prefers-reduced-motion:reduce) {
     #hero .hero-primary-action,#hero .hero-secondary-action,#hero .hero-social-links a{transition:none}
+}
+
+
+/* Portrait composition: layered editorial poster, no additional image downloads. */
+#hero .hero-visual{position:relative;min-width:0;overflow:visible}
+#hero .hero-artwork{
+    position:relative;
+    isolation:isolate;
+    padding:37px 29px 27px 56px;
+}
+#hero .hero-artwork::before{
+    content:"";
+    position:absolute;
+    z-index:-2;
+    inset:0 17% 12% 0;
+    background:linear-gradient(145deg,var(--primary-color),var(--primary-dark));
+}
+#hero .hero-artwork::after{
+    content:"";
+    position:absolute;
+    inset:13% 0 0 15%;
+    z-index:-1;
+    pointer-events:none;
+    border:1px solid var(--accent-color);
+}
+#hero .hero-artwork-pattern{
+    position:absolute;
+    z-index:-1;
+    pointer-events:none;
+    inset:0 17% 12% 0;
+    background-image:linear-gradient(rgba(255,255,255,.095) 1px,transparent 1px),
+                     linear-gradient(90deg,rgba(255,255,255,.095) 1px,transparent 1px);
+    background-size:30px 30px;
+    mask-image:linear-gradient(to bottom,black,transparent 94%);
+}
+#hero .hero-poster-rail{
+    position:absolute;
+    top:64px;
+    bottom:64px;
+    left:18px;
+    z-index:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:16px;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    color:#e7e0d6;
+    font-size:.63rem;
+    font-weight:700;
+    line-height:1.2;
+    letter-spacing:.14em;
+    white-space:nowrap;
+}
+#hero .hero-portrait{
+    position:relative;
+    z-index:2;
+    aspect-ratio: .9;
+    border:8px solid var(--bg-elevated);
+    box-shadow:12px 12px 0 rgba(124,92,59,.22);
+    background:var(--surface-muted);
+}
+#hero .hero-portrait img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 35%;
+    filter:saturate(.92) contrast(1.025);
+}
+#hero .hero-portrait-index{
+    top:auto;
+    right:auto;
+    bottom:18px;
+    left:18px;
+    background:var(--bg-elevated);
+    border:0;
+    padding:9px 12px;
+    font-size:.63rem;
+    font-weight:800;
+    letter-spacing:.13em;
+}
+#hero .hero-artwork-corner{
+    position:absolute;
+    top:-14px;
+    right:0;
+    z-index:3;
+    width:67px;
+    height:67px;
+    display:grid;
+    place-items:center;
+    background:var(--bg);
+    border:1px solid var(--accent-color);
+    transform:rotate(8deg);
+    color:var(--primary-color);
+    font-family:Georgia,'Times New Roman',serif;
+    font-weight:700;
+    font-size:1.7rem;
+    letter-spacing:-.09em;
+    box-shadow:5px 5px 0 rgba(124,92,59,.12);
+}
+#hero .hero-image-caption{
+    margin-left:56px;
+    padding:17px 0 0;
+    border-bottom:0;
+    border-top:1px solid var(--line-color);
+    margin-top:14px;
+}
+@media(max-width:920px){
+    #hero .hero-artwork{padding:35px 30px 27px 58px}
+    #hero .hero-portrait{aspect-ratio:.96}
+}
+@media(max-width:620px){
+    #hero .hero-artwork{padding:27px 14px 20px 38px}
+    #hero .hero-artwork::before{inset:0 18% 12% 0}
+    #hero .hero-artwork::after{inset:13% 0 0 13%}
+    #hero .hero-artwork-pattern{inset:0 18% 12% 0;background-size:23px 23px}
+    #hero .hero-poster-rail{left:12px;top:47px;bottom:45px;font-size:.54rem;letter-spacing:.1em}
+    #hero .hero-portrait{aspect-ratio:.96;border-width:5px;box-shadow:7px 7px 0 rgba(124,92,59,.22)}
+    #hero .hero-artwork-corner{top:-8px;right:0;width:48px;height:48px;font-size:1.27rem}
+    #hero .hero-portrait-index{left:10px;bottom:10px;font-size:.52rem;padding:6px 8px}
+    #hero .hero-image-caption{margin-left:38px;padding-top:12px;font-size:.75rem}
 }
 
 /* ===== About ===== */
@@ -1556,7 +1677,7 @@ legend {
     /* On mobile, the masthead becomes one flat, compact row. */
     .header.site-header{top:0;width:100%;border-radius:0}
     .site-header .header-content{min-height:70px}
-    .site-header .logo-img{height:38px}
+    .site-header .logo-img{height:43px}
 
     .hero-kicker,
     .hero-greeting {
