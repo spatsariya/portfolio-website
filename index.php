@@ -14,6 +14,99 @@ if (file_exists('config.php')) {
     define('CONTACT_EMAIL', 's.patsariya@gmail.com');
 }
 
+/**
+ * Validate hCaptcha without exposing keys or response tokens.
+ * Returns only a status code; diagnostic codes are written to the PHP error log.
+ */
+function verifyPortfolioHCaptcha(string $token): array {
+    $secret = defined('HCAPTCHA_SECRET') ? trim((string) HCAPTCHA_SECRET) : '';
+    $sitekey = defined('HCAPTCHA_SITEKEY') ? trim((string) HCAPTCHA_SITEKEY) : '';
+
+    if ($secret === '' || $sitekey === '' || $secret === 'YOUR_HCAPTCHA_SECRET_KEY') {
+        error_log('Portfolio hCaptcha: missing or placeholder configuration');
+        return ['success' => false, 'reason' => 'configuration'];
+    }
+
+    $params = ['secret' => $secret, 'response' => $token, 'sitekey' => $sitekey];
+    $ip = $_SERVER['REMOTE_ADDR'] ?? '';
+    if (filter_var($ip, FILTER_VALIDATE_IP)) {
+        $params['remoteip'] = $ip;
+    }
+    $payload = http_build_query($params, '', '&', PHP_QUERY_RFC3986);
+    $body = false;
+    $status = 0;
+
+    if (function_exists('curl_init')) {
+        $handle = curl_init('https://api.hcaptcha.com/siteverify');
+        if ($handle !== false) {
+            curl_setopt_array($handle, [
+                CURLOPT_POST => true,
+                CURLOPT_POSTFIELDS => $payload,
+                CURLOPT_HTTPHEADER => ['Content-Type: application/x-www-form-urlencoded'],
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_CONNECTTIMEOUT => 5,
+                CURLOPT_TIMEOUT => 12,
+                CURLOPT_SSL_VERIFYPEER => true,
+                CURLOPT_SSL_VERIFYHOST => 2,
+            ]);
+            $body = curl_exec($handle);
+            $status = (int) curl_getinfo($handle, CURLINFO_HTTP_CODE);
+            curl_close($handle);
+        }
+    } else {
+        $context = stream_context_create([
+            'http' => [
+                'method' => 'POST',
+                'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
+                'content' => $payload,
+                'timeout' => 12,
+                'ignore_errors' => true,
+            ],
+        ]);
+        $body = @file_get_contents('https://api.hcaptcha.com/siteverify', false, $context);
+        if (isset($http_response_header[0]) &&
+            preg_match('/\\s(\\d{3})\\s/', $http_response_header[0], $matches)) {
+            $status = (int) $matches[1];
+        }
+    }
+
+    if ($body === false || $status !== 200) {
+        error_log('Portfolio hCaptcha: verification service unavailable; HTTP ' . $status);
+        return ['success' => false, 'reason' => 'unavailable'];
+    }
+
+    $data = json_decode($body, true);
+    if (!is_array($data)) {
+        error_log('Portfolio hCaptcha: malformed verification response');
+        return ['success' => false, 'reason' => 'unavailable'];
+    }
+    if (($data['success'] ?? false) === true) {
+        return ['success' => true, 'reason' => ''];
+    }
+
+    $codes = $data['error-codes'] ?? [];
+    if (!is_array($codes)) {
+        $codes = [];
+    }
+    $codes = array_values(array_filter(array_map(
+        static function ($code) {
+            return is_string($code) && preg_match('/^[a-z0-9-]{1,60}$/', $code) ? $code : '';
+        },
+        $codes
+    )));
+    error_log('Portfolio hCaptcha rejected: ' . implode(',', $codes ?: ['unknown']));
+
+    $configErrors = ['missing-input-secret', 'invalid-input-secret', 'sitekey-secret-mismatch', 'not-using-dummy-passcode'];
+    $expiredErrors = ['expired-input-response', 'already-seen-response'];
+    if (array_intersect($codes, $configErrors)) {
+        return ['success' => false, 'reason' => 'configuration'];
+    }
+    if (array_intersect($codes, $expiredErrors)) {
+        return ['success' => false, 'reason' => 'expired'];
+    }
+    return ['success' => false, 'reason' => 'invalid'];
+}
+
 // Handle contact form submission
 $form_success = false;
 $form_error = '';
@@ -34,30 +127,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
     } elseif (empty($hcaptcha_response)) {
         $form_error = 'Please complete the captcha verification.';
     } else {
-        // Verify hCaptcha using config
-        $hcaptcha_secret = HCAPTCHA_SECRET;
-        $hcaptcha_verify_url = 'https://hcaptcha.com/siteverify';
-        
-        $hcaptcha_data = [
-            'secret' => $hcaptcha_secret,
-            'response' => $hcaptcha_response,
-            'remoteip' => $_SERVER['REMOTE_ADDR'] ?? ''
-        ];
-        
-        $hcaptcha_options = [
-            'http' => [
-                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                'method' => 'POST',
-                'content' => http_build_query($hcaptcha_data)
-            ]
-        ];
-        
-        $hcaptcha_context = stream_context_create($hcaptcha_options);
-        $hcaptcha_result = file_get_contents($hcaptcha_verify_url, false, $hcaptcha_context);
-        $hcaptcha_response_data = json_decode($hcaptcha_result, true);
-        
-        if (!$hcaptcha_response_data['success']) {
-            $form_error = 'Captcha verification failed. Please try again.';
+        // A challenge token is single-use. Check it once, then send the message.
+        $captcha = verifyPortfolioHCaptcha($hcaptcha_response);
+        if (!$captcha['success']) {
+            if ($captcha['reason'] === 'configuration' || $captcha['reason'] === 'unavailable') {
+                $form_error = 'Message verification is temporarily unavailable. Please email contact@imshivam.com directly.';
+            } elseif ($captcha['reason'] === 'expired') {
+                $form_error = 'Your verification expired. Please complete the captcha again and resend.';
+            } else {
+                $form_error = 'Captcha verification was unsuccessful. Please complete the challenge again.';
+            }
         } else {
             // Sanitize inputs
             $name = htmlspecialchars($name);
@@ -1206,7 +1285,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                         
                         <!-- hCaptcha -->
                         <div class="form-group">
-                            <div class="h-captcha" data-sitekey="2b96e9ce-d828-41b8-99e6-718a9e145f74" data-theme="light"></div>
+                            <div class="h-captcha" data-sitekey="<?php echo htmlspecialchars(defined('HCAPTCHA_SITEKEY') ? (string) HCAPTCHA_SITEKEY : '', ENT_QUOTES, 'UTF-8'); ?>" data-theme="light"></div>
                         </div>
                     </fieldset>
                     
