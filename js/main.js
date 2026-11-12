@@ -263,32 +263,59 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(skillsSection);
     }
 
-    // Projects filter functionality
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const projectItems = document.querySelectorAll('.project-item');
+    // Projects filter: keep the featured grid and the expandable index in sync.
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+        const filterBtns = projectsSection.querySelectorAll('.filter-btn');
+        const projectItems = projectsSection.querySelectorAll('.project-item');
+        const featuredProjects = projectsSection.querySelector('#featured-projects');
+        const featuredCards = featuredProjects.querySelectorAll('.project-item');
+        const moreProjects = projectsSection.querySelector('#more-projects');
+        const moreCards = moreProjects.querySelectorAll('.project-item');
+        const projectCount = projectsSection.querySelector('#projects-count');
+        const moreLabel = projectsSection.querySelector('#more-projects-label');
+        const filterNames = { all: 'all projects', mobile: 'mobile apps', web: 'websites', branding: 'branding' };
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-
-            // Update active button
-            filterBtns.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-
-            // Filter projects
+        const updateProjectFilter = (filter) => {
+            let total = 0;
             projectItems.forEach(item => {
-                const category = item.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    item.style.display = 'block';
-                    if (typeof AOS !== 'undefined' && typeof AOS.refresh === 'function') {
-                        AOS.refresh();
-                    }
-                } else {
-                    item.style.display = 'none';
-                }
+                const matches = filter === 'all' || item.dataset.category === filter;
+                item.hidden = !matches;
+                if (matches) total += 1;
+            });
+
+            const featuredVisible = [...featuredCards].filter(item => !item.hidden).length;
+            const moreVisible = [...moreCards].filter(item => !item.hidden).length;
+
+            featuredProjects.hidden = featuredVisible === 0;
+            moreProjects.hidden = moreVisible === 0;
+            moreProjects.open = filter !== 'all' && moreVisible > 0;
+            if (moreLabel) {
+                moreLabel.textContent = `Explore ${moreVisible} more ${moreVisible === 1 ? 'project' : 'projects'}`;
+            }
+            if (projectCount) {
+                projectCount.textContent = filter === 'all'
+                    ? `${featuredVisible} featured projects · ${moreVisible} more to explore`
+                    : `${total} ${total === 1 ? 'project' : 'projects'} in ${filterNames[filter] || filter}`;
+            }
+
+            filterBtns.forEach(button => {
+                const active = button.dataset.filter === filter;
+                button.classList.toggle('active', active);
+                button.setAttribute('aria-pressed', String(active));
+            });
+
+            if (typeof AOS !== 'undefined' && typeof AOS.refresh === 'function') {
+                AOS.refresh();
+            }
+        };
+
+        filterBtns.forEach(button => {
+            button.addEventListener('click', () => {
+                updateProjectFilter(button.dataset.filter);
             });
         });
-    });
+    }
 
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
