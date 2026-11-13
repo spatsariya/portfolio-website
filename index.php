@@ -271,7 +271,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 <div class="container">
     <header class="highlights-heading">
         <div>
-            <span class="highlights-kicker">A little more about what I do / 2026</span>
+            <span class="highlights-kicker">A little more about what I do</span>
             <h2 id="highlights-heading">I make things <em>beyond</em> interfaces.</h2>
         </div>
         <p>Some things I design. Some I build from scratch. Others I write. Here's the work that doesn't fit neatly into a job title.</p>
@@ -640,7 +640,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                 </div>
             </div>
         </div>
-        <p class="skills-footer">Tools change. Good judgment, clarity, and craft stay useful.</p>
+        <!-- <p class="skills-footer">Tools change. Good judgment, clarity, and craft stay useful.</p> -->
     </div>
 </section>
 
@@ -925,27 +925,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
         <div class="org-grid" aria-label="Organizations and roles">
             <article class="org-record">
                 <span class="org-number" aria-hidden="true">01</span>
-                <div><h3>InstiWitty Media Studios</h3><p class="org-role">Director</p><p class="org-date">May 2018 – Present</p></div>
+                <div><h3>InstiWitty Media Studios</h3><p class="org-date">May 2018 – Present</p></div><!--<p class="org-role">Director</p>-->
             </article>
             <article class="org-record">
                 <span class="org-number" aria-hidden="true">02</span>
-                <div><h3>Aashayen Foundation</h3><p class="org-role">Founder &amp; President</p><p class="org-date">2015 – Present</p></div>
+                <div><h3>Aashayen Foundation</h3><p class="org-date">2015 – Present</p></div> <!--<p class="org-role">Founder &amp; President</p>-->
             </article>
             <article class="org-record">
                 <span class="org-number" aria-hidden="true">03</span>
-                <div><h3>Microsoft Student Association</h3><p class="org-role">Student Ambassador</p></div>
+                <div><h3>Microsoft Student Association</h3><p class="org-date">2013 – 2015</p></div> <!-- <p class="org-role">Student Ambassador</p>-->
             </article>
             <article class="org-record">
                 <span class="org-number" aria-hidden="true">04</span>
-                <div><h3>OmniCan</h3><p class="org-role">Founder</p><p class="org-date">2023 – Present</p></div>
+                <div><h3>OmniCan</h3><p class="org-date">2024 – Present</p></div><!-- <p class="org-role">Founder</p>-->
             </article>
             <article class="org-record">
                 <span class="org-number" aria-hidden="true">05</span>
-                <div><h3>EazyHaven</h3><p class="org-role">Founder</p><p class="org-date">2021 – Present</p></div>
+                <div><h3>EazyHaven</h3><p class="org-date">2021 – Present</p></div><!-- <p class="org-role">Founder</p>-->
             </article>
             <article class="org-record">
                 <span class="org-number" aria-hidden="true">06</span>
-                <div><h3>Dahej</h3><p class="org-role">City Leader</p><p class="org-date">2014 – 2015</p></div>
+                <div><h3>Dahej</h3><p class="org-date">2014 – 2015</p></div><!-- <p class="org-role">City Leader</p>-->
             </article>
         </div>
     </div>
