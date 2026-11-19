@@ -1,230 +1,38 @@
 <?php
 /**
- * Product design case studies.
- *
- * This native page uses verified portfolio content and the site's shared
- * components. The external ChatGPT-hosted portfolio remains linked so its
- * additional material stays accessible without an unreliable iframe.
+ * Product design portfolio from the user-provided Shivam-Patsariya-Portfolio.html.
+ * Content, order, case studies, links and interactive calculator are retained.
+ * Styling is moved to a site-themed, scoped stylesheet.
  */
 $seoIsHomepage = false;
 $seoCanonicalEnabled = true;
-$seoTitle = 'Product Design Case Studies | Shivam Patsariya';
-$seoDescription = 'Selected UX and product design work by Shivam Patsariya, spanning Virgin Plus, Flipkart, healthcare learning, and subscription management.';
+$seoTitle = 'Shivam Patsariya — Product designer and AI prototyper';
+$seoDescription = 'Toronto-based product designer with 8+ years across healthcare, SaaS, fintech and consumer mobile. Selected work from Virgin Plus and Omnican.';
 $seoCanonical = 'https://imshivam.com/product-design';
+$pageStylesheet = 'css/product-design.css';
 include 'includes/header.php';
 ?>
-
-<style>
-/* Product design page: use the portfolio's existing design tokens. */
-.pd-page { background: var(--bg); color: var(--text-color); }
-.pd-page .pd-container { max-width: 1200px; }
-.pd-page .pd-kicker { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 24px; text-transform: uppercase; letter-spacing: .16em; font-size: .75rem; font-weight: 750; color: var(--text-muted); }
-.pd-page .pd-kicker::before { content: ""; display: inline-block; width: 27px; height: 1px; background: var(--secondary-color); }
-.pd-page .pd-hero { padding: clamp(70px, 9vw, 130px) 0 clamp(60px, 7vw, 100px); }
-.pd-page .pd-hero-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(230px, .62fr); gap: clamp(28px, 6vw, 100px); align-items: end; }
-.pd-page .pd-hero h1 { font-size: clamp(3.2rem, 7vw, 7.1rem); font-weight: 650; line-height: 1.03; letter-spacing: -.073em; max-width: 960px; }
-.pd-page .pd-hero h1 em, .pd-page .pd-section-heading em { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; color: var(--text-soft); }
-.pd-page .pd-lede { font-size: clamp(1.06rem, 1.55vw, 1.22rem); line-height: 1.72; margin-bottom: 27px; max-width: 395px; }
-.pd-page .pd-actions { display: flex; flex-wrap: wrap; gap: 13px 24px; align-items: center; }
-.pd-page .pd-link-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; background: var(--primary-color); color: white; font-weight: 700; border: 1px solid var(--primary-color); border-radius: 4px; font-size: .92rem; }
-.pd-page .pd-link-primary:hover { color: white; background: var(--primary-dark); }
-.pd-page .pd-link-text { display: inline-flex; gap: 10px; align-items: center; color: var(--primary-color); font-size: .9rem; font-weight: 700; border-bottom: 1px solid var(--line-strong); min-height: 42px; }
-.pd-page .pd-link-text:hover { border-bottom-color: var(--primary-color); }
-.pd-page .pd-note { margin-top: 23px; font-size: .78rem; color: var(--text-soft); max-width: 380px; }
-.pd-page .pd-rail { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; margin-top: clamp(48px, 7vw, 90px); border-top: 1px solid var(--line-color); border-bottom: 1px solid var(--line-color); }
-.pd-page .pd-rail > div { padding: 23px 16px 23px 0; }
-.pd-page .pd-rail > div + div { border-left: 1px solid var(--line-color); padding-left: clamp(15px, 3vw, 34px); }
-.pd-page .pd-rail strong { display: block; font-size: .75rem; letter-spacing: .14em; font-weight: 750; text-transform: uppercase; margin-bottom: 7px; }
-.pd-page .pd-rail span { color: var(--text-muted); font-size: .91rem; }
-.pd-page .pd-section-heading { font-size: clamp(2.65rem, 5.2vw, 5.1rem); font-weight: 650; letter-spacing: -.065em; line-height: 1.07; }
-.pd-page .pd-section-intro { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(250px, .64fr); align-items: end; gap: 32px; margin-bottom: 47px; }
-.pd-page .pd-section-intro > p { max-width: 360px; line-height: 1.78; font-size: 1.02rem; }
-.pd-page .pd-work { padding: clamp(75px, 8vw, 115px) 0; background: var(--bg-elevated); }
-.pd-page .pd-case { display: grid; grid-template-columns: minmax(0, 1.04fr) minmax(0, .96fr); background: var(--surface); border: 1px solid var(--line-color); min-height: 445px; }
-.pd-page .pd-case + .pd-case { margin-top: 20px; }
-.pd-page .pd-case:nth-of-type(even) .pd-visual { order: 2; }
-.pd-page .pd-case:nth-of-type(even) .pd-case-content { order: 1; }
-.pd-page .pd-visual { position: relative; overflow: hidden; background: var(--primary-color); display: flex; align-items: center; justify-content: center; min-height: 350px; }
-.pd-page .pd-visual img { width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; }
-.pd-page .pd-visual-abstract { background: #e7e0d6; padding: 38px; display: flex; flex-direction: column; justify-content: space-between; align-items: flex-start; }
-.pd-page .pd-visual-abstract::before { content: ""; position: absolute; width: 270px; height: 270px; border: 1px solid rgba(31,58,95,.18); border-radius: 50%; right: -55px; top: -75px; box-shadow: 0 0 0 52px rgba(31,58,95,.045), 0 0 0 105px rgba(31,58,95,.035); }
-.pd-page .pd-visual-abstract .pd-visual-label { position: relative; z-index: 1; text-transform: uppercase; font-size: .72rem; letter-spacing: .16em; color: var(--primary-color); font-weight: 750; }
-.pd-page .pd-visual-abstract strong { position: relative; z-index: 1; color: var(--primary-color); font-family: var(--heading-font); font-size: clamp(3rem, 5.6vw, 6.5rem); line-height: .99; letter-spacing: -.08em; font-weight: 750; max-width: 540px; overflow-wrap: anywhere; }
-.pd-page .pd-visual-abstract.pd-visual-dark { background: #1f3a5f; }
-.pd-page .pd-visual-abstract.pd-visual-dark .pd-visual-label, .pd-page .pd-visual-abstract.pd-visual-dark strong { color: #f4f1ea; }
-.pd-page .pd-visual-abstract.pd-visual-dark::before { border-color: rgba(255,255,255,.2); box-shadow: 0 0 0 52px rgba(255,255,255,.045), 0 0 0 105px rgba(255,255,255,.035); }
-.pd-page .pd-case-content { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: clamp(31px, 5vw, 70px); }
-.pd-page .pd-case-index { color: var(--text-soft); font-weight: 750; text-transform: uppercase; font-size: .72rem; letter-spacing: .14em; margin-bottom: 20px; }
-.pd-page .pd-case h3 { font-size: clamp(1.9rem, 3vw, 3.15rem); font-weight: 650; line-height: 1.12; letter-spacing: -.05em; margin-bottom: 20px; }
-.pd-page .pd-case-content > p { line-height: 1.75; margin-bottom: 25px; font-size: .99rem; }
-.pd-page .pd-case-facts { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 27px; }
-.pd-page .pd-case-facts li { color: var(--primary-color); font-size: .73rem; font-weight: 650; border: 1px solid var(--line-color); padding: 7px 10px; border-radius: 3px; }
-.pd-page .pd-method { padding: clamp(70px, 8vw, 115px) 0; }
-.pd-page .pd-method-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
-.pd-page .pd-method-grid article { padding: clamp(24px, 3vw, 36px); background: var(--surface); border: 1px solid var(--line-color); }
-.pd-page .pd-method-grid .pd-method-number { font-size: .76rem; color: var(--text-soft); letter-spacing: .13em; font-weight: 750; }
-.pd-page .pd-method-grid h3 { margin: 44px 0 17px; font-size: clamp(1.4rem, 2vw, 2rem); letter-spacing: -.035em; }
-.pd-page .pd-method-grid p { font-size: .95rem; line-height: 1.72; }
-.pd-page .pd-cta { padding: clamp(66px, 7vw, 100px) 0; background: var(--primary-color); }
-.pd-page .pd-cta-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(230px, .65fr); gap: 32px; align-items: end; }
-.pd-page .pd-cta .pd-kicker, .pd-page .pd-cta h2, .pd-page .pd-cta p { color: #f4f1ea; }
-.pd-page .pd-cta .pd-kicker::before { background: var(--accent-color); }
-.pd-page .pd-cta h2 { font-size: clamp(2.6rem, 5.4vw, 5.5rem); font-weight: 650; letter-spacing: -.065em; line-height: 1.05; }
-.pd-page .pd-cta .pd-link-primary { background: #f4f1ea; color: var(--primary-color); border-color: #f4f1ea; }
-.pd-page .pd-cta .pd-link-primary:hover { background: white; color: var(--primary-color); }
-.pd-page .pd-cta p { margin-bottom: 22px; line-height: 1.7; }
-.pd-page a:focus-visible { outline: 3px solid var(--secondary-color); outline-offset: 4px; }
-@media (max-width: 850px) {
-  .pd-page .pd-hero-grid, .pd-page .pd-section-intro, .pd-page .pd-cta-grid { grid-template-columns: 1fr; }
-  .pd-page .pd-lede { max-width: 650px; }
-  .pd-page .pd-case { grid-template-columns: 1fr; }
-  .pd-page .pd-case:nth-of-type(even) .pd-visual, .pd-page .pd-case:nth-of-type(even) .pd-case-content { order: initial; }
-  .pd-page .pd-visual { min-height: 330px; }
-}
-@media (max-width: 620px) {
-  .pd-page .pd-rail { grid-template-columns: 1fr; }
-  .pd-page .pd-rail > div, .pd-page .pd-rail > div + div { padding: 15px 0; border-left: 0; }
-  .pd-page .pd-rail > div + div { border-top: 1px solid var(--line-color); }
-  .pd-page .pd-method-grid { grid-template-columns: 1fr; }
-  .pd-page .pd-case-content { padding: 28px 23px 35px; }
-  .pd-page .pd-visual { min-height: 280px; }
-  .pd-page .pd-visual-abstract strong { font-size: clamp(3.5rem, 12vw, 5rem); }
-}
-</style>
-
-<div class="pd-page">
-    <section class="pd-hero" aria-labelledby="pd-hero-title">
-        <div class="container pd-container">
-            <span class="pd-kicker">Product design / Selected work</span>
-            <div class="pd-hero-grid">
-                <div>
-                    <h1 id="pd-hero-title">Useful by design.<br><em>Clear by intention.</em></h1>
-                </div>
-                <div>
-                    <p class="pd-lede">From the first user flow to a product people can rely on, I work across research, interfaces, design systems and implementation.</p>
-                    <div class="pd-actions">
-                        <a class="pd-link-primary" href="#case-studies">Explore case studies <span aria-hidden="true">↗</span></a>
-                        <a class="pd-link-text" href="https://shivam-patsariya-product-design-portfolio.shivampatsariya.chatgpt.site" target="_blank" rel="noopener noreferrer">View original portfolio <span aria-hidden="true">↗</span></a>
-                    </div>
-                    <p class="pd-note">A focused collection of product work, alongside the original interactive portfolio.</p>
-                </div>
-            </div>
-            <div class="pd-rail" aria-label="Areas of practice">
-                <div><strong>01 / Discover</strong><span>Understand users, friction and goals</span></div>
-                <div><strong>02 / Design</strong><span>Shape accessible, coherent experiences</span></div>
-                <div><strong>03 / Deliver</strong><span>Work closely with development and product</span></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="pd-work" id="case-studies" aria-labelledby="pd-work-title">
-        <div class="container pd-container">
-            <div class="pd-section-intro">
-                <div>
-                    <span class="pd-kicker">01 / The work</span>
-                    <h2 class="pd-section-heading" id="pd-work-title">Selected projects.<br><em>Real problems.</em></h2>
-                </div>
-                <p>Consumer journeys, commerce experiences, and self-initiated products. Each one calls for a different balance of clarity, usability and technical execution.</p>
-            </div>
-
-            <article class="pd-case" aria-labelledby="pd-case-virgin">
-                <div class="pd-visual">
-                    <img src="images/content/virgin-plus.webp" alt="Virgin Plus My Benefits mobile rewards app interface concepts" loading="lazy" decoding="async" width="1024" height="768">
-                </div>
-                <div class="pd-case-content">
-                    <span class="pd-case-index">01 / Telecom · Mobile experience</span>
-                    <h3 id="pd-case-virgin">Virgin Plus<br>My Benefits</h3>
-                    <p>Making a mobile rewards experience easier to explore, with clearer navigation, benefit categories and more understandable paths from discovery to redemption.</p>
-                    <ul class="pd-case-facts" aria-label="Design focus"><li>UX design</li><li>Navigation</li><li>Accessibility</li></ul>
-                    <a class="pd-link-text" href="https://www.figma.com/proto/QF4Mrfc8NR1oupQOVrri75/Shivam-Patsariya---Portfolio?page-id=12%3A68&amp;node-id=13-83&amp;starting-point-node-id=13%3A83&amp;t=URGumBC1RI91aJOu-1" target="_blank" rel="noopener noreferrer">Explore Figma prototype <span aria-hidden="true">↗</span></a>
-                </div>
-            </article>
-
-            <article class="pd-case" aria-labelledby="pd-case-commerce">
-                <div class="pd-visual pd-visual-abstract">
-                    <span class="pd-visual-label">Commerce / Discovery</span>
-                    <strong>Shop.<br>Share.<br>Earn.</strong>
-                </div>
-                <div class="pd-case-content">
-                    <span class="pd-case-index">02 / Social commerce · Mobile UX</span>
-                    <h3 id="pd-case-commerce">Flipkart, 2GUD<br>&amp; Shopsy</h3>
-                    <p>Exploring how social shopping can make discovery and purchasing feel connected, including video-led commerce and reseller-oriented journeys.</p>
-                    <ul class="pd-case-facts" aria-label="Design focus"><li>Product design</li><li>Commerce flows</li><li>Visual systems</li></ul>
-                    <a class="pd-link-text" href="/#experience">Read about this experience <span aria-hidden="true">↗</span></a>
-                </div>
-            </article>
-
-            <article class="pd-case" aria-labelledby="pd-case-rwt">
-                <div class="pd-visual pd-visual-abstract pd-visual-dark">
-                    <span class="pd-visual-label">Healthcare / Learning</span>
-                    <strong>Learn.<br>Practice.<br>Review.</strong>
-                </div>
-                <div class="pd-case-content">
-                    <span class="pd-case-index">03 / Healthcare education · Platform design</span>
-                    <h3 id="pd-case-rwt">Radiology<br>Without Tears</h3>
-                    <p>Designing and building a learning experience that brings educational resources, structured cases and medical imaging tools into one connected workflow.</p>
-                    <ul class="pd-case-facts" aria-label="Design focus"><li>Information architecture</li><li>Web platform</li><li>Clinical learning</li></ul>
-                    <a class="pd-link-text" href="https://rwtradiology.com/" target="_blank" rel="noopener noreferrer">Explore live platform <span aria-hidden="true">↗</span></a>
-                </div>
-            </article>
-
-            <article class="pd-case" aria-labelledby="pd-case-subs">
-                <div class="pd-visual pd-visual-abstract">
-                    <span class="pd-visual-label">Personal finance / SaaS</span>
-                    <strong>Every<br>renewal.<br>In view.</strong>
-                </div>
-                <div class="pd-case-content">
-                    <span class="pd-case-index">04 / SaaS · Product design &amp; development</span>
-                    <h3 id="pd-case-subs">Subscription<br>Manager</h3>
-                    <p>A recurring-expense tool designed to help people organize their subscriptions, understand spending and keep upcoming renewals visible.</p>
-                    <ul class="pd-case-facts" aria-label="Design focus"><li>Product strategy</li><li>Responsive UI</li><li>Full-stack build</li></ul>
-                    <a class="pd-link-text" href="https://www.subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Explore live product <span aria-hidden="true">↗</span></a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <section class="pd-method" aria-labelledby="pd-method-title">
-        <div class="container pd-container">
-            <div class="pd-section-intro">
-                <div>
-                    <span class="pd-kicker">02 / My approach</span>
-                    <h2 class="pd-section-heading" id="pd-method-title">Thoughtful systems.<br><em>Practical execution.</em></h2>
-                </div>
-                <p>My engineering and business backgrounds help me connect a polished interface to the system, team and constraints behind it.</p>
-            </div>
-            <div class="pd-method-grid">
-                <article>
-                    <span class="pd-method-number">01 / Understand</span>
-                    <h3>Start with the problem.</h3>
-                    <p>Clarify user needs, business goals and where a current experience creates friction before jumping into screens.</p>
-                </article>
-                <article>
-                    <span class="pd-method-number">02 / Shape</span>
-                    <h3>Make complexity feel simple.</h3>
-                    <p>Build information hierarchies, accessible interaction patterns and reusable components that support real tasks.</p>
-                </article>
-                <article>
-                    <span class="pd-method-number">03 / Ship</span>
-                    <h3>Design with delivery in mind.</h3>
-                    <p>Prototype, collaborate with engineers and refine the working product rather than stopping at a static mockup.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="pd-cta" aria-labelledby="pd-cta-title">
-        <div class="container pd-container pd-cta-grid">
-            <div>
-                <span class="pd-kicker">03 / Let's build</span>
-                <h2 id="pd-cta-title">Have a problem<br>worth solving?</h2>
-            </div>
-            <div>
-                <p>I'm interested in thoughtful product challenges, UX design, and turning complex workflows into clear experiences.</p>
-                <a class="pd-link-primary" href="/#contact">Start a conversation <span aria-hidden="true">↗</span></a>
-            </div>
-        </div>
-    </section>
+<div id="product-design-page" class="pd-source">
+    <div class="container">
+        <nav class="pd-subnav" aria-label="Product design page navigation"><a href="#main-content" aria-label="Top of product design page"><b>Shivam Patsariya</b><br><span class="mono">Product design × AI prototyping</span></a><div><a href="#work">Work</a><a href="#approach">Approach</a><a href="#contact">Contact</a></div></nav>
+        <div class="pd-content">
+<section class="hero"><div class="eyebrow">Toronto, Canada · Open to product design and prototyping roles</div><h1>I design the experience.<br>Then I build it to work.</h1><p class="intro">I’m Shivam, a product designer with 8+ years across healthcare, SaaS, fintech and consumer mobile. I bring interaction design, design systems and AI-assisted development into the same workflow.</p><a class="button" href="#work">Explore selected work ↓</a><a class="button secondary" href="https://www.linkedin.com/in/shivampatsariya/">LinkedIn ↗</a></section>
+<div class="stats"><div><strong>8+ years</strong><span>Product design experience</span></div><div><strong>1M+ users</strong><span>MyBenefits app audience</span></div><div><strong>Design to code</strong><span>Figma · React · Next.js · Supabase</span></div></div>
+<section id="work"><div class="eyebrow">Selected work</div><h2>Consumer scale.<br>Complex workflows. Working products.</h2><div class="work">
+<article class="card"><div class="visual pink" aria-label="Conceptual overview of MyBenefits work"><strong>Benefits, without the detour.</strong><span>Discover rewards → Redeem in the app</span><span>Mobile experience · Design systems</span></div><div class="eyebrow">Virgin Plus / Bell Canada · Product Design Lead</div><h3>MyBenefits redesign</h3><p>Redesigning a consumer mobile experience and bringing event ticket redemption into the app.</p><a href="#mybenefits">Read the case study ↗</a></article>
+<article class="card"><div class="visual"><strong>A learning platform, built end to end.</strong><span>Responsive learning interface</span><span>Frontend → Backend → Database</span></div><div class="eyebrow">Omnican · Product development and prototyping</div><h3>Radiology Resident</h3><p>Combining product structure, responsive UI and implementation in a healthcare learning platform.</p><a href="#resident">Read the case study ↗</a></article>
+<article class="card"><div class="visual"><strong>Recurring costs in one place.</strong><span>Subscription tracking</span><span>React · Next.js · Supabase</span></div><div class="eyebrow">Omnican · SaaS design and development</div><h3>Subscription Manager</h3><p>A subscription tracking application built with a responsive interface for web and mobile use.</p><a href="#subscriptions">Read the project overview ↗</a></article>
+<article class="card"><div class="visual"><strong>From findings to a structured draft.</strong><span>Prompt-driven generation</span><span>Medical templates · Workflow prototyping</span></div><div class="eyebrow">Omnican · AI product prototyping</div><h3>AI radiology report builder</h3><p>Exploring how AI-assisted summarization and structured templates can support a reporting workflow.</p><a href="#reporting">Read the project overview ↗</a></article></div><p class="fine">The diagrams above are conceptual project summaries created for this portfolio. They are not product screenshots.</p></section>
+<article class="case" id="mybenefits"><div class="eyebrow">01 / Consumer mobile</div><h2>MyBenefits redesign</h2><div class="cols"><aside><h3>My contribution</h3><p class="detail">Product Design Lead<br>Virgin Plus / Bell Canada<br>iOS, Android and web</p><p class="detail">Interaction design · Figma component libraries · Accessibility · Design QA</p></aside><div><h3>The problem</h3><p>The existing MyBenefits experience had usability and accessibility issues. Ticket redemption sent members to third-party pages, adding a break in the app journey.</p><h3>What I delivered</h3><p>I led the end-to-end redesign with product managers and engineers. I developed reusable native components and interaction states, aligned the interface with the updated brand, and reviewed implementation with engineers.</p><p>I designed the GetOnThis event ticket redemption flow as an in-app journey and introduced a gamified rewards experience.</p><h3>Reported outcomes</h3><p>The app rating rose from 1.3 to 4.5 stars. Feature engagement increased by 75% and average session time by 55%, as reported in my résumé. These figures describe the wider product effort and are not presented as a controlled attribution study.</p><p class="note">This public summary describes my role and the reported outcomes. Original product screens, research artifacts and detailed measurement methods are not included in the source materials used here.</p></div></div></article>
+<article class="case" id="resident"><div class="eyebrow">02 / Healthcare learning</div><h2>Radiology Resident</h2><div class="cols"><aside><h3>My contribution</h3><p class="detail">Product development consultant<br>Omnican Canada<br>Web platform</p><a href="https://radiology-resident.com/" target="_blank" rel="noopener">Visit the product ↗</a></aside><div><h3>The product</h3><p>A radiology education platform for residents, bringing a responsive learning interface and structured content into a full-stack web product.</p><h3>From design to implementation</h3><p>I developed the frontend, backend and database architecture, built the responsive UI, and worked on the learning system. My Omnican work combines Figma design systems with AI-assisted development to turn ambiguous briefs into functioning prototypes.</p><h3>What this demonstrates</h3><p>Ownership across interface design, application structure and implementation. The work connects design decisions to a working platform instead of ending at a static handoff.</p><p class="note">No adoption or learning-outcome metrics are claimed for this project. Visit the linked product to review its current public experience.</p></div></div></article>
+<article class="case" id="subscriptions"><div class="eyebrow">03 / SaaS</div><h2>Subscription Manager</h2><div class="cols"><aside><h3>My contribution</h3><p class="detail">Product design and development<br>Omnican Canada<br>React · Next.js · Supabase</p><a href="https://www.subscriptionmanager.app/" target="_blank" rel="noopener">Visit the product ↗</a></aside><div><h3>The product</h3><p>A SaaS application for tracking subscriptions, designed for responsive use across web and mobile screens.</p><h3>What I built</h3><p>I developed the application with React, Next.js and Supabase and designed its cross-platform interface. The work combines recurring-cost workflows with frontend implementation and backend data structure.</p><h3>Interactive illustration</h3><p>This small calculator is a new portfolio demonstration of handling form inputs and communicating recurring costs. It is independent of the original application.</p><div class="demo"><label for="cost">Monthly subscription cost in CAD</label><input id="cost" type="number" min="0" step=".01" value="24" inputmode="decimal"><button id="calculate">Calculate annual cost</button><output id="result" aria-live="polite">CAD 24.00 monthly → CAD 288.00 annually</output></div></div></div></article>
+<article class="case" id="reporting"><div class="eyebrow">04 / AI workflow</div><h2>AI radiology report builder</h2><div class="cols"><aside><h3>My contribution</h3><p class="detail">AI-assisted reporting prototype<br>Omnican Canada<br>Prompt architecture · Structured templates</p><a href="https://radverba.com/" target="_blank" rel="noopener">Explore the linked project ↗</a></aside><div><h3>The workflow</h3><p>I designed and prototyped an AI-assisted system for generating structured radiology report drafts using summarization and medical templates.</p><h3>What I built</h3><p>The prototype brings prompt-driven content generation and structured reporting templates into a reporting workflow. I developed the system architecture and documented product logic and technical decisions.</p><h3>What reviewers can assess</h3><p>The project shows my approach to making a complex domain usable and turning a product idea into a functional prototype. Clinical accuracy, deployment validation and time savings have not been established by the résumé evidence supplied for this portfolio.</p></div></div></article>
+<section class="case" id="approach"><div class="eyebrow">How I work</div><h2>Keep the reasoning connected<br>to the thing people use.</h2><div class="cols"><p>I work across discovery, interaction design, component systems and functional prototypes. My background includes Virgin Plus, Accenture, Flipkart and Omnican.</p><div><h3>Design and development in the same loop</h3><p>I translate product ideas into flows and working applications, use AI tools to accelerate implementation, and review the result through interaction states, responsive behaviour and design QA.</p><div><span class="tag">Figma design systems</span><span class="tag">React and Next.js</span><span class="tag">Supabase</span><span class="tag">AI-assisted development</span><span class="tag">Interaction design</span><span class="tag">Accessibility</span></div><h3>Education</h3><p>Computer Science engineering degree, Jiwaji University. Graduate Certificate in Global Business Management, Fleming College, Canada.</p></div></div></section>
+<section id="contact" class="hero"><div class="eyebrow">Let’s talk</div><h2>Have a product problem<br>that needs design and a working prototype?</h2><p>Based in Toronto. Authorized to work in Canada on an open work permit without employer sponsorship.</p><a class="button" href="https://www.linkedin.com/in/shivampatsariya/">Contact me on LinkedIn ↗</a><a class="button secondary" href="https://www.behance.net/shivampatsariya">View Behance ↗</a><a class="button secondary" href="https://github.com/spatsariya">View GitHub ↗</a></section></div>
+        <div class="pd-original-footer fine">© 2026 Shivam Patsariya · Project summaries grounded in supplied résumé materials. External project availability may change.</div>
+    </div>
 </div>
-
+<script>
+document.getElementById('calculate').addEventListener('click',()=>{const raw=document.getElementById('cost').value;const cost=Number(raw);document.getElementById('result').textContent=raw.trim()===''||!Number.isFinite(cost)||cost<0?'Enter a monthly cost of zero or more.':new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD'}).format(cost)+' monthly → '+new Intl.NumberFormat('en-CA',{style:'currency',currency:'CAD'}).format(cost*12)+' annually';});
+</script>
 <?php include 'includes/footer.php'; ?>
