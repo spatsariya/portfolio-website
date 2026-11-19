@@ -23,8 +23,8 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
     <meta name="author" content="Shivam Patsariya">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#f4f1ea">
-    <?php if ($seoIsHomepage): ?>
-    <link rel="canonical" href="https://imshivam.com/">
+    <?php if ($seoIsHomepage || !empty($seoCanonicalEnabled)): ?>
+    <link rel="canonical" href="<?php echo htmlspecialchars($seoCanonical, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>">
     <?php endif; ?>
     <!-- Favicon -->
     <link rel="icon" href="images/shivam-sp-favicon.ico" sizes="any">
@@ -127,8 +127,21 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
 }
     </script>
     <?php endif; ?>
-    <!-- Prioritize the lightweight hero portrait over the previous 6.7 MB GIF -->
+    <?php if (!$seoIsHomepage && !empty($seoCanonicalEnabled)): ?>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Shivam Patsariya Portfolio">
+    <meta property="og:title" content="<?php echo $seoTitleSafe; ?>">
+    <meta property="og:description" content="<?php echo $seoDescriptionSafe; ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($seoCanonical, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>">
+    <meta property="og:image" content="https://imshivam.com/images/shivam-portrait.webp">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<?php echo $seoTitleSafe; ?>">
+    <meta name="twitter:description" content="<?php echo $seoDescriptionSafe; ?>">
+    <?php endif; ?>
+    <?php if ($seoIsHomepage): ?>
+    <!-- Prioritize the lightweight homepage portrait. -->
     <link rel="preload" as="image" href="images/shivam-portrait.webp" type="image/webp" fetchpriority="high">
+    <?php endif; ?>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -184,8 +197,9 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
                             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#experience"><span class="nav-index" aria-hidden="true">02</span>Experience</a></li>
                             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#skills"><span class="nav-index" aria-hidden="true">03</span>Skills</a></li>
                             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects"><span class="nav-index" aria-hidden="true">04</span>Projects</a></li>
-                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications"><span class="nav-index" aria-hidden="true">05</span>Credentials</a></li>
-                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact"><span class="nav-index" aria-hidden="true">06</span>Contact</a></li>
+                            <li><a href="/product-design" <?php echo !$seoIsHomepage && !empty($seoCanonicalEnabled) ? 'aria-current="page"' : ''; ?>><span class="nav-index" aria-hidden="true">05</span>Case studies</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications"><span class="nav-index" aria-hidden="true">06</span>Credentials</a></li>
+                            <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact"><span class="nav-index" aria-hidden="true">07</span>Contact</a></li>
                         </ul>
                     </nav>
                     <a class="nav-band-shortcut" href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects">Selected work <span aria-hidden="true">↗</span></a>
@@ -199,6 +213,7 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#experience">Experience</a></li>
             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#skills">Skills</a></li>
             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects">Projects</a></li>
+            <li><a href="/product-design" <?php echo !$seoIsHomepage && !empty($seoCanonicalEnabled) ? 'aria-current="page"' : ''; ?>>Case studies</a></li>
             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications">Certifications</a></li>
             <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact">Contact</a></li>
             <li><a href="document/shivam_patsariya_resume_ux_designer.pdf" target="_blank">Resume</a></li>
