@@ -47,6 +47,7 @@
                         <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#experience">Experience</a></li>
                         <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#skills">Skills</a></li>
                         <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#projects">Projects</a></li>
+                        <li><a href="/product-design" <?php echo !$seoIsHomepage && !empty($seoCanonicalEnabled) ? 'aria-current="page"' : ''; ?>>Case studies</a></li>
                         <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#education">Education</a></li>
                         <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#certifications">Certifications</a></li>
                         <li><a href="<?php echo $seoIsHomepage ? '' : '/'; ?>#contact">Contact</a></li>
