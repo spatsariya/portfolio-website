@@ -155,6 +155,9 @@ $seoRobotsSafe = htmlspecialchars($seoRobots, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css?v=<?php echo filemtime(__DIR__ . '/../css/style.css'); ?>">
     <link rel="stylesheet" href="css/certifications.css?v=<?php echo filemtime(__DIR__ . '/../css/certifications.css'); ?>">
+    <?php if (!empty($pageStylesheet) && is_string($pageStylesheet) && is_file(__DIR__ . '/../' . $pageStylesheet)): ?>
+    <link rel="stylesheet" href="<?php echo htmlspecialchars($pageStylesheet, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); ?>?v=<?php echo filemtime(__DIR__ . '/../' . $pageStylesheet); ?>">
+    <?php endif; ?>
 
 </head>
 <body>
