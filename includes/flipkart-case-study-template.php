@@ -13,7 +13,8 @@ $seoIsHomepage = false;
 $seoCanonicalEnabled = true;
 $seoTitle = $study['title'] . ' | Product design case study | Shivam Patsariya';
 $seoDescription = $study['summary'];
-$seoCanonical = 'https://imshivam.com/flipkart-' . $caseStudyKey;
+$caseStudyRoute = $caseStudyKey === 'flipkart-video' ? 'flipkart-video' : 'flipkart-' . $caseStudyKey;
+$seoCanonical = 'https://imshivam.com/' . $caseStudyRoute;
 $pageStylesheet = 'css/flipkart-case-studies.css';
 $e = static function ($str) { return htmlspecialchars((string) $str, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'); };
 include __DIR__ . '/header.php';
@@ -131,7 +132,7 @@ include __DIR__ . '/header.php';
       <span class="fk-kicker">More from the Flipkart ecosystem</span>
       <div class="fk-next-grid">
         <?php foreach ($caseStudies as $key => $other): if ($key === $caseStudyKey) continue; ?>
-          <a href="/flipkart-<?php echo $e($key); ?>"><small><?php echo $e($other['eyebrow']); ?></small><strong><?php echo $e($other['title']); ?></strong><span aria-hidden="true">↗</span></a>
+          <a href="/<?php echo $e($key === 'flipkart-video' ? 'flipkart-video' : 'flipkart-' . $key); ?>"><small><?php echo $e($other['eyebrow']); ?></small><strong><?php echo $e($other['title']); ?></strong><span aria-hidden="true">↗</span></a>
         <?php endforeach; ?>
       </div>
     </div>
