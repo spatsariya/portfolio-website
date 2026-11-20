@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox'] });
   fs.mkdirSync('qa-screenshots', { recursive: true });
   const projects = {
     '2gud': '#section-6',
