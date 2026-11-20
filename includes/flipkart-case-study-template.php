@@ -54,11 +54,13 @@ include __DIR__ . '/header.php';
         <h2>Project overview</h2>
         <p><?php echo $esc($details['overview']); ?></p>
       </div>
+      <?php if (!empty($study['metrics'])): ?>
       <div class="fk-highlights" aria-label="Reported project outcomes">
       <?php foreach ($study['metrics'] as $metric): ?>
         <div><strong><?php echo $esc($metric[0]); ?></strong><span><?php echo $esc($metric[1]); ?></span></div>
       <?php endforeach; ?>
       </div>
+      <?php endif; ?>
     </div>
   </header>
 
