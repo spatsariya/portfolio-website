@@ -84,7 +84,9 @@ include __DIR__ . '/header.php';
           </ul>
         <?php endif; ?>
 
-        <?php if (!empty($chapter['images'])): ?>
+        <?php if ($caseStudyKey === 'refurbished' && $idx >= 4 && $idx <= 7): ?>
+          <?php include __DIR__ . '/flipkart-refurbished-showcases.php'; ?>
+        <?php elseif (!empty($chapter['images'])): ?>
           <div class="fk-visual-set fk-visual-set--<?php echo $esc($chapter['imageLayout'] ?? 'wide'); ?>">
             <?php foreach ($chapter['images'] as $im): ?>
               <figure class="fk-visual">
