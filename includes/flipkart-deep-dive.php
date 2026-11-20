@@ -577,8 +577,12 @@ return json_decode(<<<'JSON'
             "caption": "Video playback interface"
           },
           {
-            "url": "https://framerusercontent.com/images/Hk5hACuwZxtZaTnVIupOG5WVkE.png",
+            "url": "https://framerusercontent.com/images/8xOSijuanvL9FAKvWKisZFdu53o.png",
             "caption": "Video audio and subtitle controls"
+          },
+          {
+            "url": "https://framerusercontent.com/images/k7NyG9k4wmw86HlM1EgT5cuieo.png",
+            "caption": "Episode selection overlay"
           }
         ],
         "layout": "wide",
@@ -599,6 +603,10 @@ return json_decode(<<<'JSON'
           {
             "url": "https://framerusercontent.com/images/5yOu6I22Nh1PYPixBQ3FmIGNL1k.png",
             "caption": "Advertising interface within the Flipkart Video player"
+          },
+          {
+            "url": "https://framerusercontent.com/images/SWUXvSduvHDceNSbAgrZzKps8Q.png",
+            "caption": "Advertising brand overlay during playback"
           }
         ],
         "layout": "wide"
