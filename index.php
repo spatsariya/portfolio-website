@@ -384,22 +384,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
 @media(max-width:990px){.projects-section .work-head{grid-template-columns:1fr;gap:18px}.projects-section .work-card{grid-column:span 3}.projects-section .work-card--lead{grid-column:1/-1}.projects-section .project-index{grid-template-columns:1fr}}
 @media(max-width:700px){.projects-section .work-head{margin-bottom:29px}.projects-section .work-head h2{font-size:clamp(2.7rem,13vw,4.3rem)}.projects-section .projects-count{margin-bottom:30px}.projects-section .projects-grid{gap:14px}.projects-section .work-card,.projects-section .work-card--lead{grid-column:1/-1;display:flex}.projects-section .work-card--lead .work-media{height:auto;min-height:0;aspect-ratio:16/10}.projects-section .work-card--lead .work-copy{padding:27px}.projects-section .work-card--lead h3{font-size:2.45rem}.projects-section .work-copy{padding:23px}.projects-section .index-entry{grid-template-columns:28px minmax(0,1fr);gap:9px}.projects-section .index-link{grid-column:2;justify-self:start}.projects-section .project-more summary .more-label{gap:8px}}
 @media(prefers-reduced-motion:reduce){.projects-section .work-card,.projects-section .work-media img,.projects-section .work-action,.projects-section .project-more summary .more-toggle{transition:none}}
+/* Illustrated previews are deliberate portfolio covers, not product screenshots. */
+.projects-section .fk-work-preview{position:absolute;inset:0;padding:22px;overflow:hidden;display:flex;justify-content:space-between;align-items:flex-start;flex-direction:column;background:#c8d4df;color:#182b42}
+.projects-section .fk-work-preview--2gud{background:#d8d2e7;color:#352752}
+.projects-section .fk-work-preview--supercoin{background:#e6d6aa;color:#47381d}
+.projects-section .fk-work-preview--refurbished{background:#c1d7d8;color:#20464c}
+.projects-section .fk-work-preview--flipkart-video{background:#bacde0;color:#173454}
+.projects-section .fk-work-brand{position:relative;z-index:1;font-weight:800;font-size:.73rem;letter-spacing:.19em}
+.projects-section .fk-work-edition{position:relative;z-index:1;font-size:.65rem;font-weight:800;letter-spacing:.14em;opacity:.7}
+.projects-section .fk-work-screen{position:absolute;width:57%;height:82%;top:12%;left:24%;border:6px solid #1b2333;border-radius:21px 21px 0 0;background:#fdfbf6;transform:rotate(-11deg);padding:30px 12px 12px;box-shadow:25px 20px 0 rgba(18,27,40,.12);display:flex;flex-direction:column;gap:11px}
+.projects-section .fk-work-screen:before{content:"";position:absolute;width:38px;height:6px;background:#1b2333;top:7px;left:calc(50% - 19px);border-radius:8px}
+.projects-section .fk-work-screen-label{font-size:.49rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.projects-section .fk-work-screen strong{font-size:clamp(.94rem,2vw,1.46rem);line-height:1.15;letter-spacing:-.05em}
+.projects-section .fk-work-screen-lines{height:9px;width:82%;background:currentColor;opacity:.15;border-radius:4px}
+.projects-section .fk-work-screen-tiles{display:flex;gap:6px;min-width:0}
+.projects-section .fk-work-screen-tiles i{height:74px;flex:1;border-radius:3px;background:currentColor;opacity:.13}
+
 </style>
     <div class="container">
         <header class="work-head">
             <div>
-                <span class="work-kicker">Portfolio / 16 projects</span>
+                <span class="work-kicker">Portfolio / 19 projects</span>
                 <h2 id="projects-heading">Selected work.</h2>
             </div>
             <p>A selection of mobile products, publishing platforms, and nonprofit websites. Explore the featured work or browse the full project index.</p>
         </header>
         <div class="projects-filter" role="group" aria-label="Filter projects by category">
-            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All <span aria-hidden="true">/ 16</span></button>
+            <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All <span aria-hidden="true">/ 19</span></button>
             <button class="filter-btn" type="button" data-filter="mobile" aria-pressed="false">Mobile apps</button>
             <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">Websites</button>
             <button class="filter-btn" type="button" data-filter="branding" aria-pressed="false">Branding</button>
         </div>
-        <p class="projects-count" id="projects-count" role="status" aria-live="polite">4 featured projects · 12 more to explore</p>
+        <p class="projects-count" id="projects-count" role="status" aria-live="polite">8 featured projects · 11 more to explore</p>
         <div id="featured-projects">
             <span class="work-label">01 / Featured projects</span>
             <div class="projects-grid">
@@ -451,83 +467,139 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                     <a class="work-action" href="https://www.aashayenfoundation.org/" target="_blank" rel="noopener noreferrer">View project <span aria-hidden="true">↗</span></a>
                 </div>
             </article>
+            <article class="project-item work-card fk-portfolio-card" data-category="mobile">
+                <a class="work-media" href="/flipkart-2gud" aria-label="Read 2GUD by Flipkart case study">
+                    <div class="fk-work-preview fk-work-preview--2gud" aria-hidden="true">
+                        <span class="fk-work-brand">2GUD</span>
+                        <div class="fk-work-screen"><span class="fk-work-screen-label">Shop the story</span><strong>Video commerce</strong><span class="fk-work-screen-lines"></span><span class="fk-work-screen-tiles"><i></i><i></i><i></i></span></div>
+                        <span class="fk-work-edition">FLIPKART / CASE 01</span>
+                    </div>
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">05 / Commerce · Product experience</span>
+                    <h3>2GUD by Flipkart</h3>
+                    <p>Social commerce, product discovery and a more engaging value-shopping experience.</p>
+                    <a class="work-action" href="/flipkart-2gud">Read case study <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-item work-card fk-portfolio-card" data-category="mobile">
+                <a class="work-media" href="/flipkart-supercoin" aria-label="Read Flipkart SuperCoin case study">
+                    <div class="fk-work-preview fk-work-preview--supercoin" aria-hidden="true">
+                        <span class="fk-work-brand">SUPERCOIN</span>
+                        <div class="fk-work-screen"><span class="fk-work-screen-label">Find more value</span><strong>Rewards reimagined</strong><span class="fk-work-screen-lines"></span><span class="fk-work-screen-tiles"><i></i><i></i><i></i></span></div>
+                        <span class="fk-work-edition">FLIPKART / CASE 02</span>
+                    </div>
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">06 / Rewards · Product UX</span>
+                    <h3>Flipkart SuperCoin</h3>
+                    <p>A rewards experience focused on relevant offers, clearer navigation and loyalty.</p>
+                    <a class="work-action" href="/flipkart-supercoin">Read case study <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-item work-card fk-portfolio-card" data-category="mobile">
+                <a class="work-media" href="/flipkart-refurbished" aria-label="Read Flipkart Refurbished case study">
+                    <div class="fk-work-preview fk-work-preview--refurbished" aria-hidden="true">
+                        <span class="fk-work-brand">REFURBISHED</span>
+                        <div class="fk-work-screen"><span class="fk-work-screen-label">Buy with clarity</span><strong>Know your product</strong><span class="fk-work-screen-lines"></span><span class="fk-work-screen-tiles"><i></i><i></i><i></i></span></div>
+                        <span class="fk-work-edition">FLIPKART / CASE 03</span>
+                    </div>
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">07 / E-commerce · Trust</span>
+                    <h3>Flipkart Refurbished</h3>
+                    <p>Giving customers the clarity and confidence to buy professionally restored electronics.</p>
+                    <a class="work-action" href="/flipkart-refurbished">Read case study <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="project-item work-card fk-portfolio-card" data-category="mobile">
+                <a class="work-media" href="/flipkart-flipkart-video" aria-label="Read Flipkart Video case study">
+                    <div class="fk-work-preview fk-work-preview--flipkart-video" aria-hidden="true">
+                        <span class="fk-work-brand">VIDEO</span>
+                        <div class="fk-work-screen"><span class="fk-work-screen-label">Content that connects</span><strong>Watch and explore</strong><span class="fk-work-screen-lines"></span><span class="fk-work-screen-tiles"><i></i><i></i><i></i></span></div>
+                        <span class="fk-work-edition">FLIPKART / CASE 04</span>
+                    </div>
+                </a>
+                <div class="work-copy">
+                    <span class="work-category">08 / Entertainment · Mobile</span>
+                    <h3>Flipkart Video</h3>
+                    <p>A mobile-first entertainment experience covering discovery, episodes and playback.</p>
+                    <a class="work-action" href="/flipkart-flipkart-video">Read case study <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
             </div>
         </div>
         <details class="project-more" id="more-projects">
             <summary>
-                <span class="more-label"><span class="more-kicker">02 / Project index</span><span id="more-projects-label">Explore 12 more projects</span></span>
+                <span class="more-label"><span class="more-kicker">02 / Project index</span><span id="more-projects-label">Explore 11 more projects</span></span>
                 <span class="more-toggle" aria-hidden="true">+</span>
             </summary>
             <div class="project-index">
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">05</span>
+                <span class="index-number">09</span>
                 <div><h3>rCycle</h3><p>Sustainability · Mobile app</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">06</span>
+                <span class="index-number">10</span>
                 <div><h3>Radiology without Tears</h3><p>Healthcare learning · Mobile</p></div>
                 <a class="index-link" href="https://rwtradiology.com/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">07</span>
+                <span class="index-number">11</span>
                 <div><h3>Radiology Resident</h3><p>Medical education · Mobile</p></div>
                 <a class="index-link" href="https://radiology-resident.com/" target="_blank" rel="noopener noreferrer">Visit website <span aria-hidden="true">↗</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">08</span>
+                <span class="index-number">12</span>
                 <div><h3>Dr Outlier</h3><p>Healthcare · Product design</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">09</span>
+                <span class="index-number">13</span>
                 <div><h3>Subscription Manager</h3><p>Subscription tracking · App</p></div>
                 <a class="index-link" href="https://subscriptionmanager.app/" target="_blank" rel="noopener noreferrer">Visit product <span aria-hidden="true">↗</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">10</span>
+                <span class="index-number">14</span>
                 <div><h3>Play Classic</h3><p>Entertainment · Mobile</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">11</span>
+                <span class="index-number">15</span>
                 <div><h3>Shopsy</h3><p>Social commerce · Mobile</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
-
-            <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">12</span>
-                <div><h3>2Gud</h3><p>Commerce · Mobile</p></div>
-                <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
-            </article>
-
-            <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">13</span>
+<article class="project-item index-entry" data-category="mobile">
+                <span class="index-number">16</span>
                 <div><h3>PayQwik</h3><p>Payments · Fintech</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">14</span>
+                <span class="index-number">17</span>
                 <div><h3>Cashier</h3><p>Merchant payments · Mobile</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="mobile">
-                <span class="index-number">15</span>
+                <span class="index-number">18</span>
                 <div><h3>Circuit Launcher</h3><p>Android launcher · UI</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
 
             <article class="project-item index-entry" data-category="branding">
-                <span class="index-number">16</span>
+                <span class="index-number">19</span>
                 <div><h3>Flipkart Graphics Design</h3><p>Brand and marketing graphics</p></div>
                 <a class="index-link" href="#contact">Request details <span aria-hidden="true">→</span></a>
             </article>
