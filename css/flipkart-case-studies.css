@@ -66,3 +66,60 @@
 @media(max-width:800px){.fk-case{padding-top:70px}.fk-case .fk-section{scroll-margin-top:90px}.fk-case .fk-container{width:min(100% - 32px,1060px)}.fk-case .fk-overview{grid-template-columns:1fr;gap:12px}.fk-case .fk-other-list{grid-template-columns:1fr 1fr}.fk-case .fk-section{padding:52px 0}}
 @media(max-width:580px){.fk-case h1{font-size:clamp(2.3rem,10vw,3.25rem)}.fk-case .fk-opening{padding:42px 0 39px}.fk-case .fk-info-row{grid-template-columns:1fr;gap:13px;padding:17px 0}.fk-case .fk-info span{margin-bottom:4px}.fk-case .fk-project-image{max-height:320px}.fk-case .fk-project-image img{max-height:320px}.fk-case .fk-overview{padding:25px 0}.fk-case .fk-highlights{gap:15px}.fk-case .fk-highlights strong{font-size:clamp(1.7rem,7vw,2.6rem)}.fk-case .fk-highlights span{font-size:.73rem}.fk-case .fk-section{padding:44px 0}.fk-case .fk-section h2{font-size:clamp(1.75rem,7.2vw,2.25rem)}.fk-case .fk-points{grid-template-columns:1fr}.fk-case .fk-visual-set--three,.fk-case .fk-visual-set--sequence,.fk-case--2gud .fk-section:first-child .fk-visual-set--sequence{grid-template-columns:1fr 1fr;gap:12px}.fk-case .fk-visual-set--three .fk-visual:last-child:nth-child(odd){grid-column:1/-1;max-width:65%;justify-self:center}.fk-case .fk-visual-set--wide,.fk-case .fk-visual-set--pair,.fk-case .fk-visual-set--annotated{grid-template-columns:1fr}.fk-case .fk-visual-set--annotated .fk-visual:last-child{max-width:75%;justify-self:center}.fk-case .fk-visual-inner{min-height:100px;padding:5px;border-radius:8px}.fk-case .fk-visual-set--wide .fk-visual-inner,.fk-case .fk-visual-set--pair .fk-visual-inner{min-height:180px}.fk-case .fk-visual-set--three img{max-height:420px}.fk-case .fk-visual figcaption{font-size:.71rem}.fk-case .fk-other-list{grid-template-columns:1fr}.fk-case .fk-key-learning{padding-left:16px}}
 @media(prefers-reduced-motion:reduce){.fk-case .fk-other-list a{transition:none}}
+
+
+/* Reference-inspired annotated design boards: source screenshots plus actual callouts. */
+.fk-case .fk-design-board{margin-top:32px;background:#fafaf8;border-radius:18px;border:1px solid #e7e5e0;padding:clamp(18px,3vw,36px);display:grid;align-items:center;gap:clamp(12px,2vw,25px)}
+.fk-case .fk-design-board--compare{grid-template-columns:minmax(110px,1fr) minmax(0,1.55fr) minmax(0,1.55fr) minmax(110px,1fr);grid-template-areas:"left green blue right"}
+.fk-case .fk-design-board--compare .fk-board-callouts--left{grid-area:left}
+.fk-case .fk-design-board--compare .fk-phone-green{grid-area:green}
+.fk-case .fk-design-board--compare .fk-phone-blue{grid-area:blue}
+.fk-case .fk-design-board--compare .fk-board-callouts--right{grid-area:right}
+.fk-case .fk-board-figure{margin:0;min-width:0;text-align:center}
+.fk-case .fk-board-figure img{display:block;width:100%;height:auto;max-height:540px;object-fit:contain;margin-inline:auto}
+.fk-case .fk-board-figure figcaption{padding-top:11px;font-size:.75rem;font-weight:700;line-height:1.5;color:var(--text-color)}
+.fk-case .fk-board-callouts{display:grid;gap:clamp(30px,6vw,90px)}
+.fk-case .fk-board-callout{position:relative}
+.fk-case .fk-board-callout h3{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:clamp(1rem,1.45vw,1.24rem);font-weight:500;letter-spacing:-.025em;color:var(--secondary-color);margin:0 0 7px;line-height:1.3}
+.fk-case .fk-board-callout p{font-size:clamp(.75rem,.98vw,.9rem);line-height:1.53;color:var(--text-muted);margin:0}
+.fk-case .fk-board-callouts--left .fk-board-callout{text-align:right}
+.fk-case .fk-board-callouts--right .fk-board-callout{text-align:left}
+.fk-case .fk-board-callouts--left .fk-board-callout:after,
+.fk-case .fk-board-callouts--right .fk-board-callout:before{content:"";position:absolute;top:45%;width:22px;border-top:1px dashed var(--secondary-color);opacity:.8}
+.fk-case .fk-board-callouts--left .fk-board-callout:after{right:-25px}
+.fk-case .fk-board-callouts--right .fk-board-callout:before{left:-25px}
+.fk-case .fk-design-board--education{grid-template-columns:1.18fr 1fr 1fr;align-items:start;gap:20px}
+.fk-case .fk-design-board--education .fk-edu-image{background:#fff;min-height:300px;display:grid;place-items:center;padding:10px;border:1px solid #eee}
+.fk-case .fk-design-board--education img{max-height:490px}
+.fk-case .fk-design-board--education figcaption{text-align:left;border-top:2px solid var(--secondary-color);margin-top:14px;padding-top:13px}
+.fk-case .fk-design-board--education figcaption strong{display:block;font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:1.13rem;font-weight:500;color:var(--secondary-color);margin:0 0 7px}
+.fk-case .fk-design-board--education figcaption span{display:block;color:var(--text-muted);font-size:.83rem;line-height:1.55;font-weight:400}
+.fk-case .fk-design-board--confirm{grid-template-columns:minmax(130px,1fr) minmax(210px,1.7fr) minmax(130px,1fr);align-items:center;gap:35px}
+.fk-case .fk-design-board--confirm .fk-board-callout:first-child{text-align:right}
+.fk-case .fk-design-board--confirm .fk-board-figure img{max-height:600px}
+.fk-case .fk-design-board--trust{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start;gap:24px}
+.fk-case .fk-design-board--trust img{max-height:600px}
+@media(max-width:900px){
+  .fk-case .fk-design-board--compare{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"green blue" "left right"}
+  .fk-case .fk-board-callouts{gap:12px;align-self:start}
+  .fk-case .fk-board-callouts--left .fk-board-callout{text-align:left}
+  .fk-case .fk-board-callouts--left .fk-board-callout:after,
+  .fk-case .fk-board-callouts--right .fk-board-callout:before{display:none}
+  .fk-case .fk-design-board--confirm{gap:16px}
+}
+@media(max-width:600px){
+  .fk-case .fk-design-board{padding:15px;gap:14px;border-radius:12px}
+  .fk-case .fk-design-board--compare{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-areas:"green blue" "left right"}
+  .fk-case .fk-board-figure figcaption{font-size:.69rem}
+  .fk-case .fk-board-callout h3{font-size:.94rem}
+  .fk-case .fk-board-callout p{font-size:.75rem}
+  .fk-case .fk-design-board--education{grid-template-columns:1fr;gap:29px}
+  .fk-case .fk-design-board--education .fk-edu-image{min-height:180px}
+  .fk-case .fk-design-board--education img{max-height:430px}
+  .fk-case .fk-design-board--confirm{grid-template-columns:1fr 1fr;grid-template-areas:"phone phone" "left right"}
+  .fk-case .fk-design-board--confirm .fk-board-figure{grid-area:phone}
+  .fk-case .fk-design-board--confirm .fk-board-callout:first-child{grid-area:left;text-align:left}
+  .fk-case .fk-design-board--confirm .fk-board-callout:last-child{grid-area:right}
+  .fk-case .fk-design-board--confirm .fk-board-figure img{max-height:520px}
+  .fk-case .fk-design-board--trust{grid-template-columns:1fr}
+}
