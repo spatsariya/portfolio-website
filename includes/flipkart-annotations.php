@@ -14,12 +14,12 @@ return [
             'screen' => 0,
             'left' => [
                 ['title' => 'Featured hero', 'description' => 'The first card introduces major releases and newly available titles.', 'top' => 13],
-                ['title' => 'Curated collections', 'description' => 'Featured movies provide a quick path into paid and promoted content.', 'top' => 44],
+                ['title' => 'Curated collections', 'description' => 'Featured movies provide a quick path into paid and promoted content.', 'top' => 27],
             ],
             'right' => [
                 ['title' => 'Navigation tabs', 'description' => 'Viewers can move between Home, Originals, Movies and TV.', 'top' => 4],
-                ['title' => 'Autoplay promotion', 'description' => 'Recently launched shows gain visibility through a moving preview.', 'top' => 66],
-                ['title' => 'Browse by language', 'description' => 'Regional collections help audiences discover relevant entertainment.', 'top' => 87],
+                ['title' => 'Autoplay promotion', 'description' => 'Recently launched shows gain visibility through a moving preview.', 'top' => 57],
+                ['title' => 'Browse by language', 'description' => 'Regional collections help audiences discover relevant entertainment.', 'top' => 75],
             ],
         ],
         3 => [
