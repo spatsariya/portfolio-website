@@ -26,6 +26,14 @@ $seoTitle = $study['title'] . ' | Flipkart Product Design Case Study | Shivam Pa
 $seoDescription = $details['overview'];
 $seoCanonical = 'https://imshivam.com' . $routes[$caseStudyKey];
 $pageStylesheet = 'css/flipkart-case-studies.css';
+$annotationCatalog = require __DIR__ . '/flipkart-annotations.php';
+$designStarts = ['flipkart-video' => 2, '2gud' => 5, 'supercoin' => 4, 'refurbished' => 4];
+$designIntroductions = [
+  'flipkart-video' => 'Exploring a full entertainment journey: discovery, show selection, playback and advertising.',
+  '2gud' => 'Combining creator-led inspiration with the practical structure of e-commerce.',
+  'supercoin' => 'Applying the research to onboarding, a redesigned rewards zone and easier redemption.',
+  'refurbished' => 'Four connected solutions to make product condition clearer across search, product details and checkout.',
+];
 include __DIR__ . '/header.php';
 ?>
 <div class="fk-case fk-case--<?php echo $esc($caseStudyKey); ?>">
@@ -66,6 +74,15 @@ include __DIR__ . '/header.php';
 
   <div class="fk-narrative" id="case-study-content">
   <?php foreach ($details['chapters'] as $idx => $chapter): ?>
+    <?php if ($idx === $designStarts[$caseStudyKey]): ?>
+      <div class="fk-designs-heading">
+        <div class="fk-container">
+          <span class="fk-section-label">Design exploration</span>
+          <h2>The designs</h2>
+          <p><?php echo $esc($designIntroductions[$caseStudyKey]); ?></p>
+        </div>
+      </div>
+    <?php endif; ?>
     <section class="fk-section" id="section-<?php echo $idx + 1; ?>" aria-labelledby="fk-heading-<?php echo $idx + 1; ?>">
       <div class="fk-container">
         <span class="fk-section-label"><?php echo $esc($chapter['kicker']); ?></span>
@@ -79,6 +96,11 @@ include __DIR__ . '/header.php';
 
         <?php if ($caseStudyKey === 'refurbished' && $idx >= 4 && $idx <= 7): ?>
           <?php include __DIR__ . '/flipkart-refurbished-showcases.php'; ?>
+        <?php elseif (!empty($chapter['images']) && isset($annotationCatalog[$caseStudyKey][$idx])): ?>
+          <?php
+            $screenConfig = $annotationCatalog[$caseStudyKey][$idx];
+            include __DIR__ . '/flipkart-annotated-showcase.php';
+          ?>
         <?php elseif (!empty($chapter['images'])): ?>
           <div class="fk-visual-set fk-visual-set--<?php echo $esc($chapter['imageLayout'] ?? 'wide'); ?>">
             <?php foreach ($chapter['images'] as $im): ?>
