@@ -183,13 +183,16 @@ Reported business metrics are not independently verified and are not claimed to
 result from any single designer's work. Confirm Shivam's exact role and participation
 for each initiative before adding first-person contribution narratives.
 
-**Visual assets:** Selected published screenshots currently load from the original
-Framer image CDN and are presented inline with each section instead of an
-isolated, oversized gallery. They were not copied
-into the repository. For durable, fast hosting, replace the remote URLs with
-licensed original source files compressed to WebP/AVIF and verify the rights to
-republish them. The homepage uses lightweight CSS covers instead of third-party
-image downloads.
+**Visual assets:** 47 published screenshots are referenced directly from
+the Framer CDN in the same chapter order as the original case studies. They
+are never stretched or cropped, and the page uses smaller screens grouped
+into responsive layouts. These URLs remain external: for durable, fast hosting,
+replace them with licensed, optimized originals when available.
+
+**Quality checks:** Pull requests run PHP syntax, content-integrity and local
+render checks, plus Chromium browser tests for desktop/mobile overflow,
+cover-image loading and representative case-study screenshots. Browser QA
+captures are saved as short-lived GitHub Actions artifacts.
 
 ## 📄 License
 
