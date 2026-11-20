@@ -516,7 +516,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             </article>
 
             <article class="project-item work-card fk-portfolio-card" data-category="mobile">
-                <a class="work-media" href="/flipkart-flipkart-video" aria-label="Read Flipkart Video case study">
+                <a class="work-media" href="/flipkart-video" aria-label="Read Flipkart Video case study">
                     <div class="fk-work-preview fk-work-preview--flipkart-video" aria-hidden="true">
                         <span class="fk-work-brand">VIDEO</span>
                         <div class="fk-work-screen"><span class="fk-work-screen-label">Content that connects</span><strong>Watch and explore</strong><span class="fk-work-screen-lines"></span><span class="fk-work-screen-tiles"><i></i><i></i><i></i></span></div>
@@ -527,7 +527,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                     <span class="work-category">08 / Entertainment · Mobile</span>
                     <h3>Flipkart Video</h3>
                     <p>A mobile-first entertainment experience covering discovery, episodes and playback.</p>
-                    <a class="work-action" href="/flipkart-flipkart-video">Read case study <span aria-hidden="true">↗</span></a>
+                    <a class="work-action" href="/flipkart-video">Read case study <span aria-hidden="true">↗</span></a>
                 </div>
             </article>
             </div>
