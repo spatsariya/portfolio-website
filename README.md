@@ -159,6 +159,35 @@ Current implementation:
 
 **Note:** A sitemap and schema improve discoverability and interpretation; they do not guarantee indexing, rich results, rankings, or a specific Lighthouse score.
 
+## Flipkart ecosystem case studies
+
+Four responsive project pages are available at:
+
+- `/flipkart-2gud`
+- `/flipkart-supercoin`
+- `/flipkart-refurbished`
+- `/flipkart-video`
+
+The project pages use `includes/flipkart-case-studies.php` for curated content,
+`includes/flipkart-case-study-template.php` for the shared layout, and
+`css/flipkart-case-studies.css` for page-scoped presentation.
+They are linked from the homepage's selected work and `/product-design`;
+their canonical URLs are included in `sitemap.xml`.
+
+**Attribution and scope:** These are rewritten descriptions of collaborative
+Flipkart projects. The cited case studies on rishivaths.com belong to their author,
+Rishi Vaths, and include his own specific research and leadership contributions.
+Reported business metrics are not independently verified and are not claimed to
+result from any single designer's work. Confirm Shivam's exact role and participation
+for each initiative before adding first-person contribution narratives.
+
+**Visual assets:** Selected published screenshots currently load from the original
+Framer image CDN, with source credit alongside the gallery. They were not copied
+into the repository. For durable, fast hosting, replace the remote URLs with
+licensed original source files compressed to WebP/AVIF and verify the rights to
+republish them. The homepage uses lightweight CSS covers instead of third-party
+image downloads.
+
 ## 📄 License
 
 This project is created by Shivam Patsariya. All rights reserved.
