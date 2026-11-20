@@ -7,9 +7,9 @@ const path = require('path');
   fs.mkdirSync('qa-screenshots', { recursive: true });
   const projects = {
     '2gud': '#section-6',
-    'supercoin': '#section-7',
+    'supercoin': '#section-6',
     'refurbished': '#section-5',
-    'video': '#section-5'
+    'video': '#section-3'
   };
   let failures = [];
 
@@ -53,12 +53,12 @@ const path = require('path');
 
         const section = page.locator(keySection);
         await section.scrollIntoViewIfNeeded();
-        const images = section.locator('.fk-visual img');
+        const images = section.locator('.fk-visual img, .fk-annotation-screen img, .fk-curated-visual img, .fk-board-figure img');
         await images.first().scrollIntoViewIfNeeded();
         // Lazy images not yet scrolled into view can appear as empty panels in captures.
         // Promote only this one representative gallery to eager and wait for every image.
         await section.evaluate(async el => {
-          const imgs = Array.from(el.querySelectorAll('.fk-visual img'));
+          const imgs = Array.from(el.querySelectorAll('.fk-visual img, .fk-annotation-screen img, .fk-curated-visual img, .fk-board-figure img'));
           await Promise.all(imgs.map(async img => {
             img.loading = 'eager';
             await Promise.race([
@@ -75,6 +75,19 @@ const path = require('path');
           throw new Error('Source images did not load in ' + keySection + ': ' + failedImages.join(', '));
         }
 
+        const board = section.locator('.fk-annotation-board');
+        if (slug !== 'refurbished') {
+          if ((await board.count()) !== 1) throw new Error('Annotation board is missing');
+          const notes = await board.locator('.fk-annotation').count();
+          if (notes < 4) throw new Error('Missing interface callouts: ' + notes);
+          const phoneWidth = await board.locator('.fk-annotation-screen img').evaluate(img => img.getBoundingClientRect().width);
+          if (phoneWidth < (viewportName === 'desktop' ? 220 : 180)) {
+            throw new Error('Annotated screenshot is too small: ' + phoneWidth);
+          }
+          await board.screenshot({
+            path: path.join('qa-screenshots', slug + '-' + viewportName + '-annotated-board.png'),
+          });
+        }
         await page.screenshot({
           path: path.join('qa-screenshots', slug + '-' + viewportName + '-visual.png'),
           fullPage: false
