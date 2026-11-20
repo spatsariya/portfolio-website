@@ -20,7 +20,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for file in flipkart-2gud.php flipkart-supercoin.php flipkart-refurbished.php flipkart-video.php includes/flipkart-case-study-template.php includes/flipkart-case-studies.php includes/flipkart-deep-dive.php includes/flipkart-refurbished-showcases.php; do
+          for file in flipkart-2gud.php flipkart-supercoin.php flipkart-refurbished.php flipkart-video.php includes/flipkart-case-study-template.php includes/flipkart-case-studies.php includes/flipkart-deep-dive.php includes/flipkart-refurbished-showcases.php includes/flipkart-annotations.php includes/flipkart-annotated-showcase.php; do
             php -l "$file"
           done
       - name: Check detailed content and mapped image URLs
@@ -57,7 +57,7 @@ jobs:
           for slug in 2gud supercoin refurbished video; do
             curl --fail --silent --show-error "http://127.0.0.1:8133/flipkart-$slug.php" -o "/tmp/flipkart-$slug.html"
             grep -q '<h1>' "/tmp/flipkart-$slug.html"
-            grep -q 'fk-visual-set' "/tmp/flipkart-$slug.html"
+            grep -Eq 'fk-visual-set|fk-annotation-board|fk-design-board' "/tmp/flipkart-$slug.html"
             grep -q 'fk-other-list' "/tmp/flipkart-$slug.html"
             if grep -Eqi '(Warning:|Fatal error:|Notice:)' "/tmp/flipkart-$slug.html"; then
               cat "/tmp/flipkart-$slug.html"
