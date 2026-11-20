@@ -91,7 +91,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "06 / Design direction",
-        "title": "A creator-led home for shopping and discovery.",
+        "title": "Video Commerce Home Page",
         "paragraphs": [
           "A video-first starting point brought real people and product context into the feed. Featured items remained within reach through attached product cards, so inspiration could lead directly to practical consideration.",
           "Search and exploration paths remained visible. The goal was to add personality to commerce without removing the speed and utility that existing shoppers expected."
@@ -129,7 +129,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "07 / Design direction",
-        "title": "Make space for a familiar storefront too.",
+        "title": "Merchandising + Influencer Exploration Page",
         "paragraphs": [
           "Not every product needs a video, and not every visitor arrives to watch one. The merchandising page preserved deals, categories and price-led exploration, while connecting these areas with creator recommendations.",
           "This hybrid experience served people who wanted to wander through inspiration and people who already knew what they needed."
@@ -151,7 +151,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "08 / Design direction",
-        "title": "Give creators a recognizable destination.",
+        "title": "Influencer Store",
         "paragraphs": [
           "Dedicated creator storefronts made recommendations easier to revisit. Collections could be grouped by use, price and personality rather than appearing only as a single, disappearing video.",
           "These storefronts extended the experience from passive watching into a more deliberate shopping path."
@@ -269,7 +269,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "05 / Onboarding",
-        "title": "Explain the benefit system exactly when it matters.",
+        "title": "Onboarding screens",
         "paragraphs": [
           "New onboarding screens introduced the places where a member could inspect their balance, find offers, understand savings and move among rewards.",
           "A short orientation reduces the need for people to decode a complex loyalty system on their own."
@@ -285,7 +285,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "06 / SuperCoin zone",
-        "title": "A homepage built around relevant rewards.",
+        "title": "SuperCoin Zone",
         "paragraphs": [
           "Hero promotions, popular redemptions and category entry points transformed the reward destination into a place to browse. The design also connected earning opportunities with content and games already present elsewhere in the Flipkart ecosystem.",
           "The different modules each answered a distinct intent: find a deal, use existing coins, earn more, or inspect reward details."
@@ -307,7 +307,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "07 / Personalization",
-        "title": "Show customers what is achievable with their balance.",
+        "title": "Coin-based cohort targeting",
         "paragraphs": [
           "Three versions of the experience addressed different coin levels. Instead of showcasing the same rewards to everyone, the primary modules emphasized offers the visitor could realistically afford.",
           "Customers with fewer coins still retained an escape route to higher-value rewards through combinations of coins and cash."
@@ -336,7 +336,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "08 / Redemption",
-        "title": "Turn insufficient points into a valid way to pay.",
+        "title": "Cash + Coins",
         "paragraphs": [
           "A coins-plus-cash redemption option reduced the frustration of reaching a desirable reward but lacking enough points. Prices explicitly showed what could be paid with earned coins and what would remain in cash.",
           "This approach made loyalty value usable even for customers with limited balances, while preserving the familiar decision process of a purchase."
@@ -356,7 +356,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "09 / Rewards store",
-        "title": "Offer more choice within the same scroll.",
+        "title": "Grouping reward cards",
         "paragraphs": [
           "Grouping rewards into categories such as entertainment, food and shopping replaced a long undifferentiated list with a structure people could scan and navigate.",
           "Denser card layouts and a daily deal improved exposure without requiring the user to search blindly for useful offers."
@@ -622,7 +622,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "03 / Home",
-        "title": "A browsing experience that gets people watching.",
+        "title": "Home page",
         "paragraphs": [
           "The entertainment home combined prominent new releases, featured content and focused navigation tabs. Promotional treatments introduced new shows, while language-based collections gave different audiences familiar entry points.",
           "By separating editorial highlights from utility controls, the page could feel engaging without hiding the path to a specific piece of content."
@@ -644,7 +644,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "04 / Show details",
-        "title": "Give every title a clear starting point.",
+        "title": "Product details page",
         "paragraphs": [
           "The details page put the poster, program information and primary watch action in a predictable hierarchy. Episode lists and a season selector made serial content easier to explore.",
           "A favorites action supported the intention to watch later, while recommendations offered a useful route to discover the next show."
@@ -666,7 +666,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "05 / Player",
-        "title": "Keep the content primary and controls secondary.",
+        "title": "Video player",
         "paragraphs": [
           "The player presented the viewing surface with controls that appear when needed. Supplementary overlays organized subtitles, audio options and episode selection into distinct tasks.",
           "This lets someone adjust their experience without being pulled out of the content or forced to navigate back through the app."
@@ -695,7 +695,7 @@ return json_decode(<<<'JSON'
       },
       {
         "kicker": "06 / Ads",
-        "title": "Make advertising visible without taking over playback.",
+        "title": "Ads integration",
         "paragraphs": [
           "The design also explored video advertisement treatments and brand overlays to support the platform's business model.",
           "Placement and visual hierarchy mattered: a promotional unit needed to be legible and actionable while allowing the viewer to understand when an ad begins, what is sponsored and how to return to the show."
