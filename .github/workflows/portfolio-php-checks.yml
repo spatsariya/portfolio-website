@@ -1,0 +1,67 @@
+name: Portfolio PHP smoke checks
+
+on:
+  pull_request:
+    paths:
+      - 'flipkart-*.php'
+      - 'includes/flipkart-*.php'
+      - 'css/flipkart-case-studies.css'
+      - '.github/workflows/portfolio-php-checks.yml'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify-case-studies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lint portfolio PHP pages
+        shell: bash
+        run: |
+          set -euo pipefail
+          for file in flipkart-2gud.php flipkart-supercoin.php flipkart-refurbished.php flipkart-video.php includes/flipkart-case-study-template.php includes/flipkart-case-studies.php includes/flipkart-deep-dive.php; do
+            php -l "$file"
+          done
+      - name: Check detailed content and mapped image URLs
+        shell: bash
+        run: |
+          php -r '
+            $stories = require "includes/flipkart-deep-dive.php";
+            $names = ["2gud", "supercoin", "refurbished", "flipkart-video"];
+            if (count($stories) !== 4) { fwrite(STDERR, "Expected 4 projects\n"); exit(1); }
+            $images = 0;
+            foreach ($names as $name) {
+              if (!isset($stories[$name]["focus"], $stories[$name]["heroImage"], $stories[$name]["chapters"])) { exit(2); }
+              if (count($stories[$name]["chapters"]) < 7) { exit(3); }
+              foreach ($stories[$name]["chapters"] as $chapter) {
+                if (empty($chapter["title"]) || empty($chapter["paragraphs"])) { exit(4); }
+                foreach ($chapter["images"] ?? [] as $image) {
+                  if (!preg_match("~^https://framerusercontent\\.com/images/[a-zA-Z0-9]+\\.png$~", $image["url"])) { exit(5); }
+                  if (empty($image["caption"])) { exit(6); }
+                  $images++;
+                }
+              }
+            }
+            if ($images < 40) { exit(7); }
+            echo count($stories) . " projects, " . $images . " verified-format image references\n";
+          '
+      - name: Render all four pages locally
+        shell: bash
+        run: |
+          set -euo pipefail
+          php -S 127.0.0.1:8133 -t . >/tmp/portfolio-php.log 2>&1 &
+          server_pid=$!
+          trap 'kill $server_pid || true' EXIT
+          sleep 2
+          for slug in 2gud supercoin refurbished video; do
+            curl --fail --silent --show-error "http://127.0.0.1:8133/flipkart-$slug.php" -o "/tmp/flipkart-$slug.html"
+            grep -q '<h1>' "/tmp/flipkart-$slug.html"
+            grep -q 'fk-visual-set' "/tmp/flipkart-$slug.html"
+            grep -q 'fk-other-list' "/tmp/flipkart-$slug.html"
+            if grep -Eqi '(Warning:|Fatal error:|Notice:)' "/tmp/flipkart-$slug.html"; then
+              cat "/tmp/flipkart-$slug.html"
+              exit 8
+            fi
+          done
+          echo "All four portfolio pages render clean HTML"
