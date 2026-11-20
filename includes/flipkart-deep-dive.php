@@ -17,19 +17,19 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/DpjGbftMq3Snh6kHmphSI6O5s.png",
-            "caption": "Visitors arrived. But they were not staying or buying. · Visual 1 of 4"
+            "caption": "Original 2GUD home"
           },
           {
             "url": "https://framerusercontent.com/images/Btcg422v4zMMtX42omhRZTmzMs.png",
-            "caption": "Visitors arrived. But they were not staying or buying. · Visual 2 of 4"
+            "caption": "Original category navigation"
           },
           {
             "url": "https://framerusercontent.com/images/TddCdznv4LNOtwBCGPovt6FdKw.png",
-            "caption": "Visitors arrived. But they were not staying or buying. · Visual 3 of 4"
+            "caption": "Original product details"
           },
           {
             "url": "https://framerusercontent.com/images/J6Ry5pIVUnf544WA3vLPBZA70wE.png",
-            "caption": "Visitors arrived. But they were not staying or buying. · Visual 4 of 4"
+            "caption": "Previous shopping experience"
           }
         ],
         "imageLayout": "sequence"
@@ -58,7 +58,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/RG1gmaHXg5ju3rqlQMD0sJSyprs.png",
-            "caption": "An empathy map revealed a gap between desire and confidence. · Visual 1 of 1"
+            "caption": "Customer empathy map and research themes"
           }
         ],
         "imageLayout": "wide"
@@ -106,23 +106,23 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/PJMaS9RCFgQtn1TITj56Wav6wI.png",
-            "caption": "A creator-led home for shopping and discovery. · Visual 1 of 5"
+            "caption": "Video-commerce home and linked products"
           },
           {
             "url": "https://framerusercontent.com/images/30APGpx2h25FiohqlGHQkiUIas.png",
-            "caption": "A creator-led home for shopping and discovery. · Visual 2 of 5"
+            "caption": "Product details inlay"
           },
           {
             "url": "https://framerusercontent.com/images/DzWu1dKdiDN52IzSt5xVHx7ks8.png",
-            "caption": "A creator-led home for shopping and discovery. · Visual 3 of 5"
+            "caption": "Inlay interaction details"
           },
           {
             "url": "https://framerusercontent.com/images/Cy9pq1IRDfr1ZBXo7FexSMPM4M.png",
-            "caption": "A creator-led home for shopping and discovery. · Visual 4 of 5"
+            "caption": "Additional inlay exploration"
           },
           {
             "url": "https://framerusercontent.com/images/eTITIKymyG4xPrXnLufXNfFHvs.png",
-            "caption": "A creator-led home for shopping and discovery. · Visual 5 of 5"
+            "caption": "Alternate product-in-video designs"
           }
         ],
         "imageLayout": "sequence"
@@ -144,7 +144,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/YzDNRhNPKiCWixYYupn379D70oE.png",
-            "caption": "Make space for a familiar storefront too. · Visual 1 of 1"
+            "caption": "Merchandising and influencer exploration page"
           }
         ],
         "imageLayout": "wide"
@@ -160,7 +160,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/XYY3NwkNn1dEHiZaUjYZZV8bV4Q.png",
-            "caption": "Give creators a recognizable destination. · Visual 1 of 1"
+            "caption": "Influencer store and product collections"
           }
         ],
         "imageLayout": "wide"
@@ -189,15 +189,15 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/31jBkXaMYL4cY0G9YwOSiMhHGI.png",
-            "caption": "A more engaging way to discover value. · Visual 1 of 3"
+            "caption": "Project outcome visual"
           },
           {
             "url": "https://framerusercontent.com/images/fi4vW1WgHwTvUhQsXxM6cu7F4.png",
-            "caption": "A more engaging way to discover value. · Visual 2 of 3"
+            "caption": "Engagement and browsing outcome"
           },
           {
             "url": "https://framerusercontent.com/images/lHZBkjs9K5lf6oqhJUQDVBHq8.png",
-            "caption": "A more engaging way to discover value. · Visual 3 of 3"
+            "caption": "Additional project outcome"
           }
         ],
         "imageLayout": "three"
@@ -235,11 +235,11 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/MmQm9enyfR8fh8gBVzwh5GqtRg0.png",
-            "caption": "Listen to why customers leave the rewards page. · Visual 1 of 2"
+            "caption": "User feedback from research interviews"
           },
           {
             "url": "https://framerusercontent.com/images/j7cuh3WoadFdgu3sLHwhQJiWJY.png",
-            "caption": "Listen to why customers leave the rewards page. · Visual 2 of 2"
+            "caption": "Previous SuperCoin and rewards interface"
           }
         ],
         "imageLayout": "pair"
@@ -278,7 +278,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/WX0obTUARLiUa9HIWQ4RbiQ4E.png",
-            "caption": "Explain the benefit system exactly when it matters. · Visual 1 of 1"
+            "caption": "Onboarding and first-time guidance screens"
           }
         ],
         "imageLayout": "wide"
@@ -300,7 +300,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/ybfdbZl4l5SjYqHFf6y9zHRIL54.png",
-            "caption": "A homepage built around relevant rewards. · Visual 1 of 1"
+            "caption": "SuperCoin Zone redesign with annotated modules"
           }
         ],
         "imageLayout": "wide"
@@ -321,15 +321,15 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/QMcOUNMkDRPEP0HsPImMgy7607c.png",
-            "caption": "Show customers what is achievable with their balance. · Visual 1 of 3"
+            "caption": "Rewards for members with fewer than 500 coins"
           },
           {
             "url": "https://framerusercontent.com/images/eCXQeXTS4Co41zp06gnUn40g.png",
-            "caption": "Show customers what is achievable with their balance. · Visual 2 of 3"
+            "caption": "Rewards for members with 500–1,000 coins"
           },
           {
             "url": "https://framerusercontent.com/images/Fus3YqyOruXfLUILrb8eSZINY.png",
-            "caption": "Show customers what is achievable with their balance. · Visual 3 of 3"
+            "caption": "Rewards for members with more than 1,000 coins"
           }
         ],
         "imageLayout": "three"
@@ -345,11 +345,11 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/VDutDrnbQrnk53Mv14FwxUHrCU.png",
-            "caption": "Turn insufficient points into a valid way to pay. · Visual 1 of 2"
+            "caption": "Cash + Coins redemption flow"
           },
           {
             "url": "https://framerusercontent.com/images/62waGbT0ycLU6brm5ly9CgFpxc4.png",
-            "caption": "Turn insufficient points into a valid way to pay. · Visual 2 of 2"
+            "caption": "Coin balance information"
           }
         ],
         "imageLayout": "pair"
@@ -370,19 +370,19 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/gJI2RFA3q4CvuXzbdOqVPdwGn8.png",
-            "caption": "Offer more choice within the same scroll. · Visual 1 of 4"
+            "caption": "Redesigned reward cards and deal of the day"
           },
           {
             "url": "https://framerusercontent.com/images/44ibs8avhEasOWqUN4R5Bw8g34.png",
-            "caption": "Offer more choice within the same scroll. · Visual 2 of 4"
+            "caption": "Entertainment rewards"
           },
           {
             "url": "https://framerusercontent.com/images/0LzYhFUvz3SKgTKJL1ltSPV0fU.png",
-            "caption": "Offer more choice within the same scroll. · Visual 3 of 4"
+            "caption": "Shopping rewards"
           },
           {
             "url": "https://framerusercontent.com/images/XoSF8ZTpZE6Zdnrnds1lWM74o1Q.png",
-            "caption": "Offer more choice within the same scroll. · Visual 4 of 4"
+            "caption": "Food rewards"
           }
         ],
         "imageLayout": "sequence"
@@ -428,7 +428,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/pGiOLJfLYjDqgn2ATEpL6HirurY.png",
-            "caption": "Investigate the return, not only the checkout. · Visual 1 of 1"
+            "caption": "Interview findings and customer concerns"
           }
         ],
         "imageLayout": "wide"
@@ -444,15 +444,15 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/S148E42jMbwiFeuasdHkFCVTqvY.png",
-            "caption": "The old journey did not communicate condition consistently. · Visual 1 of 3"
+            "caption": "Existing category search"
           },
           {
             "url": "https://framerusercontent.com/images/oefNZkeKxRXA5Gtu5WKyQNg4.png",
-            "caption": "The old journey did not communicate condition consistently. · Visual 2 of 3"
+            "caption": "Existing product details"
           },
           {
             "url": "https://framerusercontent.com/images/fkySYQA4ZwYl4e69vExMS30ibfo.png",
-            "caption": "The old journey did not communicate condition consistently. · Visual 3 of 3"
+            "caption": "Existing cart"
           }
         ],
         "imageLayout": "three"
@@ -487,11 +487,11 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/rTwHkisGHk2OBbRIbDsq31v5Sw.png",
-            "caption": "Identify refurbished devices in the search results. · Visual 1 of 2"
+            "caption": "Refurbished label in product results"
           },
           {
             "url": "https://framerusercontent.com/images/vK0RCWlDLVC7AwhGgNtGpH5bxO4.png",
-            "caption": "Identify refurbished devices in the search results. · Visual 2 of 2"
+            "caption": "Annotated search comparisons showing condition badges"
           }
         ],
         "imageLayout": "pair"
@@ -513,15 +513,15 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/vEwTwMVRZJKT85XIuj1EJ42y1so.png",
-            "caption": "Explain refurbishment within the product details journey. · Visual 1 of 3"
+            "caption": "Refurbished product details"
           },
           {
             "url": "https://framerusercontent.com/images/b6KgCoeqig3E6RYQsuSrQjFgLI.png",
-            "caption": "Explain refurbishment within the product details journey. · Visual 2 of 3"
+            "caption": "In-carousel video education"
           },
           {
             "url": "https://framerusercontent.com/images/HJqH22h56yx1yWN3AbmXZjgSjEw.png",
-            "caption": "Explain refurbishment within the product details journey. · Visual 3 of 3"
+            "caption": "Condition and quality details"
           }
         ],
         "imageLayout": "three"
@@ -542,7 +542,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/FWwi8GBZpNZ6JdEg70ORVbdLEM.png",
-            "caption": "Reconfirm the product condition at checkout. · Visual 1 of 1"
+            "caption": "Checkout confirmation explaining a refurbished purchase"
           }
         ],
         "imageLayout": "wide"
@@ -564,11 +564,11 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/VmJn6ViVbrnTojQQCvHRyA0FsE.png",
-            "caption": "Build confidence with evidence, not generic promises. · Visual 1 of 2"
+            "caption": "Warranty, quality and return information"
           },
           {
             "url": "https://framerusercontent.com/images/wYBrsfJMmn5dAn9VecAZ6Fon8.png",
-            "caption": "Build confidence with evidence, not generic promises. · Visual 2 of 2"
+            "caption": "Educational page about refurbishment"
           }
         ],
         "imageLayout": "pair"
@@ -637,7 +637,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/lnD0Ky8rxPgeCLBqfcVQtrIUGjA.png",
-            "caption": "A browsing experience that gets people watching. · Visual 1 of 1"
+            "caption": "Flipkart Video home and annotated widgets"
           }
         ],
         "imageLayout": "wide"
@@ -659,7 +659,7 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/LLvZ6zWeE0mNDsb2SdCel2cDA.png",
-            "caption": "Give every title a clear starting point. · Visual 1 of 1"
+            "caption": "Show details, episode lists and season selection"
           }
         ],
         "imageLayout": "wide"
@@ -680,15 +680,15 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/Hk5hACuwZxtZaTnVIupOG5WVkE.png",
-            "caption": "Keep the content primary and controls secondary. · Visual 1 of 3"
+            "caption": "Video player interface"
           },
           {
             "url": "https://framerusercontent.com/images/8xOSijuanvL9FAKvWKisZFdu53o.png",
-            "caption": "Keep the content primary and controls secondary. · Visual 2 of 3"
+            "caption": "Audio and subtitle overlay"
           },
           {
             "url": "https://framerusercontent.com/images/k7NyG9k4wmw86HlM1EgT5cuieo.png",
-            "caption": "Keep the content primary and controls secondary. · Visual 3 of 3"
+            "caption": "Episode selection overlay"
           }
         ],
         "imageLayout": "three"
@@ -704,11 +704,11 @@ return json_decode(<<<'JSON'
         "images": [
           {
             "url": "https://framerusercontent.com/images/5yOu6I22Nh1PYPixBQ3FmIGNL1k.png",
-            "caption": "Make advertising visible without taking over playback. · Visual 1 of 2"
+            "caption": "Video advertising treatment"
           },
           {
             "url": "https://framerusercontent.com/images/SWUXvSduvHDceNSbAgrZzKps8Q.png",
-            "caption": "Make advertising visible without taking over playback. · Visual 2 of 2"
+            "caption": "Advertising overlay during playback"
           }
         ],
         "imageLayout": "pair"
