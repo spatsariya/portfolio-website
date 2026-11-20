@@ -1,6 +1,8 @@
 /* Flipkart case studies: source-faithful long-form flow using imShivam's palette. */
 .fk-case{background:var(--bg);color:var(--text-color);font-family:var(--body-font);overflow:hidden}
 .fk-case *{box-sizing:border-box}
+/* The site's fixed desktop masthead is ~134px high; reserve its space. */
+.fk-case{padding-top:134px}
 .fk-case .fk-container{width:min(100% - 48px,1060px);margin-inline:auto}
 .fk-case a{color:var(--primary-color)}
 .fk-case .fk-breadcrumbs{display:flex;align-items:center;flex-wrap:wrap;gap:10px;min-height:68px;padding:14px 0;font-size:.78rem;color:var(--text-soft)}
@@ -22,7 +24,7 @@
 .fk-case .fk-highlights>div{min-width:0}
 .fk-case .fk-highlights strong{display:block;font-family:var(--heading-font);font-weight:700;font-size:clamp(2.3rem,4vw,3.6rem);letter-spacing:-.065em;color:var(--primary-color);line-height:1.12}
 .fk-case .fk-highlights span{display:block;color:var(--text-muted);font-size:.81rem;line-height:1.5;margin-top:8px}
-.fk-case .fk-section{padding:clamp(45px,6vw,74px) 0;border-bottom:1px solid var(--line-color);scroll-margin-top:106px}
+.fk-case .fk-section{padding:clamp(45px,6vw,74px) 0;border-bottom:1px solid var(--line-color);scroll-margin-top:150px}
 .fk-case .fk-section h2{font-size:clamp(1.9rem,3vw,2.85rem);line-height:1.21;letter-spacing:-.05em;margin:13px 0 23px;max-width:970px}
 .fk-case .fk-prose{max-width:1000px}
 .fk-case .fk-prose p{color:var(--text-muted);font-size:clamp(.97rem,1.3vw,1.05rem);line-height:1.8;margin:0 0 16px}
@@ -58,6 +60,6 @@
 .fk-case .fk-other-list a .fk-arrow{font-size:1.1rem;color:var(--primary-color);align-self:end}
 .fk-case .fk-back{display:inline-flex;text-decoration:none;font-weight:700;border-bottom:1px solid var(--primary-color);margin-top:27px;padding:5px 0;font-size:.89rem}
 .fk-case a:focus-visible{outline:3px solid var(--primary-color);outline-offset:4px}
-@media(max-width:800px){.fk-case .fk-container{width:min(100% - 32px,1060px)}.fk-case .fk-overview{grid-template-columns:1fr;gap:12px}.fk-case .fk-other-list{grid-template-columns:1fr 1fr}.fk-case .fk-section{padding:52px 0}}
+@media(max-width:800px){.fk-case{padding-top:70px}.fk-case .fk-section{scroll-margin-top:90px}.fk-case .fk-container{width:min(100% - 32px,1060px)}.fk-case .fk-overview{grid-template-columns:1fr;gap:12px}.fk-case .fk-other-list{grid-template-columns:1fr 1fr}.fk-case .fk-section{padding:52px 0}}
 @media(max-width:580px){.fk-case h1{font-size:clamp(2.3rem,10vw,3.25rem)}.fk-case .fk-opening{padding:42px 0 39px}.fk-case .fk-info-row{grid-template-columns:1fr;gap:13px;padding:17px 0}.fk-case .fk-info span{margin-bottom:4px}.fk-case .fk-project-image{max-height:320px}.fk-case .fk-project-image img{max-height:320px}.fk-case .fk-overview{padding:25px 0}.fk-case .fk-highlights{gap:15px}.fk-case .fk-highlights strong{font-size:clamp(1.7rem,7vw,2.6rem)}.fk-case .fk-highlights span{font-size:.73rem}.fk-case .fk-section{padding:44px 0}.fk-case .fk-section h2{font-size:clamp(1.75rem,7.2vw,2.25rem)}.fk-case .fk-points{grid-template-columns:1fr}.fk-case .fk-visual-set--three,.fk-case .fk-visual-set--sequence,.fk-case--2gud .fk-section:first-child .fk-visual-set--sequence{grid-template-columns:1fr 1fr;gap:12px}.fk-case .fk-visual-set--three .fk-visual:last-child:nth-child(odd){grid-column:1/-1;max-width:65%;justify-self:center}.fk-case .fk-visual-set--wide,.fk-case .fk-visual-set--pair{grid-template-columns:1fr}.fk-case .fk-visual-inner{min-height:100px;padding:5px;border-radius:8px}.fk-case .fk-visual-set--wide .fk-visual-inner,.fk-case .fk-visual-set--pair .fk-visual-inner{min-height:180px}.fk-case .fk-visual-set--three img{max-height:420px}.fk-case .fk-visual figcaption{font-size:.71rem}.fk-case .fk-other-list{grid-template-columns:1fr}.fk-case .fk-key-learning{padding-left:16px}}
 @media(prefers-reduced-motion:reduce){.fk-case .fk-other-list a{transition:none}}
