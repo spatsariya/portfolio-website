@@ -486,15 +486,15 @@ return json_decode(<<<'JSON'
         ],
         "images": [
           {
-            "url": "https://framerusercontent.com/images/rTwHkisGHk2OBbRIbDsq31v5Sw.png",
-            "caption": "Refurbished label in product results"
-          },
-          {
             "url": "https://framerusercontent.com/images/vK0RCWlDLVC7AwhGgNtGpH5bxO4.png",
             "caption": "Annotated search comparisons showing condition badges"
+          },
+          {
+            "url": "https://framerusercontent.com/images/rTwHkisGHk2OBbRIbDsq31v5Sw.png",
+            "caption": "Refurbished label in product results"
           }
         ],
-        "imageLayout": "pair"
+        "imageLayout": "annotated"
       },
       {
         "kicker": "06 / Solution 02",
