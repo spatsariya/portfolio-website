@@ -20,7 +20,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          for file in flipkart-2gud.php flipkart-supercoin.php flipkart-refurbished.php flipkart-video.php includes/flipkart-case-study-template.php includes/flipkart-case-studies.php includes/flipkart-deep-dive.php; do
+          for file in flipkart-2gud.php flipkart-supercoin.php flipkart-refurbished.php flipkart-video.php includes/flipkart-case-study-template.php includes/flipkart-case-studies.php includes/flipkart-deep-dive.php includes/flipkart-refurbished-showcases.php; do
             php -l "$file"
           done
       - name: Check detailed content and mapped image URLs
