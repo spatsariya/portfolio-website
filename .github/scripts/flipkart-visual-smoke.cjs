@@ -53,17 +53,27 @@ const path = require('path');
 
         const section = page.locator(keySection);
         await section.scrollIntoViewIfNeeded();
-        const image = section.locator('.fk-visual img').first();
-        await image.scrollIntoViewIfNeeded();
-        await image.evaluate(async img => {
-          if (img.complete) return;
-          await Promise.race([
-            img.decode().catch(() => {}),
-            new Promise(resolve => setTimeout(resolve, 15000))
-          ]);
+        const images = section.locator('.fk-visual img');
+        await images.first().scrollIntoViewIfNeeded();
+        // Lazy images not yet scrolled into view can appear as empty panels in captures.
+        // Promote only this one representative gallery to eager and wait for every image.
+        await section.evaluate(async el => {
+          const imgs = Array.from(el.querySelectorAll('.fk-visual img'));
+          await Promise.all(imgs.map(async img => {
+            img.loading = 'eager';
+            await Promise.race([
+              img.decode().catch(() => {}),
+              new Promise(resolve => setTimeout(resolve, 20000))
+            ]);
+          }));
         });
-        const sectionLoaded = await image.evaluate(img => img.complete && img.naturalWidth > 0);
-        if (!sectionLoaded) throw new Error('Source screenshot did not load in ' + keySection);
+        const failedImages = await images.evaluateAll(imgs =>
+          imgs.filter(img => !img.complete || img.naturalWidth === 0)
+              .map(img => img.currentSrc || img.src)
+        );
+        if (failedImages.length) {
+          throw new Error('Source images did not load in ' + keySection + ': ' + failedImages.join(', '));
+        }
 
         await page.screenshot({
           path: path.join('qa-screenshots', slug + '-' + viewportName + '-visual.png'),
