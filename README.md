@@ -169,12 +169,14 @@ Four responsive project pages are available at:
 - `/flipkart-video`
 
 The project pages use `includes/flipkart-case-studies.php` for curated content,
+`includes/flipkart-deep-dive.php` for expanded section-by-section narratives,
 `includes/flipkart-case-study-template.php` for the shared layout, and
 `css/flipkart-case-studies.css` for page-scoped presentation.
 They are linked from the homepage's selected work and `/product-design`;
 their canonical URLs are included in `sitemap.xml`.
 
-**Attribution and scope:** These are rewritten descriptions of collaborative
+**Attribution and scope:** The public pages omit a large attribution callout.
+These are newly authored descriptions of collaborative
 Flipkart projects. The cited case studies on rishivaths.com belong to their author,
 Rishi Vaths, and include his own specific research and leadership contributions.
 Reported business metrics are not independently verified and are not claimed to
@@ -182,7 +184,8 @@ result from any single designer's work. Confirm Shivam's exact role and particip
 for each initiative before adding first-person contribution narratives.
 
 **Visual assets:** Selected published screenshots currently load from the original
-Framer image CDN, with source credit alongside the gallery. They were not copied
+Framer image CDN and are presented inline with each section instead of an
+isolated, oversized gallery. They were not copied
 into the repository. For durable, fast hosting, replace the remote URLs with
 licensed original source files compressed to WebP/AVIF and verify the rights to
 republish them. The homepage uses lightweight CSS covers instead of third-party
