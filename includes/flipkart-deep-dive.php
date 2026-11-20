@@ -3,7 +3,7 @@
 return json_decode(<<<'JSON'
 {
   "2gud": {
-    "focus": "Reimagining commerce for India's next wave of online shoppers",
+    "focus": "Reimagining e-commerce for the next 100 million users in India",
     "overview": "2GUD set out to make affordable, discovery-led shopping feel as rich and inspiring as visiting a local market. The project moved from optimizing an existing catalogue to questioning how shopping could create connection and aspiration.",
     "chapters": [
       {
@@ -13,13 +13,26 @@ return json_decode(<<<'JSON'
           "Six months after launching, the marketplace had substantial traffic without the engagement or conversion that its business needed. The challenge was bigger than polishing category pages: the product had to offer a compelling reason to explore.",
           "A low-price promise could bring someone to a product, yet that did not automatically answer whether an item was right for them, whether they could trust it, or how it might look in everyday life."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/DpjGbftMq3Snh6kHmphSI6O5s.png",
-            "caption": "Early commerce experience and discovery screens"
+            "caption": "Original 2GUD home"
+          },
+          {
+            "url": "https://framerusercontent.com/images/Btcg422v4zMMtX42omhRZTmzMs.png",
+            "caption": "Original category navigation"
+          },
+          {
+            "url": "https://framerusercontent.com/images/TddCdznv4LNOtwBCGPovt6FdKw.png",
+            "caption": "Original product details"
+          },
+          {
+            "url": "https://framerusercontent.com/images/J6Ry5pIVUnf544WA3vLPBZA70wE.png",
+            "caption": "Previous shopping experience"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "sequence"
       },
       {
         "kicker": "02 / Discover",
@@ -41,13 +54,14 @@ return json_decode(<<<'JSON'
           "People enjoyed the idea of finding stylish products at accessible prices, but were cautious about quality, product accuracy and the inability to inspect a purchase in person.",
           "These observations suggested that the product needed to satisfy more than a practical shopping task: it also needed to help users picture a better version of themselves."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/RG1gmaHXg5ju3rqlQMD0sJSyprs.png",
-            "caption": "Research empathy map and shopping behavior synthesis"
+            "caption": "Customer empathy map and research themes"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "wide"
       },
       {
         "kicker": "04 / Insight",
@@ -82,23 +96,36 @@ return json_decode(<<<'JSON'
           "A video-first starting point brought real people and product context into the feed. Featured items remained within reach through attached product cards, so inspiration could lead directly to practical consideration.",
           "Search and exploration paths remained visible. The goal was to add personality to commerce without removing the speed and utility that existing shoppers expected."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/PJMaS9RCFgQtn1TITj56Wav6wI.png",
-            "caption": "Creator-led video commerce homepage with linked product cards"
-          },
-          {
-            "url": "https://framerusercontent.com/images/30APGpx2h25FiohqlGHQkiUIas.png",
-            "caption": "Alternative discovery and product details explorations"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Full-screen video gives each demonstration room to breathe.",
           "Linked product cards connect moments in a creator's story to merchandise.",
           "Following and exploring creators adds a repeat-visit pathway.",
           "Search stays available for intent-driven shoppers."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/PJMaS9RCFgQtn1TITj56Wav6wI.png",
+            "caption": "Video-commerce home and linked products"
+          },
+          {
+            "url": "https://framerusercontent.com/images/30APGpx2h25FiohqlGHQkiUIas.png",
+            "caption": "Product details inlay"
+          },
+          {
+            "url": "https://framerusercontent.com/images/DzWu1dKdiDN52IzSt5xVHx7ks8.png",
+            "caption": "Inlay interaction details"
+          },
+          {
+            "url": "https://framerusercontent.com/images/Cy9pq1IRDfr1ZBXo7FexSMPM4M.png",
+            "caption": "Additional inlay exploration"
+          },
+          {
+            "url": "https://framerusercontent.com/images/eTITIKymyG4xPrXnLufXNfFHvs.png",
+            "caption": "Alternate product-in-video designs"
+          }
+        ],
+        "imageLayout": "sequence"
       },
       {
         "kicker": "07 / Design direction",
@@ -107,19 +134,20 @@ return json_decode(<<<'JSON'
           "Not every product needs a video, and not every visitor arrives to watch one. The merchandising page preserved deals, categories and price-led exploration, while connecting these areas with creator recommendations.",
           "This hybrid experience served people who wanted to wander through inspiration and people who already knew what they needed."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/YzDNRhNPKiCWixYYupn379D70oE.png",
-            "caption": "Merchandising and creator-led exploration experience"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Featured product and creator collections.",
           "Quick entry to trending creators.",
           "Deals and shopping by budget.",
           "Curated creator shops and recommendations."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/YzDNRhNPKiCWixYYupn379D70oE.png",
+            "caption": "Merchandising and influencer exploration page"
+          }
+        ],
+        "imageLayout": "wide"
       },
       {
         "kicker": "08 / Design direction",
@@ -128,13 +156,14 @@ return json_decode(<<<'JSON'
           "Dedicated creator storefronts made recommendations easier to revisit. Collections could be grouped by use, price and personality rather than appearing only as a single, disappearing video.",
           "These storefronts extended the experience from passive watching into a more deliberate shopping path."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/XYY3NwkNn1dEHiZaUjYZZV8bV4Q.png",
-            "caption": "Dedicated influencer-store shopping interface"
+            "caption": "Influencer store and product collections"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "wide"
       },
       {
         "kicker": "09 / Validation",
@@ -156,12 +185,29 @@ return json_decode(<<<'JSON'
           "The published case study reports a near-threefold increase in conversion after three months, an average time spent of about 18 minutes and higher daily activity. These are project-wide figures reported by the original team.",
           "The broader lesson was that affordable shopping works better when practical merchandising and emotional discovery reinforce one another."
         ],
-        "quote": "More product cards were not the answer. A stronger reason to discover was."
+        "quote": "More product cards were not the answer. A stronger reason to discover was.",
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/31jBkXaMYL4cY0G9YwOSiMhHGI.png",
+            "caption": "Project outcome visual"
+          },
+          {
+            "url": "https://framerusercontent.com/images/fi4vW1WgHwTvUhQsXxM6cu7F4.png",
+            "caption": "Engagement and browsing outcome"
+          },
+          {
+            "url": "https://framerusercontent.com/images/lHZBkjs9K5lf6oqhJUQDVBHq8.png",
+            "caption": "Additional project outcome"
+          }
+        ],
+        "imageLayout": "three"
       }
-    ]
+    ],
+    "period": "Jan–Jun 2020",
+    "heroImage": "https://framerusercontent.com/images/47jGzw4Y1NSss5NUO34NoiLdmx4.png"
   },
   "supercoin": {
-    "focus": "Simplifying a complex rewards ecosystem",
+    "focus": "Reduce bounce rate and increase repeat visits",
     "overview": "SuperCoin was intended to give Flipkart customers tangible value for shopping. The opportunity was to make those benefits feel visible, relevant and achievable, rather than presenting rewards as an abstract balance of points.",
     "chapters": [
       {
@@ -185,13 +231,18 @@ return json_decode(<<<'JSON'
           "The page needed a stronger feeling of value and excitement.",
           "Useful offers should be visible without excessive scrolling or searching."
         ],
+        "layout": "wide",
         "images": [
           {
+            "url": "https://framerusercontent.com/images/MmQm9enyfR8fh8gBVzwh5GqtRg0.png",
+            "caption": "User feedback from research interviews"
+          },
+          {
             "url": "https://framerusercontent.com/images/j7cuh3WoadFdgu3sLHwhQJiWJY.png",
-            "caption": "Original SuperCoin and rewards experiences used for review"
+            "caption": "Previous SuperCoin and rewards interface"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "pair"
       },
       {
         "kicker": "03 / Product definition",
@@ -214,12 +265,6 @@ return json_decode(<<<'JSON'
           "The design brought the visual hierarchy of an e-commerce storefront into the loyalty area. Promotional panels, category shortcuts, featured offers and redemption options were arranged around familiar shopping behaviors.",
           "This change made browsing feel less like scanning a list of rules and more like finding something worthwhile."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/WX0obTUARLiUa9HIWQ4RbiQ4E.png",
-            "caption": "Rewards merchandising direction"
-          }
-        ],
         "layout": "wide"
       },
       {
@@ -229,13 +274,14 @@ return json_decode(<<<'JSON'
           "New onboarding screens introduced the places where a member could inspect their balance, find offers, understand savings and move among rewards.",
           "A short orientation reduces the need for people to decode a complex loyalty system on their own."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/WX0obTUARLiUa9HIWQ4RbiQ4E.png",
-            "caption": "SuperCoin onboarding and orientation designs"
+            "caption": "Onboarding and first-time guidance screens"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "wide"
       },
       {
         "kicker": "06 / SuperCoin zone",
@@ -244,19 +290,20 @@ return json_decode(<<<'JSON'
           "Hero promotions, popular redemptions and category entry points transformed the reward destination into a place to browse. The design also connected earning opportunities with content and games already present elsewhere in the Flipkart ecosystem.",
           "The different modules each answered a distinct intent: find a deal, use existing coins, earn more, or inspect reward details."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/ybfdbZl4l5SjYqHFf6y9zHRIL54.png",
-            "caption": "SuperCoin store-like homepage with modular widgets"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Hero campaigns presented offers and exclusive discounts.",
           "Popular rewards reduced decision-making effort.",
           "Navigation took users to redeemed rewards and coin information.",
           "Related engagement surfaces offered ways to earn coins through videos and games."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/ybfdbZl4l5SjYqHFf6y9zHRIL54.png",
+            "caption": "SuperCoin Zone redesign with annotated modules"
+          }
+        ],
+        "imageLayout": "wide"
       },
       {
         "kicker": "07 / Personalization",
@@ -265,18 +312,27 @@ return json_decode(<<<'JSON'
           "Three versions of the experience addressed different coin levels. Instead of showcasing the same rewards to everyone, the primary modules emphasized offers the visitor could realistically afford.",
           "Customers with fewer coins still retained an escape route to higher-value rewards through combinations of coins and cash."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/QMcOUNMkDRPEP0HsPImMgy7607c.png",
-            "caption": "Three coin-balance cohorts and personalized offers"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Under 500 coins: accessible rewards first.",
           "500–1,000 coins: a wider set of mid-tier offers.",
           "Above 1,000 coins: more premium redemption opportunities."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/QMcOUNMkDRPEP0HsPImMgy7607c.png",
+            "caption": "Rewards for members with fewer than 500 coins"
+          },
+          {
+            "url": "https://framerusercontent.com/images/eCXQeXTS4Co41zp06gnUn40g.png",
+            "caption": "Rewards for members with 500–1,000 coins"
+          },
+          {
+            "url": "https://framerusercontent.com/images/Fus3YqyOruXfLUILrb8eSZINY.png",
+            "caption": "Rewards for members with more than 1,000 coins"
+          }
+        ],
+        "imageLayout": "three"
       },
       {
         "kicker": "08 / Redemption",
@@ -285,13 +341,18 @@ return json_decode(<<<'JSON'
           "A coins-plus-cash redemption option reduced the frustration of reaching a desirable reward but lacking enough points. Prices explicitly showed what could be paid with earned coins and what would remain in cash.",
           "This approach made loyalty value usable even for customers with limited balances, while preserving the familiar decision process of a purchase."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/VDutDrnbQrnk53Mv14FwxUHrCU.png",
-            "caption": "Coins-plus-cash redemption option"
+            "caption": "Cash + Coins redemption flow"
+          },
+          {
+            "url": "https://framerusercontent.com/images/62waGbT0ycLU6brm5ly9CgFpxc4.png",
+            "caption": "Coin balance information"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "pair"
       },
       {
         "kicker": "09 / Rewards store",
@@ -300,22 +361,31 @@ return json_decode(<<<'JSON'
           "Grouping rewards into categories such as entertainment, food and shopping replaced a long undifferentiated list with a structure people could scan and navigate.",
           "Denser card layouts and a daily deal improved exposure without requiring the user to search blindly for useful offers."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/gJI2RFA3q4CvuXzbdOqVPdwGn8.png",
-            "caption": "Condensed reward-card grouping and featured offer"
-          },
-          {
-            "url": "https://framerusercontent.com/images/44ibs8avhEasOWqUN4R5Bw8g34.png",
-            "caption": "Category-specific reward discovery"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Category grouping created clear browsing landmarks.",
           "A deal of the day communicated urgency and exclusivity.",
           "More offers became visible in a shorter browsing journey."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/gJI2RFA3q4CvuXzbdOqVPdwGn8.png",
+            "caption": "Redesigned reward cards and deal of the day"
+          },
+          {
+            "url": "https://framerusercontent.com/images/44ibs8avhEasOWqUN4R5Bw8g34.png",
+            "caption": "Entertainment rewards"
+          },
+          {
+            "url": "https://framerusercontent.com/images/0LzYhFUvz3SKgTKJL1ltSPV0fU.png",
+            "caption": "Shopping rewards"
+          },
+          {
+            "url": "https://framerusercontent.com/images/XoSF8ZTpZE6Zdnrnds1lWM74o1Q.png",
+            "caption": "Food rewards"
+          }
+        ],
+        "imageLayout": "sequence"
       },
       {
         "kicker": "10 / Outcomes",
@@ -326,10 +396,12 @@ return json_decode(<<<'JSON'
         ],
         "quote": "Rewards work when people can quickly see why their points are useful."
       }
-    ]
+    ],
+    "period": "Aug–Oct 2022",
+    "heroImage": "https://framerusercontent.com/images/niz8DrjfLmzrd0rhKItkPDHdTQ.png"
   },
   "refurbished": {
-    "focus": "Building trust in professionally refurbished electronics",
+    "focus": "Reducing product returns after purchase",
     "overview": "The refurbished marketplace offered compelling prices, but customers needed an unmistakable explanation of what they were buying. The redesign made product condition, inspection and protection part of the entire shopping journey.",
     "chapters": [
       {
@@ -352,7 +424,14 @@ return json_decode(<<<'JSON'
           "Some expected an unopened, new device because of the low price.",
           "Questions about warranties and condition were left unanswered.",
           "A consistent explanation was needed across search, product and cart."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/pGiOLJfLYjDqgn2ATEpL6HirurY.png",
+            "caption": "Interview findings and customer concerns"
+          }
+        ],
+        "imageLayout": "wide"
       },
       {
         "kicker": "03 / Audit",
@@ -361,17 +440,22 @@ return json_decode(<<<'JSON'
           "In the earlier experience, a product's condition was easy to overlook within a familiar retail card. The details view did not sufficiently educate new category users, and checkout did little to reinforce the difference between refurbished and new.",
           "The solution could not be a single disclaimer. It needed repeated, helpful signals at the moments when a buyer made decisions."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/S148E42jMbwiFeuasdHkFCVTqvY.png",
-            "caption": "Original product discovery and detail patterns"
+            "caption": "Existing category search"
+          },
+          {
+            "url": "https://framerusercontent.com/images/oefNZkeKxRXA5Gtu5WKyQNg4.png",
+            "caption": "Existing product details"
           },
           {
             "url": "https://framerusercontent.com/images/fkySYQA4ZwYl4e69vExMS30ibfo.png",
-            "caption": "Earlier cart journey"
+            "caption": "Existing cart"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "three"
       },
       {
         "kicker": "04 / Design questions",
@@ -394,22 +478,23 @@ return json_decode(<<<'JSON'
           "Shoppers scanning a dense catalogue often anchor on the price and thumbnail. To prevent the category from being misunderstood, the revised treatment repeated the condition on the product image, in the listing title and immediately below it as a clear grade.",
           "This design was applied in both category results and the broader Flipkart search experience to help customers tell new and refurbished inventory apart."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/rTwHkisGHk2OBbRIbDsq31v5Sw.png",
-            "caption": "Refurbished-tag treatment in product listings"
-          },
-          {
-            "url": "https://framerusercontent.com/images/vK0RCWlDLVC7AwhGgNtGpH5bxO4.png",
-            "caption": "Annotated comparison between refurbished and standard search results"
-          }
-        ],
         "layout": "wide",
         "points": [
           "An unmistakable badge on the product photo.",
           "Explicit mention of refurbished condition in titles.",
           "Condition grade alongside ordinary retail information."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/vK0RCWlDLVC7AwhGgNtGpH5bxO4.png",
+            "caption": "Annotated search comparisons showing condition badges"
+          },
+          {
+            "url": "https://framerusercontent.com/images/rTwHkisGHk2OBbRIbDsq31v5Sw.png",
+            "caption": "Refurbished label in product results"
+          }
+        ],
+        "imageLayout": "annotated"
       },
       {
         "kicker": "06 / Solution 02",
@@ -418,19 +503,28 @@ return json_decode(<<<'JSON'
           "Customers needed a definition of what they were about to buy before being asked to commit. An explanation was placed high in the details flow, supported by additional information about the inspection and restoration process.",
           "The content also incorporated an educational video and product-condition details in the image carousel, allowing customers to learn through both short text and visual explanation."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/vEwTwMVRZJKT85XIuj1EJ42y1so.png",
-            "caption": "Refurbished product detail page and educational features"
-          }
-        ],
         "layout": "wide",
         "points": [
           "An introductory explanation near the first screen.",
           "Video describing the refurbishing process.",
           "Product-grade and condition-specific information.",
           "Direct access to more details without leaving the buying journey."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/vEwTwMVRZJKT85XIuj1EJ42y1so.png",
+            "caption": "Refurbished product details"
+          },
+          {
+            "url": "https://framerusercontent.com/images/b6KgCoeqig3E6RYQsuSrQjFgLI.png",
+            "caption": "In-carousel video education"
+          },
+          {
+            "url": "https://framerusercontent.com/images/HJqH22h56yx1yWN3AbmXZjgSjEw.png",
+            "caption": "Condition and quality details"
+          }
+        ],
+        "imageLayout": "three"
       },
       {
         "kicker": "07 / Solution 03",
@@ -439,18 +533,19 @@ return json_decode(<<<'JSON'
           "Even after learning about refurbishment, customers could forget the distinction while filling a mixed cart. A confirmation bottom sheet explicitly reminded them they were choosing a refurbished device.",
           "Rather than relying on an alarming warning, the sheet paired a clear statement of condition with the practical benefits of the purchase. This made the reminder both transparent and supportive."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/FWwi8GBZpNZ6JdEg70ORVbdLEM.png",
-            "caption": "Refurbished confirmation bottom sheet at checkout"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Clear reminder of the product type before confirmation.",
           "Quality checks and warranty cues presented together.",
           "A price and value framing without disguising the condition."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/FWwi8GBZpNZ6JdEg70ORVbdLEM.png",
+            "caption": "Checkout confirmation explaining a refurbished purchase"
+          }
+        ],
+        "imageLayout": "wide"
       },
       {
         "kicker": "08 / Solution 04",
@@ -459,23 +554,24 @@ return json_decode(<<<'JSON'
           "The final part of the flow emphasized inspection steps, warranty terms, replacement information and comparative value. A supporting educational page offered more background about how devices are restored and checked.",
           "The aim was to make buyers feel informed instead of simply reassured, with condition information available when it mattered."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/VmJn6ViVbrnTojQQCvHRyA0FsE.png",
-            "caption": "Quality, warranty and return information in product details"
-          },
-          {
-            "url": "https://framerusercontent.com/images/wYBrsfJMmn5dAn9VecAZ6Fon8.png",
-            "caption": "Education page explaining product quality checks"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Visible warranty and returns information.",
           "A simple breakdown of quality inspection steps.",
           "Price comparison between new and restored devices.",
           "Educational content for people unfamiliar with the category."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/VmJn6ViVbrnTojQQCvHRyA0FsE.png",
+            "caption": "Warranty, quality and return information"
+          },
+          {
+            "url": "https://framerusercontent.com/images/wYBrsfJMmn5dAn9VecAZ6Fon8.png",
+            "caption": "Educational page about refurbishment"
+          }
+        ],
+        "imageLayout": "pair"
       },
       {
         "kicker": "09 / Validation",
@@ -494,10 +590,12 @@ return json_decode(<<<'JSON'
         ],
         "quote": "A good deal should never depend on a customer misunderstanding what they are buying."
       }
-    ]
+    ],
+    "period": "Jun–Jul 2021",
+    "heroImage": "https://framerusercontent.com/images/mFzjhj3dcpoOb0W2nUSnHLXZLU.png"
   },
   "flipkart-video": {
-    "focus": "Designing an entertainment destination inside Flipkart",
+    "focus": "Designing an entertainment destination for Flipkart",
     "overview": "Flipkart Video introduced a new reason to open the shopping app. The experience needed to support entertainment discovery and comfortable playback while fitting naturally into an existing consumer product.",
     "chapters": [
       {
@@ -529,19 +627,20 @@ return json_decode(<<<'JSON'
           "The entertainment home combined prominent new releases, featured content and focused navigation tabs. Promotional treatments introduced new shows, while language-based collections gave different audiences familiar entry points.",
           "By separating editorial highlights from utility controls, the page could feel engaging without hiding the path to a specific piece of content."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/lnD0Ky8rxPgeCLBqfcVQtrIUGjA.png",
-            "caption": "Flipkart Video home with promotional hero and content navigation"
-          }
-        ],
         "layout": "wide",
         "points": [
           "An attention-grabbing hero highlights new programming.",
           "Tabs allow quick switching between content views.",
           "Featured collections surface paid or promoted content.",
           "Regional-language browsing supports diverse audiences."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/lnD0Ky8rxPgeCLBqfcVQtrIUGjA.png",
+            "caption": "Flipkart Video home and annotated widgets"
+          }
+        ],
+        "imageLayout": "wide"
       },
       {
         "kicker": "04 / Show details",
@@ -550,19 +649,20 @@ return json_decode(<<<'JSON'
           "The details page put the poster, program information and primary watch action in a predictable hierarchy. Episode lists and a season selector made serial content easier to explore.",
           "A favorites action supported the intention to watch later, while recommendations offered a useful route to discover the next show."
         ],
-        "images": [
-          {
-            "url": "https://framerusercontent.com/images/LLvZ6zWeE0mNDsb2SdCel2cDA.png",
-            "caption": "Flipkart Video show details, episode list and season picker"
-          }
-        ],
         "layout": "wide",
         "points": [
           "Prominent content title and hero artwork.",
           "Season switching and episode discovery.",
           "Save to favorites for later viewing.",
           "Related recommendations for exploration."
-        ]
+        ],
+        "images": [
+          {
+            "url": "https://framerusercontent.com/images/LLvZ6zWeE0mNDsb2SdCel2cDA.png",
+            "caption": "Show details, episode lists and season selection"
+          }
+        ],
+        "imageLayout": "wide"
       },
       {
         "kicker": "05 / Player",
@@ -571,26 +671,27 @@ return json_decode(<<<'JSON'
           "The player presented the viewing surface with controls that appear when needed. Supplementary overlays organized subtitles, audio options and episode selection into distinct tasks.",
           "This lets someone adjust their experience without being pulled out of the content or forced to navigate back through the app."
         ],
+        "layout": "wide",
+        "points": [
+          "Consistent play, pause and progress controls.",
+          "Audio and subtitle selection in a dedicated overlay.",
+          "Episode choices accessible during playback."
+        ],
         "images": [
           {
             "url": "https://framerusercontent.com/images/Hk5hACuwZxtZaTnVIupOG5WVkE.png",
-            "caption": "Video playback interface"
+            "caption": "Video player interface"
           },
           {
             "url": "https://framerusercontent.com/images/8xOSijuanvL9FAKvWKisZFdu53o.png",
-            "caption": "Video audio and subtitle controls"
+            "caption": "Audio and subtitle overlay"
           },
           {
             "url": "https://framerusercontent.com/images/k7NyG9k4wmw86HlM1EgT5cuieo.png",
             "caption": "Episode selection overlay"
           }
         ],
-        "layout": "wide",
-        "points": [
-          "Consistent play, pause and progress controls.",
-          "Audio and subtitle selection in a dedicated overlay.",
-          "Episode choices accessible during playback."
-        ]
+        "imageLayout": "three"
       },
       {
         "kicker": "06 / Ads",
@@ -599,17 +700,18 @@ return json_decode(<<<'JSON'
           "The design also explored video advertisement treatments and brand overlays to support the platform's business model.",
           "Placement and visual hierarchy mattered: a promotional unit needed to be legible and actionable while allowing the viewer to understand when an ad begins, what is sponsored and how to return to the show."
         ],
+        "layout": "wide",
         "images": [
           {
             "url": "https://framerusercontent.com/images/5yOu6I22Nh1PYPixBQ3FmIGNL1k.png",
-            "caption": "Advertising interface within the Flipkart Video player"
+            "caption": "Video advertising treatment"
           },
           {
             "url": "https://framerusercontent.com/images/SWUXvSduvHDceNSbAgrZzKps8Q.png",
-            "caption": "Advertising brand overlay during playback"
+            "caption": "Advertising overlay during playback"
           }
         ],
-        "layout": "wide"
+        "imageLayout": "pair"
       },
       {
         "kicker": "07 / Product lessons",
@@ -620,7 +722,9 @@ return json_decode(<<<'JSON'
         ],
         "quote": "Help people find what they want to watch. Then let the video do the work."
       }
-    ]
+    ],
+    "period": "Jul–Sep 2019",
+    "heroImage": "https://framerusercontent.com/images/DUCKWPrVE880UtdeeFg764d4qmg.png"
   }
 }
 JSON

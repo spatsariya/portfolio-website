@@ -1,0 +1,43 @@
+name: Flipkart visual QA
+
+on:
+  pull_request:
+    paths:
+      - 'flipkart-*.php'
+      - 'includes/flipkart-*.php'
+      - 'css/flipkart-case-studies.css'
+      - '.github/scripts/flipkart-visual-smoke.cjs'
+      - '.github/workflows/flipkart-visual-qa.yml'
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  visual-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright and use runner Chrome
+        run: |
+          npm install --prefix /tmp/flipkart-pw --no-audit --no-fund --ignore-scripts playwright@1.56.1
+          google-chrome --version
+      - name: Check desktop and mobile pages
+        env:
+          PLAYWRIGHT_PATH: /tmp/flipkart-pw/node_modules/playwright
+        run: |
+          php -S 127.0.0.1:8133 -t . >/tmp/portfolio-php.log 2>&1 &
+          echo $! > /tmp/portfolio-php.pid
+          sleep 3
+          node .github/scripts/flipkart-visual-smoke.cjs
+      - name: Upload QA screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: flipkart-desktop-mobile-qa
+          path: qa-screenshots/
+          if-no-files-found: warn
+          retention-days: 7
