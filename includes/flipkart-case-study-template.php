@@ -76,13 +76,6 @@ include __DIR__ . '/header.php';
         <?php endforeach; ?>
         </div>
 
-        <?php if (!empty($chapter['points'])): ?>
-          <ul class="fk-points" aria-label="Key findings">
-            <?php foreach ($chapter['points'] as $point): ?>
-              <li><?php echo $esc($point); ?></li>
-            <?php endforeach; ?>
-          </ul>
-        <?php endif; ?>
 
         <?php if ($caseStudyKey === 'refurbished' && $idx >= 4 && $idx <= 7): ?>
           <?php include __DIR__ . '/flipkart-refurbished-showcases.php'; ?>
@@ -97,6 +90,14 @@ include __DIR__ . '/header.php';
               </figure>
             <?php endforeach; ?>
           </div>
+        <?php endif; ?>
+
+        <?php if (!empty($chapter['points']) && !($caseStudyKey === 'refurbished' && $idx >= 4 && $idx <= 7)): ?>
+          <ul class="fk-points" aria-label="Key findings">
+            <?php foreach ($chapter['points'] as $point): ?>
+              <li><?php echo $esc($point); ?></li>
+            <?php endforeach; ?>
+          </ul>
         <?php endif; ?>
 
         <?php if (!empty($chapter['quote'])): ?>
