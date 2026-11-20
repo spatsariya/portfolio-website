@@ -21,10 +21,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Install Playwright and Chromium
+      - name: Install Playwright and use runner Chrome
         run: |
           npm install --prefix /tmp/flipkart-pw --no-audit --no-fund --ignore-scripts playwright@1.56.1
-          node /tmp/flipkart-pw/node_modules/playwright/cli.js install --with-deps chromium
+          google-chrome --version
       - name: Check desktop and mobile pages
         env:
           PLAYWRIGHT_PATH: /tmp/flipkart-pw/node_modules/playwright
